@@ -13,7 +13,8 @@ It also matches users with relevant job listings using **compatibility scoring**
 
 ## Team Details
 **Team Lead:**  
-- **Ali Ahmed** – [syed-ali3](https://github.com/syed-ali3) – 23L-3067
+- **Ali Ahmed** – [syed-ali3](https://github.com/syed-ali3) – 23L-3067 <br>
+
 **Team Members:**  
 - **Muhammad Ahmad Butt** – [m-ahmad-butt](https://github.com/m-ahmad-butt) – 23L-3059  
 
@@ -45,5 +46,5 @@ It also matches users with relevant job listings using **compatibility scoring**
 ### AI Integration
 - LLM Model: Ollama  
 
-© 2026 **Apex – FAST NUCES Lahore**  
-All rights reserved.
+## License
+This project is for educational purposes only.

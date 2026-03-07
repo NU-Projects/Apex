@@ -103,4 +103,4 @@ const verifyOtp = async ({ email, otp }) => {
 };
 
 
-module.exports = { signUp, verifyOtp, verifyOtp };
+module.exports = { signUp, verifyOtp };

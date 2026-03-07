@@ -11,7 +11,8 @@ app.use(express.json());
 
 const SERVICES = {
   auth: process.env.AUTH_SERVICE_URL || 'http://localhost:5002',
-  eureka: process.env.EUREKA_SERVER_URL || 'http://localhost:5001'
+  eureka: process.env.EUREKA_SERVER_URL || 'http://localhost:5001',
+  skills: process.env.SKILLS_EXTRACTION_SERVICE_URL || 'http://localhost:5003'
 };
 
 app.get('/', (req, res) => {
@@ -41,6 +42,22 @@ app.all('/eureka/{*path}', async (req, res) => {
     const response = await axios({
       method: req.method,
       url: `${SERVICES.eureka}${req.path}`,
+      data: req.body,
+      params: req.query,
+      headers: { 'Content-Type': 'application/json' }
+    });
+    res.status(response.status).json(response.data);
+  } catch (error) {
+    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+  }
+});
+
+// Route: /skills* -> skills-extraction-service
+app.all('/skills/{*path}', async (req, res) => {
+  try {
+    const response = await axios({
+      method: req.method,
+      url: `${SERVICES.skills}${req.path.replace('/skills', '')}`,
       data: req.body,
       params: req.query,
       headers: { 'Content-Type': 'application/json' }

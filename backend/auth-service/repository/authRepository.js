@@ -12,6 +12,22 @@ const findUserByEmail = async (email) => {
 };
 
 
+// ─── Fetch full user record needed for login (includes hashed password) ───
+
+const findUserForLogin = async (email) => {
+
+  const query = `
+    SELECT email, full_name, password, github_username, linkedin_username, skills, is_verified
+    FROM users
+    WHERE email = $1
+  `;
+
+  const { rows } = await pool.query(query, [email]);
+
+  return rows[0] || null;
+};
+
+
 // ─── Insert a new user row ───
 
 const createUser = async ({ email, fullName, hashedPassword, gitHubUserName, linkedInUserName }) => {
@@ -107,6 +123,7 @@ const deleteOtpsByEmail = async (email) => {
 
 module.exports = {
   findUserByEmail,
+  findUserForLogin,
   createUser,
   updateUser,
   createOtpVerification,

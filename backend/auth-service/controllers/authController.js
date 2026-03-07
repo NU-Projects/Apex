@@ -62,4 +62,33 @@ const verifyOtp = async (req, res) => {
 };
 
 
-module.exports = { signUp, verifyOtp };
+// ─── POST /auth/login ───
+
+const login = async (req, res) => {
+
+  try {
+    const { email, password } = req.body;
+
+    const result = await authService.login({ email, password });
+
+    return res.status(200).json({
+      success: true,
+      message: result.message,
+      data: {
+        user: result.user,
+      },
+    });
+
+  } catch (err) {
+    const statusCode = err.statusCode || 500;
+    const message = err.statusCode ? err.message : 'Internal server error';
+
+    return res.status(statusCode).json({
+      success: false,
+      message,
+    });
+  }
+};
+
+
+module.exports = { signUp, verifyOtp, login, login };

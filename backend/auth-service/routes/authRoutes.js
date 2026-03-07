@@ -14,6 +14,11 @@ router.post('/signup', authController.signUp);
 router.post('/verify-otp', authController.verifyOtp);
 
 
+// ─── POST  /auth/login ───
+
+router.post('/login', authController.login);
+
+
 module.exports = router;
 
 

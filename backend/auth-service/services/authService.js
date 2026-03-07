@@ -103,4 +103,50 @@ const verifyOtp = async ({ email, otp }) => {
 };
 
 
-module.exports = { signUp, verifyOtp };
+// ─── Login Logic ───
+
+const login = async ({ email, password }) => {
+
+  // 1. Find user — includes hashed password
+  const user = await authRepository.findUserForLogin(email);
+
+  if (!user) {
+    const error = new Error('Invalid email or password');
+    error.statusCode = 401;
+    throw error;
+  }
+
+
+  // 2. Block unverified accounts
+  if (!user.is_verified) {
+    const error = new Error('Account is not verified. Please verify your email first.');
+    error.statusCode = 403;
+    throw error;
+  }
+
+
+  // 3. Compare provided password against stored hash
+  const passwordMatch = await bcrypt.compare(password, user.password);
+
+  if (!passwordMatch) {
+    const error = new Error('Invalid email or password');
+    error.statusCode = 401;
+    throw error;
+  }
+
+
+  return {
+    message: 'Login successful.',
+    user: {
+      email: user.email,
+      fullName: user.full_name,
+      gitHubUserName: user.github_username,
+      linkedInUserName: user.linkedin_username,
+      isVerified: user.is_verified,
+      skills: user.skills || [],
+    },
+  };
+};
+
+
+module.exports = { signUp, verifyOtp, login, login };

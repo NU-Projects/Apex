@@ -6,9 +6,33 @@ const { startEureka } = require('./eureka-client');
 
 const authRoutes = require('./routes/authRoutes');
 
+const cors = require('cors');
+
 const app = express();
 const PORT = process.env.AUTHSERVICE_PORT || 5002;
 
+const allowedOrigins = [
+  process.env.CLIENT_URL?.trim().replace(/\/$/, ""),
+  "http://localhost:5173"
+].filter(Boolean);
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    // console.log("Incoming origin:", origin);
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("CORS not allowed"));
+    }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  credentials: true,
+  optionsSuccessStatus: 200,
+  maxAge: 86400
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 

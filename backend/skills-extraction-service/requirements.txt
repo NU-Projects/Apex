@@ -5,3 +5,4 @@ py-eureka-client
 psycopg2-binary
 selenium
 webdriver-manager
+flask-cors

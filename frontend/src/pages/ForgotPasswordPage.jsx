@@ -4,7 +4,7 @@ import AuthCard from '../components/AuthCard'
 import InputField from '../components/InputField'
 import Button from '../components/Button'
 import OTPInput from '../components/OTPInput'
-import { mockSendOTP, mockVerifyOTP } from '../services/authService'
+import { forgotPassword, verifyResetOtp } from '../services/authService'
 
 function ForgotPasswordPage() {
   const navigate = useNavigate()
@@ -35,13 +35,21 @@ function ForgotPasswordPage() {
       setError('Please enter your email address.')
       return
     }
+    if (!email.toLowerCase().endsWith('@gmail.com')) {
+      setError('Only @gmail.com emails are allowed.')
+      return
+    }
     setError('')
     setLoading(true)
     try {
-      await mockSendOTP(email)
+      const { error: sendError } = await forgotPassword(email)
+      if (sendError) {
+        setError(sendError.message)
+        return
+      }
       setStep(2)
-      setTimer(60)
-      setSuccess('OTP sent successfully! Check your email.')
+      setTimer(300)
+      setSuccess('OTP sent successfully!')
     } catch {
       setError('Failed to send OTP. Try again.')
     } finally {
@@ -50,19 +58,20 @@ function ForgotPasswordPage() {
   }
 
   const handleVerifyOTP = async () => {
-    if (otp.length < 6) {
-      setError('Please enter the complete 6-digit OTP.')
+    if (!otp) {
+      setError('Please enter the OTP.')
       return
     }
     setError('')
     setLoading(true)
     try {
-      const result = await mockVerifyOTP(otp)
-      if (result.success) {
-        navigate('/dashboard')
-      } else {
-        setError('Invalid OTP. Please try again.')
+      const { error: verifyError } = await verifyResetOtp(email, otp)
+      if (verifyError) {
+        setError(verifyError.message)
+        return
       }
+      setSuccess('OTP verified successfully!')
+      setTimeout(() => navigate('/'), 2000)
     } catch {
       setError('Verification failed.')
     } finally {
@@ -75,8 +84,12 @@ function ForgotPasswordPage() {
     setLoading(true)
     setError('')
     try {
-      await mockSendOTP(email)
-      setTimer(60)
+      const { error: resendError } = await forgotPassword(email)
+      if (resendError) {
+        setError(resendError.message)
+        return
+      }
+      setTimer(300)
       setOtp('')
       setSuccess('OTP resent successfully!')
     } catch {
@@ -86,10 +99,15 @@ function ForgotPasswordPage() {
     }
   }
 
+  const subtitles = {
+    1: 'Enter your email to receive a verification code',
+    2: 'Verify your email address',
+  }
+
   return (
     <AuthCard
-      title={step === 1 ? 'Reset password' : 'Verify OTP'}
-      subtitle={step === 1 ? 'Enter your email to receive a verification code' : `We sent a code to ${email}`}
+      title={step === 1 ? 'Reset password' : 'Verify Email'}
+      subtitle={subtitles[step]}
     >
       <div className="space-y-4 animate-slide-in" key={step}>
         {error && (
@@ -97,34 +115,38 @@ function ForgotPasswordPage() {
             {error}
           </div>
         )}
-        {success && step === 2 && (
+        {success && (
           <div className="p-3 rounded-lg bg-blue-50 border border-blue-200 text-sm text-brand-700 animate-fade-in">
             {success}
           </div>
         )}
 
         {step === 1 && (
-          <>
-            <InputField
-              label="Email Address"
-              id="forgot-email"
-              type="email"
-              placeholder="Email address"
-              value={email}
-              onChange={(e) => { setEmail(e.target.value); setError('') }}
-            />
-            <Button onClick={handleSendOTP} loading={loading}>
-              Send OTP
-            </Button>
-          </>
+          <InputField
+            label="Email Address"
+            id="forgot-email"
+            type="email"
+            placeholder="Email address"
+            value={email}
+            onChange={(e) => { setEmail(e.target.value); setError('') }}
+          />
         )}
 
         {step === 2 && (
           <>
-            <div className="py-2">
-              <OTPInput length={6} value={otp} onChange={setOtp} />
+            <div className="text-sm text-text-secondary mb-4">
+              We've sent a 6-digit verification code to <span className="font-semibold text-text-primary">{email}</span>.
             </div>
-
+            <InputField
+              label="Verification Code (OTP)"
+              id="forgot-otp"
+              placeholder="XXXXXX"
+              value={otp}
+              onChange={(e) => {
+                setOtp(e.target.value)
+                setError('')
+              }}
+            />
             <div className="text-center">
               {timer > 0 ? (
                 <p className="text-sm text-text-secondary">
@@ -143,16 +165,27 @@ function ForgotPasswordPage() {
                 </p>
               )}
             </div>
-
-            <Button onClick={handleVerifyOTP} loading={loading}>
-              Verify OTP
-            </Button>
-
-            <Button variant="secondary" onClick={() => { setStep(1); setOtp(''); setError(''); setSuccess('') }}>
-              Change email
-            </Button>
           </>
         )}
+
+        <div className="flex gap-3 pt-1">
+          {step === 2 && (
+            <Button variant="secondary" onClick={() => { setStep(1); setOtp(''); setError(''); setSuccess('') }} fullWidth={false}>
+              Back
+            </Button>
+          )}
+          <div className="flex-1">
+            {step === 1 ? (
+              <Button onClick={handleSendOTP} loading={loading}>
+                Send OTP
+              </Button>
+            ) : (
+              <Button onClick={handleVerifyOTP} loading={loading}>
+                Verify & Activate
+              </Button>
+            )}
+          </div>
+        </div>
 
         <p className="text-center text-sm text-text-secondary pt-1">
           Remember your password?{' '}

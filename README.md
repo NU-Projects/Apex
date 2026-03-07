@@ -32,15 +32,16 @@ It also matches users with relevant job listings using **compatibility scoring**
 ### Frontend
 - React.js  
 
-### Backend
+### Backend (Microservices)
 - Express.js  
-- Python (Flask) microservices  
+- Python Flask 
 
 ### Microservices & Infrastructure
-- Service Registry: Netflix Eureka Server (Community Edition)  
+- Service Registry: Netflix Eureka Server
 - Messaging: Apache Kafka  
 - Containerization: Docker  
 - Deployment: AWS  
+- CI/CD: GitLab
 
 ### Database & Authentication
 - Supabase  

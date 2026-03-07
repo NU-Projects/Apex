@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { logoutUser } from '../services/authService'
 
 const navItems = [
   {
@@ -62,16 +64,30 @@ const bottomItems = [
       </svg>
     ),
   },
+  {
+    label: 'Logout',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+      </svg>
+    ),
+    isLogout: true,
+  },
 ]
 
 function Sidebar() {
   const [collapsed, setCollapsed] = useState(false)
+  const navigate = useNavigate()
+
+  const handleLogout = async () => {
+    await logoutUser()
+    navigate('/')
+  }
 
   return (
     <aside
-      className={`hidden md:flex flex-col bg-white border-r border-border-light transition-all duration-200 ${
-        collapsed ? 'w-20' : 'w-60'
-      }`}
+      className={`hidden md:flex flex-col bg-white border-r border-border-light transition-all duration-200 ${collapsed ? 'w-20' : 'w-60'
+        }`}
     >
       {/* Toggle */}
       <div className="flex items-center justify-end p-3">
@@ -109,7 +125,12 @@ function Sidebar() {
         {bottomItems.map((item) => (
           <button
             key={item.label}
-            className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-text-secondary hover:text-text-primary hover:bg-surface transition-colors duration-150"
+            onClick={item.isLogout ? handleLogout : undefined}
+            className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150 
+              ${item.isLogout
+                ? 'text-red-500 hover:text-red-600 hover:bg-red-50'
+                : 'text-text-secondary hover:text-text-primary hover:bg-surface'
+              }`}
           >
             <span className="flex-shrink-0">{item.icon}</span>
             {!collapsed && <span className="truncate">{item.label}</span>}

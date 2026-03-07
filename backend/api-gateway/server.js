@@ -1,12 +1,35 @@
 const express = require('express');
 const axios = require('axios');
 const path = require('path');
+const cors = require('cors');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 const { startEureka } = require('./eureka-client');
 
 const app = express();
 const PORT = process.env.API_GATEWAY_PORT || 5000;
 
+const allowedOrigins = [
+  process.env.CLIENT_URL?.trim().replace(/\/$/, ""),
+  "http://localhost:5173"
+].filter(Boolean);
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    // console.log("Incoming origin:", origin);
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("CORS not allowed"));
+    }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  credentials: true,
+  optionsSuccessStatus: 200,
+  maxAge: 86400
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const SERVICES = {
@@ -21,11 +44,11 @@ app.get('/', (req, res) => {
 
 
 // Route: /auth* -> auth-service
-app.all('/auth/{*path}', async (req, res) => {
+app.use('/auth', async (req, res) => {
   try {
     const response = await axios({
       method: req.method,
-      url: `${SERVICES.auth}${req.path}`,
+      url: `${SERVICES.auth}/auth${req.url}`,
       data: req.body,
       params: req.query,
       headers: { 'Content-Type': 'application/json' }
@@ -37,11 +60,11 @@ app.all('/auth/{*path}', async (req, res) => {
 });
 
 // Route: /eureka* -> netflix-eureka-server
-app.all('/eureka/{*path}', async (req, res) => {
+app.use('/eureka', async (req, res) => {
   try {
     const response = await axios({
       method: req.method,
-      url: `${SERVICES.eureka}${req.path}`,
+      url: `${SERVICES.eureka}/eureka${req.url}`,
       data: req.body,
       params: req.query,
       headers: { 'Content-Type': 'application/json' }
@@ -53,11 +76,11 @@ app.all('/eureka/{*path}', async (req, res) => {
 });
 
 // Route: /skills* -> skills-extraction-service
-app.all('/skills/{*path}', async (req, res) => {
+app.use('/skills', async (req, res) => {
   try {
     const response = await axios({
       method: req.method,
-      url: `${SERVICES.skills}${req.path.replace('/skills', '')}`,
+      url: `${SERVICES.skills}${req.url}`,
       data: req.body,
       params: req.query,
       headers: { 'Content-Type': 'application/json' }

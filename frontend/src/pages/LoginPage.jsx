@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import AuthCard from '../components/AuthCard'
 import InputField from '../components/InputField'
 import Button from '../components/Button'
-import { mockLogin } from '../services/authService'
+import { loginUser } from '../services/authService'
 
 function LoginPage() {
   const navigate = useNavigate()
@@ -18,10 +18,26 @@ function LoginPage() {
       setError('Please fill in all fields.')
       return
     }
+
+    if (!email.toLowerCase().endsWith('@gmail.com')) {
+      setError('Only @gmail.com emails are allowed.')
+      return
+    }
+
     setError('')
     setLoading(true)
     try {
-      await mockLogin(email, password)
+      const { data, error: authError } = await loginUser(email, password)
+
+      if (authError) {
+        setError(authError.message || 'Login failed. Please try again.')
+        return
+      }
+
+      if (data?.session?.access_token) {
+        localStorage.setItem('accessToken', data.session.access_token)
+      }
+
       navigate('/dashboard')
     } catch {
       setError('Login failed. Please try again.')

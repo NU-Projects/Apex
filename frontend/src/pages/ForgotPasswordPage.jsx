@@ -1,0 +1,171 @@
+import { useState, useEffect, useCallback } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import AuthCard from '../components/AuthCard'
+import InputField from '../components/InputField'
+import Button from '../components/Button'
+import OTPInput from '../components/OTPInput'
+import { mockSendOTP, mockVerifyOTP } from '../services/authService'
+
+function ForgotPasswordPage() {
+  const navigate = useNavigate()
+  const [step, setStep] = useState(1)
+  const [email, setEmail] = useState('')
+  const [otp, setOtp] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+  const [success, setSuccess] = useState('')
+  const [timer, setTimer] = useState(0)
+
+  useEffect(() => {
+    if (timer <= 0) return
+    const interval = setInterval(() => {
+      setTimer((t) => t - 1)
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [timer])
+
+  const formatTime = useCallback((seconds) => {
+    const m = Math.floor(seconds / 60)
+    const s = seconds % 60
+    return `${m}:${s.toString().padStart(2, '0')}`
+  }, [])
+
+  const handleSendOTP = async () => {
+    if (!email) {
+      setError('Please enter your email address.')
+      return
+    }
+    setError('')
+    setLoading(true)
+    try {
+      await mockSendOTP(email)
+      setStep(2)
+      setTimer(60)
+      setSuccess('OTP sent successfully! Check your email.')
+    } catch {
+      setError('Failed to send OTP. Try again.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const handleVerifyOTP = async () => {
+    if (otp.length < 6) {
+      setError('Please enter the complete 6-digit OTP.')
+      return
+    }
+    setError('')
+    setLoading(true)
+    try {
+      const result = await mockVerifyOTP(otp)
+      if (result.success) {
+        navigate('/dashboard')
+      } else {
+        setError('Invalid OTP. Please try again.')
+      }
+    } catch {
+      setError('Verification failed.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const handleResendOTP = async () => {
+    if (timer > 0) return
+    setLoading(true)
+    setError('')
+    try {
+      await mockSendOTP(email)
+      setTimer(60)
+      setOtp('')
+      setSuccess('OTP resent successfully!')
+    } catch {
+      setError('Failed to resend OTP.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  return (
+    <AuthCard
+      title={step === 1 ? 'Reset password' : 'Verify OTP'}
+      subtitle={step === 1 ? 'Enter your email to receive a verification code' : `We sent a code to ${email}`}
+    >
+      <div className="space-y-4 animate-slide-in" key={step}>
+        {error && (
+          <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600 animate-fade-in">
+            {error}
+          </div>
+        )}
+        {success && step === 2 && (
+          <div className="p-3 rounded-lg bg-blue-50 border border-blue-200 text-sm text-brand-700 animate-fade-in">
+            {success}
+          </div>
+        )}
+
+        {step === 1 && (
+          <>
+            <InputField
+              label="Email Address"
+              id="forgot-email"
+              type="email"
+              placeholder="Email address"
+              value={email}
+              onChange={(e) => { setEmail(e.target.value); setError('') }}
+            />
+            <Button onClick={handleSendOTP} loading={loading}>
+              Send OTP
+            </Button>
+          </>
+        )}
+
+        {step === 2 && (
+          <>
+            <div className="py-2">
+              <OTPInput length={6} value={otp} onChange={setOtp} />
+            </div>
+
+            <div className="text-center">
+              {timer > 0 ? (
+                <p className="text-sm text-text-secondary">
+                  Code expires in{' '}
+                  <span className="font-semibold text-brand-600">{formatTime(timer)}</span>
+                </p>
+              ) : (
+                <p className="text-sm text-text-secondary">
+                  Didn&apos;t receive the code?{' '}
+                  <button
+                    onClick={handleResendOTP}
+                    className="font-semibold text-brand-600 hover:text-brand-700 transition-colors"
+                  >
+                    Resend
+                  </button>
+                </p>
+              )}
+            </div>
+
+            <Button onClick={handleVerifyOTP} loading={loading}>
+              Verify OTP
+            </Button>
+
+            <Button variant="secondary" onClick={() => { setStep(1); setOtp(''); setError(''); setSuccess('') }}>
+              Change email
+            </Button>
+          </>
+        )}
+
+        <p className="text-center text-sm text-text-secondary pt-1">
+          Remember your password?{' '}
+          <Link
+            to="/"
+            className="font-semibold text-brand-600 hover:text-brand-700 transition-colors"
+          >
+            Sign in
+          </Link>
+        </p>
+      </div>
+    </AuthCard>
+  )
+}
+
+export default ForgotPasswordPage

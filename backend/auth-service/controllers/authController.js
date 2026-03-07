@@ -76,6 +76,7 @@ const login = async (req, res) => {
       message: result.message,
       data: {
         user: result.user,
+        accessToken: result.accessToken,
       },
     });
 

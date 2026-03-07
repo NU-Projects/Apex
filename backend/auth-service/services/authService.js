@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 const authRepository = require('../repository/authRepository');
 const { generateOtp } = require('./otpService');
 const { sendOtpEmail } = require('./emailService');
+const supabase = require('../config/supabase');
 
 const SALT_ROUNDS = 10;
 
@@ -54,6 +55,22 @@ const signUp = async ({ email, fullName, password, gitHubUserName, linkedInUserN
   await authRepository.createOtpVerification(email, otpCode);
   await sendOtpEmail(email, otpCode);
 
+  // 5. Sync with Supabase Auth (Admin API to avoid confirm email)
+  try {
+    const { data: sbData, error: sbError } = await supabase.auth.admin.createUser({
+      email,
+      password,
+      email_confirm: true,
+      user_metadata: { fullName, gitHubUserName, linkedInUserName }
+    });
+
+    // If it fails because user exists, we might ignore or log it
+    if (sbError && sbError.status !== 422) {
+      console.error('Supabase identity sync failed:', sbError.message);
+    }
+  } catch (err) {
+    console.error('Error syncing with Supabase:', err.message);
+  }
 
   return {
     message: 'OTP has been sent to your email. Please verify to complete sign-up.',
@@ -134,9 +151,21 @@ const login = async ({ email, password }) => {
     throw error;
   }
 
+  // 4. Authenticate with Supabase to get a real JWT
+  const { data: sbData, error: sbError } = await supabase.auth.signInWithPassword({
+    email,
+    password
+  });
+
+  if (sbError) {
+    const error = new Error('Identity verification failed: ' + sbError.message);
+    error.statusCode = 401;
+    throw error;
+  }
 
   return {
     message: 'Login successful.',
+    accessToken: sbData.session.access_token,
     user: {
       email: user.email,
       fullName: user.full_name,

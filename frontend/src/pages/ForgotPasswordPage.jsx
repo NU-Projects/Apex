@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import AuthCard from '../components/AuthCard'
 import InputField from '../components/InputField'
 import Button from '../components/Button'
-import OTPInput from '../components/OTPInput'
 import { forgotPassword, verifyResetOtp } from '../services/authService'
 
 function ForgotPasswordPage() {

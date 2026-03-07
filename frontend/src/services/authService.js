@@ -11,11 +11,17 @@ export const loginUser = async (email, password) => {
     if (!res.ok || !data.success) {
       return { error: { message: data.message || 'Login failed' } }
     }
-    // Returning dummy token structure as requested since node auth isn't returning JWT yet.
-    if (data.data?.user) {
-      localStorage.setItem('user', JSON.stringify(data.data.user))
+
+    const { accessToken, user } = data.data
+
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user))
     }
-    return { data: { session: { access_token: `token_${data.data?.user?.email || email}` }, user: data.data?.user } }
+    if (accessToken) {
+      localStorage.setItem('accessToken', accessToken)
+    }
+
+    return { data: { session: { access_token: accessToken }, user } }
   } catch (error) {
     return { error: { message: error.message || 'Network error' } }
   }

@@ -76,8 +76,8 @@ const verifyOtp = async ({ email, otp }) => {
   }
 
 
-  // 2. Check if the OTP has expired
-  if (new Date(otpRecord.expires_at) < new Date()) {
+  // 2. Check if the OTP has expired (compared inside PostgreSQL)
+  if (otpRecord.is_expired) {
     const error = new Error('OTP has expired. Please request a new one.');
     error.statusCode = 410;
     throw error;
@@ -85,7 +85,7 @@ const verifyOtp = async ({ email, otp }) => {
 
 
   // 3. Match the OTP code
-  if (otpRecord.otp_code !== otp) {
+  if (otpRecord.otp_code !== String(otp)) {
     const error = new Error('Invalid OTP. Please try again.');
     error.statusCode = 401;
     throw error;

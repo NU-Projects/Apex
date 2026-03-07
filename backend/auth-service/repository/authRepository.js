@@ -68,7 +68,7 @@ const createOtpVerification = async (email, otpCode) => {
 const findLatestOtp = async (email) => {
 
   const query = `
-    SELECT otp_code, expires_at
+    SELECT otp_code, expires_at, (expires_at < NOW()) AS is_expired
     FROM otp_verifications
     WHERE email = $1
     ORDER BY expires_at DESC

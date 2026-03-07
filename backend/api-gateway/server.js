@@ -1,29 +1,30 @@
 const express = require('express');
 const axios = require('axios');
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 const { startEureka } = require('./eureka-client');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.API_GATEWAY_PORT || 5000;
 
 app.use(express.json());
 
 const SERVICES = {
-  users: 'http://user-service:5005',
-  notifications: 'http://notification-service:5003',
-  eureka: 'http://netflix-eureka-server:5002'
+  auth: process.env.AUTH_SERVICE_URL || 'http://localhost:5002',
+  eureka: process.env.EUREKA_SERVER_URL || 'http://localhost:5001'
 };
 
 app.get('/', (req, res) => {
   res.json({ message: 'API Gateway Service is running' });
 });
 
-// Route: /u -> user-service (exact match)
-app.all('/u', async (req, res) => {
+
+// Route: /auth* -> auth-service
+app.all('/auth/{*path}', async (req, res) => {
   try {
     const response = await axios({
       method: req.method,
-      url: `${SERVICES.users}/u`,
+      url: `${SERVICES.auth}${req.path}`,
       data: req.body,
       params: req.query,
       headers: { 'Content-Type': 'application/json' }
@@ -34,72 +35,7 @@ app.all('/u', async (req, res) => {
   }
 });
 
-//u means users
-// Route: /u/* -> user-service
-app.all('/u/{*path}', async (req, res) => {
-  try {
-    const response = await axios({
-      method: req.method,
-      url: `${SERVICES.users}${req.path}`,
-      data: req.body,
-      params: req.query,
-      headers: { 'Content-Type': 'application/json' }
-    });
-    res.status(response.status).json(response.data);
-  } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
-  }
-});
-
-// Route: /notifications -> notification-service (exact match)
-app.all('/notifications', async (req, res) => {
-  try {
-    const response = await axios({
-      method: req.method,
-      url: `${SERVICES.notifications}/notifications`,
-      data: req.body,
-      params: req.query,
-      headers: { 'Content-Type': 'application/json' }
-    });
-    res.status(response.status).json(response.data);
-  } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
-  }
-});
-
-// Route: /notifications/* -> notification-service
-app.all('/notifications/{*path}', async (req, res) => {
-  try {
-    const response = await axios({
-      method: req.method,
-      url: `${SERVICES.notifications}${req.path}`,
-      data: req.body,
-      params: req.query,
-      headers: { 'Content-Type': 'application/json' }
-    });
-    res.status(response.status).json(response.data);
-  } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
-  }
-});
-
-// Route: /eureka -> netflix-eureka-server (exact match)
-app.all('/eureka', async (req, res) => {
-  try {
-    const response = await axios({
-      method: req.method,
-      url: `${SERVICES.eureka}/eureka`,
-      data: req.body,
-      params: req.query,
-      headers: { 'Content-Type': 'application/json' }
-    });
-    res.status(response.status).json(response.data);
-  } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
-  }
-});
-
-// Route: /eureka/* -> netflix-eureka-server
+// Route: /eureka* -> netflix-eureka-server
 app.all('/eureka/{*path}', async (req, res) => {
   try {
     const response = await axios({

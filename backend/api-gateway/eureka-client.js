@@ -1,9 +1,11 @@
 const axios = require('axios');
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const SERVICE_NAME = 'API-GATEWAY';
-const PORT = process.env.PORT || 5000;
-const EUREKA_URL = process.env.EUREKA_URL || 'http://netflix-eureka-server:5002';
+const PORT = process.env.API_GATEWAY_PORT || 5000;
+const EUREKA_URL = process.env.EUREKA_URL || 'http://localhost:5001';
+const HOST_NAME = process.env.HOSTNAME || 'localhost';
 const INSTANCE_ID = `${SERVICE_NAME}-${PORT}`;
 
 async function register() {
@@ -11,7 +13,7 @@ async function register() {
     await axios.post(`${EUREKA_URL}/eureka/apps/${SERVICE_NAME}`, {
       instance: {
         instanceId: INSTANCE_ID,
-        hostName: 'api-gateway',
+        hostName: HOST_NAME,
         port: PORT,
         app: SERVICE_NAME,
         status: 'UP'

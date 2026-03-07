@@ -1,9 +1,10 @@
 const express = require('express');
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 const { setupEurekaRoutes } = require('./eureka-server');
 
 const app = express();
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.EUREKA_PORT || 5001;
 
 app.use(express.json());
 

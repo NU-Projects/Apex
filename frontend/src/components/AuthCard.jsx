@@ -3,7 +3,7 @@ function AuthCard({ children, title, subtitle }) {
     <div className="min-h-screen flex">
       {/* Left side — Form */}
       <div className="w-full lg:w-[45%] flex flex-col justify-center px-8 sm:px-12 lg:px-16 py-10 bg-white">
-        <div className="w-full max-w-sm mx-auto lg:mx-0">
+        <div className="w-full max-w-sm mx-auto">
           {/* Text Logo */}
           <div className="mb-10">
             <span className="text-2xl font-bold text-brand-600 tracking-tight">Apex</span>
@@ -22,7 +22,7 @@ function AuthCard({ children, title, subtitle }) {
           {children}
 
           {/* Footer */}
-          <p className="text-xs text-text-muted mt-10">
+          <p className="text-xs text-text-muted mt-10 text-center">
             &copy; 2026 Apex. All rights reserved.
           </p>
         </div>

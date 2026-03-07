@@ -121,6 +121,20 @@ const deleteOtpsByEmail = async (email) => {
 };
 
 
+// ─── Update password for a user ───
+
+const updatePassword = async (email, hashedPassword) => {
+
+  const query = `
+    UPDATE users
+    SET password = $2
+    WHERE email = $1
+  `;
+
+  await pool.query(query, [email, hashedPassword]);
+};
+
+
 module.exports = {
   findUserByEmail,
   findUserForLogin,
@@ -130,4 +144,5 @@ module.exports = {
   findLatestOtp,
   markUserVerified,
   deleteOtpsByEmail,
+  updatePassword,
 };

@@ -9,20 +9,27 @@ class GithubService:
         self.token = os.getenv("GITHUB_ACCESS_TOKEN")
 
     def fetch_github_skills(self, username):
-        headers = {"Authorization": f"token {self.token}"}
-        repos_url = f"https://api.github.com/users/{username}/repos"
-        
-        response = requests.get(repos_url, headers=headers)
-        if response.status_code != 200:
+        if not self.token:
+            print("Missing GITHUB_ACCESS_TOKEN in .env")
             return []
 
-        repos = response.json()
-        skills = set()
-        for repo in repos:
-            if repo.get("language"):
-                skills.add(repo.get("language"))
-            topics = repo.get("topics", [])
-            for topic in topics:
-                skills.add(topic)
-                
-        return list(skills)
+        headers = {"Authorization": f"token {self.token}"}
+        url = f"https://api.github.com/users/{username}/repos"
+        
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code != 200:
+                print(f"GitHub fetch failed (Status {response.status_code})")
+                return []
+
+            skills = set()
+            for repo in response.json():
+                if repo.get("language"):
+                    skills.add(repo.get("language"))
+                for topic in repo.get("topics", []):
+                    skills.add(topic)
+                    
+            return list(skills)
+        except Exception as e:
+            print(f"GitHub fetch error: {e}")
+            return []

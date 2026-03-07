@@ -12,19 +12,17 @@ class SkillRepository:
         return psycopg2.connect(self.conn_str)
 
     def update_user_skills(self, email, skills):
-        conn = self.get_db_connection()
-        cur = conn.cursor()
+        conn = None
         try:
-            cur.execute(
-                "UPDATE users SET skills = %s WHERE email = %s",
-                (skills, email)
-            )
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            cur.execute("UPDATE users SET skills = %s WHERE email = %s", (skills, email))
             conn.commit()
+            cur.close()
             return True
         except Exception as e:
             print(f"Database error: {e}")
-            conn.rollback()
+            if conn: conn.rollback()
             return False
         finally:
-            cur.close()
-            conn.close()
+            if conn: conn.close()

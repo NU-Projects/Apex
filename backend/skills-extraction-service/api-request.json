@@ -17,7 +17,8 @@
         "Request type": "POST",
         "End point": "/all-skills",
         "Body parameters": {
-            "username": "username"
+            "github_username": "github_username",
+            "linkedin_username": "linkedin_username"
         }
     },
     {

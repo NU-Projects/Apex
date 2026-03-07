@@ -11,26 +11,26 @@ class SkillController:
 
     def get_github_skills(self, data):
         username = data.get('username')
-        skills = self.github_service.fetch_github_skills(username)
-        return jsonify(skills)
+        return jsonify(self.github_service.fetch_github_skills(username))
 
     def get_linkedin_skills(self, data):
         username = data.get('username')
-        skills = self.linkedin_service.fetch_linkedin_skills(username)
-        return jsonify(skills)
+        return jsonify(self.linkedin_service.fetch_linkedin_skills(username))
 
     def get_all_skills(self, data):
-        username = data.get('username')
-        github_skills = self.github_service.fetch_github_skills(username)
-        linkedin_skills = self.linkedin_service.fetch_linkedin_skills(username)
-        combined = list(set(github_skills + linkedin_skills))
-        return jsonify(combined)
+        github_username = data.get('github_username')
+        linkedin_username = data.get('linkedin_username')
+        
+        github_username = None if str(github_username).lower() in ['none', 'null', ''] else github_username
+        linkedin_username = None if str(linkedin_username).lower() in ['none', 'null', ''] else linkedin_username
+        
+        github = self.github_service.fetch_github_skills(github_username) if github_username else []
+        linkedin = self.linkedin_service.fetch_linkedin_skills(linkedin_username) if linkedin_username else []
+        
+        return jsonify(sorted(list(set(github + linkedin))))
 
     def add_skills_to_db(self, data):
-        email = data.get('email')
-        skills = data.get('skills', [])
-        success = self.repository.update_user_skills(email, skills)
+        success = self.repository.update_user_skills(data.get('email'), data.get('skills', []))
         if success:
             return jsonify({"message": "Skills updated successfully"}), 200
-        else:
-            return jsonify({"error": "Failed to update skills"}), 500
+        return jsonify({"error": "Failed to update skills"}), 500

@@ -10,4 +10,7 @@ Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd api-gateway; n
 Write-Host "Starting Auth Service..." -ForegroundColor Cyan
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd auth-service; npm i; npm run dev"
 
+Write-Host "Starting Skills Extraction Service..." -ForegroundColor Cyan
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd skills-extraction-service; if (Test-Path 'venv') { .\venv\Scripts\activate }; python app.py"
+
 Write-Host "All services are starting up!" -ForegroundColor Green

@@ -1,0 +1,18 @@
+import os
+from py_eureka_client import eureka_client
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
+
+def register_eureka():
+    e_url = os.getenv("EUREKA_URL", "http://localhost:5001")
+    s_name = "SKILLS-EXTRACTION-SERVICE"
+    s_port = int(os.getenv("SKILLS_EXTRACTION_SERVICE_PORT", 5003))
+    
+    eureka_client.init(
+        eureka_server=f"{e_url}/eureka",
+        app_name=s_name,
+        instance_port=s_port,
+        instance_host=os.getenv("HOSTNAME", "localhost"),
+        should_discover=False
+    )

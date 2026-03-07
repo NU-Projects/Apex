@@ -16,7 +16,9 @@ It also matches users with relevant job listings using **compatibility scoring**
 - **Ali Ahmed** – [syed-ali3](https://github.com/syed-ali3) – 23L-3067 <br>
 
 **Team Members:**  
-- **Muhammad Ahmad Butt** – [m-ahmad-butt](https://github.com/m-ahmad-butt) – 23L-3059  
+- **Muhammad Ahmad Butt** – [m-ahmad-butt](https://github.com/m-ahmad-butt) – 23L-3059
+- **Abeer Tahir** – [abeer2701](https://github.com/abeer2701) – 23L-3090
+- **Fatima Tuz Zahra** – [fatima-rashid3099](https://github.com/fatima-rashid3099) – 23L-3099  
 
 ## Core Features
 - Skill extraction and validation from GitHub, LinkedIn, and resumes  

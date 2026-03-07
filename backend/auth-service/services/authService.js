@@ -149,4 +149,101 @@ const login = async ({ email, password }) => {
 };
 
 
-module.exports = { signUp, verifyOtp, login, login };
+// ─── Forgot Password Logic ───
+
+const forgotPassword = async ({ email }) => {
+
+  // 1. Check if user exists and is verified
+  const user = await authRepository.findUserByEmail(email);
+
+  if (!user) {
+    const error = new Error('No account found with this email');
+    error.statusCode = 404;
+    throw error;
+  }
+
+  if (!user.is_verified) {
+    const error = new Error('Account is not verified. Please verify your email first.');
+    error.statusCode = 403;
+    throw error;
+  }
+
+
+  // 2. Generate OTP, store it, and send via email
+  const otpCode = generateOtp();
+  await authRepository.createOtpVerification(email, otpCode);
+  await sendOtpEmail(email, otpCode);
+
+
+  return {
+    message: 'OTP has been sent to your email for password reset.',
+  };
+};
+
+
+// ─── Verify Reset OTP Logic ───
+
+const verifyResetOtp = async ({ email, otp }) => {
+
+  // 1. Fetch the latest OTP row for this email
+  const otpRecord = await authRepository.findLatestOtp(email);
+
+  if (!otpRecord) {
+    const error = new Error('No OTP found for this email.');
+    error.statusCode = 404;
+    throw error;
+  }
+
+
+  // 2. Check if the OTP has expired
+  if (otpRecord.is_expired) {
+    const error = new Error('OTP has expired. Please request a new one.');
+    error.statusCode = 410;
+    throw error;
+  }
+
+
+  // 3. Match the OTP code
+  if (otpRecord.otp_code !== String(otp)) {
+    const error = new Error('Invalid OTP. Please try again.');
+    error.statusCode = 401;
+    throw error;
+  }
+
+
+  // 4. OTP matched — clean up all OTPs for this email
+  await authRepository.deleteOtpsByEmail(email);
+
+
+  return {
+    message: 'OTP verified successfully. You can now reset your password.',
+  };
+};
+
+
+// ─── Change Password Logic ───
+
+const changePassword = async ({ email, password }) => {
+
+  // 1. Check user exists
+  const user = await authRepository.findUserByEmail(email);
+
+  if (!user) {
+    const error = new Error('No account found with this email');
+    error.statusCode = 404;
+    throw error;
+  }
+
+
+  // 2. Hash and update
+  const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
+  await authRepository.updatePassword(email, hashedPassword);
+
+
+  return {
+    message: 'Password updated successfully.',
+  };
+};
+
+
+module.exports = { signUp, verifyOtp, login, forgotPassword, verifyResetOtp, changePassword };

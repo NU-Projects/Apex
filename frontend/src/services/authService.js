@@ -61,8 +61,12 @@ export const verifyOtpUser = async (email, token) => {
     if (!res.ok || !data.success) {
       return { error: { message: data.message || 'OTP Verification failed' } }
     }
-    localStorage.setItem('user', JSON.stringify({ email }))
-    return { data: { session: { access_token: `token_${email}` } } }
+    if (data.data?.user) {
+      localStorage.setItem('user', JSON.stringify(data.data.user))
+    } else {
+      localStorage.setItem('user', JSON.stringify({ email }))
+    }
+    return { data: { session: { access_token: `token_${email}` }, user: data.data?.user } }
   } catch (error) {
     return { error: { message: error.message || 'Network error' } }
   }

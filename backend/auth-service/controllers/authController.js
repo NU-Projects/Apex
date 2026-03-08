@@ -48,6 +48,9 @@ const verifyOtp = async (req, res) => {
     return res.status(200).json({
       success: true,
       message: result.message,
+      data: {
+        user: result.user,
+      },
     });
 
   } catch (err) {

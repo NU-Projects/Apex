@@ -105,9 +105,11 @@ const markUserVerified = async (email) => {
     UPDATE users
     SET is_verified = true
     WHERE email = $1
+    RETURNING email, full_name, github_username, linkedin_username, is_verified, skills
   `;
 
-  await pool.query(query, [email]);
+  const { rows } = await pool.query(query, [email]);
+  return rows[0];
 };
 
 

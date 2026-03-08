@@ -122,12 +122,20 @@ const verifyOtp = async ({ email, otp }) => {
 
 
   // 4. Mark user as verified and clean up all OTPs
-  await authRepository.markUserVerified(email);
+  const verifiedUser = await authRepository.markUserVerified(email);
   await authRepository.deleteOtpsByEmail(email);
 
 
   return {
     message: 'Email verified successfully. You can now log in.',
+    user: verifiedUser ? {
+      email: verifiedUser.email,
+      fullName: verifiedUser.full_name,
+      gitHubUserName: verifiedUser.github_username,
+      linkedInUserName: verifiedUser.linkedin_username,
+      isVerified: verifiedUser.is_verified,
+      skills: verifiedUser.skills || [],
+    } : null,
   };
 };
 

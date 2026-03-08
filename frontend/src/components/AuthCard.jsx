@@ -1,11 +1,24 @@
 function AuthCard({ children, title, subtitle }) {
   return (
-    <div className="min-h-screen flex">
-      {/* Left side — Form */}
-      <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 sm:px-12 lg:px-16 py-10 bg-white">
+    <div className="min-h-screen flex flex-col lg:flex-row">
+      {/* Mobile hero image — shown above form on small screens */}
+      <div className="block lg:hidden w-full h-48 relative">
+        <img
+          src="/apex-illustration.png"
+          alt="Apex platform illustration"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-brand-950/50" />
+        <div className="absolute bottom-4 left-6 right-6">
+          <span className="text-xl font-bold text-white tracking-tight">Apex</span>
+        </div>
+      </div>
+
+      {/* Left side — Form (45%) */}
+      <div className="w-full lg:w-[45%] flex flex-col justify-center px-8 sm:px-12 lg:px-16 py-10 bg-white">
         <div className="w-full max-w-sm mx-auto">
-          {/* Text Logo */}
-          <div className="mb-10">
+          {/* Text Logo — hidden on mobile since it's in the hero */}
+          <div className="mb-10 hidden lg:block">
             <span className="text-2xl font-bold text-brand-600 tracking-tight">Apex</span>
           </div>
 
@@ -28,13 +41,16 @@ function AuthCard({ children, title, subtitle }) {
         </div>
       </div>
 
-      {/* Right side — Illustration */}
-      <div className="hidden lg:flex lg:w-1/2 relative items-center justify-center bg-white">
+      {/* Right side — Hero image (55%) */}
+      <div className="hidden lg:block lg:w-[55%] relative">
         <img
           src="/apex-illustration.png"
           alt="Apex platform illustration"
-          className="absolute inset-0 w-full h-full object-contain object-right"
+          className="absolute inset-0 w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-brand-950/40" />
+
+
       </div>
     </div>
   )

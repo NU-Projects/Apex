@@ -64,8 +64,20 @@ const signUp = async ({ email, fullName, password, gitHubUserName, linkedInUserN
       user_metadata: { fullName, gitHubUserName, linkedInUserName }
     });
 
-    // If it fails because user exists, we might ignore or log it
-    if (sbError && sbError.status !== 422) {
+    // If user already exists in Supabase, update their password to stay in sync
+    if (sbError && sbError.status === 422) {
+      const { data: listData } = await supabase.auth.admin.listUsers();
+      const sbUser = listData?.users?.find(u => u.email === email);
+      if (sbUser) {
+        const { error: updateError } = await supabase.auth.admin.updateUserById(sbUser.id, {
+          password,
+          user_metadata: { fullName, gitHubUserName, linkedInUserName }
+        });
+        if (updateError) {
+          console.error('Supabase password sync failed:', updateError.message);
+        }
+      }
+    } else if (sbError) {
       console.error('Supabase identity sync failed:', sbError.message);
     }
   } catch (err) {
@@ -264,10 +276,25 @@ const changePassword = async ({ email, password }) => {
   }
 
 
-  // 2. Hash and update
+  // 2. Hash and update locally
   const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
   await authRepository.updatePassword(email, hashedPassword);
 
+  // 3. Sync new password to Supabase
+  try {
+    const { data: listData } = await supabase.auth.admin.listUsers();
+    const sbUser = listData?.users?.find(u => u.email === email);
+    if (sbUser) {
+      const { error: updateError } = await supabase.auth.admin.updateUserById(sbUser.id, {
+        password,
+      });
+      if (updateError) {
+        console.error('Supabase password sync failed:', updateError.message);
+      }
+    }
+  } catch (err) {
+    console.error('Error syncing password with Supabase:', err.message);
+  }
 
   return {
     message: 'Password updated successfully.',

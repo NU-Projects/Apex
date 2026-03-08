@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import AuthCard from '../components/AuthCard'
 import InputField from '../components/InputField'
 import Button from '../components/Button'
-import { forgotPassword, verifyResetOtp } from '../services/authService'
+import { forgotPassword, verifyResetOtp, changePassword } from '../services/authService'
 
 function ForgotPasswordPage() {
   const navigate = useNavigate()
@@ -14,6 +14,8 @@ function ForgotPasswordPage() {
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
   const [timer, setTimer] = useState(0)
+  const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
 
   useEffect(() => {
     if (timer <= 0) return
@@ -69,10 +71,41 @@ function ForgotPasswordPage() {
         setError(verifyError.message)
         return
       }
-      setSuccess('OTP verified successfully!')
-      setTimeout(() => navigate('/'), 2000)
+      setSuccess('OTP verified successfully! You can now reset your password.')
+      setStep(3)
     } catch {
       setError('Verification failed.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const handleChangePassword = async () => {
+    if (!password || !confirmPassword) {
+      setError('Please fill in both password fields.')
+      return
+    }
+    if (password.length < 8) {
+      setError('Password must be at least 8 characters long.')
+      return
+    }
+    if (password !== confirmPassword) {
+      setError('Passwords do not match.')
+      return
+    }
+    setError('')
+    setSuccess('')
+    setLoading(true)
+    try {
+      const { error: changeError } = await changePassword(email, password)
+      if (changeError) {
+        setError(changeError.message || 'Failed to update password.')
+        return
+      }
+      setSuccess('Your password has been updated successfully.')
+      setTimeout(() => navigate('/'), 2000)
+    } catch {
+      setError('Failed to update password. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -101,11 +134,12 @@ function ForgotPasswordPage() {
   const subtitles = {
     1: 'Enter your email to receive a verification code',
     2: 'Verify your email address',
+    3: 'Set your new password',
   }
 
   return (
     <AuthCard
-      title={step === 1 ? 'Reset password' : 'Verify Email'}
+      title={step === 1 ? 'Reset password' : step === 2 ? 'Verify Email' : 'New Password'}
       subtitle={subtitles[step]}
     >
       <div className="space-y-4 animate-slide-in" key={step}>
@@ -167,6 +201,27 @@ function ForgotPasswordPage() {
           </>
         )}
 
+        {step === 3 && (
+          <>
+            <InputField
+              label="New Password"
+              id="reset-password"
+              type="password"
+              placeholder="Enter new password"
+              value={password}
+              onChange={(e) => { setPassword(e.target.value); setError('') }}
+            />
+            <InputField
+              label="Confirm Password"
+              id="reset-confirm-password"
+              type="password"
+              placeholder="Confirm new password"
+              value={confirmPassword}
+              onChange={(e) => { setConfirmPassword(e.target.value); setError('') }}
+            />
+          </>
+        )}
+
         <div className="flex gap-3 pt-1">
           {step === 2 && (
             <Button variant="secondary" onClick={() => { setStep(1); setOtp(''); setError(''); setSuccess('') }} fullWidth={false}>
@@ -178,9 +233,13 @@ function ForgotPasswordPage() {
               <Button onClick={handleSendOTP} loading={loading}>
                 Send OTP
               </Button>
-            ) : (
+            ) : step === 2 ? (
               <Button onClick={handleVerifyOTP} loading={loading}>
                 Verify & Activate
+              </Button>
+            ) : (
+              <Button onClick={handleChangePassword} loading={loading}>
+                Update Password
               </Button>
             )}
           </div>

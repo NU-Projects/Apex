@@ -10,7 +10,7 @@ function AuthCard({ children, title, subtitle }) {
         />
         <div className="absolute inset-0 bg-brand-950/50" />
         <div className="absolute bottom-4 left-6 right-6">
-          <span className="text-xl font-bold text-white tracking-tight">Apex</span>
+          <span className="text-2xl font-black text-white tracking-tighter">APEX</span>
         </div>
       </div>
 
@@ -19,7 +19,7 @@ function AuthCard({ children, title, subtitle }) {
         <div className="w-full max-w-sm mx-auto">
           {/* Text Logo — hidden on mobile since it's in the hero */}
           <div className="mb-10 hidden lg:block">
-            <span className="text-2xl font-bold text-brand-600 tracking-tight">Apex</span>
+            <span className="text-3xl font-black text-brand-600 tracking-tighter">APEX</span>
           </div>
 
           {/* Heading */}

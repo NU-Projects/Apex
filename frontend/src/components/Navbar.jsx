@@ -23,7 +23,7 @@ function Navbar() {
     <header className="sticky top-0 z-30 bg-white border-b border-border-light">
       <div className="flex items-center justify-between h-16 px-6">
         {/* Text Logo */}
-        <span className="text-xl font-bold text-brand-600 tracking-tight">Apex</span>
+        <span className="text-2xl font-black text-brand-600 tracking-tighter">APEX</span>
 
         {/* Right section */}
         <div className="flex items-center gap-3">

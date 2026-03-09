@@ -16,7 +16,7 @@ function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/signup"
-              className="px-10 py-4 text-base font-bold text-white rounded-xl bg-brand-600 shadow-lg shadow-brand-500/30 hover:bg-brand-700 transition-all duration-300 hover:-translate-y-1"
+              className="px-10 py-4 text-base font-bold text-white rounded-xl bg-brand-600 shadow-lg shadow-brand-500/30 hover:bg-brand-700 transition-all duration-300"
             >
               Get Started Free
             </Link>
@@ -33,13 +33,13 @@ function Footer() {
       {/* Actual Footer */}
       <footer className="py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col items-center md:items-start">
-            <span className="text-2xl font-black text-text-primary tracking-tighter">APEX</span>
+          <div className="flex flex-col items-center md:items-start group">
+            <span className="text-2xl font-black text-text-primary tracking-tighter mb-2 transition-colors group-hover:text-brand-600">APEX</span>
             <p className="text-sm text-text-secondary mt-2 text-center md:text-left">
               Your end-to-end career growth engine.
             </p>
           </div>
-          
+
           <div className="flex items-center gap-6 text-sm font-medium">
             <Link to="/" className="text-text-secondary hover:text-brand-600 transition-colors">About</Link>
             <Link to="/" className="text-text-secondary hover:text-brand-600 transition-colors">Features</Link>

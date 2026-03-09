@@ -13,6 +13,6 @@ echo Starting Auth Service...
 start "Auth Service" cmd /k "cd auth-service && npm run dev"
 
 echo Starting Skills Extraction Service...
-start "Skills Extraction Service" cmd /k "cd skills-extraction-service && (if exist venv\Scripts\activate.bat call venv\Scripts\activate.bat) && pip install -r requirements.txt && python app.py"
+start "Skills Extraction Service" cmd /k "cd skills-extraction-service && (if exist venv\Scripts\activate.bat call venv\Scripts\activate.bat) && python app.py"
 
 echo All services are starting up!

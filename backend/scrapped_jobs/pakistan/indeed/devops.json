@@ -1,0 +1,616 @@
+[
+    {
+        "title": "DevOps Engineer (Mid level)",
+        "companyName": "soum",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "7 months ago",
+        "datePublished": "2025-08-21",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Soum",
+        "rating": {
+            "rating": 5,
+            "count": 1
+        },
+        "descriptionText": "Role: DevOps Engineer (Mid level)\nLocation: Egypt, Uzbekistan, and Pakistan (Remote)\nWork Week: Sunday – Thursday\nWork Timings: 9:00 AM – 6:00 PM (Saudi Arabian Time Zone)\n\nRole Overview:\nWe are looking for a Mid level DevOps Engineer/Tech interested in building performant, stable and resilient infrastructure. You will be responsible for architecting and building the infrastructure, as well as coordinating with the teams responsible for other layers of the product infrastructure. Building a stable infrastructure is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is required.\n\nKey Responsibilities:\nTake responsibility for the scalability, stability and availability of our low-latency & mission-critical systems\nEnhance the CI/CD pipeline using Github Actions\nAble to generate and maintain helm manifests for Kubernetes\nMaintain our IaC\nAble to setup and maintain monitoring via NewRelic, Prometheus & Grafana\nAbility to debug infrastructure and detect bottlenecks\nTake responsibility for company-wide whole tech infrastructure for all environments.\nResponsibility for managing vpn, load balancers and firewalls\nResponsible for high availability and disaster recovery\nImplementation of secure and stable infrastructure\nResponsibility for continuous improvement and cost optimization\nResponsibility of 24x7 monitoring and resolving infrastructure tier incidents and escalate to upper tiers where necessary\nResponsibility for investigating and clear documentation of incident reports\nQualifications:\nExcellent understanding in AWS cloud\nKnowledge of containerized environments with Kubernetes & Docker\nAbility to develop well managed infrastructure setup\nDeep knowledge of Linux internals, networking routing & protocols\nStrong hands-on building High availability infrastructure using EKS on AWS\nStrong understanding in IaC specifically Terraform\nStrong understanding in GitOps specifically ArgoCD\nStrong understanding in securing production infrastructure\nExperience:\nMinimum 2 years of DevOps experience in production applications\nAt least 1 year working with Terraform\nAt least 1 year with monitoring tools (NewRelic, Prometheus, Grafana, etc.)\nExperience designing and architecting high-performing applications\nBackground in Agile development practices\nExperience in a fast-growing startup (preferred)\nAWS Certifications (preferred)\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
+        "descriptionHtml": "<div><div><b>Role: DevOps Engineer (Mid level)</b></div><div><b>\nLocation:</b> Egypt, Uzbekistan, and Pakistan (Remote)</div><div><b>\nWork Week:</b> Sunday &ndash; Thursday</div><div><b>\nWork Timings:</b> 9:00 AM &ndash; 6:00 PM (Saudi Arabian Time Zone)</div><div></div><div><b><br>\nRole Overview:\n</b></div><div>We are looking for a <b>Mid level DevOps Engineer/Tech</b> interested in building performant, stable and resilient infrastructure. You will be responsible for architecting and building the infrastructure, as well as coordinating with the teams responsible for other layers of the product infrastructure. Building a stable infrastructure is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is required.</div><br>\n<div></div>\n<h3 class=\"jobSectionHeader\"><b>\nKey Responsibilities:\n</b></h3><ul><li>Take responsibility for the scalability, stability and availability of our low-latency &amp; mission-critical systems</li><li>\nEnhance the CI/CD pipeline using Github Actions</li><li>\nAble to generate and maintain helm manifests for Kubernetes</li><li>\nMaintain our IaC</li><li>\nAble to setup and maintain monitoring via NewRelic, Prometheus &amp; Grafana</li><li>\nAbility to debug infrastructure and detect bottlenecks</li><li>\nTake responsibility for company-wide whole tech infrastructure for all environments.</li><li>\nResponsibility for managing vpn, load balancers and firewalls</li><li>\nResponsible for high availability and disaster recovery</li><li>\nImplementation of secure and stable infrastructure</li><li>\nResponsibility for continuous improvement and cost optimization</li><li>\nResponsibility of 24x7 monitoring and resolving infrastructure tier incidents and escalate to upper tiers where necessary</li><li>\nResponsibility for investigating and clear documentation of incident reports</li></ul><h3 class=\"jobSectionHeader\"><b>\nQualifications:\n</b></h3><ul><li>Excellent understanding in <b>AWS cloud\n</b></li><li>Knowledge of containerized environments with <b>Kubernetes </b>&amp;<b> Docker</b></li><li>\nAbility to develop well managed infrastructure setup</li><li>\nDeep knowledge of <b>Linux </b>internals, networking routing &amp; protocols</li><li>\nStrong hands-on building High availability infrastructure using EKS on AWS</li><li>\nStrong understanding in IaC specifically Terraform</li><li>\nStrong understanding in <b>GitOps</b> specifically <b>ArgoCD</b></li><li>\nStrong understanding in securing production infrastructure</li></ul><h3 class=\"jobSectionHeader\"><b>\nExperience:\n</b></h3><ul><li>Minimum <b>2 years </b>of <b>DevOps experience</b> in production applications</li><li>\nAt least <b>1 year</b> working with<b> Terraform</b></li><li>\nAt least<b> 1 year</b> with monitoring tools (<b>NewRelic, Prometheus, Grafana, etc.</b>)</li><li>\nExperience designing and architecting high-performing applications</li><li>\nBackground in Agile development practices</li><li>\nExperience in a fast-growing startup (preferred)</li><li>\nAWS Certifications<b> </b>(preferred)</li></ul>\n<p>\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Software Development Operations Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Soum",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 0,
+        "jobKey": "0ba8ce339d48649d",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=0ba8ce339d48649d",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "AWS Cloud Engineer",
+        "companyName": "Cloudelligent",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a year ago",
+        "datePublished": "2024-11-23",
+        "jobType": [],
+        "companyUrl": "https://www.indeed.com/cmp/Cloudelligent-2",
+        "rating": {
+            "rating": 2,
+            "count": 2
+        },
+        "descriptionText": "Cloudelligent is looking for experienced candidates for the position of AWS Cloud Engineer.\n\nPosition Title: AWS Cloud Engineer\n\nLocation: Remote\n\nJob Timings: 8am-5pm Central Time (US)\n\nAbout Cloudelligent\n\nCloudelligent is Cloud-native consultancy and AWS Advanced consulting partner! We specialize in providing bespoke cloud solutions to the SMB & enterprise segments as well as the public sector (Non-Profit Organizations). Being a next-gen cloud service provider, Cloudelligent helps small businesses & medium/large enterprises to break free from hardware lifecycle and capital expenditures, allowing them to make the most out of their cloud investment. We have an international footprint with a diverse team of domain experts, and we are customer obsessed.\n\nJob Objective\n\nAs an AWS Cloud Engineer, you will be at the center of efforts to build and/or redesign scalable software solutions. You will design, develop, test, and debug cloud infrastructure and deployment automation in support of company's development team. Your efforts will be critical to ensuring we are following DevOps best practices such as infrastructure as code, use of deployment and maintenance automation at all stages of our SDLC. The job entails ensuring seamless service to our customers and maintaining a complex product based on cutting edge technology. Working at Cloudelligent, you would be in a highly versatile team with in-depth knowledge of their specialized areas. We are successfully developing a culture of knowledge sharing and personal development within our team.\n\nResponsibilities\n\n• Create innovative solutions leveraging cloud platforms to solve client business challenges.\n• Gather requirements, assess client capabilities, and analyze findings to provide appropriate cloud recommendations and adoption strategy.\n• Create conceptual, logical, and physical design for cloud-based solutions for infrastructure and platforms.\n• Implement and manage continuous delivery systems and methodologies on AWS.\n• Implement and automate security controls, governance processes, and compliance validation.\n• Define and deploy monitoring, metrics, and logging systems on AWS.\n• Be well versed in AWS, technology architecture, associated vendor products, and their interdependencies.\n• Provide appropriate cloud solution recommendations based on your definition and analysis of the client's technical requirements while advising and leading the client to their Cloud adoption strategy.\n• Learn and adopt new tools and techniques to increase performance, automation, and scalability.\n• Share the leading practices and cloud emerging technologies with internal team members and clients.\n\nRequirements\n\n• Bachelor's in Software/Computer Engineering or Computer Science.\n• Effective Communication skills (Proficiency in English Language).\n• 2+ years project experience migrating and deploying cloud-based solutions (AWS).\n• 2+ years of experience architecting, implementing, and supporting Amazon Web Services infrastructure and services.\n• Self-driven, ability to work independently or as part of a project team with limited supervision.\n\nTechnical Experience/Expertise\n\n• Project experience implementing core infrastructure, networking and cloud-based services for business teams or consumers.\n• Automation experience with Cloud Formation Template, Terraform, Ansible and System Manager.\n• Container configuration and implementation experience with Docker, Vagrant and Kubernetes.\n• Experience working on Agile projects (Scrum or Kanban).\n\nDeep product knowledge and understanding of product features including:\n\n• IaaS, PaaS, and SaaS Solutions\n• Kubernetes or EKS, Docker­­­\n• Hybrid Cloud Solutions\n• Automation and DevOps (Git, Jenkins, CLI, ARM, Terraform, Ansible, Puppet, Chef)\n\nAn understanding of cloud ecosystem and leading-edge cloud emerging technologies including:\n\n• Configuring and tuning cloud hosted solutions and platforms.\n• Supporting production applications or workloads in a cloud-based environment\n• Performance analysis, troubleshooting and remediation techniques.\n• Encryption and key management principles and design patterns\n• Networking principles and technologies (DNS, Load Balancers, Reverse Proxies).\n• Automation and DevOps principles\n• Microsoft Active Directory and Active Directory Federation Services (ADFS).\n• Single-sign-on (SSO) solutions including SAML and OAuth authentication options.\n• High Availability and Disaster Recovery principles, patterns, and usage.\n• Sizing hardware and storage needs.\n\nPreferred Requirements\n\nAWS: Certified Solutions Architect – Associate.",
+        "descriptionHtml": "Cloudelligent is looking for experienced candidates for the position of AWS Cloud Engineer.\n<br><br>\n<b>Position Title:</b> AWS Cloud Engineer\n<br><br>\n<b>Location:</b> Remote\n<br><br>\n<b>Job Timings:</b> 8am-5pm Central Time (US)\n<br><br>\nAbout Cloudelligent\n<br><br>\nCloudelligent is Cloud-native consultancy and AWS Advanced consulting partner! We specialize in providing bespoke cloud solutions to the SMB & enterprise segments as well as the public sector (Non-Profit Organizations). Being a next-gen cloud service provider, Cloudelligent helps small businesses & medium/large enterprises to break free from hardware lifecycle and capital expenditures, allowing them to make the most out of their cloud investment. We have an international footprint with a diverse team of domain experts, and we are customer obsessed.\n<br><br>\nJob Objective\n<br><br>\nAs an AWS Cloud Engineer, you will be at the center of efforts to build and/or redesign scalable software solutions. You will design, develop, test, and debug cloud infrastructure and deployment automation in support of company's development team. Your efforts will be critical to ensuring we are following DevOps best practices such as infrastructure as code, use of deployment and maintenance automation at all stages of our SDLC. The job entails ensuring seamless service to our customers and maintaining a complex product based on cutting edge technology. Working at Cloudelligent, you would be in a highly versatile team with in-depth knowledge of their specialized areas. We are successfully developing a culture of knowledge sharing and personal development within our team.\n<br><br>\nResponsibilities\n<br><br>\n<ul>\n<li>Create innovative solutions leveraging cloud platforms to solve client business challenges.</li>\n<li>Gather requirements, assess client capabilities, and analyze findings to provide appropriate cloud recommendations and adoption strategy.</li>\n<li>Create conceptual, logical, and physical design for cloud-based solutions for infrastructure and platforms.</li>\n<li>Implement and manage continuous delivery systems and methodologies on AWS.</li>\n<li>Implement and automate security controls, governance processes, and compliance validation.</li>\n<li>Define and deploy monitoring, metrics, and logging systems on AWS.</li>\n<li>Be well versed in AWS, technology architecture, associated vendor products, and their interdependencies.</li>\n<li>Provide appropriate cloud solution recommendations based on your definition and analysis of the client's technical requirements while advising and leading the client to their Cloud adoption strategy.</li>\n<li>Learn and adopt new tools and techniques to increase performance, automation, and scalability.</li>\n<li>Share the leading practices and cloud emerging technologies with internal team members and clients.</li>\n</ul>\nRequirements\n<br><br>\n<ul>\n<li>Bachelor's in Software/Computer Engineering or Computer Science.</li>\n<li>Effective Communication skills (Proficiency in English Language).</li>\n<li>2+ years project experience migrating and deploying cloud-based solutions (AWS).</li>\n<li>2+ years of experience architecting, implementing, and supporting Amazon Web Services infrastructure and services.</li>\n<li>Self-driven, ability to work independently or as part of a project team with limited supervision.</li>\n</ul>\nTechnical Experience/Expertise\n<br><br>\n<ul>\n<li>Project experience implementing core infrastructure, networking and cloud-based services for business teams or consumers.</li>\n<li>Automation experience with Cloud Formation Template, Terraform, Ansible and System Manager.</li>\n<li>Container configuration and implementation experience with Docker, Vagrant and Kubernetes.</li>\n<li>Experience working on Agile projects (Scrum or Kanban).</li>\n</ul>\nDeep product knowledge and understanding of product features including:\n<br><br>\n<ul>\n<li>IaaS, PaaS, and SaaS Solutions</li>\n<li>Kubernetes or EKS, Docker­­­</li>\n<li>Hybrid Cloud Solutions</li>\n<li>Automation and DevOps (Git, Jenkins, CLI, ARM, Terraform, Ansible, Puppet, Chef)</li>\n</ul>\nAn understanding of cloud ecosystem and leading-edge cloud emerging technologies including:\n<br><br>\n<ul>\n<li>Configuring and tuning cloud hosted solutions and platforms.</li>\n<li>Supporting production applications or workloads in a cloud-based environment</li>\n<li>Performance analysis, troubleshooting and remediation techniques.</li>\n<li>Encryption and key management principles and design patterns</li>\n<li>Networking principles and technologies (DNS, Load Balancers, Reverse Proxies).</li>\n<li>Automation and DevOps principles</li>\n<li>Microsoft Active Directory and Active Directory Federation Services (ADFS).</li>\n<li>Single-sign-on (SSO) solutions including SAML and OAuth authentication options.</li>\n<li>High Availability and Disaster Recovery principles, patterns, and usage.</li>\n<li>Sizing hardware and storage needs.</li>\n</ul>\nPreferred Requirements\n<br><br>\n<b>AWS:</b> Certified Solutions Architect – Associate.",
+        "benefits": [],
+        "occupation": [
+            "Technology Infrastructure Engineers",
+            "Technology Infrastructure & Security Occupations",
+            "Technology Occupations",
+            "Cloud Engineers"
+        ],
+        "attributes": [],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Cloudelligent",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 1,
+        "jobKey": "97eb207985502c89",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=97eb207985502c89",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Principal Azure Infrastructure Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/5ee2393996475755e59dbb9809dea76a",
+        "companyName": "Zones",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "6 months ago",
+        "datePublished": "2025-09-08",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/4a490692420521a90de51c918f42a3e3",
+        "companyUrl": "https://www.indeed.com/cmp/Zones",
+        "rating": {
+            "rating": 2.8,
+            "count": 362
+        },
+        "descriptionText": "Description\n\nCompany Overview:\n\nWhen it comes to IT solution providers, there are a lot of choices. But when it comes to providers with innovative and differentiating end-to-end service offerings, there’s really only one: Zones – First Choice for IT.TM\n\nZones is a Global Solution Provider of end-to-end IT solutions with an unmatched supply chain. Positioned to be the IT partner you need, Zones, a Minority Business Enterprise (MBE) in business for over 35 years, specializes in Digital Workplace, Cloud & Data Center, Networking, Security, and Managed/Professional/Staffing services. Operating in more than 120 countries, leveraging a robust portfolio, and utilizing the highest certification levels from key partners, including Microsoft, Apple, Cisco, Lenovo, Adobe, and more, Zones has mastered the science of building digital infrastructures that change the way business does business ensuring whatever they need, they can Consider IT Done. Follow Zones, LLC on Twitter @Zones, and LinkedIn and Facebook.\n\nPosition Overview\n\nIn this role, you will be a hands-on technical powerhouse responsible for the architectural design, deployment, and daily maintenance of our global Azure ecosystem. We are looking for a Principal Engineer who thrives in the \"doing\"—someone who is as comfortable writing complex Terraform scripts and debugging connectivity issues as they are designing long-term infrastructure roadmaps. You will take full ownership of our infrastructure and play a pivotal role in building and scaling our Data Pipelines from the ground up. This is not a \"management-only\" role; you will be in the thick of daily operations, ensuring our environment is automated, secure, and hyper-efficient. As a key \"intrapreneur\" at Zones Digital, you will directly build the connected and automated technology solutions that drive our global business.\n\nWhat you’ll do as the Principal Azure Infrastructure Engineer\n\nEmployees employed in the role of Principal Azure Infrastructure Engineer shall be required to apply their independent mind and demonstrate advanced intellectual abilities in their decision-making. The expectation for this role is high-level technical execution; you will be expected to lead by example, writing code, configuring resources, and solving complex technical roadblocks daily.\n\nThe requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. This job description is not intended to be a comprehensive list of the duties and responsibilities of the position, and the duties and responsibilities may change without notice.\n\nKey Responsibilities\n\nHands-on Infrastructure Engineering: Build, deploy, and manage production-grade Azure resources daily, ensuring 24/7 availability and peak performance.\nData Pipeline Development: Actively build and maintain scalable Data Pipelines using Azure Data Factory, Synapse, and Databricks. You will be responsible for the \"plumbing\" that powers our data-driven initiatives.\nEnd-to-End Automation: Drive the transition to a fully automated environment by writing and maintaining Infrastructure as Code (Terraform/Bicep) for all deployments—no manual clicks.\nDirect Troubleshooting: Serve as the final escalation point for complex technical issues, diving deep into logs, network traces, and code to resolve bottlenecks.\nActive Security Hardening: Directly implement and audit security controls, identity management (Entra ID), and encryption standards to meet ISO, NIST, and SOC compliance.\nReal-time Cost Optimization: Perform weekly \"hands-on\" audits of Azure spend, actively resizing workloads and removing waste to ensure maximum ROI.\nCI/CD Integration: Build and maintain robust CI/CD pipelines (Azure DevOps/GitHub Actions) to automate the delivery of both infrastructure and application updates.\nCollaborative Building: Work side-by-side with developers and architects to ensure the infrastructure perfectly supports application requirements.\n\nWhat you will bring to the team\n\nEducation: Bachelor’s degree in Computer Science, IT, or a related field (Master’s Degree preferred).\nExperience: 7–10+ years of deep technical experience in IT infrastructure, with a proven track record of being the \"go-to\" hands-on expert for Azure environments.\nTechnical Breadth: Expert-level command of Azure Networking (vWAN, Firewalls, Application Gateways), AKS, and Storage solutions.\nPipeline Expertise: Demonstrable experience in the actual construction and optimization of Data Pipelines and ETL processes within Azure.\nAutomation Mastery: Advanced proficiency in Terraform and scripting languages (PowerShell, Bash, or Python) to automate repetitive tasks.\nCertifications: Preferred Azure Solutions Architect Expert or Azure DevOps Engineer Expert—must show evidence of keeping skills \"sharp\" and current.\nGrit and Ownership: A \"roll-up-your-sleeves\" mentality with the ability to manage complex projects while remaining deeply involved in the daily technical details.\n\nZones offers a comprehensive Benefits package\n\nAt Zones, we are committed to fostering an inclusive and diverse workplace where every team member is valued and supported. We offer life insurance, optional health insurance, EOBI, and a voluntary pension scheme in line with Company policy. Employees also enjoy additional perks such as Complimentary meals, and access to our in-house gym.\n\nWe take pride in being an equal opportunity employer and remain dedicated to maintaining a workplace free from discrimination of any kind. If you are passionate about driving innovation in IT, sales, engineering, or operations, Zones provides a dynamic and collaborative environment to help you grow your career.\n\nAll qualified applicants will receive consideration for employment and will not be discriminated against on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, age, genetic information, or pregnancy.\n\nJob timings: 7:00PM – 4:00AM (Pk time)\n\n#LI-WI1",
+        "descriptionHtml": "<div><p><b>Description</b><br>\n</p><br>\n<br>\n<p>Company Overview:</p><p>\nWhen it comes to IT solution providers, there are a lot of choices. But when it comes to providers with innovative and differentiating end-to-end service offerings, there&rsquo;s really only one: Zones &ndash; First Choice for IT.TM</p><p>\nZones is a Global Solution Provider of end-to-end IT solutions with an unmatched supply chain. Positioned to be the IT partner you need, Zones, a Minority Business Enterprise (MBE) in business for over 35 years, specializes in Digital Workplace, Cloud &amp; Data Center, Networking, Security, and Managed/Professional/Staffing services. Operating in more than 120 countries, leveraging a robust portfolio, and utilizing the highest certification levels from key partners, including Microsoft, Apple, Cisco, Lenovo, Adobe, and more, Zones has mastered the science of building digital infrastructures that change the way business does business ensuring whatever they need, they can Consider IT Done. Follow Zones, LLC on Twitter @Zones, and LinkedIn and Facebook.</p><p>\nPosition Overview</p><p>\nIn this role, you will be a hands-on technical powerhouse responsible for the architectural design, deployment, and daily maintenance of our global Azure ecosystem. We are looking for a Principal Engineer who thrives in the &quot;doing&quot;&mdash;someone who is as comfortable writing complex Terraform scripts and debugging connectivity issues as they are designing long-term infrastructure roadmaps. You will take full ownership of our infrastructure and play a pivotal role in building and scaling our Data Pipelines from the ground up. This is not a &quot;management-only&quot; role; you will be in the thick of daily operations, ensuring our environment is automated, secure, and hyper-efficient. As a key &quot;intrapreneur&quot; at Zones Digital, you will directly build the connected and automated technology solutions that drive our global business.</p><p>\nWhat you&rsquo;ll do as the Principal Azure Infrastructure Engineer</p><p>\nEmployees employed in the role of Principal Azure Infrastructure Engineer shall be required to apply their independent mind and demonstrate advanced intellectual abilities in their decision-making. The expectation for this role is high-level technical execution; you will be expected to lead by example, writing code, configuring resources, and solving complex technical roadblocks daily.</p><p>\nThe requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. This job description is not intended to be a comprehensive list of the duties and responsibilities of the position, and the duties and responsibilities may change without notice.</p><p>\nKey Responsibilities</p><ul><li>\nHands-on Infrastructure Engineering: Build, deploy, and manage production-grade Azure resources daily, ensuring 24/7 availability and peak performance.</li><li>\nData Pipeline Development: Actively build and maintain scalable Data Pipelines using Azure Data Factory, Synapse, and Databricks. You will be responsible for the &quot;plumbing&quot; that powers our data-driven initiatives.</li><li>\nEnd-to-End Automation: Drive the transition to a fully automated environment by writing and maintaining Infrastructure as Code (Terraform/Bicep) for all deployments&mdash;no manual clicks.</li><li>\nDirect Troubleshooting: Serve as the final escalation point for complex technical issues, diving deep into logs, network traces, and code to resolve bottlenecks.</li><li>\nActive Security Hardening: Directly implement and audit security controls, identity management (Entra ID), and encryption standards to meet ISO, NIST, and SOC compliance.</li><li>\nReal-time Cost Optimization: Perform weekly &quot;hands-on&quot; audits of Azure spend, actively resizing workloads and removing waste to ensure maximum ROI.</li><li>\nCI/CD Integration: Build and maintain robust CI/CD pipelines (Azure DevOps/GitHub Actions) to automate the delivery of both infrastructure and application updates.</li><li>\nCollaborative Building: Work side-by-side with developers and architects to ensure the infrastructure perfectly supports application requirements.</li></ul><p>\nWhat you will bring to the team</p><ul><li>\nEducation: Bachelor&rsquo;s degree in Computer Science, IT, or a related field (Master&rsquo;s Degree preferred).</li><li>\nExperience: 7&ndash;10+ years of deep technical experience in IT infrastructure, with a proven track record of being the &quot;go-to&quot; hands-on expert for Azure environments.</li><li>\nTechnical Breadth: Expert-level command of Azure Networking (vWAN, Firewalls, Application Gateways), AKS, and Storage solutions.</li><li>\nPipeline Expertise: Demonstrable experience in the actual construction and optimization of Data Pipelines and ETL processes within Azure.</li><li>\nAutomation Mastery: Advanced proficiency in Terraform and scripting languages (PowerShell, Bash, or Python) to automate repetitive tasks.</li><li>\nCertifications: Preferred Azure Solutions Architect Expert or Azure DevOps Engineer Expert&mdash;must show evidence of keeping skills &quot;sharp&quot; and current.</li><li>\nGrit and Ownership: A &quot;roll-up-your-sleeves&quot; mentality with the ability to manage complex projects while remaining deeply involved in the daily technical details.</li></ul><p>\nZones offers a comprehensive Benefits package</p><p>\nAt Zones, we are committed to fostering an inclusive and diverse workplace where every team member is valued and supported. We offer life insurance, optional health insurance, EOBI, and a voluntary pension scheme in line with Company policy. Employees also enjoy additional perks such as Complimentary meals, and access to our in-house gym.</p><p>\nWe take pride in being an equal opportunity employer and remain dedicated to maintaining a workplace free from discrimination of any kind. If you are passionate about driving innovation in IT, sales, engineering, or operations, Zones provides a dynamic and collaborative environment to help you grow your career.</p><p>\nAll qualified applicants will receive consideration for employment and will not be discriminated against on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, age, genetic information, or pregnancy.</p><p>\nJob timings: 7:00PM &ndash; 4:00AM (Pk time)</p><p>\n#LI-WI1</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Technology Infrastructure Engineers",
+            "Technology Infrastructure & Security Occupations",
+            "Technology Occupations",
+            "Cloud Engineers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Zones",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 2,
+        "jobKey": "7dda010e462616cf",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=7dda010e462616cf",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Sr. AWS Cloud Engineer",
+        "companyName": "Cloudelligent",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a year ago",
+        "datePublished": "2024-11-23",
+        "jobType": [],
+        "companyUrl": "https://www.indeed.com/cmp/Cloudelligent-2",
+        "rating": {
+            "rating": 2,
+            "count": 2
+        },
+        "descriptionText": "Cloudelligent is looking for experienced candidates for the position of Sr. AWS Cloud Engineer\n\nPosition Title: Sr. AWS Cloud Engineer\n\nLocation: DHA Phase-II, Islamabad\n\nJob Timings: 8am-5pm Central Time (US)\n\nAbout Cloudelligent\n\nCloudelligent is Cloud-native consultancy and AWS Advanced consulting partner! We specialize in providing bespoke cloud solutions to the SMB & enterprise segments as well as the public sector (Non-Profit Organizations). Being a next-gen cloud service provider, Cloudelligent helps small businesses & medium/large enterprises to break free from hardware lifecycle and capital expenditures, allowing them to make the most out of their cloud investment. We have an international footprint with a diverse team of domain experts, and we are customer obsessed.\n\nJob Objective\n\nAs a Sr. AWS Cloud Engineer, you will be at the center of efforts to build and/or redesign scalable software solutions. You will design, develop, test, and debug cloud infrastructure and deployment automation in support of company's development team. Your efforts will be critical to ensuring we are following DevOps best practices such as infrastructure as code, use of deployment and maintenance automation at all stages of our SDLC. The job entails ensuring seamless service to our customers and maintaining a complex product based on cutting edge technology. Working at Cloudelligent, you would be in a highly versatile team with in-depth knowledge of their specialized areas. We are successfully developing a culture of knowledge sharing and personal development within our team.\n\nResponsibilities\n\n• Create innovative solutions leveraging cloud platforms to solve client business challenges.\n• Gather requirements, assess client capabilities, and analyze findings to provide appropriate cloud recommendations and adoption strategy.\n• Create conceptual, logical, and physical design for cloud-based solutions for infrastructure and platforms.\n• Implement and manage continuous delivery systems and methodologies on AWS.\n• Implement and automate security controls, governance processes, and compliance validation.\n• Define and deploy monitoring, metrics, and logging systems on AWS.\n• Be well versed in AWS, technology architecture, associated vendor products, and their interdependencies.\n• Provide appropriate cloud solution recommendations based on your definition and analysis of the client's technical requirements while advising and leading the client to their Cloud adoption strategy.\n• Learn and adopt new tools and techniques to increase performance, automation, and scalability.\n• Share the leading practices and cloud emerging technologies with internal team members and clients.\n• Lead a diverse team of engineers and developers.\n\nRequirements\n\n• Bachelor's in Software/Computer Engineering or Computer Science.\n• Effective Communication skills (Proficiency in English Language).\n• 4+ years project experience migrating and deploying cloud-based solutions (AWS).\n• 4+ years of experience in architecting, implementing, and supporting Amazon Web Services infrastructure and services.\n• Self-driven, ability to work independently or as part of a project team with limited supervision.\n\nTechnical Experience/Expertise\n\n• Project experience implementing core infrastructure, networking and cloud-based services for business teams or consumers.\n• Automation experience with Cloud Formation Template, Terraform, Ansible and System Manager.\n• Container configuration and implementation experience with Docker, Vagrant and Kubernetes.\n• Experience working on Agile projects (Scrum or Kanban).\n\nDeep product knowledge and understanding of product features including:\n\n• IaaS, PaaS, and SaaS Solutions.\n• Kubernetes or EKS, Docker­­­.\n• Hybrid Cloud Solutions.\n• Automation and DevOps (Git, Jenkins, CLI, ARM, Terraform, Ansible, Puppet, Chef).\n\nAn understanding of cloud ecosystem and leading-edge cloud emerging technologies including:\n\n• Configuring and tuning cloud hosted solutions and platforms.\n• Supporting production applications or workloads in a cloud-based environment.\n• Performance analysis, troubleshooting and remediation techniques.\n• Encryption and key management principles and design patterns.\n• Networking principles and technologies (DNS, Load Balancers, Reverse Proxies).\n• Automation and DevOps principles.\n• Microsoft Active Directory and Active Directory Federation Services (ADFS).\n• Single-sign-on (SSO) solutions including SAML and OAuth authentication options.\n• High Availability and Disaster Recovery principles, patterns, and usage.\n• Sizing hardware and storage needs.\n\nPreferred Requirements\n\nAWS: Certified Solutions Architect – Associate.",
+        "descriptionHtml": "Cloudelligent is looking for experienced candidates for the position of Sr. AWS Cloud Engineer\n<br><br>\n<b>Position Title:</b> Sr. AWS Cloud Engineer\n<br><br>\n<b>Location:</b> DHA Phase-II, Islamabad\n<br><br>\n<b>Job Timings:</b> 8am-5pm Central Time (US)\n<br><br>\nAbout Cloudelligent\n<br><br>\nCloudelligent is Cloud-native consultancy and AWS Advanced consulting partner! We specialize in providing bespoke cloud solutions to the SMB & enterprise segments as well as the public sector (Non-Profit Organizations). Being a next-gen cloud service provider, Cloudelligent helps small businesses & medium/large enterprises to break free from hardware lifecycle and capital expenditures, allowing them to make the most out of their cloud investment. We have an international footprint with a diverse team of domain experts, and we are customer obsessed.\n<br><br>\nJob Objective\n<br><br>\nAs a Sr. AWS Cloud Engineer, you will be at the center of efforts to build and/or redesign scalable software solutions. You will design, develop, test, and debug cloud infrastructure and deployment automation in support of company's development team. Your efforts will be critical to ensuring we are following DevOps best practices such as infrastructure as code, use of deployment and maintenance automation at all stages of our SDLC. The job entails ensuring seamless service to our customers and maintaining a complex product based on cutting edge technology. Working at Cloudelligent, you would be in a highly versatile team with in-depth knowledge of their specialized areas. We are successfully developing a culture of knowledge sharing and personal development within our team.\n<br><br>\nResponsibilities\n<br><br>\n<ul>\n<li>Create innovative solutions leveraging cloud platforms to solve client business challenges.</li>\n<li>Gather requirements, assess client capabilities, and analyze findings to provide appropriate cloud recommendations and adoption strategy.</li>\n<li>Create conceptual, logical, and physical design for cloud-based solutions for infrastructure and platforms.</li>\n<li>Implement and manage continuous delivery systems and methodologies on AWS.</li>\n<li>Implement and automate security controls, governance processes, and compliance validation.</li>\n<li>Define and deploy monitoring, metrics, and logging systems on AWS.</li>\n<li>Be well versed in AWS, technology architecture, associated vendor products, and their interdependencies.</li>\n<li>Provide appropriate cloud solution recommendations based on your definition and analysis of the client's technical requirements while advising and leading the client to their Cloud adoption strategy.</li>\n<li>Learn and adopt new tools and techniques to increase performance, automation, and scalability.</li>\n<li>Share the leading practices and cloud emerging technologies with internal team members and clients.</li>\n<li>Lead a diverse team of engineers and developers.</li>\n</ul>\nRequirements\n<br><br>\n<ul>\n<li>Bachelor's in Software/Computer Engineering or Computer Science.</li>\n<li>Effective Communication skills (Proficiency in English Language).</li>\n<li>4+ years project experience migrating and deploying cloud-based solutions (AWS).</li>\n<li>4+ years of experience in architecting, implementing, and supporting Amazon Web Services infrastructure and services.</li>\n<li>Self-driven, ability to work independently or as part of a project team with limited supervision.</li>\n</ul>\nTechnical Experience/Expertise\n<br><br>\n<ul>\n<li>Project experience implementing core infrastructure, networking and cloud-based services for business teams or consumers.</li>\n<li>Automation experience with Cloud Formation Template, Terraform, Ansible and System Manager.</li>\n<li>Container configuration and implementation experience with Docker, Vagrant and Kubernetes.</li>\n<li>Experience working on Agile projects (Scrum or Kanban).</li>\n</ul>\nDeep product knowledge and understanding of product features including:\n<br><br>\n<ul>\n<li>IaaS, PaaS, and SaaS Solutions.</li>\n<li>Kubernetes or EKS, Docker­­­.</li>\n<li>Hybrid Cloud Solutions.</li>\n<li>Automation and DevOps (Git, Jenkins, CLI, ARM, Terraform, Ansible, Puppet, Chef).</li>\n</ul>\nAn understanding of cloud ecosystem and leading-edge cloud emerging technologies including:\n<br><br>\n<ul>\n<li>Configuring and tuning cloud hosted solutions and platforms.</li>\n<li>Supporting production applications or workloads in a cloud-based environment.</li>\n<li>Performance analysis, troubleshooting and remediation techniques.</li>\n<li>Encryption and key management principles and design patterns.</li>\n<li>Networking principles and technologies (DNS, Load Balancers, Reverse Proxies).</li>\n<li>Automation and DevOps principles.</li>\n<li>Microsoft Active Directory and Active Directory Federation Services (ADFS).</li>\n<li>Single-sign-on (SSO) solutions including SAML and OAuth authentication options.</li>\n<li>High Availability and Disaster Recovery principles, patterns, and usage.</li>\n<li>Sizing hardware and storage needs.</li>\n</ul>\nPreferred Requirements\n<br><br>\n<b>AWS:</b> Certified Solutions Architect – Associate.",
+        "benefits": [],
+        "occupation": [
+            "Technology Infrastructure Engineers",
+            "Technology Infrastructure & Security Occupations",
+            "Technology Occupations",
+            "Cloud Engineers"
+        ],
+        "attributes": [],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Cloudelligent",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 3,
+        "jobKey": "b9df361658753850",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=b9df361658753850",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Lead Infrastructure Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/aa48aa50d2d26fe9ad2f9b53a713d985",
+        "companyName": "Unifonic",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 months ago",
+        "datePublished": "2025-10-14",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Unifonic",
+        "rating": {
+            "rating": 3.5,
+            "count": 4
+        },
+        "descriptionText": "Proudly voted a Great Place to Work®, we are a dynamic startup in the SaaS space that is revolutionizing the way businesses communicate. Our team is made up of 500 energetic and passionate Unifones who are dedicated to delivering the best possible experience to 5000+ customer-centric companies.\n\nWe pride ourselves on our fun and collaborative work environment, where creativity and new ideas are constantly encouraged. As shareholders in the business, we’re so much more than a group of passionate communicators. We are Unifones. Join our team and be a part of something big!\n\nMeet the team!\n\nOur Engineering team is responsible for designing, developing, and maintaining the systems and technologies that drive Unifonic’s solutions. We work closely with other departments to ensure our products and services meet the needs of our customers. If you are passionate about technology and are excited about working on cutting-edge communication and engagement solutions, we want you on our team.\n\nAs a Lead Infrastructure Engineer in the Developer Experience (DevX) team, you will be leading a team working to cross and merge the barriers that exist between software development, testing, and operations teams, and keep existing networks in mind as they design, plan, and test.\n\nHelp us shape the future of communication by:\n\nLeading a team of Infrastructure Engineers by setting high standards, building the right culture, and sharing knowledge.\nSetting up and enhancing CI (Continuous Integration) and CD (Continuous Deployment).\nConfiguring the company's products to meet the functional requirements including the configuration of functional areas and technical areas (e.g. integration interfaces, integration maps, web services, transport protocols, etc).\nTroubleshooting and remediating issues impacting the integration, and operations of the infrastructure and systems.\nEnsuring high availability of the company’s products and platforms [24x7x365], including but not limited to messaging, voice, and e-mail gateways, in addition to assessing emergencies, providing analysis, and recommending solutions.\nWriting and deploying scripts in different environments to automate day-to-day operations.\nMaintaining servers’ configuration, monitoring jobs, and infrastructure documentation across the cloud environment (Oracle Cloud Infrastructure, etc).\nWorking extensively with the offshore teams and network of partners on a daily basis.\n\nWhat you'll bring:\n\nPrevious people managerial experience is a must\nHands-on 7+ years of recent technical experience in a Professional Services/Enterprise DevOps role.\nStrong technical skills and proficiency in multiple functional areas are required; such as infrastructure as Code (Terraform), containerize orchestration (Docker, Kubernetes), configuration management (Ansible), programming language (Python), logging system (Elastic Stack), CI/CD (DroneCI, Argo CD) and network protocols and standards.\nBachelor's degree in Computer Engineering, Software Engineering, or other IT-related fields.\nThe ability to spend substantial time interfacing with the offshore teams on a daily basis.\nFluent in English with excellent writing/editing and verbal communication skills.\nStrong sense of ownership, critical thinking, and ability to drive DevOps mindset initiatives across teams for agile release.\nAnalytical thinking and being accountable for the results of made decisions.\n\nAs a Unifone you will receive a range of benefits:\n\nCompetitive salary and bonus.\nUnifonic share scheme (we are all owners!).\n30 holiday days after the first anniversary.\nYour Birthday off!\nSpend up to 25 days per year working from anywhere in the world!\nPaid leave for new parents.\nLinkedIn learning license.",
+        "descriptionHtml": "<div><p>Proudly voted a Great Place to Work&reg;, we are a dynamic startup in the SaaS space that is revolutionizing the way businesses communicate. Our team is made up of 500 energetic and passionate Unifones who are dedicated to delivering the best possible experience to 5000+ customer-centric companies.</p><p></p><p>\nWe pride ourselves on our fun and collaborative work environment, where creativity and new ideas are constantly encouraged. As shareholders in the business, we&rsquo;re so much more than a group of passionate communicators. We are Unifones. Join our team and be a part of something big!</p><p></p><p><b>\nMeet the team!</b></p><p>\nOur Engineering team is responsible for designing, developing, and maintaining the systems and technologies that drive Unifonic&rsquo;s solutions. We work closely with other departments to ensure our products and services meet the needs of our customers. If you are passionate about technology and are excited about working on cutting-edge communication and engagement solutions, we want you on our team.</p><p></p><p>\nAs a Lead Infrastructure Engineer in the Developer Experience (DevX) team, you will be leading a team working to cross and merge the barriers that exist between software development, testing, and operations teams, and keep existing networks in mind as they design, plan, and test.</p><p></p><p><b>\nHelp us shape the future of communication by:</b></p><ul><li>\nLeading a team of Infrastructure Engineers by setting high standards, building the right culture, and sharing knowledge.</li><li>\nSetting up and enhancing CI (Continuous Integration) and CD (Continuous Deployment).</li><li>\nConfiguring the company's products to meet the functional requirements including the configuration of functional areas and technical areas (e.g. integration interfaces, integration maps, web services, transport protocols, etc).</li><li>\nTroubleshooting and remediating issues impacting the integration, and operations of the infrastructure and systems.</li><li>\nEnsuring high availability of the company&rsquo;s products and platforms [24x7x365], including but not limited to messaging, voice, and e-mail gateways, in addition to assessing emergencies, providing analysis, and recommending solutions.</li><li>\nWriting and deploying scripts in different environments to automate day-to-day operations.</li><li>\nMaintaining servers&rsquo; configuration, monitoring jobs, and infrastructure documentation across the cloud environment (Oracle Cloud Infrastructure, etc).</li><li>\nWorking extensively with the offshore teams and network of partners on a daily basis.</li></ul><p></p><p><b><br>\nWhat you'll bring:</b></p><ul><li>\nPrevious people managerial experience is a must</li><li>\nHands-on 7+ years of recent technical experience in a Professional Services/Enterprise DevOps role.</li><li>\nStrong technical skills and proficiency in multiple functional areas are required; such as infrastructure as Code (Terraform), containerize orchestration (Docker, Kubernetes), configuration management (Ansible), programming language (Python), logging system (Elastic Stack), CI/CD (DroneCI, Argo CD) and network protocols and standards.</li><li>\nBachelor's degree in Computer Engineering, Software Engineering, or other IT-related fields.</li><li>\nThe ability to spend substantial time interfacing with the offshore teams on a daily basis.</li><li>\nFluent in English with excellent writing/editing and verbal communication skills.</li><li>\nStrong sense of ownership, critical thinking, and ability to drive DevOps mindset initiatives across teams for agile release.</li><li>\nAnalytical thinking and being accountable for the results of made decisions.</li></ul><p></p><p><b><br>\nAs a Unifone you will receive a range of benefits:</b></p><ul><li>\nCompetitive salary and bonus.</li><li>\nUnifonic share scheme (we are all owners!).</li><li>\n30 holiday days after the first anniversary.</li><li>\nYour Birthday off!</li><li>\nSpend up to 25 days per year working from anywhere in the world!</li><li>\nPaid leave for new parents.</li><li>\nLinkedIn learning license.</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Technology Infrastructure Engineers",
+            "Technology Infrastructure & Security Occupations",
+            "Technology Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Unifonic",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 4,
+        "jobKey": "28784e823a4ef6ee",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=28784e823a4ef6ee",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Machine Leaning Engineer - Computer Vision",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/8c04621d7c32cfc14de4eef1f004e603",
+        "companyName": "Code District",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "4 months ago",
+        "datePublished": "2025-11-07",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/405e54e84298fe34b935b4f6650415e7",
+        "companyUrl": "https://www.indeed.com/cmp/Code-District",
+        "rating": {
+            "rating": 1,
+            "count": 1
+        },
+        "descriptionText": "Code District is seeking a skilled Computer Vision Engineer to design, develop, and deploy AI-driven vision solutions. The ideal candidate should have hands-on experience in computer vision projects within production environments.\n\nResponsibilities:\n\nDevelop computer vision and deep learning applications related to object detection, object segmentation and activity/action detection.\nScientific thinking and the ability to invent, implement, and lead technology developments in the field of computer vision and machine learning.\nDedicated to delivering Machine Learning projects.\nUtilizing existing hardware and images in addition to new image data gathering techniques to produce innovative image analysis models and algorithms.\nLead the ideation, prototyping, and development of AI software.\nDemonstrate expertise in solving computer vision problems.\nDevelop deep learning and traditional machine learning algorithms.\nDesign and develop scalable software architectures.\nDemonstrate ongoing understanding of Machine Learning technologies in the current marketplace and how they can be applied to the business.\nFacilitate design and deployment of vision hardware equipment needed for image data gathering.\nCreate and maintain data pipeline architecture for ML algorithm development.\n\nRequirements:\nMS or PhD in Computer Science, Engineering, Mathematics or Statistics, with specialization in computer vision and deep learning.\nMinimum 4 years of industrial experience in developing and deploying Computer Vision and Deep Learning applications in Production at scale.\nExperience in software development, integration with deep learning algorithms and deployment in production.\nProficiency in scientific understanding and implementation of deep learning architectures in Computer vision (Image classification, object detection, segmentation, pose estimation) from ideation to productionized deployment.\nSoftware development in Python, Deep learning (Tensorflow and Pytorch), Machine Learning libraries (OpenCV, Scikit-learn, NumPy, Pandas) and Data Analytics/Reporting.\nDevOps: Code Management, Version Control, Code Review, CI/CD, Configuration Management, Monitoring, Containerization\nMLOps: Experiment Management (Model Versioning, Parameter Versioning, Model Performance Metrics), Model Integration, Serving, Deployment, Testing and Continuous Monitoring\nDataOps: Data Gathering, Annotation, Quality, Visualization, Versioning, and Engineering.\nAbility to read scientific publications, understand and implement proposed solutions.\nExcellent written and spoken communication skills.\nSelf-driven and strong problem-solving skills.\nTeam work.\nStrong analytical skills and process focus",
+        "descriptionHtml": "<div><p>Code District is seeking a skilled Computer Vision Engineer to design, develop, and deploy AI-driven vision solutions. The ideal candidate should have hands-on experience in computer vision projects within production environments.</p><p><b>\nResponsibilities:</b></p><br>\n<ul><li>\nDevelop computer vision and deep learning applications related to object detection, object segmentation and activity/action detection.</li><li>\nScientific thinking and the ability to invent, implement, and lead technology developments in the field of computer vision and machine learning.</li><li>\nDedicated to delivering Machine Learning projects.</li><li>\nUtilizing existing hardware and images in addition to new image data gathering techniques to produce innovative image analysis models and algorithms.</li><li>\nLead the ideation, prototyping, and development of AI software.</li><li>\nDemonstrate expertise in solving computer vision problems.</li><li>\nDevelop deep learning and traditional machine learning algorithms.</li><li>\nDesign and develop scalable software architectures.</li><li>\nDemonstrate ongoing understanding of Machine Learning technologies in the current marketplace and how they can be applied to the business.</li><li>\nFacilitate design and deployment of vision hardware equipment needed for image data gathering.</li><li>\nCreate and maintain data pipeline architecture for ML algorithm development.<br>\n</li></ul><div><b>\nRequirements:</b></div><ul><li>\nMS or PhD in Computer Science, Engineering, Mathematics or Statistics, with specialization in computer vision and deep learning.</li><li>\nMinimum 4 years of industrial experience in developing and deploying Computer Vision and Deep Learning applications in Production at scale.</li><li>\nExperience in software development, integration with deep learning algorithms and deployment in production.</li><li>\nProficiency in scientific understanding and implementation of deep learning architectures in Computer vision (Image classification, object detection, segmentation, pose estimation) from ideation to productionized deployment.</li><li>\nSoftware development in Python, Deep learning (Tensorflow and Pytorch), Machine Learning libraries (OpenCV, Scikit-learn, NumPy, Pandas) and Data Analytics/Reporting.</li><li>\nDevOps: Code Management, Version Control, Code Review, CI/CD, Configuration Management, Monitoring, Containerization</li><li>\nMLOps: Experiment Management (Model Versioning, Parameter Versioning, Model Performance Metrics), Model Integration, Serving, Deployment, Testing and Continuous Monitoring</li><li>\nDataOps: Data Gathering, Annotation, Quality, Visualization, Versioning, and Engineering.</li><li>\nAbility to read scientific publications, understand and implement proposed solutions.</li><li>\nExcellent written and spoken communication skills.</li><li>\nSelf-driven and strong problem-solving skills.</li><li>\nTeam work.</li><li>\nStrong analytical skills and process focus</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Science & Research Occupations",
+            "Research Computer Scientists"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Code District",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 5,
+        "jobKey": "80f88fa80d1db977",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=80f88fa80d1db977",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Sr. Java Engineer",
+        "companyName": "Stella Technology",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a year ago",
+        "datePublished": "2025-03-04",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Stella-Technology",
+        "rating": {
+            "rating": 4.5,
+            "count": 4
+        },
+        "descriptionText": "We're Hiring! Java Developer (4-5 Years Experience)\n\nAre you an experienced Java Developer looking for your next exciting opportunity? Join our innovative team and help us build cutting-edge applications using Java 8+, Spring Boot, and the latest cloud technologies!\n\nWe’re on the lookout for a talented and driven Java Developer to help us design, develop, and maintain high-performance applications. If you have experience with Spring, RESTful APIs, AWS Cloud, and thrive in an Agile environment, we want to hear from you!\n\nWhat You’ll Do:\n\n- Develop scalable Java applications using Spring Boot, Spring Core, and Hibernate\n- Design and build RESTful APIs with Swagger documentation\n- Collaborate with cross-functional teams in Agile (Scrum & Kanban) environments\n- Contribute to cloud-native development and AWS Cloud integration\n- Work with CI/CD pipelines to automate testing and deployment\n- Use Git to maintain code versioning and follow best practices\n\nWhat We’re Looking For:\n\n- 4-5 years of professional experience with Java 8+\n- Strong expertise in Spring Boot, Spring Core, Spring Cloud Native, Spring Data JPA, and Hibernate\n- Experience designing and developing RESTful APIs, Swagger experience is a plus\n- Hands-on experience with Git for version control\n- Familiarity with AWS Cloud and basic DevOps (CI/CD) practices\n- A passion for problem-solving and working in a collaborative, fast-paced environment\n\nWhy You’ll Love Working With Us:\n\n- Work on exciting, high-impact projects with a passionate team\n- Flexible work options with the opportunity to make a real difference\n- Career growth opportunities and continuous learning\n- Competitive salary and benefits package\n\nInterested? Send us your resume! Let's build something amazing together.",
+        "descriptionHtml": "<div><p><b>We're Hiring! Java Developer (4-5 Years Experience)</b></p>\n<p><b>\nAre you an experienced Java Developer looking for your next exciting opportunity?</b> Join our innovative team and help us build cutting-edge applications using <b>Java 8+</b>, <b>Spring Boot</b>, and the latest cloud technologies!</p>\n<p>\nWe&rsquo;re on the lookout for a talented and driven <b>Java Developer</b> to help us design, develop, and maintain high-performance applications. If you have experience with <b>Spring</b>, <b>RESTful APIs</b>, <b>AWS Cloud</b>, and thrive in an <b>Agile</b> environment, we want to hear from you!</p><br>\n<p></p>\n<p><b>\nWhat You&rsquo;ll Do:</b></p>\n<ul><li><b>Develop</b> scalable Java applications using <b>Spring Boot, Spring Core</b>, and <b>Hibernate</b></li><li>Design and build <b>RESTful APIs</b> with <b>Swagger</b> documentation</li><li>Collaborate with cross-functional teams in <b>Agile</b> (Scrum &amp; Kanban) environments</li><li>Contribute to cloud-native development and <b>AWS Cloud</b> integration</li><li> Work with <b>CI/CD</b> pipelines to automate testing and deployment</li><li> Use <b>Git</b> to maintain code versioning and follow best practices</li></ul><br>\n<p></p>\n<p><b>\nWhat We&rsquo;re Looking For:</b></p>\n<ul><li> 4-5 years of professional experience with <b>Java 8+</b></li><li> Strong expertise in <b>Spring Boot, Spring Core</b>, <b>Spring Cloud Native</b>, <b>Spring Data JPA</b>, and <b>Hibernate</b></li><li>Experience designing and developing <b>RESTful APIs</b>, <b>Swagger</b> experience is a plus</li><li>Hands-on experience with <b>Git</b> for version control</li><li> Familiarity with <b>AWS Cloud</b> and basic <b>DevOps (CI/CD)</b> practices</li><li> A passion for problem-solving and working in a collaborative, fast-paced environment</li></ul><br>\n<p></p>\n<p><b>\nWhy You&rsquo;ll Love Working With Us:</b></p>\n<ul><li> Work on exciting, high-impact projects with a passionate team</li><li> Flexible work options with the opportunity to make a real difference</li><li> Career growth opportunities and continuous learning</li><li> Competitive salary and benefits package</li></ul><br>\n<p></p>\n<p><b>\nInterested?</b> Send us your resume! Let's build something amazing together.</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Back End Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Stella Technology",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 6,
+        "jobKey": "735cbdc7e2347686",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=735cbdc7e2347686",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Sr. Software Architect./ Engineering Manager",
+        "companyName": "31 Green Ltd",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "6 months ago",
+        "datePublished": "2025-09-16",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/31-Green-Ltd",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "10+ years (including 3 to 4+ years in\narchitecture, leadership, and project\nownership)\n\nAbout the Role\n31G Ltd. is seeking a highly experienced Technical Lead / Software Architect to drive the\ntechnical vision, design, and execution of enterprise-level software projects. The ideal candidate\nmust have deep expertise in Python frameworks (Django, FastAPI), modern frontend\ntechnologies (React), and strong architectural skills experience with AI, ML and Agentic AI. This\nrole requires end-to-end ownership: architecting complex systems, leading engineering teams,\ncontributing to pre-sales, building technical solutions, and ensuring timely delivery of all IT\nprojects from conception to deployment.\nThis is a senior, client-facing, and leadership-focused role requiring both technical depth and\nstrategic decision-making.\n\nKey Responsibilities\n● Architect complete enterprise-level systems, including backend, frontend, databases,\nintegrations, and cloud infrastructure.\n● Lead, mentor, and manage a team of 15+ engineers across backend, frontend, QA, and\nDevOps.\n● Work proactively on pre-sales, including requirement analysis, solution design,\nestimations, and client technical presentations.\n● Oversee multiple projects simultaneously, ensuring quality, timelines, and alignment with\nbusiness objectives.\n● Design and develop backend services using Python frameworks such as Django, DRF,\nand FastAPI.\n● Lead and guide frontend architecture using React and related frameworks.\n● Conduct high-level and low-level architecture planning, including diagrams, workflows,\nand documentation.\n● Review code, enforce best engineering practices, and maintain clean, secure, scalable\nsolutions.\n● Collaborate with product, design, QA, and DevOps to ensure smooth, reliable delivery.\n● Identify risks, bottlenecks, and architectural gaps, offering clear mitigation strategies.\n● Drive DevOps practices such as CI/CD, versioning, automated testing, and monitoring.\n● Ensure systems are designed with performance, security, and scalability in mind.\n\nRequirements\n● Bachelor’s or Master’s degree in Computer Science, Engineering, or a related field.\n● 10+ years of professional software development experience.\n● 3 to 4+ years in technical leadership, architecture, or management of engineering teams.\n● Strong hands-on expertise in Python and frameworks such as Django, DRF, and\nFastAPI, AI, ML, Agentic AI (is a plus).\n● Solid proficiency in frontend development using React and modern\nJavaScript/TypeScript frameworks.\n● Strong understanding of system design, architecture patterns, REST APIs,\nmicroservices, and event-driven designs.\n● Experience with SQL and NoSQL databases (PostgreSQL, MySQL, MongoDB, Redis).\n● Proficiency with Git, CI/CD pipelines, and cloud infrastructure (AWS, Azure, or GCP).\n● Excellent communication, leadership, analytical, and problem-solving skills.\n● Ability to balance deep technical execution with leadership and delivery responsibilities.\n\nNice-to-Have\n● Experience with Docker, Kubernetes, and containerized deployments.\n● Understanding of distributed systems and microservices architecture.\n● Exposure to Agile/Scrum methodologies.\n● Experience with message brokers and asynchronous frameworks (RabbitMQ, Kafka,\nCelery).\n● Knowledge of AI/ML model integration, pipelines, or data engineering.\n● Understanding of blockchain fundamentals or experience with smart contract\nintegrations.\n● Experience working with compliance heavy environments (GDPR, NHS DSPT, DPIA\netc).\n● Experience with system security, data governance, and compliance-driven architectures",
+        "descriptionHtml": "<div><p><b>10+ years (including 3 to 4+ years in</b><br>\n<b>architecture, leadership, and project</b><br>\n<b>ownership)</b></p><p></p><p><b><br>\nAbout the Role</b><br>\n31G Ltd. is seeking a highly experienced Technical Lead / Software Architect to drive the<br>\ntechnical vision, design, and execution of enterprise-level software projects. The ideal candidate<br>\nmust have deep expertise in Python frameworks (Django, FastAPI), modern frontend<br>\ntechnologies (React), and strong architectural skills experience with AI, ML and Agentic AI. This<br>\nrole requires end-to-end ownership: architecting complex systems, leading engineering teams,<br>\ncontributing to pre-sales, building technical solutions, and ensuring timely delivery of all IT<br>\nprojects from conception to deployment.<br>\nThis is a senior, client-facing, and leadership-focused role requiring both technical depth and<br>\nstrategic decision-making.</p><p></p><div><b><br>\nKey Responsibilities</b><br>\n<ul><li>Architect complete enterprise-level systems, including backend, frontend, databases,</li></ul>\nintegrations, and cloud infrastructure.<br>\n<ul><li>Lead, mentor, and manage a team of 15+ engineers across backend, frontend, QA, and</li></ul>\nDevOps.<br>\n<ul><li>Work proactively on pre-sales, including requirement analysis, solution design,</li></ul>\nestimations, and client technical presentations.<br>\n<ul><li>Oversee multiple projects simultaneously, ensuring quality, timelines, and alignment with</li></ul>\nbusiness objectives.<br>\n<ul><li>Design and develop backend services using Python frameworks such as Django, DRF,</li></ul>\nand FastAPI.<br>\n<ul><li>Lead and guide frontend architecture using React and related frameworks.</li><li>Conduct high-level and low-level architecture planning, including diagrams, workflows,</li></ul>\nand documentation.<br>\n<ul><li>Review code, enforce best engineering practices, and maintain clean, secure, scalable</li></ul>\nsolutions.<br>\n<ul><li>Collaborate with product, design, QA, and DevOps to ensure smooth, reliable delivery.</li><li>Identify risks, bottlenecks, and architectural gaps, offering clear mitigation strategies.</li><li>Drive DevOps practices such as CI/CD, versioning, automated testing, and monitoring.</li><li>Ensure systems are designed with performance, security, and scalability in mind.</li></ul></div><p></p><div><b><br>\nRequirements</b><br>\n<ul><li>Bachelor&rsquo;s or Master&rsquo;s degree in Computer Science, Engineering, or a related field.</li><li>10+ years of professional software development experience.</li><li>3 to 4+ years in technical leadership, architecture, or management of engineering teams.</li><li>Strong hands-on expertise in Python and frameworks such as Django, DRF, and</li></ul>\nFastAPI, AI, ML, Agentic AI (is a plus).<br>\n<ul><li>Solid proficiency in frontend development using React and modern</li></ul>\nJavaScript/TypeScript frameworks.<br>\n<ul><li>Strong understanding of system design, architecture patterns, REST APIs,</li></ul>\nmicroservices, and event-driven designs.<br>\n<ul><li>Experience with SQL and NoSQL databases (PostgreSQL, MySQL, MongoDB, Redis).</li><li>Proficiency with Git, CI/CD pipelines, and cloud infrastructure (AWS, Azure, or GCP).</li><li>Excellent communication, leadership, analytical, and problem-solving skills.</li><li>Ability to balance deep technical execution with leadership and delivery responsibilities.</li></ul></div><p></p><div><b><br>\nNice-to-Have</b><br>\n<ul><li>Experience with Docker, Kubernetes, and containerized deployments.</li><li>Understanding of distributed systems and microservices architecture.</li><li>Exposure to Agile/Scrum methodologies.</li><li>Experience with message brokers and asynchronous frameworks (RabbitMQ, Kafka,</li></ul>\nCelery).<br>\n<ul><li>Knowledge of AI/ML model integration, pipelines, or data engineering.</li><li>Understanding of blockchain fundamentals or experience with smart contract</li></ul>\nintegrations.<br>\n<ul><li>Experience working with compliance heavy environments (GDPR, NHS DSPT, DPIA</li></ul>\netc).<br>\n<ul><li>Experience with system security, data governance, and compliance-driven architectures</li></ul></div></div>",
+        "benefits": [],
+        "occupation": [
+            "Software & Web Architects",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "31 Green Ltd",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 7,
+        "jobKey": "191e8772d9c24a59",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=191e8772d9c24a59",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer - Backend .Net",
+        "companyName": "VIDIZMO LLC",
+        "location": {
+            "city": "Karachi",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Karachi",
+            "formattedAddressShort": "Karachi",
+            "latitude": 24.892857,
+            "longitude": 67.02747,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 months ago",
+        "datePublished": "2025-10-07",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Vidizmo-LLC",
+        "rating": {
+            "rating": 3.5,
+            "count": 2
+        },
+        "descriptionText": "We're seeking passionate, driven, and self-motivated individuals to join our team. If you're eager to grow in a dynamic environment and be part of a company that’s at the forefront of AI innovation, this is your chance to hit the ground running.\n\nVIDIZMO is a USA-based technology company headquartered in Tysons, Virginia, and a Microsoft Solutions Partner in Data & AI, Infrastructure, and Digital & App Innovation. Offering a AI-Powered Intelligence Hub, we empower Fortune 500 companies, large enterprises, governments, and the public sector to securely manage, analyze, and govern their data with complete control and compliance.\n\nOur Multimodal AI Data Intelligence Platform leverages Large Language Models (LLMs) and RAG (Retrieval-Augmented Generation) to deliver powerful capabilities such as auto-tagging, redaction, content summarization, OCR, translation, subtitle creation, object detection and tracking, content search, sentiment and emotion analysis, topic extraction, document classification, and facial attribute detection.\n\nAI Output Verification & Accountability (Required Competency)\n\nThe candidate must be capable of effectively using AI tools (e.g., Claude, ChatGPT, Copilot, or similar) to support work outputs such as content, analysis, documentation, or code. However, the candidate must also demonstrate strong judgment and ownership of the final deliverables. AI-generated output must never be treated as final without review. The candidate is expected to validate accuracy, completeness, logic, compliance, and alignment with business requirements, and refine AI-assisted work to meet the expected quality standards. The individual will be held accountable for the final output, regardless of whether AI tools were used during execution.\n\nResponsibilities:\n\nBuild server-side web technology stack that provides API for various products and integrations\nResponsibility for reviewing and validating AI-generated outputs\nOwnership of final deliverables, regardless of AI assistance\nAbility to critically evaluate AI results and ensure they meet defined requirements\nAccountability for accuracy, quality, and compliance\n\nDevelop and enhance back-end processing pipeline with evolving needs\nWork with Product Analyst, Web Engineers, and other Front and Back end engineers to provide necessary support building new features\nSecuring and ensuring the back-end stack is scalable, elastic and can support millions of concurrent users\nPerform unit, integration testing of developed modules and systems as well as participate in weekly bug bash activity\nPerform Peer code reviews to improve code quality\nFollow and enforce SCRUM/Agile practices as well as work with Product Manager, maintaining product and spring backlog\nPropose and participate in the adoption of new technologies and trends\n\nEssential Skills:\n\nMust have worked with at least one server-side technology for developing web application such as ASP.NET OR C# OR Java Spring/Spring Boot OR NodeJS OR Python\nHave experience developing and designing API and Middle-ware for the web\nHands on experience working on Visual Studio 2019, SQL Server Management Studio\nProficient knowledge and in-depth understanding of underlying frameworks like .NET, Java, etc.\nHave experience and knowledge of designing scalable application\nSkilled in implementing design patterns and logic development\nThe ideal candidate demonstrates strong business acumen, translates objectives into impactful solutions, and effectively leverages AI tools for efficiency. Proficiency in Claude (mandatory) and familiarity with tools such as ChatGPT are required. An ownership mindset and the ability to deliver results independently are essential. Successful completion of a Claude-based assessment is required as part of the hiring process.\n\nPreferred Skills:\n\nHave created an application using ASP.NET Core, ASP.NET 5, libraries in .NET and Windows services\nHave worked on SignalR OR gRPC OR WebSockets\nHave worked with Azure Devops OR AWS OR Google PaaS Services\nHave done system-level programming such as sockets, multi-threading, or designed distributed applications\nHave worked on video streaming technology or encoders/decoders\nContainers, Elastic Search, Dapper, Kafka, RabbitMQ, Zipkin, Consul, Zookeeper, Redis, WSL/2, gRPC protocols, mDNS\n\nRequired Qualification:\n\nBS/BSc or above in Computer Science\n0 - 5+ years experience in backend development\nCan work independently and have a go-getter attitude\nGood English language verbal and writing communication skills\nAuthorized to work legally\n\nBenefits: Health Insurance (OPD/IPD), Daily Lunch Facility, Separate Maternity Cover, Leave encashment, Car Support Program, Referral Bonus, EOBI, Bi-Annual Increment. Provident Fund, Career Growth, Bonus (benefits vary based on location)\n\nMultiple Locations: Pakistan, India, UAE, Australia, Canada & USA",
+        "descriptionHtml": "<div><p>We're seeking passionate, driven, and self-motivated individuals to join our team. If you're eager to grow in a dynamic environment and be part of a company that&rsquo;s at the forefront of AI innovation, this is your chance to hit the ground running.</p><br>\n<p></p>\n<p>\nVIDIZMO is a USA-based technology company headquartered in Tysons, Virginia, and a <b>Microsoft Solutions Partner</b> in <b>Data &amp; AI</b>, <b>Infrastructure</b>, and <b>Digital &amp; App Innovation</b>. Offering a <b>AI-Powered Intelligence Hub</b>, we empower <b>Fortune 500 companies</b>, <b>large enterprises</b>, governments, and the <b>public sector</b> to securely manage, analyze, and govern their data with complete control and compliance.</p><br>\n<p></p>\n<p>\nOur <b>Multimodal AI Data Intelligence Platform</b> leverages <b>Large Language Models (LLMs)</b> and <b>RAG (Retrieval-Augmented Generation)</b> to deliver powerful capabilities such as <b>auto-tagging</b>, <b>redaction</b>, <b>content summarization</b>, <b>OCR</b>, <b>translation</b>, <b>subtitle creation</b>, <b>object detection and tracking</b>, <b>content search</b>, <b>sentiment and emotion analysis</b>, <b>topic extraction</b>, <b>document classification</b>, and <b>facial attribute detection.</b></p><p></p><p><b><br>\nAI Output Verification &amp; Accountability (Required Competency)</b></p><p></p><p><br>\nThe candidate must be capable of effectively using AI tools (e.g., Claude, ChatGPT, Copilot, or similar) to support work outputs such as content, analysis, documentation, or code. However, the candidate must also demonstrate strong judgment and ownership of the final deliverables. AI-generated output must never be treated as final without review. The candidate is expected to validate accuracy, completeness, logic, compliance, and alignment with business requirements, and refine AI-assisted work to meet the expected quality standards. The individual will be held accountable for the final output, regardless of whether AI tools were used during execution.</p><p></p><p><b><br>\nResponsibilities:</b></p>\n<ul>\n<li>Build server-side web technology stack that provides API for various products and integrations</li>\n</ul><ul><li>Responsibility for reviewing and validating AI-generated outputs</li>\n<li>Ownership of final deliverables, regardless of AI assistance</li>\n<li>Ability to critically evaluate AI results and ensure they meet defined requirements</li>\n<li>Accountability for accuracy, quality, and compliance<br>\n</li>\n<li>Develop and enhance back-end processing pipeline with evolving needs</li>\n<li>Work with Product Analyst, Web Engineers, and other Front and Back end engineers to provide necessary support building new features</li>\n<li>Securing and ensuring the back-end stack is scalable, elastic and can support millions of concurrent users</li>\n<li>Perform unit, integration testing of developed modules and systems as well as participate in weekly bug bash activity</li>\n<li>Perform Peer code reviews to improve code quality</li>\n<li>Follow and enforce SCRUM/Agile practices as well as work with Product Manager, maintaining product and spring backlog</li>\n<li>Propose and participate in the adoption of new technologies and trends</li></ul><p></p><p><b><br>\nEssential Skills:</b></p>\n<ul>\n<li>Must have worked with at least one server-side technology for developing web application such as ASP.NET OR C# OR Java Spring/Spring Boot OR NodeJS OR Python</li>\n<li>Have experience developing and designing API and Middle-ware for the web</li>\n<li>Hands on experience working on Visual Studio 2019, SQL Server Management Studio</li>\n<li>Proficient knowledge and in-depth understanding of underlying frameworks like .NET, Java, etc.</li>\n<li>Have experience and knowledge of designing scalable application</li>\n<li>Skilled in implementing design patterns and logic development</li>\n<li>The ideal candidate demonstrates strong business acumen, translates objectives into impactful solutions, and effectively leverages AI tools for efficiency. Proficiency in Claude (mandatory) and familiarity with tools such as ChatGPT are required. An ownership mindset and the ability to deliver results independently are essential. Successful completion of a Claude-based assessment is required as part of the hiring process.</li></ul><br>\n<p></p>\n<p><b>\nPreferred Skills:</b></p>\n<ul>\n<li>Have created an application using ASP.NET Core, ASP.NET 5, libraries in .NET and Windows services</li>\n<li>Have worked on SignalR OR gRPC OR WebSockets</li>\n<li>Have worked with Azure Devops OR AWS OR Google PaaS Services</li>\n<li>Have done system-level programming such as sockets, multi-threading, or designed distributed applications</li>\n</ul><ul><li>Have worked on video streaming technology or encoders/decoders</li>\n<li>Containers, Elastic Search, Dapper, Kafka, RabbitMQ, Zipkin, Consul, Zookeeper, Redis, WSL/2, gRPC protocols, mDNS</li></ul><br>\n<p></p>\n<p><b>\nRequired Qualification:</b></p>\n<ul>\n<li>BS/BSc or above in Computer Science</li>\n<li>0 - 5+ years experience in backend development</li>\n<li>Can work independently and have a go-getter attitude</li>\n<li>Good English language verbal and writing communication skills</li>\n<li>Authorized to work legally</li></ul><br>\n<p></p>\n<p>\nBenefits: Health Insurance (OPD/IPD), Daily Lunch Facility, Separate Maternity Cover, Leave encashment, Car Support Program, Referral Bonus, EOBI, Bi-Annual Increment. Provident Fund, Career Growth, Bonus (benefits vary based on location)</p><p></p><p><br>\nMultiple Locations: Pakistan, India, UAE, Australia, Canada &amp; USA</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Back End Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "VIDIZMO LLC",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 8,
+        "jobKey": "22e4d0d44c03253c",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=22e4d0d44c03253c",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "DevOps Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/09eddfc100a8ce09dda8c2f70d6a7d8e",
+        "companyName": "Terapage",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "3 months ago",
+        "datePublished": "2025-12-12",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/ed6ee05b3b210a5903ff5c9eba0bc8de",
+        "companyUrl": "https://www.indeed.com/cmp/Terapage",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Location:* Remote (Pakistan)\n*Employment Type:* Full-time, Permanent\n*Salary:* 60,000 PKR to 70,000 PKR per month (depending on experience)\n*Start Date:* 22 December 2025 – 9:00 AM Pakistan Time\n\n*About Us*\n\nAt *Terapage*, we help businesses go beyond numbers and dashboards to understand people — their behaviours, journeys, and experiences — in ways that are innovative, intelligent, and human.\nOur technology platforms combine design, analytics, and automation to uncover the _why_ behind the _what_.\n\nWe’re a growing digital technology startup headquartered in the UK, building scalable products that connect services, automate intelligent systems, and enhance user experiences across multiple industries.\n\n*Role Overview*\n\nWe are seeking a *highly skilled and versatile Hybrid DevOps Engineer* with strong expertise in *coding, CI/CD pipelines, cloud infrastructure, build/deployment management, regression workflows, AWS services, backups, automation, testing, and system reliability.*\n\nYou will work across both development and operations, ensuring smooth delivery, integration, monitoring, and scaling of Terapage’s applications.\nThis role is ideal for someone who writes clean, efficient code *and* manages robust cloud infrastructure with confidence.\n\n*Key ResponsibilitiesDevelopment & Code Work*\n\n✅ Write clean, well-structured, and efficient backend/automation code.\n✅ Perform in-depth *code reviews*, merge requests, and regression checks.\n✅ Build, maintain, and improve CI/CD automation pipelines.\n✅ Collaborate with engineers on version control, branching strategies, and release cycles.\n\n*DevOps, Infrastructure & Deployment*\n\n✅ Configure, manage, monitor, and optimize *AWS services* including EC2, S3, Lambda, RDS, CloudWatch, IAM, ECS/EKS, and networking.\n✅ Automate deployments, scaling, and reliability improvements using DevOps best practices.\n✅ Build and maintain secure, high-availability cloud environments.\n\n*Testing, Monitoring & Maintenance*\n\n✅ Create automated test workflows for deployment validation and system integrity.\n✅ Conduct regression testing and ensure stable releases.\n✅ Implement and manage *disaster recovery, backups, and rollback strategies*.\n✅ Monitor performance, detect issues early, and resolve bottlenecks proactively.\n\n*Collaboration & Documentation*\n\n✅ Work closely with developers, QA, and product teams across sprint cycles.\n✅ Document system architectures, pipelines, scripts, and cloud configurations.\n✅ Provide support during outages, deployments, or infrastructure changes.\n\n*Skills & QualificationsCore Technical Skills*\n\n✅ 1–3 years of experience as a DevOps Engineer, Cloud Engineer, or related hybrid role.\n✅ Strong programming skills (Node.js, Python, Bash scripting, or similar).\n✅ Deep understanding of *Git / GitHub workflows*, merging, branching, and conflict resolution.\n✅ Hands-on experience with CI/CD tools (GitHub Actions, GitLab CI, Jenkins, etc.).\n✅ Advanced knowledge of *AWS configuration, provisioning, monitoring, and lifecycle management*.\n✅ Experience with containerization (Docker) and orchestration technologies (ECS/EKS/Kubernetes).\n✅ Experience with automated testing, regression workflows, and release pipelines.\n\n*Bonus Skills*\n\n* Familiarity with IaC tools (Terraform, CloudFormation, Ansible).\n* Knowledge of networking, firewalls, DNS, load balancers, and security best practices.\n* Experience with log aggregation tools (ELK, Loki, CloudWatch Logs).\n\n*Soft Skills*\n\n✅ Strong problem-solving and analytical mindset.\n✅ Excellent communication and documentation habits.\n✅ Ability to manage time, prioritise, and deliver in agile environments.\n✅ Proactive, ownership-driven, and detail-oriented.\n\n*What We Offer*\n\n* Competitive salary with annual reviews and performance-based growth.\n* *Remote-first flexibility* (with occasional hybrid collaboration when required).\n* Opportunity to work on global cloud-native products.\n* A collaborative, inclusive culture where your contributions are visible.\n* Learning opportunities with modern DevOps and cloud technologies.\n* Clear growth path within a scaling tech startup.\n\n*How to Apply*\n\nSend your *CV* and a *short cover letter* describing your DevOps experience, AWS expertise, related projects, and availability to:\n*careers@terapage.ai*\n\nJoin Terapage and help us build stable, scalable, and intelligent digital platforms that power the next generation of human-centered technology.\nLet’s create something meaningful — together.\n\nJob Type: Full-time\n\nPay: Rs60,000.00 - Rs70,000.00 per month\n\nWork Location: Remote",
+        "descriptionHtml": "<p><b>Location:</b> Remote (Pakistan)<br/><b>Employment Type:</b> Full-time, Permanent<br/><b>Salary:</b> 60,000 PKR to 70,000 PKR per month (depending on experience)<br/><b>Start Date:</b> 22 December 2025 &ndash; 9:00 AM Pakistan Time</p><p><b>About Us</b></p><p>At <b>Terapage</b>, we help businesses go beyond numbers and dashboards to understand people &mdash; their behaviours, journeys, and experiences &mdash; in ways that are innovative, intelligent, and human.<br/>Our technology platforms combine design, analytics, and automation to uncover the <i>why</i> behind the <i>what</i>.</p><p>We&rsquo;re a growing digital technology startup headquartered in the UK, building scalable products that connect services, automate intelligent systems, and enhance user experiences across multiple industries.</p><p><b>Role Overview</b></p><p>We are seeking a <b>highly skilled and versatile Hybrid DevOps Engineer</b> with strong expertise in <b>coding, CI/CD pipelines, cloud infrastructure, build/deployment management, regression workflows, AWS services, backups, automation, testing, and system reliability.</b></p><p>You will work across both development and operations, ensuring smooth delivery, integration, monitoring, and scaling of Terapage&rsquo;s applications.<br/>This role is ideal for someone who writes clean, efficient code <b>and</b> manages robust cloud infrastructure with confidence.</p><p><b>Key ResponsibilitiesDevelopment &amp; Code Work</b></p><p>✅ Write clean, well-structured, and efficient backend/automation code.<br/>✅ Perform in-depth <b>code reviews</b>, merge requests, and regression checks.<br/>✅ Build, maintain, and improve CI/CD automation pipelines.<br/>✅ Collaborate with engineers on version control, branching strategies, and release cycles.</p><p><b>DevOps, Infrastructure &amp; Deployment</b></p><p>✅ Configure, manage, monitor, and optimize <b>AWS services</b> including EC2, S3, Lambda, RDS, CloudWatch, IAM, ECS/EKS, and networking.<br/>✅ Automate deployments, scaling, and reliability improvements using DevOps best practices.<br/>✅ Build and maintain secure, high-availability cloud environments.</p><p><b>Testing, Monitoring &amp; Maintenance</b></p><p>✅ Create automated test workflows for deployment validation and system integrity.<br/>✅ Conduct regression testing and ensure stable releases.<br/>✅ Implement and manage <b>disaster recovery, backups, and rollback strategies</b>.<br/>✅ Monitor performance, detect issues early, and resolve bottlenecks proactively.</p><p><b>Collaboration &amp; Documentation</b></p><p>✅ Work closely with developers, QA, and product teams across sprint cycles.<br/>✅ Document system architectures, pipelines, scripts, and cloud configurations.<br/>✅ Provide support during outages, deployments, or infrastructure changes.</p><p><b>Skills &amp; QualificationsCore Technical Skills</b></p><p>✅ 1&ndash;3 years of experience as a DevOps Engineer, Cloud Engineer, or related hybrid role.<br/>✅ Strong programming skills (Node.js, Python, Bash scripting, or similar).<br/>✅ Deep understanding of <b>Git / GitHub workflows</b>, merging, branching, and conflict resolution.<br/>✅ Hands-on experience with CI/CD tools (GitHub Actions, GitLab CI, Jenkins, etc.).<br/>✅ Advanced knowledge of <b>AWS configuration, provisioning, monitoring, and lifecycle management</b>.<br/>✅ Experience with containerization (Docker) and orchestration technologies (ECS/EKS/Kubernetes).<br/>✅ Experience with automated testing, regression workflows, and release pipelines.</p><p><b>Bonus Skills</b></p><ul><li>Familiarity with IaC tools (Terraform, CloudFormation, Ansible).</li><li>Knowledge of networking, firewalls, DNS, load balancers, and security best practices.</li><li>Experience with log aggregation tools (ELK, Loki, CloudWatch Logs).</li></ul><p><b>Soft Skills</b></p><p>✅ Strong problem-solving and analytical mindset.<br/>✅ Excellent communication and documentation habits.<br/>✅ Ability to manage time, prioritise, and deliver in agile environments.<br/>✅ Proactive, ownership-driven, and detail-oriented.</p><p><b>What We Offer</b></p><ul><li>Competitive salary with annual reviews and performance-based growth.</li><li><b>Remote-first flexibility</b> (with occasional hybrid collaboration when required).</li><li>Opportunity to work on global cloud-native products.</li><li>A collaborative, inclusive culture where your contributions are visible.</li><li>Learning opportunities with modern DevOps and cloud technologies.</li><li>Clear growth path within a scaling tech startup.</li></ul><p><b>How to Apply</b></p><p>Send your <b>CV</b> and a <b>short cover letter</b> describing your DevOps experience, AWS expertise, related projects, and availability to:<br/><b>careers@terapage.ai</b></p><p>Join Terapage and help us build stable, scalable, and intelligent digital platforms that power the next generation of human-centered technology.<br/>Let&rsquo;s create something meaningful &mdash; together.</p><p>Job Type: Full-time</p><p>Pay: Rs60,000.00 - Rs70,000.00 per month</p><p>Work Location: Remote</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Software Development Operations Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 9,
+        "jobKey": "d88a3190ae591b9b",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=d88a3190ae591b9b",
+        "emails": [
+            "careers@terapage.ai"
+        ],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "DevOps Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/55cfcfde4cf3726353f69d695c60d544",
+        "companyName": "One Network",
+        "location": {
+            "city": "Rawalpindi",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Rawalpindi",
+            "formattedAddressShort": "Rawalpindi",
+            "latitude": 33.604397,
+            "longitude": 73.03846,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "2 months ago",
+        "datePublished": "2026-01-30",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/One-Network",
+        "rating": {
+            "rating": 3.6,
+            "count": 7
+        },
+        "descriptionText": "We are seeking a DevOps Engineer to manage the deployment and synchronization of high-availability data systems. You will be responsible for ensuring that our distributed backend services are stable, secure, and perfectly synced across all nodes.\n\n*Key Responsibilities:*\n\n* *Data Synchronization:* Develop and maintain services that ensure database consistency across distributed locations.\n* *Deployment:* Manage containerized environments using *Docker* for Python-based microservices.\n* *Reliability:* Monitor system health and performance post-release to maintain 99.9% uptime for critical applications.\n* *Automation:* Create scripts (Bash/Python) to automate repetitive server tasks and deployments.\n\nBachelor’s degree in *Software, * *Computer Science (BS CS)* or related\n\n*Requirements:*\n\n* Strong command of *Linux (Ubuntu)* and *Git*.\n* Proficiency in managing *PostgreSQL* (Sync/Replication experience is a plus).\n* Experience with *Python (Flask or FastAPI)* deployment workflows.\n* Knowledge of networking protocols and secure data tunneling.\n\n*\n\nJob Type: Full-time\n\nPay: Rs120,000.00 - Rs160,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p>We are seeking a DevOps Engineer to manage the deployment and synchronization of high-availability data systems. You will be responsible for ensuring that our distributed backend services are stable, secure, and perfectly synced across all nodes.</p><p><b>Key Responsibilities:</b></p><ul><li><b>Data Synchronization:</b> Develop and maintain services that ensure database consistency across distributed locations.</li><li><b>Deployment:</b> Manage containerized environments using <b>Docker</b> for Python-based microservices.</li><li><b>Reliability:</b> Monitor system health and performance post-release to maintain 99.9% uptime for critical applications.</li><li><b>Automation:</b> Create scripts (Bash/Python) to automate repetitive server tasks and deployments.</li></ul><p>Bachelor&rsquo;s degree in <b>Software, </b> <b>Computer Science (BS CS)</b> or related</p><p><b>Requirements:</b></p><ul><li>Strong command of <b>Linux (Ubuntu)</b> and <b>Git</b>.</li><li>Proficiency in managing <b>PostgreSQL</b> (Sync/Replication experience is a plus).</li><li>Experience with <b>Python (Flask or FastAPI)</b> deployment workflows.</li><li>Knowledge of networking protocols and secure data tunneling.</li></ul><p>*</p><p>Job Type: Full-time</p><p>Pay: Rs120,000.00 - Rs160,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Software Development Operations Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 11,
+        "jobKey": "e01876fd954b851a",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=e01876fd954b851a",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    }
+]

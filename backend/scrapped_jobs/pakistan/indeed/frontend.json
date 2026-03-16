@@ -1,0 +1,224 @@
+[
+    {
+        "title": "Senior Frontend Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/aa48aa50d2d26fe9ad2f9b53a713d985",
+        "companyName": "Unifonic",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 months ago",
+        "datePublished": "2025-10-14",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Unifonic",
+        "rating": {
+            "rating": 3.5,
+            "count": 4
+        },
+        "descriptionText": "Proudly voted a Great Place to Work®, we are a dynamic startup in the SaaS space that is revolutionizing the way businesses communicate. Our team is made up of 500 energetic and passionate Unifones who are dedicated to delivering the best possible experience to 5000+ customer-centric companies.\n\nWe pride ourselves on our fun and collaborative work environment, where creativity and new ideas are constantly encouraged. As shareholders in the business, we’re so much more than a group of passionate communicators. We are Unifones. Join our team and be a part of something big!\n\nMeet the team!\n\nOur Engineering team is responsible for designing, developing, and maintaining the systems and technologies that drive Unifonic’s solutions. We work closely with other departments to ensure our products and services meet the needs of our customers. If you are passionate about technology and are excited about working on cutting-edge communication and engagement solutions, we want you on our team.\n\nAs a Frontend Engineer, you will be responsible for implementing enhancements, defining the architecture, supporting bug fixes, performing data analysis, and reporting key metrics for the company's platform with a focus on frontend. In this role, you will be working on the next-generation evolution of the product on the frontend (Angular) side to deliver a great user experience.\n\nHelp us shape the future of communication by:\n\nDriving frontend architecture work, ensuring that as we scale our platform can scale with us.\nContributing to building and maintaining the policies, procedures, and technical assets in the company's front-end architecture.\nSupporting various teams with the technical vision in the core areas of interest for the company's products.\nCreating engineering best practices and frameworks for web applications and tooling.\nEnabling teams to deliver a fantastic user experience, in close collaboration with product owners and product marketing.\nWriting clean, well-structured, and maintainable code that can be tested easily.\nUnderstanding and using the company's technical architectures, tools, and techniques to build powerful, efficient, flexible, and scalable solutions.\nWorking closely with service delivery teams to support product deployments to the cloud.\nCollaborating with product owners, scrum masters, and other developers to deliver a quality product using tools such as JIRA and Git.\n\nWhat you'll bring:\n\nHands-on 4+ years of professional software engineering experience working on building SaaS applications in frontend capacity using Angular.\nSolid experience in writing and using unit tests to build maintainable and flexible code, and in writing and maintaining unit, integration, and end-to-end tests.\nHigh level of expertise with TypeScript.\nExperience with microservices and/or micro-frontends (SystemsJS, Webpack Module Federation, etc.)\nStrong experience with A/B testing.\nExtensive experience with UI libraries, design systems, storybooks, and optimizing web performance (time-to-first byte, time-to-first paint, perceived performance).\nBachelor’s degree in Software Engineering or any other related field.\nStrong understanding of RxJS and state management tools such as NgRx (or Redux, MobX, etc.), and practical experience applying reactive programming patterns in complex applications.\nAbility to work in a continuous delivery ecosystem.\nAbility to apply business logic to development requirements in a creative manner.\nA genuine interest in staying up to date with the latest Angular ecosystem updates and best practices.\nFluent in English with excellent written and verbal communication skills.\n\nAs a Unifone you will receive a range of benefits:\n\nCompetitive salary and bonus.\nUnifonic share scheme (we are all owners!).\n30 holiday days after the first anniversary.\nYour Birthday off!\nSpend up to 25 days per year working from anywhere in the world!\nPaid leave for new parents.\nLinkedIn learning license.",
+        "descriptionHtml": "<div><p>Proudly voted a Great Place to Work&reg;, we are a dynamic startup in the SaaS space that is revolutionizing the way businesses communicate. Our team is made up of 500 energetic and passionate Unifones who are dedicated to delivering the best possible experience to 5000+ customer-centric companies.</p><p>\nWe pride ourselves on our fun and collaborative work environment, where creativity and new ideas are constantly encouraged. As shareholders in the business, we&rsquo;re so much more than a group of passionate communicators. We are Unifones. Join our team and be a part of something big!</p><p><b>\nMeet the team!</b></p><p>\nOur Engineering team is responsible for designing, developing, and maintaining the systems and technologies that drive Unifonic&rsquo;s solutions. We work closely with other departments to ensure our products and services meet the needs of our customers. If you are passionate about technology and are excited about working on cutting-edge communication and engagement solutions, we want you on our team.</p><p></p><p>\nAs a Frontend Engineer, you will be responsible for implementing enhancements, defining the architecture, supporting bug fixes, performing data analysis, and reporting key metrics for the company's platform with a focus on frontend. In this role, you will be working on the next-generation evolution of the product on the frontend (Angular) side to deliver a great user experience.</p><p></p><p><b>\nHelp us shape the future of communication by:</b></p><ul><li>\nDriving frontend architecture work, ensuring that as we scale our platform can scale with us.</li><li>\nContributing to building and maintaining the policies, procedures, and technical assets in the company's front-end architecture.</li><li>\nSupporting various teams with the technical vision in the core areas of interest for the company's products.</li><li>\nCreating engineering best practices and frameworks for web applications and tooling.</li><li>\nEnabling teams to deliver a fantastic user experience, in close collaboration with product owners and product marketing.</li><li>\nWriting clean, well-structured, and maintainable code that can be tested easily.</li><li>\nUnderstanding and using the company's technical architectures, tools, and techniques to build powerful, efficient, flexible, and scalable solutions.</li><li>\nWorking closely with service delivery teams to support product deployments to the cloud.</li><li>\nCollaborating with product owners, scrum masters, and other developers to deliver a quality product using tools such as JIRA and Git.</li></ul><p></p><p><b><br>\nWhat you'll bring:</b></p><ul><li>\nHands-on 4+ years of professional software engineering experience working on building SaaS applications in frontend capacity using Angular.</li><li>\nSolid experience in writing and using unit tests to build maintainable and flexible code, and in writing and maintaining unit, integration, and end-to-end tests.</li><li>\nHigh level of expertise with TypeScript.</li><li>\nExperience with microservices and/or micro-frontends (SystemsJS, Webpack Module Federation, etc.)</li><li>\nStrong experience with A/B testing.</li><li>\nExtensive experience with UI libraries, design systems, storybooks, and optimizing web performance (time-to-first byte, time-to-first paint, perceived performance).</li><li>\nBachelor&rsquo;s degree in Software Engineering or any other related field.</li><li>\nStrong understanding of RxJS and state management tools such as NgRx (or Redux, MobX, etc.), and practical experience applying reactive programming patterns in complex applications.</li><li>\nAbility to work in a continuous delivery ecosystem.</li><li>\nAbility to apply business logic to development requirements in a creative manner.</li><li>\nA genuine interest in staying up to date with the latest Angular ecosystem updates and best practices.</li><li>\nFluent in English with excellent written and verbal communication skills.</li></ul><p></p><p><b><br>\nAs a Unifone you will receive a range of benefits:</b></p><ul><li>\nCompetitive salary and bonus.</li><li>\nUnifonic share scheme (we are all owners!).</li><li>\n30 holiday days after the first anniversary.</li><li>\nYour Birthday off!</li><li>\nSpend up to 25 days per year working from anywhere in the world!</li><li>\nPaid leave for new parents.</li><li>\nLinkedIn learning license.</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Front End Developers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Unifonic",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 0,
+        "jobKey": "9ebb3343009694b1",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=9ebb3343009694b1",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Senior Frontend Engineer",
+        "companyName": "VIDIZMO LLC",
+        "location": {
+            "city": "Karachi",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Karachi",
+            "formattedAddressShort": "Karachi",
+            "latitude": 24.892857,
+            "longitude": 67.02747,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 months ago",
+        "datePublished": "2025-10-08",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Vidizmo-LLC",
+        "rating": {
+            "rating": 3.5,
+            "count": 2
+        },
+        "descriptionText": "We're seeking passionate, driven, and self-motivated individuals to join our team. If you're eager to grow in a dynamic environment and be part of a company that’s at the forefront of AI innovation, this is your chance to hit the ground running.\n\nVIDIZMO is a USA-based technology company headquartered in Tysons, Virginia, and a Microsoft Solutions Partner in Data & AI, Infrastructure, and Digital & App Innovation. Offering a AI-Powered Intelligence Hub, we empower Fortune 500 companies, large enterprises, governments, and the public sector to securely manage, analyze, and govern their data with complete control and compliance.\n\nOur Multimodal AI Data Intelligence Platform leverages Large Language Models (LLMs) and RAG (Retrieval-Augmented Generation) to deliver powerful capabilities such as auto-tagging, redaction, content summarization, OCR, translation, subtitle creation, object detection and tracking, content search, sentiment and emotion analysis, topic extraction, document classification, and facial attribute detection.\n\nAI Output Verification & Accountability (Required Competency)\n\nThe candidate must be capable of effectively using AI tools (e.g., Claude, ChatGPT, Copilot, or similar) to support work outputs such as content, analysis, documentation, or code. However, the candidate must also demonstrate strong judgment and ownership of the final deliverables. AI-generated output must never be treated as final without review. The candidate is expected to validate accuracy, completeness, logic, compliance, and alignment with business requirements, and refine AI-assisted work to meet the expected quality standards. The individual will be held accountable for the final output, regardless of whether AI tools were used during execution.\n\nResponsibilities:\n\nDevelop and architect complex web applications using cutting-edge front-end technologies and frameworks.\nResponsibility for reviewing and validating AI-generated outputs\nOwnership of final deliverables, regardless of AI assistance\nAbility to critically evaluate AI results and ensure they meet defined requirements\nAccountability for accuracy, quality, and compliance\n\nUtilize strong knowledge of JavaScript, to build efficient, reusable, and scalable code.\nApply Object-Oriented Programming (OOP) principles to create robust and maintainable code structures.\nImplement and optimize algorithms and data structures to solve complex problems and improve application performance.\nDesign and implement software design patterns to enhance code quality and maintainability.\nAnalyze and optimize browser performance and understand intricacies of browser rendering, caching, and DOM manipulation.\nCollaborate closely with design and back-end teams to translate UI/UX designs into functional and responsive interfaces.\nConduct code reviews, provide constructive feedback, and mentor junior team members.\nStay updated with the latest front-end technologies, tools, and best practices.\n\nRequired Skills:\n\nExtensive experience in JavaScript, with a deep understanding of its core concepts and best practices.\nStrong proficiency in Object-Oriented Programming (OOP) and its application in front-end development.\nStrong knowledge of Angular 2+.\nProficiency in algorithms, data structures, and problem-solving skills.\nSolid understanding of design patterns and their practical implementation in JavaScript applications.\nThorough knowledge of browser concepts, performance optimization, and debugging techniques.\nExperience with modern front-end frameworks/libraries such as React, or Vue.js.\nAbility to analyze complex technical problems and propose innovative solutions.\nExcellent communication skills and ability to collaborate effectively within a team.\nBachelor’s degree in computer science, Engineering, or a related field (or equivalent work experience).\nThe ideal candidate demonstrates strong business acumen, translates objectives into impactful solutions, and effectively leverages AI tools for efficiency. Proficiency in Claude (mandatory) and familiarity with tools such as ChatGPT are required. An ownership mindset and the ability to deliver results independently are essential. Successful completion of a Claude-based assessment is required as part of the hiring process.\n\nQualifications:\n\nBS in Computer Science, Software Engineering or IT related field\n3-4 years of experience in front end development\n\nEssential Skills:\n\nThe ideal candidate demonstrates strong business acumen, can translate objectives into impactful solutions, and is proficient in leveraging AI tools—including mandatory use of platforms like ChatGPT—to enhance efficiency. An ownership mindset and the ability to drive outcomes with minimal task-level direction are essential.\n\nBenefits: Health Insurance (OPD/IPD), Separate Maternity Cover, Leave encashment, Car Support Program, Referral Bonus, EOBI, Bi-Annual Increment. Provident Fund, Career Growth, Bonus\n\nMultiple Locations: Pakistan, India, UAE, Australia, Canada & USA (benefits vary based on location)",
+        "descriptionHtml": "<div><p>We're seeking passionate, driven, and self-motivated individuals to join our team. If you're eager to grow in a dynamic environment and be part of a company that&rsquo;s at the forefront of AI innovation, this is your chance to hit the ground running.</p><br>\n<p></p>\n<p>\nVIDIZMO is a USA-based technology company headquartered in Tysons, Virginia, and a <b>Microsoft Solutions Partner</b> in <b>Data &amp; AI</b>, <b>Infrastructure</b>, and <b>Digital &amp; App Innovation</b>. Offering a <b>AI-Powered Intelligence Hub</b>, we empower <b>Fortune 500 companies</b>, <b>large enterprises</b>, governments, and the <b>public sector</b> to securely manage, analyze, and govern their data with complete control and compliance.</p><br>\n<p></p>\n<p>\nOur <b>Multimodal AI Data Intelligence Platform</b> leverages <b>Large Language Models (LLMs)</b> and <b>RAG (Retrieval-Augmented Generation)</b> to deliver powerful capabilities such as <b>auto-tagging</b>, <b>redaction</b>, <b>content summarization</b>, <b>OCR</b>, <b>translation</b>, <b>subtitle creation</b>, <b>object detection and tracking</b>, <b>content search</b>, <b>sentiment and emotion analysis</b>, <b>topic extraction</b>, <b>document classification</b>, and <b>facial attribute detection.</b></p><p></p><p><b><br>\nAI Output Verification &amp; Accountability (Required Competency)</b></p><p></p><p><br>\nThe candidate must be capable of effectively using AI tools (e.g., Claude, ChatGPT, Copilot, or similar) to support work outputs such as content, analysis, documentation, or code. However, the candidate must also demonstrate strong judgment and ownership of the final deliverables. AI-generated output must never be treated as final without review. The candidate is expected to validate accuracy, completeness, logic, compliance, and alignment with business requirements, and refine AI-assisted work to meet the expected quality standards. The individual will be held accountable for the final output, regardless of whether AI tools were used during execution.</p><p></p><p><b><br>\nResponsibilities:</b></p>\n<ul>\n<li>Develop and architect complex web applications using cutting-edge front-end technologies and frameworks.</li>\n<li>Responsibility for reviewing and validating AI-generated outputs</li>\n<li>Ownership of final deliverables, regardless of AI assistance</li>\n<li>Ability to critically evaluate AI results and ensure they meet defined requirements</li>\n<li>Accountability for accuracy, quality, and compliance<br>\n</li>\n<li>Utilize strong knowledge of JavaScript, to build efficient, reusable, and scalable code.</li>\n<li>Apply Object-Oriented Programming (OOP) principles to create robust and maintainable code structures.</li>\n<li>Implement and optimize algorithms and data structures to solve complex problems and improve application performance.</li>\n<li>Design and implement software design patterns to enhance code quality and maintainability.</li>\n<li>Analyze and optimize browser performance and understand intricacies of browser rendering, caching, and DOM manipulation.</li>\n<li>Collaborate closely with design and back-end teams to translate UI/UX designs into functional and responsive interfaces.</li>\n<li>Conduct code reviews, provide constructive feedback, and mentor junior team members.</li>\n<li>Stay updated with the latest front-end technologies, tools, and best practices.</li></ul><br>\n<p></p>\n<p><b>\nRequired Skills:</b></p>\n<ul>\n<li>Extensive experience in JavaScript, with a deep understanding of its core concepts and best practices.</li>\n<li>Strong proficiency in Object-Oriented Programming (OOP) and its application in front-end development.</li>\n<li>Strong knowledge of Angular 2+.</li>\n<li>Proficiency in algorithms, data structures, and problem-solving skills.</li>\n<li>Solid understanding of design patterns and their practical implementation in JavaScript applications.</li>\n<li>Thorough knowledge of browser concepts, performance optimization, and debugging techniques.</li>\n<li>Experience with modern front-end frameworks/libraries such as React, or Vue.js.</li>\n<li>Ability to analyze complex technical problems and propose innovative solutions.</li>\n<li>Excellent communication skills and ability to collaborate effectively within a team.</li>\n<li>Bachelor&rsquo;s degree in computer science, Engineering, or a related field (or equivalent work experience).</li>\n<li>The ideal candidate demonstrates strong business acumen, translates objectives into impactful solutions, and effectively leverages AI tools for efficiency. Proficiency in Claude (mandatory) and familiarity with tools such as ChatGPT are required. An ownership mindset and the ability to deliver results independently are essential. Successful completion of a Claude-based assessment is required as part of the hiring process.</li></ul><p></p><p><br>\n<b>\nQualifications:</b></p><br>\n<p></p><ul>\n<li>\nBS in Computer Science, Software Engineering or IT related field</li>\n<li>3-4 years of experience in front end development</li></ul><br>\n<p></p>\n<p><b>\nEssential Skills:</b></p>\n<p>\nThe ideal candidate demonstrates strong business acumen, can translate objectives into impactful solutions, and is proficient in leveraging AI tools&mdash;including mandatory use of platforms like ChatGPT&mdash;to enhance efficiency. An ownership mindset and the ability to drive outcomes with minimal task-level direction are essential.</p><p></p><p><b><br>\nBenefits:</b> Health Insurance (OPD/IPD), Separate Maternity Cover, Leave encashment, Car Support Program, Referral Bonus, EOBI, Bi-Annual Increment. Provident Fund, Career Growth, Bonus</p><p></p><p><b><br>\nMultiple Locations:</b> Pakistan, India, UAE, Australia, Canada &amp; USA (benefits vary based on location)</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Front End Developers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "VIDIZMO LLC",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 1,
+        "jobKey": "c31693539febac73",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=c31693539febac73",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer - Frontend (Angular)",
+        "companyName": "Ascertia",
+        "location": {
+            "city": "Lahore",
+            "postalCode": "54000",
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.515,
+            "longitude": 74.336,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-16",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Ascertia",
+        "rating": {
+            "rating": 5,
+            "count": 1
+        },
+        "descriptionText": "Ascertia delivers digital trust products and services globally for Enterprises, Governments and Trust Service Providers. Ascertia solutions enable digital business processes which are fundamentally underpinned by digital trust to ensure that digital identities are proven, and business transactions and signatures are trustworthy.\n\n Ascertia's digital signature platform and PKI products deliver digital trust across people, devices, data, and documents. At the heart of Ascertia’s digital trust ecosystem is a wide-reaching customer base, 100+ expert partners and integrators which have been delivering Ascertia products, cloud services and apps since 2001.\n\nAscertia has experienced solid revenue growth and is hiring new team members to drive further growth, success and take on the larger big-name organizations across the PKI and Digital Signature industries. Ascertia has over 190 full-time employees and is looking for a Frontend Developer – Angular. This opportunity provides a solid platform for the successful candidate to stretch themselves and work with a talented team to achieve global success.\n\nJob Description:\n\nWe are looking for an experienced Front-end Developer with at least 3 years of experience to join our team. The ideal candidate should have a strong understanding of HTML5, Angular, JavaScript, jQuery, CSS 3, SCSS, Less, Typescript, tailwind, Material Design, and other UI frameworks like W3 UI CSS, as well as experience with Frontend frameworks such as Angular. You will be responsible for developing user-friendly interfaces for web applications that meet the requirements of our clients.\n\nKey Responsibilities:\n\nDevelop high-quality, responsive user interfaces using HTML5, Angular, JavaScript, jQuery, CSS3, SCSS, Less, Typescript, tailwind, Material Design, and other UI frameworks like W3 UI CSS.\nCollaborate with the design team to implement UI designs that meet the client's requirements.\nDevelop and maintain reusable code libraries.\nEnsure the technical feasibility of UI/UX designs.\nOptimize application for maximum speed and scalability.\nCollaborate with back-end developers to integrate UI with the back-end services.\nContinuously research and evaluate new technologies to improve the UI development process.\nWrite clean, well-documented code, and ensure code quality through testing and code reviews.\nCollaborate with cross-functional teams to develop new features and functionality.\nWork with project managers to ensure timely delivery of projects.\n\nSkills Requirement:\n\nProven experience in Front-end development with a strong understanding of HTML5, Angular, JavaScript, jQuery, CSS 3, SCSS, Less, Typescript, tailwind, Material Design, and other UI frameworks like W3 UI CSS.\nExperience with Frontend frameworks such as Angular.\nFamiliarity with VS Code and other development tools.\nStrong analytical and problem-solving skills.\nExcellent communication and collaboration skills.\nAbility to work independently and as part of a team.\nAbility to manage time effectively and work on multiple projects simultaneously.\nUnderstanding of Agile software development methodologies.\nBachelor’s degree in computer science or a related field.\n\nWe offer:\n\nAn interesting and challenging job, dynamic opportunity for professional growth.\nA good remuneration package including Provident fund, Medical insurance and Allowance\nBi Annual Bonuses\nBi Annual Increments\nPaid time Off, Maternity and Paternity leaves\nComplementary Meals\nCompany sponsored yearly excursion trip, cricket, gaming, and dart clubs.\nTEfyfaVKJr",
+        "descriptionHtml": "<div><p>Ascertia delivers digital trust products and services globally for Enterprises, Governments and Trust Service Providers. Ascertia solutions enable digital business processes which are fundamentally underpinned by digital trust to ensure that digital identities are proven, and business transactions and signatures are trustworthy.</p><p>\n Ascertia's digital signature platform and PKI products deliver digital trust across people, devices, data, and documents. At the heart of Ascertia&rsquo;s digital trust ecosystem is a wide-reaching customer base, 100+ expert partners and integrators which have been delivering Ascertia products, cloud services and apps since 2001.</p><p><br>\nAscertia has experienced solid revenue growth and is hiring new team members to drive further growth, success and take on the larger big-name organizations across the PKI and Digital Signature industries. Ascertia has over 190 full-time employees and is looking for a Frontend Developer &ndash; Angular. This opportunity provides a solid platform for the successful candidate to stretch themselves and work with a talented team to achieve global success.</p><p><b>\nJob Description:</b></p><p>\nWe are looking for an experienced Front-end Developer with at least 3 years of experience to join our team. The ideal candidate should have a strong understanding of HTML5, Angular, JavaScript, jQuery, CSS 3, SCSS, Less, Typescript, tailwind, Material Design, and other UI frameworks like W3 UI CSS, as well as experience with Frontend frameworks such as Angular. You will be responsible for developing user-friendly interfaces for web applications that meet the requirements of our clients.</p><p><b>\nKey Responsibilities:</b></p><ul><li>\nDevelop high-quality, responsive user interfaces using HTML5, Angular, JavaScript, jQuery, CSS3, SCSS, Less, Typescript, tailwind, Material Design, and other UI frameworks like W3 UI CSS.</li><li>\nCollaborate with the design team to implement UI designs that meet the client's requirements.</li><li>\nDevelop and maintain reusable code libraries.</li><li>\nEnsure the technical feasibility of UI/UX designs.</li><li>\nOptimize application for maximum speed and scalability.</li><li>\nCollaborate with back-end developers to integrate UI with the back-end services.</li><li>\nContinuously research and evaluate new technologies to improve the UI development process.</li><li>\nWrite clean, well-documented code, and ensure code quality through testing and code reviews.</li><li>\nCollaborate with cross-functional teams to develop new features and functionality.</li><li>\nWork with project managers to ensure timely delivery of projects.</li></ul><p><b>\nSkills Requirement:</b></p><ul><li>\nProven experience in Front-end development with a strong understanding of HTML5, Angular, JavaScript, jQuery, CSS 3, SCSS, Less, Typescript, tailwind, Material Design, and other UI frameworks like W3 UI CSS.</li><li>\nExperience with Frontend frameworks such as Angular.</li><li>\nFamiliarity with VS Code and other development tools.</li><li>\nStrong analytical and problem-solving skills.</li><li>\nExcellent communication and collaboration skills.</li><li>\nAbility to work independently and as part of a team.</li><li>\nAbility to manage time effectively and work on multiple projects simultaneously.</li><li>\nUnderstanding of Agile software development methodologies.</li><li>\nBachelor&rsquo;s degree in computer science or a related field.</li></ul><p><b>\nWe offer:</b></p><ul><li>\nAn interesting and challenging job, dynamic opportunity for professional growth.</li><li>\nA good remuneration package including Provident fund, Medical insurance and Allowance</li><li>\nBi Annual Bonuses</li><li>\nBi Annual Increments</li><li>\nPaid time Off, Maternity and Paternity leaves\n</li><li>Complementary Meals</li><li>\nCompany sponsored yearly excursion trip, cricket, gaming, and dart clubs.</li></ul><p>\n</p><p>TEfyfaVKJr</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Front End Developers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Ascertia",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 2,
+        "jobKey": "1db2eb84586a8cd7",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=1db2eb84586a8cd7",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "MERN Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/8c04621d7c32cfc14de4eef1f004e603",
+        "companyName": "Code District",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "9 months ago",
+        "datePublished": "2025-06-19",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/405e54e84298fe34b935b4f6650415e7",
+        "companyUrl": "https://www.indeed.com/cmp/Code-District",
+        "rating": {
+            "rating": 1,
+            "count": 1
+        },
+        "descriptionText": "Code District is looking for passionate Software Engineers with 1-3 years of experience to join our growing engineering team. You will work on modern web applications using React/Next.js, Node.js/NestJS, SQL and NoSQL databases, and core AWS cloud services, contributing to scalable, secure, and well-structured systems.\n\nWere an AI-first engineering organization: we want developers who are comfortable using tools like Copilot, Cursor, and LLMs to work smarter, but who also have strong fundamentals and can think independently\n\nKey Responsibilities\n\nDevelop, enhance, and maintain web applications using React/Next.js on the frontend and Node.js/NestJS on the backend.\nDesign, build, and consume RESTful APIs and integrate with internal and external services.\nWork with SQL databases (e.g., PostgreSQL/MySQL) and NoSQL (e.g., MongoDB) for data modeling and query optimization.\nUse core AWS services (e.g., EC2, S3, RDS, Lambda, API Gateway) for application hosting, storage, and integrations\nWrite clean, maintainable, and testable code following best coding practices and team standards.\nUse Git effectively: branching, pull requests, code reviews, and CI-friendly workflows.\nCollaborate with product managers, designers, QA, and other engineers in an Agile environment.\nParticipate in code reviews, estimations, and technical discussions.\nProactively improve performance, scalability, and reliability of existing systems.\nUse AI-powered tools (Copilot, Cursor, ChatGPT, etc.) to speed up development while maintaining high code quality.\n\nRequirements\n\n1-3 years of professional experience in web application development.\nStrong proficiency in JavaScript (ES6+); familiarity with TypeScript is a plus.\nHands-on experience with React (Next.js preferred) and Node.js (NestJS is a plus).\nStrong foundation in SQL databases; experience with MongoDB/NoSQL is preferred.\nExperience building and consuming REST APIs.\nGood understanding of version control (Git) and modern development workflows.\nWorking knowledge of cloud platforms, especially core AWS services (EC2, S3, RDS, Lambda, API Gateway, etc.).\nExperience working in Agile/Scrum teams.\nDisciplined, reliable, and highly committed to delivering on responsibilities and timelines.\nDemonstrated ability and willingness to learn new technologies and tools.\nPreferably experienced with AI-assisted development tools (Copilot, Cursor, etc.) and exposure to public LLMs (OpenAI, etc.)\nStrong communication skills and ability to work effectively in cross-functional teams.",
+        "descriptionHtml": "<div><p>Code District is looking for passionate <b>Software Engineers</b> with 1-3 years of experience to join our growing engineering team. You will work on modern web applications using <b>React/Next.js, Node.js/NestJS, SQL and NoSQL databases</b>, and <b>core AWS cloud services</b>, contributing to scalable, secure, and well-structured systems.</p><p>\nWere an <b>AI-first</b> engineering organization: we want developers who are comfortable using tools like <b>Copilot, Cursor, and LLMs</b> to work smarter, but who also have strong fundamentals and can think independently</p><p><b>\nKey Responsibilities</b></p><ul><li>\nDevelop, enhance, and maintain web applications using React/Next.js on the frontend and Node.js/NestJS on the backend.</li><li>\nDesign, build, and consume RESTful APIs and integrate with internal and external services.</li><li>\nWork with SQL databases (e.g., PostgreSQL/MySQL) and NoSQL (e.g., MongoDB) for data modeling and query optimization.</li><li>\nUse core AWS services (e.g., EC2, S3, RDS, Lambda, API Gateway) for application hosting, storage, and integrations<br>\nWrite clean, maintainable, and testable code following best coding practices and team standards.</li><li>\nUse Git effectively: branching, pull requests, code reviews, and CI-friendly workflows.</li><li>\nCollaborate with product managers, designers, QA, and other engineers in an Agile environment.</li><li>\nParticipate in code reviews, estimations, and technical discussions.</li><li>\nProactively improve performance, scalability, and reliability of existing systems.</li><li>\nUse AI-powered tools (Copilot, Cursor, ChatGPT, etc.) to speed up development while maintaining high code quality.</li></ul><p><b>\nRequirements</b></p><ul><li>\n1-3 years of professional experience in web application development.</li><li>\nStrong proficiency in JavaScript (ES6+); familiarity with TypeScript is a plus.</li><li>\nHands-on experience with React (Next.js preferred) and Node.js (NestJS is a plus).</li><li>\nStrong foundation in SQL databases; experience with MongoDB/NoSQL is preferred.</li><li>\nExperience building and consuming REST APIs.</li><li>\nGood understanding of version control (Git) and modern development workflows.</li><li>\nWorking knowledge of cloud platforms, especially core AWS services (EC2, S3, RDS, Lambda, API Gateway, etc.).</li><li>\nExperience working in Agile/Scrum teams.</li><li>\nDisciplined, reliable, and highly committed to delivering on responsibilities and timelines.</li><li>\nDemonstrated ability and willingness to learn new technologies and tools.</li><li>\nPreferably experienced with AI-assisted development tools (Copilot, Cursor, etc.) and exposure to public LLMs (OpenAI, etc.)</li><li>\nStrong communication skills and ability to work effectively in cross-functional teams.</li></ul></div>",
+        "benefits": [],
+        "occupation": [],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Code District",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 3,
+        "jobKey": "7a9a6d49576db017",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=7a9a6d49576db017",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    }
+]

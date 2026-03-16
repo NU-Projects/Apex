@@ -1,0 +1,168 @@
+[
+    {
+        "title": "Mobile Engineer – Android",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/54583e1d8c44b624d622ed6362249506",
+        "companyName": "SiliconFort LLC.",
+        "location": {
+            "city": "Lahore Bahria Town",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore Bahria Town",
+            "formattedAddressShort": "Lahore Bahria Town",
+            "latitude": 30.3981,
+            "longitude": 72.3934,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "17 days ago",
+        "datePublished": "2026-02-26",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/0016737728ee195303be192abf3b97f8",
+        "companyUrl": "https://www.indeed.com/cmp/Siliconfort-Llc.",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "We are seeking a passionate Mobile Engineer - Android to join our team, specializing in modern Android development using Kotlin and Jetpack Compose. As a vital part of our IT team, you will contribute to the development and maintenance of our Android applications built with cutting-edge Android technologies. This role offers opportunities to work on both frontend mobile development and backend services that enhance the in-app experience. In a dynamic business environment, you will collaborate with diverse teams including other engineering units and department stakeholders.\n\n*Responsibilities:*\n\n* Translate designs and wireframes into high-quality, maintainable Kotlin code using Jetpack Compose.\n* Build and maintain declarative UI components using Material Design 3 principles.\n* Ensure optimal performance, quality, and responsiveness of applications.\n* Identify and resolve bottlenecks and bugs in production code.\n* Help maintain code quality, organization, and automation.\n* Make proficient use of Android Studio and Gradle (Kotlin DSL).\n* Implement clean architecture patterns, separating data, domain, and presentation layers.\n* Work with dependency injection using Hilt.\n* Integrate RESTful APIs using Retrofit and OkHttp with proper error handling and interceptors.\n* Implement local data persistence using Room database and DataStore for preferences.\n* Handle asynchronous operations using Kotlin Coroutines and Flow.\n* Work both independently and collaboratively in a team environment.\n* Communicate technical issues effectively to non-technical audiences.\n* Work with agile development methodology.\n* Write and maintain unit tests and UI tests for Compose screens\n\n*Requirements:*\n\n* Bachelor's degree in Computer Science, Information Systems, or equivalent education or work experience.\n* 3+ years of Android development experience with a focus on modern Android development.\n* \\*\\*Proficient in Kotlin\\*\\* (strong preference; Java experience acceptable if willing to transition to Kotlin).\n* Strong experience with \\*\\*Jetpack Compose\\*\\* for building declarative UIs.\n* Experience with \\*\\*Android SDK\\*\\*, handling different Android versions (minSdk 24+) and various screen sizes.\n* Strong understanding of object-oriented design and functional programming concepts.\n* \\*\\*Familiarity with dependency injection\\*\\* using \\*\\*Hilt\\*\\* (or Dagger).\n* \\*\\*Experience with Retrofit and OkHttp\\*\\* for RESTful API integration, including interceptors and error handling.\n* Proficiency in \\*\\*Material Design 3\\*\\* principles and Compose UI best practices.\n* Experience with \\*\\*local data persistence\\*\\*: Room database and DataStore (Preferences).\n* \\*\\*Strong knowledge of Kotlin Coroutines and Flow\\*\\* for asynchronous programming and reactive streams.\n* Experience with \\*\\*Jetpack Navigation Compose\\*\\* for app navigation.\n* Understanding of clean architecture principles and MVVM/MVI architecture patterns.\n* Knowledge of \\*\\*image loading libraries\\*\\* (Coil, Glide) and handling different image formats including SVG.\n* \\*\\*Proficient understanding of Git\\*\\* and familiarity with continuous integration/continuous deployment (CI/CD) pipelines.\n* Experience with \\*\\*Gradle Kotlin DSL\\*\\* for build configuration and dependency management.\n* Understanding of Android lifecycle-aware components and ViewModel.\n* Interest in UX design and staying up-to-date with mobile app trends & best practices.\n* Experience with writing unit tests and UI tests for Compose applications.\n* Excellent time management skills, attention to detail, and strong verbal/written communication skills.\n\n*Technologies Used in Our Codebase*\n\n* Kotlin\n* Jetpack Compose\n* Hilt (Dependency Injection)\n* Retrofit + OkHttp\n* Room Database\n* DataStore (Preferences)\n* Kotlin Coroutines + Flow\n* Navigation Compose\n* Material Design 3\n* Coil (Image Loading)\n* Gson\n* Gradle Kotlin DSL\n\nJob Type: Full-time\n\nPay: Rs180,000.00 - Rs250,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p>We are seeking a passionate Mobile Engineer - Android to join our team, specializing in modern Android development using Kotlin and Jetpack Compose. As a vital part of our IT team, you will contribute to the development and maintenance of our Android applications built with cutting-edge Android technologies. This role offers opportunities to work on both frontend mobile development and backend services that enhance the in-app experience. In a dynamic business environment, you will collaborate with diverse teams including other engineering units and department stakeholders.</p><p><b>Responsibilities:</b></p><ul><li>Translate designs and wireframes into high-quality, maintainable Kotlin code using Jetpack Compose.</li><li>Build and maintain declarative UI components using Material Design 3 principles.</li><li>Ensure optimal performance, quality, and responsiveness of applications.</li><li>Identify and resolve bottlenecks and bugs in production code.</li><li>Help maintain code quality, organization, and automation.</li><li>Make proficient use of Android Studio and Gradle (Kotlin DSL).</li><li>Implement clean architecture patterns, separating data, domain, and presentation layers.</li><li>Work with dependency injection using Hilt.</li><li>Integrate RESTful APIs using Retrofit and OkHttp with proper error handling and interceptors.</li><li>Implement local data persistence using Room database and DataStore for preferences.</li><li>Handle asynchronous operations using Kotlin Coroutines and Flow.</li><li>Work both independently and collaboratively in a team environment.</li><li>Communicate technical issues effectively to non-technical audiences.</li><li>Work with agile development methodology.</li><li>Write and maintain unit tests and UI tests for Compose screens</li></ul><p><b>Requirements:</b></p><ul><li>Bachelor's degree in Computer Science, Information Systems, or equivalent education or work experience.</li><li>3+ years of Android development experience with a focus on modern Android development.</li><li>**Proficient in Kotlin** (strong preference; Java experience acceptable if willing to transition to Kotlin).</li><li>Strong experience with **Jetpack Compose** for building declarative UIs.</li><li>Experience with **Android SDK**, handling different Android versions (minSdk 24+) and various screen sizes.</li><li>Strong understanding of object-oriented design and functional programming concepts.</li><li>**Familiarity with dependency injection** using **Hilt** (or Dagger).</li><li>**Experience with Retrofit and OkHttp** for RESTful API integration, including interceptors and error handling.</li><li>Proficiency in **Material Design 3** principles and Compose UI best practices.</li><li>Experience with **local data persistence**: Room database and DataStore (Preferences).</li><li>**Strong knowledge of Kotlin Coroutines and Flow** for asynchronous programming and reactive streams.</li><li>Experience with **Jetpack Navigation Compose** for app navigation.</li><li>Understanding of clean architecture principles and MVVM/MVI architecture patterns.</li><li>Knowledge of **image loading libraries** (Coil, Glide) and handling different image formats including SVG.</li><li>**Proficient understanding of Git** and familiarity with continuous integration/continuous deployment (CI/CD) pipelines.</li><li>Experience with **Gradle Kotlin DSL** for build configuration and dependency management.</li><li>Understanding of Android lifecycle-aware components and ViewModel.</li><li>Interest in UX design and staying up-to-date with mobile app trends &amp; best practices.</li><li>Experience with writing unit tests and UI tests for Compose applications.</li><li>Excellent time management skills, attention to detail, and strong verbal/written communication skills.</li></ul><p><b>Technologies Used in Our Codebase</b></p><ul><li>Kotlin</li><li>Jetpack Compose</li><li>Hilt (Dependency Injection)</li><li>Retrofit + OkHttp</li><li>Room Database</li><li>DataStore (Preferences)</li><li>Kotlin Coroutines + Flow</li><li>Navigation Compose</li><li>Material Design 3</li><li>Coil (Image Loading)</li><li>Gson</li><li>Gradle Kotlin DSL</li></ul><p>Job Type: Full-time</p><p>Pay: Rs180,000.00 - Rs250,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Android Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Mobile Developers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 0,
+        "jobKey": "6ccab3e7b72b95ac",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=6ccab3e7b72b95ac",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Maintenance Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/6cd8c26826a0bf59c5266a2c51216b1f",
+        "companyName": "Vivo mobile Company",
+        "location": {
+            "city": "Gujranwala",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Gujranwala",
+            "formattedAddressShort": "Gujranwala",
+            "latitude": 32.14835,
+            "longitude": 74.18132,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "2 months ago",
+        "datePublished": "2026-01-09",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Vivo-Mobile-Company",
+        "rating": {
+            "rating": 4.2,
+            "count": 17
+        },
+        "descriptionText": "Job Description\n\n* To receive and deal with mobile phones sent by customers or distributors for repair and keep in good touch with them.\n* To study specialized materials and guidance documents regarding mobile phone.\n* To satisfy the demand of customers for products and services.\n* To assist the manager/director/executive to complete various tasks and improve the performance.\n* To give feedback on issues in time and track the results.\n* To answer the professional and technical questions raised by customers.\n* To take the vacant place when the service consultant is busy or absent.\n* To complete other tasks assigned by the Director.\n\n*What do we offer?*\n\nFor the right candidate, we are offering the opportunity to build a career with a multi-national organization along with an attractive salary and benefits package.\n\nSkills: Coordination Skills , Equipment Maintenance Electrical Repairing\n\n*Degree Required : Electrical*/ Electronic Engineering\n\nJob Type: Full-time\n\nPay: From Rs50,000.00 per month\n\n\n\nEducation:\n* Bachelor's (Preferred)\n\nLocation:\n* Gujranwala (Required)\n\nWork Location: In person",
+        "descriptionHtml": "<p>Job Description</p><ul><li>To receive and deal with mobile phones sent by customers or distributors for repair and keep in good touch with them.</li><li>To study specialized materials and guidance documents regarding mobile phone.</li><li>To satisfy the demand of customers for products and services.</li><li>To assist the manager/director/executive to complete various tasks and improve the performance.</li><li>To give feedback on issues in time and track the results.</li><li>To answer the professional and technical questions raised by customers.</li><li>To take the vacant place when the service consultant is busy or absent.</li><li>To complete other tasks assigned by the Director.</li></ul><p><b>What do we offer?</b></p><p>For the right candidate, we are offering the opportunity to build a career with a multi-national organization along with an attractive salary and benefits package.</p><p>Skills: Coordination Skills , Equipment Maintenance Electrical Repairing</p><p><b>Degree Required : Electrical</b>/ Electronic Engineering</p><p>Job Type: Full-time</p><p>Pay: From Rs50,000.00 per month</p><p>Education:</p><ul><li>Bachelor's (Preferred)</li></ul><p>Location:</p><ul><li>Gujranwala (Required)</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Facilities Maintenance Occupations",
+            "Repair, Maintenance & Installation Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 1,
+        "jobKey": "72c0ae6dbe0f4f17",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=72c0ae6dbe0f4f17",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Senior Mobile Engineer",
+        "companyName": "Moniepoint",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "18 days ago",
+        "datePublished": "2026-02-26",
+        "jobType": [],
+        "companyUrl": "https://www.indeed.com/cmp/Moniepoint",
+        "rating": {
+            "rating": 3.9,
+            "count": 12
+        },
+        "descriptionText": "Who we are\n\nMoniepoint is an all-in-one financial services platform for emerging markets and the second-fastest growing company in Africa. Since 2019, Moniepoint's technology has powered over 3 million people, offering personal and business banking, payment, credit and business management tools to help them succeed. Moniepoint processed $182 billion in 2023 and currently processes the majority of the POS transactions in Nigeria.\n\nAbout the role\n\nLocation: Remote (Full time)\n\nWhat you'll get to do\n\nDesign and Build sophisticated and highly scalable apps using Flutter.\n\nBuild custom packages in Flutter using the functionalities and APIs already available in native Android and IOS.\n\nTranslate and Build the designs and Wireframes into hight quality responsive UI code.\n\nWrite efficient queries for core Data.\n\nUse of Model-View-Controller ( MVC) and Model-View-ViewModel-Controller (MVVM) as it relates to designing, developing architecture and developing maintainable, testable and functional software that meets product requirements.\n\nExplore feasible architectures for implementing new features.\n\nResolve any problems existing in the system and suggest and add new features in the complete system.\n\nSuggest space and time efficient Data Structures.\n\nFollow the best practices while developing the app and also keeping everything structured and well documented.\n\nUse CI/CD for smooth deployment.\n\nDocument the project and code efficiently.\n\nManage the code and project on Git in order to keep in sync with other team members and managers.\n\nCommunicate with the Project Manager regarding status of projects and suggest appropriate deadlines for new functionalities.\n\nEnsure security guidelines are always followed while developing the app.\n\nValidate the cloud system to ensure any new changes do not compromise security of the backend server.\n\nSuggest new features and/or enhancements.\n\nMaintaining software through product lifecycle including design, development, verification and bug fixes.\n\nConnect regularly with the Quality Assurance Specialist to deliver stable app.\n\nResolve all the bugs reported by the Quality Assurance Specialist in a timely manner.\n\nPerform time profiling and memory leaks assessment.\n\nExecute app verification protocol.\n\nWrite tests for the App.\n\nFollowing company policies and quality procedures to ensure quality product deliverables.\n\nTo succeed in this role, you should have\n5 years plus combined Mobile Development Experience\nFlutter: To build cross platform mobile apps for Android, IOS and Web. This should include from making responsive UIs to efficiently query data and also manage states in an optimized manner.\n\nNative Android (Kotlin preferably) and IOS: To build custom Flutter Packages.\n\nFirebase: Should have experience with Cloud Firestore, Push Notifications, Cloud Functions and Analytics.\n\nFigma: Should know how to use Figma to analyse and view the designs to build the app\n\nGit: To manage and collaborate in different projects with the rest of the team.\n\nAbility to provide a portfolio showing projects solely worked on upon request\n\nBachelors Degree in a related field\n\nNice to have some of the technologies\n\nAngular\n\nBootstrap\n\nJavaScript\n\nNative Android (Kotlin preferably)\nDart\n\nWhat we can offer you\n\nCulture -We put our people first and prioritize the well-being of every team member. We've built a company where all opinions carry weight and where all voices are heard. We value and respect each other and always look out for one another. Above all, we are human.\nLearning - We have a learning and development-focused environment with an emphasis on knowledge sharing, training, and regular internal technical talks.\nCompensation - You'll receive an attractive salary, pension, health insurance, annual bonus, plus other benefits.\n\nWhat to expect in the hiring process\n\nA preliminary phone call with the recruiter\nA hackerrank test\nA technical interview with a Lead in our Engineering Team\nA behavioural and technical interview with a member of the Executive team.\n\nMoniepoint is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees and candidates.",
+        "descriptionHtml": "<div><p><b>Who we are</b></p>\n<p>\nMoniepoint is an all-in-one financial services platform for emerging markets and the second-fastest growing company in Africa. Since 2019, Moniepoint's technology has powered over 3 million people, offering personal and business banking, payment, credit and business management tools to help them succeed. Moniepoint processed $182 billion in 2023 and currently processes the majority of the POS transactions in Nigeria.</p>\n<p><b>\nAbout the role</b></p>\n<p>\nLocation: Remote (Full time)</p>\n<p><b>\nWhat you'll get to do</b></p>\n<ul>\n<li>Design and Build sophisticated and highly scalable apps using Flutter.<br>\n</li>\n<li>Build custom packages in Flutter using the functionalities and APIs already available in native Android and IOS.<br>\n</li>\n<li>Translate and Build the designs and Wireframes into hight quality responsive UI code.<br>\n</li>\n<li>Write efficient queries for core Data.<br>\n</li>\n<li>Use of Model-View-Controller ( MVC) and Model-View-ViewModel-Controller (MVVM) as it relates to designing, developing architecture and developing maintainable, testable and functional software that meets product requirements.<br>\n</li>\n<li>Explore feasible architectures for implementing new features.<br>\n</li>\n<li>Resolve any problems existing in the system and suggest and add new features in the complete system.<br>\n</li>\n<li>Suggest space and time efficient Data Structures.<br>\n</li>\n<li>Follow the best practices while developing the app and also keeping everything structured and well documented.<br>\n</li>\n<li>Use CI/CD for smooth deployment.<br>\n</li>\n<li>Document the project and code efficiently.<br>\n</li>\n<li>Manage the code and project on Git in order to keep in sync with other team members and managers.<br>\n</li>\n<li>Communicate with the Project Manager regarding status of projects and suggest appropriate deadlines for new functionalities.<br>\n</li>\n<li>Ensure security guidelines are always followed while developing the app.<br>\n</li>\n<li>Validate the cloud system to ensure any new changes do not compromise security of the backend server.<br>\n</li>\n<li>Suggest new features and/or enhancements.<br>\n</li>\n<li>Maintaining software through product lifecycle including design, development, verification and bug fixes.<br>\n</li>\n<li>Connect regularly with the Quality Assurance Specialist to deliver stable app.<br>\n</li>\n<li>Resolve all the bugs reported by the Quality Assurance Specialist in a timely manner.<br>\n</li>\n<li>Perform time profiling and memory leaks assessment.<br>\n</li>\n<li>Execute app verification protocol.<br>\n</li>\n<li>Write tests for the App.<br>\n</li>\n<li>Following company policies and quality procedures to ensure quality product deliverables.<br>\n</li>\n</ul><h3 class=\"jobSectionHeader\"><b>To succeed in this role, you should have</b></h3>\n<ul><li>5 years plus combined Mobile Development Experience</li>\n<li>Flutter: To build cross platform mobile apps for Android, IOS and Web. This should include from making responsive UIs to efficiently query data and also manage states in an optimized manner.<br>\n</li>\n<li>Native Android (Kotlin preferably) and IOS: To build custom Flutter Packages.<br>\n</li>\n<li>Firebase: Should have experience with Cloud Firestore, Push Notifications, Cloud Functions and Analytics.<br>\n</li>\n<li>Figma: Should know how to use Figma to analyse and view the designs to build the app<br>\n</li>\n<li>Git: To manage and collaborate in different projects with the rest of the team.<br>\n</li>\n<li>Ability to provide a portfolio showing projects solely worked on upon request<br>\n</li>\n<li>Bachelors Degree in a related field</li><br>\n</ul>\n<p><b>Nice to have some of the technologies</b></p>\n<ul>\n<li>Angular<br>\n</li>\n<li>Bootstrap<br>\n</li>\n<li>JavaScript<br>\n</li>\n<li>Native Android (Kotlin preferably)</li>\n<li>Dart</li>\n</ul>\n<div><p><b>What we can offer you</b></p>\n<ul>\n<li>Culture -We put our people first and prioritize the well-being of every team member. We've built a company where all opinions carry weight and where all voices are heard. We value and respect each other and always look out for one another. Above all, we are human.</li>\n<li>Learning - We have a learning and development-focused environment with an emphasis on knowledge sharing, training, and regular internal technical talks.</li>\n<li>Compensation - You'll receive an attractive salary, pension, health insurance, annual bonus, plus other benefits.</li>\n</ul>\n<p><b>What to expect in the hiring process</b></p>\n<ul>\n<li>A preliminary phone call with the recruiter</li>\n<li>A hackerrank test</li>\n<li>A technical interview with a Lead in our Engineering Team</li>\n<li>A behavioural and technical interview with a member of the Executive team.</li>\n</ul>\n<p>Moniepoint is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees and candidates.</p></div></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Mobile Developers"
+        ],
+        "attributes": [],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Moniepoint",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 2,
+        "jobKey": "a2d110d4b7442c3a",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=a2d110d4b7442c3a",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    }
+]

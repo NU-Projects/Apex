@@ -1,0 +1,611 @@
+[
+    {
+        "title": "Data Engineer",
+        "companyName": "soum",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "6 months ago",
+        "datePublished": "2025-09-21",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Soum",
+        "rating": {
+            "rating": 5,
+            "count": 1
+        },
+        "descriptionText": "Role: Data Engineer\nLocation: Egypt, Uzbekistan, and Pakistan (Remote)\nWork Week: Sunday – Thursday\nWork Timings: 9:00 AM – 6:00 PM (Saudi Arabian Time Zone)\n\nOverview:\nWe’re seeking a Data Engineer to design, build, and maintain the data infrastructure that underpins our analytics, ML models, and decision-making processes. You’ll be responsible for building scalable data pipelines, integrating diverse data sources, and ensuring data quality, reliability, and accessibility across the organization. Working closely with data scientists, analysts, and product teams, you’ll enable data-driven insights while optimizing for performance and scalability. This is a great opportunity to have a direct impact on how data is leveraged across a fast-growing company.\nRole & Responsibilities:\nData Pipeline Development & Optimization:\nDesign, build, and maintain scalable and reliable data pipelines to support analytics, ML models, and business reporting.\nCollaborate with data scientists and analysts to ensure data is available, clean, and optimized for downstream use.\nImplement data quality checks, monitoring, and validation processes.\nData Architecture & Integration:\nWork with cross-functional teams to design efficient ETL/ELT workflows using modern data tools.\nIntegrate data from multiple sources (databases, APIs, third-party tools) into centralized storage solutions (data lakes/warehouses).\nSupport cloud-based infrastructure for data storage and retrieval.\nPerformance & Scalability:\nMonitor, troubleshoot, and optimize existing data pipelines to handle large-scale, real-time data flows.\nImplement best practices for query optimization and cost-efficient data storage.\nEnsure data is available and accessible for business-critical operations.\nCollaboration & Documentation:\nPartner with product, engineering, and business stakeholders to understand data requirements.\nDocument data workflows, schemas, and best practices.\nSupport a culture of data reliability, governance, and security.\nRequirements:\nProficiency in Python and SQL for data engineering tasks.\nStrong understanding of ETL/ELT processes, data warehousing, and data modeling.\nHands-on experience with cloud platforms (AWS, GCP, or Azure) and data storage solutions (BigQuery, Redshift, Snowflake, etc.).\nFamiliarity with data orchestration tools Airflow, Airbyte is a must.\nExperience with containerization & deployment tools (Docker, Kubernetes) is a plus.\nKnowledge of data governance, security, and best practices for handling sensitive data.\nFamiliarity to work with Git and GitHub.\nDataform is a must\nStrong skills in eliciting requirements from cross-functional stakeholders and translating them into actionable data engineering tasks.\nExperience:\n2+ years in data engineering, building and maintaining data pipelines.\n2+ years in SQL and Python development for production environments.\nExperience working in fast-growing startup environments is a plus.\nExposure to real-time data processing frameworks (Kafka, Spark, Flink) is a plus.\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
+        "descriptionHtml": "<div><div><b>Role: Data Engineer</b></div><div><b>\nLocation:</b> Egypt, Uzbekistan, and Pakistan (Remote)</div><div><b>\nWork Week:</b> Sunday &ndash; Thursday</div><div><b>\nWork Timings:</b> 9:00 AM &ndash; 6:00 PM (Saudi Arabian Time Zone)</div><div></div><div><b><br>\nOverview:</b></div><div>\nWe&rsquo;re seeking a <b>Data Engineer</b> to design, build, and maintain the data infrastructure that underpins our analytics, ML models, and decision-making processes. You&rsquo;ll be responsible for building scalable data pipelines, integrating diverse data sources, and ensuring data quality, reliability, and accessibility across the organization. Working closely with data scientists, analysts, and product teams, you&rsquo;ll enable data-driven insights while optimizing for performance and scalability. This is a great opportunity to have a direct impact on how data is leveraged across a fast-growing company.</div>\n<h3 class=\"jobSectionHeader\"><b>Role &amp; Responsibilities:</b></h3><ul><li><b>\nData Pipeline Development &amp; Optimization:</b></li><li>\nDesign, build, and maintain scalable and reliable data pipelines to support analytics, ML models, and business reporting.</li><li>\nCollaborate with data scientists and analysts to ensure data is available, clean, and optimized for downstream use.</li><li>\nImplement data quality checks, monitoring, and validation processes.</li><li><b>\nData Architecture &amp; Integration:</b></li><li>\nWork with cross-functional teams to design efficient ETL/ELT workflows using modern data tools.</li><li>\nIntegrate data from multiple sources (databases, APIs, third-party tools) into centralized storage solutions (data lakes/warehouses).</li><li>\nSupport cloud-based infrastructure for data storage and retrieval.</li><li><b>\nPerformance &amp; Scalability:</b></li><li>\nMonitor, troubleshoot, and optimize existing data pipelines to handle large-scale, real-time data flows.</li><li>\nImplement best practices for query optimization and cost-efficient data storage.</li><li>\nEnsure data is available and accessible for business-critical operations.</li><li><b>\nCollaboration &amp; Documentation:</b></li><li>\nPartner with product, engineering, and business stakeholders to understand data requirements.</li><li>\nDocument data workflows, schemas, and best practices.</li><li>\nSupport a culture of data reliability, governance, and security.</li></ul><h3 class=\"jobSectionHeader\"><b>\nRequirements:</b></h3><ul><li>\nProficiency in <b>Python</b> and <b>SQL</b> for data engineering tasks.</li><li>\nStrong understanding of <b>ETL/ELT processes</b>, data warehousing, and data modeling.</li><li>\nHands-on experience with <b>cloud platforms</b> (AWS, GCP, or Azure) and data storage solutions (BigQuery, Redshift, Snowflake, etc.).</li><li>\nFamiliarity with <b>data orchestration tools</b> Airflow, Airbyte <b>is a must.</b></li><li>\nExperience with <b>containerization &amp; deployment tools</b> (Docker, Kubernetes) is a plus.</li><li>\nKnowledge of <b>data governance, security, and best practices</b> for handling sensitive data.</li><li>\nFamiliarity to work with Git and GitHub.</li><li><b>\nDataform is a must</b></li><li>\nStrong skills in eliciting requirements from cross-functional stakeholders and translating them into actionable data engineering tasks.</li></ul><h3 class=\"jobSectionHeader\"><b>\nExperience:</b></h3><ul><li><b>\n2+ years in data engineering</b>, building and maintaining data pipelines.</li><li><b>\n2+ years in SQL and Python development</b> for production environments.</li><li>\nExperience working in <b>fast-growing startup environments</b> is a plus.</li><li>\nExposure to <b>real-time data processing frameworks</b> (Kafka, Spark, Flink) is a plus.</li></ul>\n<p>\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Developers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Soum",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 0,
+        "jobKey": "fbb694a34d1649d6",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=fbb694a34d1649d6",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Data Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/ae16877fde6f0cd10f337275a4c7a874",
+        "companyName": "Avanceon",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a year ago",
+        "datePublished": "2024-11-23",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Avanceon",
+        "rating": {
+            "rating": 4.2,
+            "count": 18
+        },
+        "descriptionText": "Company Description\n\nWith the international capability to deliver engineering services in electrical, controls, machine design, information technology, and manufacturing business strategy, Avanceon creates integrated solutions that enable clients to control, improve, and optimize their manufacturing processes. Avanceon's experience in engineering services, software solutions, energy optimization, and support services enable our clients the opportunity to achieve powerful business results and financial returns.\n\nJob Description\n\nOctopus Digital (a subsidiary of Avanceon Limited) is looking for experienced Data Engineers who are willing to develop and implement data warehouse solutions for company-wide applications and manage large sets of structured and unstructured data by using the technologies mentioned below.\n\nJob Responsibilities:\n\nHands-on experience on Azure/AWS.\nExperience on a spark, python.\nDesign and develop code, scripts, and data pipelines that leverage structured and unstructured data\nShould be able to manage Data ingestion pipelines and stream processing\nWrite and optimize complex SQL and shell scripts\nExperience in Big Data querying\nExperience with NoSQL databases\nExperience with Hadoop distributions as Azure DataLake HDFS\nTraining/Certification on Data Lake HDFS will be a plus.\nAbility to meet deadlines, identify issues and resolve with minimal direction\n\nQualifications\n\nAt least 2-3 years of relevant working experience with Cloud Development\nBachelor/Master Degree in Computer Science with relevant working experience.",
+        "descriptionHtml": "<div><b>Company Description</b><p><br>\nWith the international capability to deliver engineering services in electrical, controls, machine design, information technology, and manufacturing business strategy, Avanceon creates integrated solutions that enable clients to control, improve, and optimize their manufacturing processes. Avanceon's experience in engineering services, software solutions, energy optimization, and support services enable our clients the opportunity to achieve powerful business results and financial returns.</p><b><br>\nJob Description</b><p><br>\nOctopus Digital (a subsidiary of Avanceon Limited) is looking for experienced Data Engineers who are willing to develop and implement data warehouse solutions for company-wide applications and manage large sets of structured and unstructured data by using the technologies mentioned below.</p><p><b>\nJob Responsibilities:</b></p><ul><li>\nHands-on experience on Azure/AWS.</li><li>\nExperience on a spark, python.</li><li>\nDesign and develop code, scripts, and data pipelines that leverage structured and unstructured data</li><li>\nShould be able to manage Data ingestion pipelines and stream processing</li><li>\nWrite and optimize complex SQL and shell scripts</li><li>\nExperience in Big Data querying</li><li>\nExperience with NoSQL databases</li><li>\nExperience with Hadoop distributions as Azure DataLake HDFS</li><li>\nTraining/Certification on Data Lake HDFS will be a plus.</li><li>\nAbility to meet deadlines, identify issues and resolve with minimal direction</li></ul><br>\n<b>\nQualifications</b><br>\n<ul><li>\nAt least 2-3 years of relevant working experience with Cloud Development</li><li>\nBachelor/Master Degree in Computer Science with relevant working experience.</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Developers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Avanceon Limited",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 1,
+        "jobKey": "d6bc7fe4699a64c0",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=d6bc7fe4699a64c0",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Application Support Engineer - Remote",
+        "companyName": "Abyan Capital",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 months ago",
+        "datePublished": "2025-10-04",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Abyan-Capital",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "The position acts as a critical bridge between the customer support team and the core engineering teams, ensuring technical issues are resolved efficiently and root causes are identified.\n\nKey Responsibilities\nTroubleshooting: You'll debug and resolve complex technical issues reported by customers and internal teams. This includes analyzing application logs, database queries, and system metrics.\n\nIncident Management: You will be on a rotation to respond to and manage production incidents, working to restore service and communicate with stakeholders.\n\nTechnical Escalation: You're responsible for identifying and escalating bugs or recurring issues to the appropriate engineering teams, providing them with detailed data and context to help with a timely fix.\n\nTooling and Automation: A key part of the job is building and maintaining tools and scripts to automate support tasks, improve diagnostics, and streamline workflows for the broader support team.\n\nDocumentation: You will create and update internal knowledge base articles and runbooks to help others resolve common issues more quickly.\n\nRequired Qualifications\n\nTechnical Skills: Strong experience with the Linux command line, scripting languages (like Python & Bash), and a good understanding of SQL for database querying. Preferred Pgsql\n\nProblem-Solving: Excellent analytical and problem-solving abilities, with a proven track record of diagnosing and resolving technical issues.\n\nCommunication: Exceptional communication skills to translate complex technical issues into clear and concise language for both technical and non-technical audiences.\n\nSoftware Knowledge: A solid understanding of how web applications work, including APIs, microservices, and modern web architectures. Experience with monitoring tools like Datadog, Splunk, or Prometheus is often preferred.",
+        "descriptionHtml": "<div><p>The position acts as a critical bridge between the customer support team and the core engineering teams, ensuring technical issues are resolved efficiently and root causes are identified.<br>\n<br>\n<b>Key Responsibilities</b><br>\nTroubleshooting: You'll debug and resolve complex technical issues reported by customers and internal teams. This includes analyzing application logs, database queries, and system metrics.<br>\n<br>\nIncident Management: You will be on a rotation to respond to and manage production incidents, working to restore service and communicate with stakeholders.<br>\n<br>\nTechnical Escalation: You're responsible for identifying and escalating bugs or recurring issues to the appropriate engineering teams, providing them with detailed data and context to help with a timely fix.<br>\n<br>\nTooling and Automation: A key part of the job is building and maintaining tools and scripts to automate support tasks, improve diagnostics, and streamline workflows for the broader support team.<br>\n<br>\nDocumentation: You will create and update internal knowledge base articles and runbooks to help others resolve common issues more quickly.<br>\n<br>\n<b>Required Qualifications</b><br>\n<br>\nTechnical Skills: Strong experience with the Linux command line, scripting languages (like Python &amp; Bash), and a good understanding of SQL for database querying. Preferred Pgsql<br>\n<br>\nProblem-Solving: Excellent analytical and problem-solving abilities, with a proven track record of diagnosing and resolving technical issues.<br>\n<br>\nCommunication: Exceptional communication skills to translate complex technical issues into clear and concise language for both technical and non-technical audiences.<br>\n<br>\nSoftware Knowledge: A solid understanding of how web applications work, including APIs, microservices, and modern web architectures. Experience with monitoring tools like Datadog, Splunk, or Prometheus is often preferred.</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Technology Occupations",
+            "Technical Support Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Abyan Capital",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 2,
+        "jobKey": "db52b89b0fecd2a6",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=db52b89b0fecd2a6",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "DevOps Engineer (Mid level)",
+        "companyName": "soum",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "7 months ago",
+        "datePublished": "2025-08-21",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Soum",
+        "rating": {
+            "rating": 5,
+            "count": 1
+        },
+        "descriptionText": "Role: DevOps Engineer (Mid level)\nLocation: Egypt, Uzbekistan, and Pakistan (Remote)\nWork Week: Sunday – Thursday\nWork Timings: 9:00 AM – 6:00 PM (Saudi Arabian Time Zone)\n\nRole Overview:\nWe are looking for a Mid level DevOps Engineer/Tech interested in building performant, stable and resilient infrastructure. You will be responsible for architecting and building the infrastructure, as well as coordinating with the teams responsible for other layers of the product infrastructure. Building a stable infrastructure is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is required.\n\nKey Responsibilities:\nTake responsibility for the scalability, stability and availability of our low-latency & mission-critical systems\nEnhance the CI/CD pipeline using Github Actions\nAble to generate and maintain helm manifests for Kubernetes\nMaintain our IaC\nAble to setup and maintain monitoring via NewRelic, Prometheus & Grafana\nAbility to debug infrastructure and detect bottlenecks\nTake responsibility for company-wide whole tech infrastructure for all environments.\nResponsibility for managing vpn, load balancers and firewalls\nResponsible for high availability and disaster recovery\nImplementation of secure and stable infrastructure\nResponsibility for continuous improvement and cost optimization\nResponsibility of 24x7 monitoring and resolving infrastructure tier incidents and escalate to upper tiers where necessary\nResponsibility for investigating and clear documentation of incident reports\nQualifications:\nExcellent understanding in AWS cloud\nKnowledge of containerized environments with Kubernetes & Docker\nAbility to develop well managed infrastructure setup\nDeep knowledge of Linux internals, networking routing & protocols\nStrong hands-on building High availability infrastructure using EKS on AWS\nStrong understanding in IaC specifically Terraform\nStrong understanding in GitOps specifically ArgoCD\nStrong understanding in securing production infrastructure\nExperience:\nMinimum 2 years of DevOps experience in production applications\nAt least 1 year working with Terraform\nAt least 1 year with monitoring tools (NewRelic, Prometheus, Grafana, etc.)\nExperience designing and architecting high-performing applications\nBackground in Agile development practices\nExperience in a fast-growing startup (preferred)\nAWS Certifications (preferred)\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
+        "descriptionHtml": "<div><div><b>Role: DevOps Engineer (Mid level)</b></div><div><b>\nLocation:</b> Egypt, Uzbekistan, and Pakistan (Remote)</div><div><b>\nWork Week:</b> Sunday &ndash; Thursday</div><div><b>\nWork Timings:</b> 9:00 AM &ndash; 6:00 PM (Saudi Arabian Time Zone)</div><div></div><div><b><br>\nRole Overview:\n</b></div><div>We are looking for a <b>Mid level DevOps Engineer/Tech</b> interested in building performant, stable and resilient infrastructure. You will be responsible for architecting and building the infrastructure, as well as coordinating with the teams responsible for other layers of the product infrastructure. Building a stable infrastructure is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is required.</div><br>\n<div></div>\n<h3 class=\"jobSectionHeader\"><b>\nKey Responsibilities:\n</b></h3><ul><li>Take responsibility for the scalability, stability and availability of our low-latency &amp; mission-critical systems</li><li>\nEnhance the CI/CD pipeline using Github Actions</li><li>\nAble to generate and maintain helm manifests for Kubernetes</li><li>\nMaintain our IaC</li><li>\nAble to setup and maintain monitoring via NewRelic, Prometheus &amp; Grafana</li><li>\nAbility to debug infrastructure and detect bottlenecks</li><li>\nTake responsibility for company-wide whole tech infrastructure for all environments.</li><li>\nResponsibility for managing vpn, load balancers and firewalls</li><li>\nResponsible for high availability and disaster recovery</li><li>\nImplementation of secure and stable infrastructure</li><li>\nResponsibility for continuous improvement and cost optimization</li><li>\nResponsibility of 24x7 monitoring and resolving infrastructure tier incidents and escalate to upper tiers where necessary</li><li>\nResponsibility for investigating and clear documentation of incident reports</li></ul><h3 class=\"jobSectionHeader\"><b>\nQualifications:\n</b></h3><ul><li>Excellent understanding in <b>AWS cloud\n</b></li><li>Knowledge of containerized environments with <b>Kubernetes </b>&amp;<b> Docker</b></li><li>\nAbility to develop well managed infrastructure setup</li><li>\nDeep knowledge of <b>Linux </b>internals, networking routing &amp; protocols</li><li>\nStrong hands-on building High availability infrastructure using EKS on AWS</li><li>\nStrong understanding in IaC specifically Terraform</li><li>\nStrong understanding in <b>GitOps</b> specifically <b>ArgoCD</b></li><li>\nStrong understanding in securing production infrastructure</li></ul><h3 class=\"jobSectionHeader\"><b>\nExperience:\n</b></h3><ul><li>Minimum <b>2 years </b>of <b>DevOps experience</b> in production applications</li><li>\nAt least <b>1 year</b> working with<b> Terraform</b></li><li>\nAt least<b> 1 year</b> with monitoring tools (<b>NewRelic, Prometheus, Grafana, etc.</b>)</li><li>\nExperience designing and architecting high-performing applications</li><li>\nBackground in Agile development practices</li><li>\nExperience in a fast-growing startup (preferred)</li><li>\nAWS Certifications<b> </b>(preferred)</li></ul>\n<p>\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Software Development Operations Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Soum",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 3,
+        "jobKey": "0ba8ce339d48649d",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=0ba8ce339d48649d",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "SQA Engineer (Mid level)",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/9cbd331707ba71e74b494e2243f6a0d7",
+        "companyName": "Mob Inspire (PVT) Ltd",
+        "location": {
+            "city": "Rawalpindi",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Rawalpindi",
+            "formattedAddressShort": "Rawalpindi",
+            "latitude": 33.604397,
+            "longitude": 73.03846,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a year ago",
+        "datePublished": "2024-11-23",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Mob-Inspire-(pvt)-Ltd",
+        "rating": {
+            "rating": 5,
+            "count": 1
+        },
+        "descriptionText": "Company Description\n\nMob Inspire,inc is one of the fastest growing mobile platform development and innovative technology companies in the world. The company leverages unique processes to build and control world class mobile platforms. Through cutting-edge development processes we get bunch of data intelligence and predictive traffic technologies, Mob Inspire helps leading Enterprises, Brands, governments and news startups make it easier to solve big problems in their countries by launching a great platform that can hold big data of consumers and providers. Our vision is simple – to solve big problems, empower people, work on innovations, and rest of the time we spend on planning and enhance commerce.\n\nJob Description\n\nOverview:\n\nWe are seeking a highly motivated and detail-oriented Software Quality Assurance (SQA) Engineer with at least two years of experience in a service-based company. The ideal candidate will play a crucial role in ensuring the quality and reliability of our software products, contributing to the delivery of exceptional solutions to our clients. #LIONSITE\n\nResponsibilities:\n\nManual Testing:\n\nExecute and write comprehensive ,detailed test cases to ensure the quality and functionality of software applications.\nIdentify, document, and track defects.\n\nBug Reporting and Tracking:\n\nCollaborate with cross-functional teams to report and track software defects.\nProvide clear and detailed bug reports with necessary documentation.\n\nEffective Communications:\n\nCommunicate effectively with team members, developers and stakeholders.\nParticipate in team meetings and provide valuable insights on testing progress.\n\nAPI Testing (Postman):\n\nConduct API testing using tools like Postman.\nValidate API functionality and ensure seamless integration between software components.\n\nDatabase Testing (MongoDB):\n\nPerform database testing to ensure data integrity and accuracy.\n\nAutomation Testing (Selenium):\n\nPossess a foundational understanding of automation testing concepts using Selenium.\nWillingness to learn and contribute to automated testing efforts.\n\nQualifications\n\nBachelor’s degree in Computer Science, Information Technology, or a related field.\nMust have 3-4 years experience with the service-based company.\nKnowledge and experience in manual testing methodologies.\nFamiliarity with bug tracking tools.\nEffective communication skills and the ability to work collaboratively in a team environment.\nBasic understanding of API testing using tools like Postman.\nExperience with database testing, particularly using MongoDB.\nStrong knowledge of SDLC and STLC processes.\nDesire to learn and grow in the field of automation testing.\n\nPreferred Skills:\n\nBasic knowledge of automation testing tools (e.g., Selenium, JUnit).\nExposure to continuous integration and continuous deployment (CI/CD) processes.\n\nPersonal Attributes:\n\nStrong attention to detail.\nAnalytical mindset with problem-solving abilities.\nProactive and self-motivated.\nExcellent time management and organizational skills.\n\nAdditional Information\n\nFollowing benefits will be given after successful completion of the probation period:\n\nMedical reimbursement.\n\nInhouse and outdoor games/activities.\n\nCasual & sick paid leaves.\n\nLeave encashment.\n\nChallenging clients.\n\nCompetitive compensation and benefits.\n\nEmployee performance-based bonuses.\n\nEmployee referral bonus.\n\nOccasional bonuses and gifts.\n\nJob days: Monday to Friday.\n\nJob type: On-site (Only).\n\nJob Timings: 9:00AM to 6:00PM.\n\nJob Location: Bahria Town phase 4, Rawalpindi.\n\nSalary Package: 100k-150k PKR.",
+        "descriptionHtml": "<div><b>Company Description</b><p><br>\nMob Inspire,inc is one of the fastest growing mobile platform development and innovative technology companies in the world. The company leverages unique processes to build and control world class mobile platforms. Through cutting-edge development processes we get bunch of data intelligence and predictive traffic technologies, Mob Inspire helps leading Enterprises, Brands, governments and news startups make it easier to solve big problems in their countries by launching a great platform that can hold big data of consumers and providers. Our vision is simple &ndash; to solve big problems, empower people, work on innovations, and rest of the time we spend on planning and enhance commerce.</p><b><br>\nJob Description</b><p><b><br>\nOverview:</b></p><p>\nWe are seeking a highly motivated and detail-oriented Software Quality Assurance (SQA) Engineer with at least two years of experience in a service-based company. The ideal candidate will play a crucial role in ensuring the quality and reliability of our software products, contributing to the delivery of exceptional solutions to our clients. #LIONSITE</p><p><b>\nResponsibilities:</b></p><p><b>\nManual Testing:</b></p><ul><li>\nExecute and write comprehensive ,detailed test cases to ensure the quality and functionality of software applications.</li><li>\nIdentify, document, and track defects.</li></ul><p><b>\nBug Reporting and Tracking:</b></p><ul><li>\nCollaborate with cross-functional teams to report and track software defects.</li><li>\nProvide clear and detailed bug reports with necessary documentation.</li></ul><p><b>\nEffective Communications:</b></p><ul><li>\nCommunicate effectively with team members, developers and stakeholders.</li><li>\nParticipate in team meetings and provide valuable insights on testing progress.</li></ul><p><b>\nAPI Testing (Postman):</b></p><ul><li>\nConduct API testing using tools like Postman.</li><li>\nValidate API functionality and ensure seamless integration between software components.</li></ul><p><b>\nDatabase Testing (MongoDB):</b></p><ul><li>\nPerform database testing to ensure data integrity and accuracy.</li></ul><p><b>\nAutomation Testing (Selenium):</b></p><ul><li>\nPossess a foundational understanding of automation testing concepts using Selenium.</li><li>\nWillingness to learn and contribute to automated testing efforts.</li></ul><br>\n<b>\nQualifications</b><br>\n<ul><li>\nBachelor&rsquo;s degree in Computer Science, Information Technology, or a related field.</li><li>\nMust have 3-4 years experience with the service-based company.</li><li>\nKnowledge and experience in manual testing methodologies.</li><li>\nFamiliarity with bug tracking tools.</li><li>\nEffective communication skills and the ability to work collaboratively in a team environment.</li><li>\nBasic understanding of API testing using tools like Postman.</li><li>\nExperience with database testing, particularly using MongoDB.</li><li>\nStrong knowledge of SDLC and STLC processes.</li><li>\nDesire to learn and grow in the field of automation testing.</li></ul><p><b>\nPreferred Skills:</b></p><ul><li>\nBasic knowledge of automation testing tools (e.g., Selenium, JUnit).</li><li>\nExposure to continuous integration and continuous deployment (CI/CD) processes.</li></ul><p><b>\nPersonal Attributes:</b></p><ul><li>\nStrong attention to detail.</li><li>\nAnalytical mindset with problem-solving abilities.</li><li>\nProactive and self-motivated.</li><li>\nExcellent time management and organizational skills.</li></ul><br>\n<b>\nAdditional Information</b><p><br>\nFollowing benefits will be given after successful completion of the probation period:</p><ul><li><p>\nMedical reimbursement.</p></li><li><p>\nInhouse and outdoor games/activities.</p></li><li><p>\nCasual &amp; sick paid leaves.</p></li><li><p>\nLeave encashment.</p></li><li><p>\nChallenging clients.</p></li><li><p>\nCompetitive compensation and benefits.</p></li><li><p>\nEmployee performance-based bonuses.</p></li><li><p>\nEmployee referral bonus.</p></li><li><p>\nOccasional bonuses and gifts.</p></li></ul><p>\nJob days: Monday to Friday.</p><p>\nJob type: On-site (Only).</p><p>\nJob Timings: 9:00AM to 6:00PM.</p><p>\nJob Location: Bahria Town phase 4, Rawalpindi.</p><p>\nSalary Package: 100k-150k PKR.</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Software Quality Assurance Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Mob Inspire (Pvt) Ltd",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 5,
+        "jobKey": "e5ecb3d0b6dc9908",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=e5ecb3d0b6dc9908",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Data Science & Engineering Lead",
+        "companyName": "soum",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "8 months ago",
+        "datePublished": "2025-07-03",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Soum",
+        "rating": {
+            "rating": 5,
+            "count": 1
+        },
+        "descriptionText": "Role: Data Science & Engineering Lead\nLocation: Egypt, Uzbekistan, and Pakistan (Remote)\nWork Week: Sunday – Thursday\nWork Timings: 9:00 AM – 6:00 PM (Saudi Arabian Time Zone)\n\nOverview:\nWe’re looking for a hands-on Data Science & Engineering Lead to lead our data strategy and help scale a lean, high-impact team. This role blends leadership, architecture, and deep technical work - from building predictive models to designing the infrastructure that powers real-time decision-making. You’ll partner closely with cross-functional teams (Product, Business, Finance, Tech) and take full ownership of analytics delivery from raw data to actionable insight.\n\nThis is a builder’s role - ideal for someone who wants deep ownership, startup pace, and the chance to grow as we scale.\nResponsibilities:\nDefine and deliver our data strategy - from core infrastructure to insights delivery\nBuild and mentor a team of 2–5 data scientists and engineers\nDesign and deploy predictive models, recommendation systems, and performance analytics\nArchitect, deploy, and maintain scalable data pipelines and analytics tooling\nOwn and scale robust data pipelines and ensure data integrity across business verticals\nCollaborate closely with stakeholders across Product, Business Finance, and Tech teams to integrate data into daily operations and product decisions\nAct as the go-to person for data strategy, experimentation, and insights\nRequirements:\n5–6 years of relevant experience in data science, engineering or analytics,\nAt least 1-2 years in a leading or mentoring small teams (leading 2-5 people) within an agile high tech environment\nStrong command of Python or R; strong SQL skills required\nDeep expertise in data analysis, predictive modeling, designing scalable pipelines, and maintaining analytics infrastructure\nFamiliarity with modern BI tools (e.g., Looker, Metabase, Power BI, Tableau)\nExperience working cross functionally with business and product teams\nStartup mindset; strong bias for action, autonomy and ownership; able to apply agile principles and own delivery end to end\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
+        "descriptionHtml": "<div><div><b>Role: Data Science &amp; Engineering Lead</b></div><div><b>\nLocation:</b> Egypt, Uzbekistan, and Pakistan (Remote)</div><div><b>\nWork Week:</b> Sunday &ndash; Thursday</div><div><b>\nWork Timings:</b> 9:00 AM &ndash; 6:00 PM (Saudi Arabian Time Zone)</div><div></div><div><b><br>\nOverview:</b></div><div>\nWe&rsquo;re looking for a hands-on <b>Data Science &amp; Engineering Lead</b> to lead our data strategy and help scale a lean, high-impact team. This role blends leadership, architecture, and deep technical work - from building predictive models to designing the infrastructure that powers real-time decision-making. You&rsquo;ll partner closely with cross-functional teams (Product, Business, Finance, Tech) and take full ownership of analytics delivery from raw data to actionable insight.</div><div></div><div><br>\nThis is a builder&rsquo;s role - ideal for someone who wants deep ownership, startup pace, and the chance to grow as we scale.</div>\n<h3 class=\"jobSectionHeader\"><b>Responsibilities:</b></h3><ul><li>\nDefine and deliver our data strategy - from core infrastructure to insights delivery</li><li>\nBuild and mentor a team of 2&ndash;5 data scientists and engineers</li><li>\nDesign and deploy predictive models, recommendation systems, and performance analytics</li><li>\nArchitect, deploy, and maintain scalable data pipelines and analytics tooling</li><li>\nOwn and scale robust data pipelines and ensure data integrity across business verticals</li><li>\nCollaborate closely with stakeholders across Product, Business Finance, and Tech teams to integrate data into daily operations and product decisions</li><li>\nAct as the go-to person for data strategy, experimentation, and insights</li></ul><h3 class=\"jobSectionHeader\"><b>\nRequirements:\n</b></h3><ul><li><b>5&ndash;6 years of relevant experience</b> in data science, engineering or analytics,\n</li><li><b>At least 1-2 years in a leading or mentoring small teams </b>(leading 2-5 people) <b>within an agile high tech environment</b></li><li>\nStrong command of Python or R; strong SQL skills required</li><li>\nDeep expertise in <b>data analysis, predictive modeling, designing scalable pipelines, and maintaining analytics infrastructure</b></li><li>\nFamiliarity with modern BI tools (e.g., Looker, Metabase, Power BI, Tableau)</li><li>\nExperience <b>working cross functionally</b> with business and product teams</li><li>\nStartup mindset; strong bias for action, autonomy and ownership; able to apply agile principles and own delivery end to end</li></ul>\n<p>\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Warehousing Architects"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Soum",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 6,
+        "jobKey": "24bb2201b298f11d",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=24bb2201b298f11d",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "MERN Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/8c04621d7c32cfc14de4eef1f004e603",
+        "companyName": "Code District",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "9 months ago",
+        "datePublished": "2025-06-19",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/405e54e84298fe34b935b4f6650415e7",
+        "companyUrl": "https://www.indeed.com/cmp/Code-District",
+        "rating": {
+            "rating": 1,
+            "count": 1
+        },
+        "descriptionText": "Code District is looking for passionate Software Engineers with 1-3 years of experience to join our growing engineering team. You will work on modern web applications using React/Next.js, Node.js/NestJS, SQL and NoSQL databases, and core AWS cloud services, contributing to scalable, secure, and well-structured systems.\n\nWere an AI-first engineering organization: we want developers who are comfortable using tools like Copilot, Cursor, and LLMs to work smarter, but who also have strong fundamentals and can think independently\n\nKey Responsibilities\n\nDevelop, enhance, and maintain web applications using React/Next.js on the frontend and Node.js/NestJS on the backend.\nDesign, build, and consume RESTful APIs and integrate with internal and external services.\nWork with SQL databases (e.g., PostgreSQL/MySQL) and NoSQL (e.g., MongoDB) for data modeling and query optimization.\nUse core AWS services (e.g., EC2, S3, RDS, Lambda, API Gateway) for application hosting, storage, and integrations\nWrite clean, maintainable, and testable code following best coding practices and team standards.\nUse Git effectively: branching, pull requests, code reviews, and CI-friendly workflows.\nCollaborate with product managers, designers, QA, and other engineers in an Agile environment.\nParticipate in code reviews, estimations, and technical discussions.\nProactively improve performance, scalability, and reliability of existing systems.\nUse AI-powered tools (Copilot, Cursor, ChatGPT, etc.) to speed up development while maintaining high code quality.\n\nRequirements\n\n1-3 years of professional experience in web application development.\nStrong proficiency in JavaScript (ES6+); familiarity with TypeScript is a plus.\nHands-on experience with React (Next.js preferred) and Node.js (NestJS is a plus).\nStrong foundation in SQL databases; experience with MongoDB/NoSQL is preferred.\nExperience building and consuming REST APIs.\nGood understanding of version control (Git) and modern development workflows.\nWorking knowledge of cloud platforms, especially core AWS services (EC2, S3, RDS, Lambda, API Gateway, etc.).\nExperience working in Agile/Scrum teams.\nDisciplined, reliable, and highly committed to delivering on responsibilities and timelines.\nDemonstrated ability and willingness to learn new technologies and tools.\nPreferably experienced with AI-assisted development tools (Copilot, Cursor, etc.) and exposure to public LLMs (OpenAI, etc.)\nStrong communication skills and ability to work effectively in cross-functional teams.",
+        "descriptionHtml": "<div><p>Code District is looking for passionate <b>Software Engineers</b> with 1-3 years of experience to join our growing engineering team. You will work on modern web applications using <b>React/Next.js, Node.js/NestJS, SQL and NoSQL databases</b>, and <b>core AWS cloud services</b>, contributing to scalable, secure, and well-structured systems.</p><p>\nWere an <b>AI-first</b> engineering organization: we want developers who are comfortable using tools like <b>Copilot, Cursor, and LLMs</b> to work smarter, but who also have strong fundamentals and can think independently</p><p><b>\nKey Responsibilities</b></p><ul><li>\nDevelop, enhance, and maintain web applications using React/Next.js on the frontend and Node.js/NestJS on the backend.</li><li>\nDesign, build, and consume RESTful APIs and integrate with internal and external services.</li><li>\nWork with SQL databases (e.g., PostgreSQL/MySQL) and NoSQL (e.g., MongoDB) for data modeling and query optimization.</li><li>\nUse core AWS services (e.g., EC2, S3, RDS, Lambda, API Gateway) for application hosting, storage, and integrations<br>\nWrite clean, maintainable, and testable code following best coding practices and team standards.</li><li>\nUse Git effectively: branching, pull requests, code reviews, and CI-friendly workflows.</li><li>\nCollaborate with product managers, designers, QA, and other engineers in an Agile environment.</li><li>\nParticipate in code reviews, estimations, and technical discussions.</li><li>\nProactively improve performance, scalability, and reliability of existing systems.</li><li>\nUse AI-powered tools (Copilot, Cursor, ChatGPT, etc.) to speed up development while maintaining high code quality.</li></ul><p><b>\nRequirements</b></p><ul><li>\n1-3 years of professional experience in web application development.</li><li>\nStrong proficiency in JavaScript (ES6+); familiarity with TypeScript is a plus.</li><li>\nHands-on experience with React (Next.js preferred) and Node.js (NestJS is a plus).</li><li>\nStrong foundation in SQL databases; experience with MongoDB/NoSQL is preferred.</li><li>\nExperience building and consuming REST APIs.</li><li>\nGood understanding of version control (Git) and modern development workflows.</li><li>\nWorking knowledge of cloud platforms, especially core AWS services (EC2, S3, RDS, Lambda, API Gateway, etc.).</li><li>\nExperience working in Agile/Scrum teams.</li><li>\nDisciplined, reliable, and highly committed to delivering on responsibilities and timelines.</li><li>\nDemonstrated ability and willingness to learn new technologies and tools.</li><li>\nPreferably experienced with AI-assisted development tools (Copilot, Cursor, etc.) and exposure to public LLMs (OpenAI, etc.)</li><li>\nStrong communication skills and ability to work effectively in cross-functional teams.</li></ul></div>",
+        "benefits": [],
+        "occupation": [],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Code District",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 7,
+        "jobKey": "7a9a6d49576db017",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=7a9a6d49576db017",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Project Manager (Dev)",
+        "companyName": "ALADDINB2B INC",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a year ago",
+        "datePublished": "2024-11-24",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Aladdinb2b-Inc",
+        "rating": {
+            "rating": 5,
+            "count": 2
+        },
+        "descriptionText": "Our Culture:\n\nWe want to change the world of B2B Trade through the advancement of technology. We are looking for someone who fits the startups culture - we are a young, happy, and motivated masterminds team. We are working together from all around the globe: USA, UAE, France, Russia, Australia, Pakistan, India, Philippines, Africa, KSA and Jordan forming an international mastermind alliance and bringing different cultures and prospects to the table. We do not operate with traditional management styles, thus we are looking for well organized, self-managed candidates that thrive independently just as well as with a team. The seven Key Values we look for in a candidate:\n\nDependability, if you say you will do it, you deliver on time\nLoyalty, you believe in Aladdin and you stay with us through both the good and tough times\nAbility to work under pressure, sometimes we have timely deadlines and we work long hours\nInnovative, Smart thinking outside the box\nPositive mentality, we are looking for happy mind & positive approach to life\nAbility to go the extra mile, be a self starter, not only doing the job but do it better than anyone\nFaith in Aladdin Vision and Mission, there’s nothing like a mastermind of people working towards a unified goal\n\nAladdinB2B is looking for Project Manager - Technology Development :\n\nWe are seeking a highly skilled Development Project Manager to join our team and lead the development efforts for our product, Aladdin. As the Development Project Manager, you will be responsible for overseeing all aspects of the product development lifecycle, from conception to launch. You will work closely with cross-functional teams, including software engineers, designers, and product managers, to ensure the successful delivery of high-quality, scalable software solutions.\n\nResponsibilities:\n\nLead the planning, execution, and delivery of all development projects related to the Aladdin platform.\nDefine project scope, goals, and deliverables in collaboration with stakeholders.\nDevelop and maintain project schedules, resource plans, and budgets.\nCoordinate with internal teams to prioritize tasks and allocate resources effectively.\nDrive continuous improvement initiatives to optimize development processes and increase efficiency.\nEnsure adherence to quality standards and best practices throughout the development lifecycle.\nAct as a primary point of contact for all stakeholders, providing regular updates on project status and addressing any concerns or inquiries.\nStay up-to-date with industry trends and advancements in technology to inform decision-making and drive innovation within the organization.\n\nJob Location: Remotely\n\nCompany Industry:\n\nTechnology, Big Data, B2B Trade\n\nJob Role: Project Manager (Dev)\n\nJoining Date: 2024\n\nEmployment Status: Full-time Contractor\n\nNumber of Vacancies: 1\n\nRemote Monthly Salary: Attractive , USD 2000 - 3500\n\nManages Others: Yes\n\nNumber of days off/week: 2 DAYS Off / 22 days per years\n\nOther: The successful candidate must have a strong communication skill and a positive attitude. Preferably in ages 30+ years old.\n\nJob Specification:\n\nBachelor’s degree in Computer Science, Engineering, or related field.\nProven experience (8 years) in project management, specifically in software development. Experience in the B2B or SaaS industry is a plus.\nStrong understanding of software development methodologies, such as Agile and Waterfall.\nStrong understanding of project management methodologies and tools.\nStrong analytical and problem-solving skills.\nExcellent communication and collaboration abilities in a remote work environment.\nUsing AI Integration\nGulf Experience is a plus\nAladdin Academy Certified is required within the first month\n\nKey Skills and characteristics:\n\nExcellent leadership and communication skills, with the ability to effectively collaborate with cross-functional teams.\nStrong ability to manage multiple projects and prioritize effectively.\nExcellent communication skills especially in English language.\nAttention to detail and accuracy in reporting\nStrategic mindset to anticipate and address operational challenges.\nExpertise in utilizing project management tools and software, especially ClickUp. Computer & software skills, Google Apps skills including Google calendar, Google docs, Google email, Google drive, Google forms and Google tasks.\nStrong problem-solving and decision-making abilities, with a focus on driving results and achieving organizational goals.\nProven ability to work effectively in a remote environment.\nFlexibility to adapt to a dynamic and fast-paced startup environment.",
+        "descriptionHtml": "<div><p><b>Our Culture:</b></p>\n<p>\nWe want to change the world of B2B Trade through the advancement of technology. We are looking for someone who fits the startups culture - we are a young, happy, and motivated masterminds team. We are working together from all around the globe: USA, UAE, France, Russia, Australia, Pakistan, India, Philippines, Africa, KSA and Jordan forming an international mastermind alliance and bringing different cultures and prospects to the table. We do not operate with traditional management styles, thus we are looking for well organized, self-managed candidates that thrive independently just as well as with a team. The seven Key Values we look for in a candidate:</p><br>\n<p></p><ul>\n<li><b>\nDependability, if you say you will do it, you deliver on time</b></li>\n<li><b>Loyalty, you believe in Aladdin and you stay with us through both the good </b><b><i>and</i></b><b> tough times</b></li>\n<li><b>Ability to work under pressure, sometimes we have timely deadlines and we work long hours</b></li>\n</ul><ul><li><b>Innovative, Smart thinking outside the box</b></li>\n</ul><ul><li><b>Positive mentality, we are looking for happy mind &amp; positive approach to life</b></li>\n<li><b>Ability to go the extra mile, be a self starter, not only doing the job but do it better than anyone\n</b></li><li><b>Faith in Aladdin Vision and Mission, there&rsquo;s nothing like a mastermind of people working towards a unified goal</b></li></ul><br>\n<p></p>\n<p><b>\nAladdinB2B </b><b>is looking for </b><b>Project Manager - Technology Development </b><b>:</b></p><p></p><p><br>\nWe are seeking a highly skilled Development Project Manager to join our team and lead the development efforts for our product, Aladdin. As the Development Project Manager, you will be responsible for overseeing all aspects of the product development lifecycle, from conception to launch. You will work closely with cross-functional teams, including software engineers, designers, and product managers, to ensure the successful delivery of high-quality, scalable software solutions.</p><p></p><p><b><br>\nResponsibilities:</b></p><br>\n<p></p><ul>\n<li>\nLead the planning, execution, and delivery of all development projects related to the Aladdin platform.</li>\n<li>Define project scope, goals, and deliverables in collaboration with stakeholders.</li>\n<li>Develop and maintain project schedules, resource plans, and budgets.</li>\n<li>Coordinate with internal teams to prioritize tasks and allocate resources effectively.</li>\n<li>Drive continuous improvement initiatives to optimize development processes and increase efficiency.</li>\n<li>Ensure adherence to quality standards and best practices throughout the development lifecycle.</li>\n<li>Act as a primary point of contact for all stakeholders, providing regular updates on project status and addressing any concerns or inquiries.</li>\n<li>Stay up-to-date with industry trends and advancements in technology to inform decision-making and drive innovation within the organization.</li></ul><br>\n<p></p>\n<p><b>\nJob Location: Remotely</b></p>\n<p><b>\nCompany Industry:</b></p>\n<p><b>\nTechnology, Big Data, B2B Trade</b></p>\n<p><b>\nJob Role: </b>Project Manager (Dev)</p>\n<p><b>\nJoining Date: </b>2024</p>\n<p><b>\nEmployment Status: </b>Full-time Contractor</p>\n<p><b>\nNumber of Vacancies: </b><b>1</b></p>\n<p><b>\nRemote Monthly Salary: </b><b>Attractive , USD </b>2000 - 3500</p>\n<p><b>\nManages Others: Y</b>es</p>\n<p><b>\nNumber of days off/week: 2 DAYS Off / </b>22 days per years</p>\n<p><b>\nOther: </b>The successful candidate must have a strong communication skill and a positive attitude. Preferably in ages 30+ years old.</p><p></p><p><b><br>\nJob Specification:</b></p>\n<ul>\n<li>Bachelor&rsquo;s degree in Computer Science, Engineering, or related field.</li>\n<li>Proven experience (8 years) in project management, specifically in software development. Experience in the B2B or SaaS industry is a plus.</li>\n<li>Strong understanding of software development methodologies, such as Agile and Waterfall.</li>\n<li>Strong understanding of project management methodologies and tools.</li>\n<li>Strong analytical and problem-solving skills.</li>\n<li>Excellent communication and collaboration abilities in a remote work environment.</li>\n<li>Using AI Integration</li>\n<li>Gulf Experience is a plus</li>\n<li>Aladdin Academy Certified is required within the first month</li></ul><br>\n<p></p>\n<p><b>\nKey Skills and characteristics:</b></p>\n<ul>\n<li>Excellent leadership and communication skills, with the ability to effectively collaborate with cross-functional teams.</li>\n<li>Strong ability to manage multiple projects and prioritize effectively.</li>\n<li>Excellent communication skills especially in English language<i>.</i></li>\n<li>Attention to detail and accuracy in reporting</li>\n<li>Strategic mindset to anticipate and address operational challenges.</li>\n<li>Expertise in utilizing project management tools and software, especially ClickUp. Computer &amp; software skills, Google Apps skills including Google calendar, Google docs, Google email, Google drive, Google forms and Google tasks.\n</li><li>Strong problem-solving and decision-making abilities, with a focus on driving results and achieving organizational goals.</li>\n<li>Proven ability to work effectively in a remote environment.</li>\n<li>Flexibility to adapt to a dynamic and fast-paced startup environment.</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Technical Project & Program Managers",
+            "Technology Occupations",
+            "Technology Management Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "ALADDINB2B INC",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 8,
+        "jobKey": "e153231edb296957",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=e153231edb296957",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Machine Leaning Engineer - Computer Vision",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/8c04621d7c32cfc14de4eef1f004e603",
+        "companyName": "Code District",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "4 months ago",
+        "datePublished": "2025-11-07",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/405e54e84298fe34b935b4f6650415e7",
+        "companyUrl": "https://www.indeed.com/cmp/Code-District",
+        "rating": {
+            "rating": 1,
+            "count": 1
+        },
+        "descriptionText": "Code District is seeking a skilled Computer Vision Engineer to design, develop, and deploy AI-driven vision solutions. The ideal candidate should have hands-on experience in computer vision projects within production environments.\n\nResponsibilities:\n\nDevelop computer vision and deep learning applications related to object detection, object segmentation and activity/action detection.\nScientific thinking and the ability to invent, implement, and lead technology developments in the field of computer vision and machine learning.\nDedicated to delivering Machine Learning projects.\nUtilizing existing hardware and images in addition to new image data gathering techniques to produce innovative image analysis models and algorithms.\nLead the ideation, prototyping, and development of AI software.\nDemonstrate expertise in solving computer vision problems.\nDevelop deep learning and traditional machine learning algorithms.\nDesign and develop scalable software architectures.\nDemonstrate ongoing understanding of Machine Learning technologies in the current marketplace and how they can be applied to the business.\nFacilitate design and deployment of vision hardware equipment needed for image data gathering.\nCreate and maintain data pipeline architecture for ML algorithm development.\n\nRequirements:\nMS or PhD in Computer Science, Engineering, Mathematics or Statistics, with specialization in computer vision and deep learning.\nMinimum 4 years of industrial experience in developing and deploying Computer Vision and Deep Learning applications in Production at scale.\nExperience in software development, integration with deep learning algorithms and deployment in production.\nProficiency in scientific understanding and implementation of deep learning architectures in Computer vision (Image classification, object detection, segmentation, pose estimation) from ideation to productionized deployment.\nSoftware development in Python, Deep learning (Tensorflow and Pytorch), Machine Learning libraries (OpenCV, Scikit-learn, NumPy, Pandas) and Data Analytics/Reporting.\nDevOps: Code Management, Version Control, Code Review, CI/CD, Configuration Management, Monitoring, Containerization\nMLOps: Experiment Management (Model Versioning, Parameter Versioning, Model Performance Metrics), Model Integration, Serving, Deployment, Testing and Continuous Monitoring\nDataOps: Data Gathering, Annotation, Quality, Visualization, Versioning, and Engineering.\nAbility to read scientific publications, understand and implement proposed solutions.\nExcellent written and spoken communication skills.\nSelf-driven and strong problem-solving skills.\nTeam work.\nStrong analytical skills and process focus",
+        "descriptionHtml": "<div><p>Code District is seeking a skilled Computer Vision Engineer to design, develop, and deploy AI-driven vision solutions. The ideal candidate should have hands-on experience in computer vision projects within production environments.</p><p><b>\nResponsibilities:</b></p><br>\n<ul><li>\nDevelop computer vision and deep learning applications related to object detection, object segmentation and activity/action detection.</li><li>\nScientific thinking and the ability to invent, implement, and lead technology developments in the field of computer vision and machine learning.</li><li>\nDedicated to delivering Machine Learning projects.</li><li>\nUtilizing existing hardware and images in addition to new image data gathering techniques to produce innovative image analysis models and algorithms.</li><li>\nLead the ideation, prototyping, and development of AI software.</li><li>\nDemonstrate expertise in solving computer vision problems.</li><li>\nDevelop deep learning and traditional machine learning algorithms.</li><li>\nDesign and develop scalable software architectures.</li><li>\nDemonstrate ongoing understanding of Machine Learning technologies in the current marketplace and how they can be applied to the business.</li><li>\nFacilitate design and deployment of vision hardware equipment needed for image data gathering.</li><li>\nCreate and maintain data pipeline architecture for ML algorithm development.<br>\n</li></ul><div><b>\nRequirements:</b></div><ul><li>\nMS or PhD in Computer Science, Engineering, Mathematics or Statistics, with specialization in computer vision and deep learning.</li><li>\nMinimum 4 years of industrial experience in developing and deploying Computer Vision and Deep Learning applications in Production at scale.</li><li>\nExperience in software development, integration with deep learning algorithms and deployment in production.</li><li>\nProficiency in scientific understanding and implementation of deep learning architectures in Computer vision (Image classification, object detection, segmentation, pose estimation) from ideation to productionized deployment.</li><li>\nSoftware development in Python, Deep learning (Tensorflow and Pytorch), Machine Learning libraries (OpenCV, Scikit-learn, NumPy, Pandas) and Data Analytics/Reporting.</li><li>\nDevOps: Code Management, Version Control, Code Review, CI/CD, Configuration Management, Monitoring, Containerization</li><li>\nMLOps: Experiment Management (Model Versioning, Parameter Versioning, Model Performance Metrics), Model Integration, Serving, Deployment, Testing and Continuous Monitoring</li><li>\nDataOps: Data Gathering, Annotation, Quality, Visualization, Versioning, and Engineering.</li><li>\nAbility to read scientific publications, understand and implement proposed solutions.</li><li>\nExcellent written and spoken communication skills.</li><li>\nSelf-driven and strong problem-solving skills.</li><li>\nTeam work.</li><li>\nStrong analytical skills and process focus</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Science & Research Occupations",
+            "Research Computer Scientists"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Code District",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 9,
+        "jobKey": "80f88fa80d1db977",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=80f88fa80d1db977",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Data Engineer (Azure Platform)",
+        "companyName": "Algo",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 months ago",
+        "datePublished": "2025-10-16",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Algo",
+        "rating": {
+            "rating": 3.4,
+            "count": 12
+        },
+        "descriptionText": "Position: Data Engineer (Azure Platform)\n\nLocation: Lahore, Pakistan (on-site)\n\nJob Description\n• Design and develop scalable data warehouse solutions to support analytics and reporting.\n• Build and maintain efficient Azure Data Pipelines using Azure Data Factory for ETL processes.\n• Develop and optimize Spark jobs using Databricks and PySpark for large-scale data transformations.\n• Coordinate with onsite and offshore teams to ensure seamless project execution and business continuity.\n• Develop and maintain dashboards and reports using BI tools such as Power BI, Tableau, MicroStrategy, or Qlik.\n• Manage the presentation and access layers to ensure secure and efficient data access.\n• Work directly with clients and stakeholders to understand requirements and deliver actionable data solutions\n\nQualifications\n\n• BS in Computer Science or a related field with 4-5 years of experience in BI and data management projects.\n• Strong expertise in database and data warehouse design, support, and maintenance.\n• Proficiency in writing complex SQL and SparkSQL queries.\n• Experience in Python and its data-related frameworks.\n• Hands-on experience with Databricks and PySpark for data engineering tasks.\n• Strong proficiency in Power BI; experience with other BI tools is a plus.\n• Experience with Azure Data Platform (Data Factory, Azure SQL, Synapse, Data Lake) is preferred.\n• Ability to generate and maintain comprehensive technical documentation.\n• Excellent communication and interpersonal skills.\n• Strong analytical and problem-solving abilities.\n• Willingness to learn and adapt to new technologies and project requirements.\n• Experience in data analysis is a plus.\n• Ability to work independently and handle critical situations confidently.\n• A collaborative, team-oriented mindset.",
+        "descriptionHtml": "<div><p><b>Position:</b> Data Engineer (Azure Platform)</p>\n<p><b>\nLocation:</b> Lahore, Pakistan (on-site)</p><p></p><div><b><br>\nJob Description</b><br>\n<ul><li>Design and develop scalable data warehouse solutions to support analytics and reporting.</li><li>Build and maintain efficient <b>Azure Data Pipelines </b>using <b>Azure Data Factory</b> for ETL processes.</li><li>Develop and optimize Spark jobs using <b>Databricks</b> and <b>PySpark</b> for large-scale data transformations.</li><li>Coordinate with onsite and offshore teams to ensure seamless project execution and business continuity.</li><li>Develop and maintain dashboards and reports using BI tools such as Power BI, Tableau, MicroStrategy, or Qlik.</li><li>Manage the presentation and access layers to ensure secure and efficient data access.</li><li>Work directly with clients and stakeholders to understand requirements and deliver actionable data solutions</li></ul></div><p></p><p><b><br>\nQualifications</b></p>\n<ul><li>BS in Computer Science or a related field with <b>4-5 years of experience</b> in BI and data management projects.</li><li>Strong expertise in <b>database</b> and <b>data warehouse design</b>, support, and maintenance.</li><li>Proficiency in <b>writing complex SQL</b> and <b>SparkSQL queries</b>.</li><li>Experience in <b>Python</b> and its data-related frameworks.</li><li>Hands-on experience with <b>Databricks</b> and <b>PySpark</b> for data engineering tasks.</li><li>Strong proficiency in Power BI; experience with other BI tools is a plus.</li><li>Experience with Azure Data Platform <b>(Data Factory, Azure SQL, Synapse, Data Lake)</b> is preferred.</li><li>Ability to generate and maintain comprehensive technical documentation.</li><li>Excellent communication and interpersonal skills.</li><li>Strong analytical and problem-solving abilities.</li><li>Willingness to learn and adapt to new technologies and project requirements.</li><li>Experience in data analysis is a plus.</li><li>Ability to work independently and handle critical situations confidently.</li><li>A collaborative, team-oriented mindset.</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Developers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Algo",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 10,
+        "jobKey": "c48447e2d2c07c21",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=c48447e2d2c07c21",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Instrumentation Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/ae16877fde6f0cd10f337275a4c7a874",
+        "companyName": "Avanceon",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "6 months ago",
+        "datePublished": "2025-09-25",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Avanceon",
+        "rating": {
+            "rating": 4.2,
+            "count": 18
+        },
+        "descriptionText": "Are you a skilled and experienced Instrumentation Engineer looking to take on exciting challenges in the oil and gas industry? Do you thrive in a collaborative environment and have a strong understanding of relevant codes and standards?\n\nIf so, Avanceon is seeking a talented Instrumentation Engineer to join our dynamic Engineering Department!\n\nWhy Join Us?\n\nAt Avanceon, you'll be part of a dedicated discipline engineering group, working on diverse projects with opportunities to coordinate with project leads, contractors, clients, and vendors. You'll have the chance to lead projects, manage scope, schedule, and cost, and ensure the timely and methodical completion of instrumentation engineering activities.\n\n✔ Lead Projects | ✔ Collaborative Environment | ✔ Growth Opportunities\n\nJoin us in driving engineering excellence at Avanceon! ✨\n\nWe are looking for an Instrumentation Engineer with 4-6 years of experience to contribute to the full lifecycle of instrumentation engineering activities.\n\nYour Role in Driving Instrumentation Excellence:\n\nLead small to medium-sized instrumentation projects, managing scope, schedule, and cost.\nEnsure the methodical and timely completion of engineering for assigned projects.\nEffectively plan and follow up on scheduled activities.\nParticipate in studies, conceptual designs, and estimate preparation as required.\nPrepare instrumentation engineering design documents and drawings (specifications, installation guidelines) for process instruments and control instrumentation systems, ensuring code compliance.\nPerform primary and final element sizing and selection of field instrumentation.\nConduct detailed technical reviews with vendor/contractor instrumentation designs to ensure compliance with project specifications and applicable standards and codes.\nReview, comment on, and red-line mark up P&IDs, layouts, and other key documents with consideration for safety, operability, and simplicity.\nEnsure all project work conforms to agreed codes and practices, meets contract specifications, project scope, and technical briefs, and applies outlined design criteria and methodologies.\nPerform validation of engineering data sheets, specifications, requisitions, technical bid evaluations, vendor document reviews and approvals, and other engineering deliverables.\nCoordinate with other engineering discipline teams and be responsible for work progress and quality of deliverables within the instrumentation area.\nAnalyze and interpret all project-related documents (instrument, electrical, mechanical, piping, etc.) to accurately quantify all controls and instrumentation scope items.\nMaintain a high-quality design threshold through the use of understandable quality procedures.\n\nWhat We're Looking For:\n\n✔ Bachelor's Degree in Electronics or Mechatronics Engineering (B Eng).\n✔ Minimum 4-6 years of working experience in instrumentation design and project deliveries.\n✔ Proficient in codes and standards in the oil and gas industry (API, BS, ISO, ASME, ANSI, IEC, ISA, IEEE, etc.).\n✔ Strong interpersonal skills and a proven ability to work effectively as part of a team.\n✔ Ability to collaborate with all levels of management and multinational staff.\n\nWhat's in It for You?\n\nCompetitive Salary and Benefits Package – We value your expertise.\nOpportunity to lead projects and grow your career within a leading organization.\nCollaborative and supportive team environment.\nWork on diverse and challenging projects in the oil and gas sector.\n\nReady to Lead Instrumentation Engineering Activities?\n\nIf you are a motivated and experienced Instrumentation Engineer looking for an exciting opportunity, apply now! Let's engineer a successful future together.",
+        "descriptionHtml": "<div><p>Are you a skilled and experienced Instrumentation Engineer looking to take on exciting challenges in the oil and gas industry? Do you thrive in a collaborative environment and have a strong understanding of relevant codes and standards?</p>\n<p>If so, Avanceon is seeking a talented Instrumentation Engineer to join our dynamic Engineering Department!</p>\n<p><b>Why Join Us?</b></p>\n<p>At Avanceon, you'll be part of a dedicated discipline engineering group, working on diverse projects with opportunities to coordinate with project leads, contractors, clients, and vendors. You'll have the chance to lead projects, manage scope, schedule, and cost, and ensure the timely and methodical completion of instrumentation engineering activities.</p>\n<p>✔ <b>Lead Projects</b> | ✔ <b>Collaborative Environment</b> | ✔ <b>Growth Opportunities</b></p>\n<p>Join us in driving engineering excellence at Avanceon! ✨</p>\n<p>We are looking for an <b>Instrumentation Engineer</b> with 4-6 years of experience to contribute to the full lifecycle of instrumentation engineering activities.</p>\n<p><b>Your Role in Driving Instrumentation Excellence:</b></p>\n<ul><li>Lead small to medium-sized instrumentation projects, managing scope, schedule, and cost.</li>\n<li>Ensure the methodical and timely completion of engineering for assigned projects.</li>\n<li>Effectively plan and follow up on scheduled activities.</li>\n<li>Participate in studies, conceptual designs, and estimate preparation as required.</li>\n<li>Prepare instrumentation engineering design documents and drawings (specifications, installation guidelines) for process instruments and control instrumentation systems, ensuring code compliance.</li>\n<li>Perform primary and final element sizing and selection of field instrumentation.</li>\n<li>Conduct detailed technical reviews with vendor/contractor instrumentation designs to ensure compliance with project specifications and applicable standards and codes.</li>\n<li>Review, comment on, and red-line mark up P&amp;IDs, layouts, and other key documents with consideration for safety, operability, and simplicity.</li>\n<li>Ensure all project work conforms to agreed codes and practices, meets contract specifications, project scope, and technical briefs, and applies outlined design criteria and methodologies.</li>\n<li>Perform validation of engineering data sheets, specifications, requisitions, technical bid evaluations, vendor document reviews and approvals, and other engineering deliverables.</li>\n<li>Coordinate with other engineering discipline teams and be responsible for work progress and quality of deliverables within the instrumentation area.</li>\n<li>Analyze and interpret all project-related documents (instrument, electrical, mechanical, piping, etc.) to accurately quantify all controls and instrumentation scope items.</li>\n<li>Maintain a high-quality design threshold through the use of understandable quality procedures.</li>\n</ul><p><b>What We're Looking For:</b></p>\n<ul><li>✔ Bachelor's Degree in Electronics or Mechatronics Engineering (B Eng).</li>\n<li>✔ Minimum 4-6 years of working experience in instrumentation design and project deliveries.</li>\n<li>✔ Proficient in codes and standards in the oil and gas industry (API, BS, ISO, ASME, ANSI, IEC, ISA, IEEE, etc.).</li>\n<li>✔ Strong interpersonal skills and a proven ability to work effectively as part of a team.</li>\n<li>✔ Ability to collaborate with all levels of management and multinational staff.</li>\n</ul><p><b>What's in It for You?</b></p>\n<ul><li>Competitive Salary and Benefits Package &ndash; We value your expertise.</li>\n<li>Opportunity to lead projects and grow your career within a leading organization.</li>\n<li>Collaborative and supportive team environment.</li>\n<li>Work on diverse and challenging projects in the oil and gas sector.</li>\n</ul><p><b>Ready to Lead Instrumentation Engineering Activities?</b></p>\n<p>If you are a motivated and experienced Instrumentation Engineer looking for an exciting opportunity, apply now! Let's engineer a successful future together.</p></div><p></p>",
+        "benefits": [],
+        "occupation": [
+            "Engineers",
+            "Electrical Engineers",
+            "Engineering Occupations",
+            "Architecture & Engineering Occupations",
+            "Instrumentation Design Engineers"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Avanceon MEA",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 11,
+        "jobKey": "29574fd43c796da6",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=29574fd43c796da6",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    }
+]

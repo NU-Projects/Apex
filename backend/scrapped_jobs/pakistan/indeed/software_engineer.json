@@ -1,0 +1,1064 @@
+[
+    {
+        "title": "Mid-Level Software Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/a039c163df4333baf268c0ea2b15ea92",
+        "companyName": "Devfum",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-13",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/381aaec178519ed6acff9d6bc7e0838f",
+        "companyUrl": "https://www.indeed.com/cmp/Devfum",
+        "rating": {
+            "rating": 5,
+            "count": 5
+        },
+        "descriptionText": "*About Devfum*\n\nDevfum is a forward-thinking technology company focused on delivering web development, AI, and extended reality (XR) solutions that redefine industries. At Devfum, we foster a collaborative environment where top talent can thrive. You will work on cutting-edge technologies, contribute to impactful projects, and enjoy opportunities for continuous learning and career growth. Join us and be part of a team shaping the future of digital innovation.\n\n*Vision:* _“To be the world’s pioneering digital experience provider.”_\n\n*Why Join Devfum?*\n\nWe offer an environment that fosters growth, learning, and work-life balance, ensuring that our employees feel valued and motivated.\n\n* *Bi-Annual Salary Increments:* Recognizing your contributions regularly.\n* *Clear Career Growth Roadmap:* Software Engineer → Senior Software Engineer → Engineering Manager.\n* *Continuous Learning:* Access to paid courses to enhance your skills.\n* *Daily Meals:* Enjoy complimentary lunch and tea/coffee.\n* *Recreational Activities:* Monthly sports activities and annual company tours.\n\n*Role Overview*\n\nWe are hiring a Mid-Level Software Engineer who is strong in TypeScript, has solid backend architecture and database experience, and has hands-on exposure to DevOps in real production environments.\n\nThis role sits between junior execution and senior delivery ownership. You will work under a Senior Software Engineer to own features end-to-end, mentor junior engineers, and support deployments. This is a role for a builder who thinks in terms of edge cases, data integrity, and failure scenarios — not just happy paths.\n\n*Key Responsibilities*\n\n* Own full features/modules from implementation to release. Design the approach before coding and ensure features are stable, tested, and production-ready.\n* Design REST APIs with proper validation and error handling. Implement layered backend architectures (controllers, services, data access) and handle role-based access control.\n* Build production-ready interfaces using React.js and Next.js. Handle client-side/server-side rendering and state management.\n* Translate high-level user stories into clear tasks for junior engineers. Review PRs and guide juniors to reduce rework.\n* Handle deployments to staging and production (Linux/Cloud — AWS/DigitalOcean), debug basic production issues, check logs, and manage environment variables.\n\n*Required Qualifications*\n\n* 2–3 years of real production experience. You must have shipped real features to production.\n* Technical Stack (Non-Negotiable):\n* *Primary Language:* TypeScript (large codebases, interfaces, generics, strict type safety ).\n* *Frontend:* React.js, Next.js, component-based architecture.\n* *Databases:* PostgreSQL, MongoDB, or MySQL with schema design, data modeling, and ORMs (Prisma, TypeORM, Mongoose).\n* *Auth:* Supabase Auth, Firebase, Auth0, or NextAuth.\n* *Integrations:* Third-party APIs (Stripe, Twilio, OpenAI), real-time features (WebSockets/Supabase Realtime), or cloud storage (AWS S3).\n\n*Soft Skills & Mindset*\n\n* You take responsibility for your code and decisions.\n* You communicate clearly, ask questions early, and respect engineering processes.\n\n*Work Schedule*\n\nStandard Hours: 12:00 PM – 09:00 PM, Monday to Friday.\n\n*Salary Range*\n\nPKR 200,000 – PKR 250,000\n\nJob Type: Full-time\n\nPay: Rs200,000.00 - Rs250,000.00 per month\n\n\n\nApplication Question(s):\n* Kindly share your GitHub profile link\n\nEducation:\n* Bachelor's (Preferred)\n\nExperience:\n*  real production: 3 years (Preferred)\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>About Devfum</b></p><p>Devfum is a forward-thinking technology company focused on delivering web development, AI, and extended reality (XR) solutions that redefine industries. At Devfum, we foster a collaborative environment where top talent can thrive. You will work on cutting-edge technologies, contribute to impactful projects, and enjoy opportunities for continuous learning and career growth. Join us and be part of a team shaping the future of digital innovation.</p><p><b>Vision:</b> <i>&ldquo;To be the world&rsquo;s pioneering digital experience provider.&rdquo;</i></p><p><b>Why Join Devfum?</b></p><p>We offer an environment that fosters growth, learning, and work-life balance, ensuring that our employees feel valued and motivated.</p><ul><li><b>Bi-Annual Salary Increments:</b> Recognizing your contributions regularly.</li><li><b>Clear Career Growth Roadmap:</b> Software Engineer &rarr; Senior Software Engineer &rarr; Engineering Manager.</li><li><b>Continuous Learning:</b> Access to paid courses to enhance your skills.</li><li><b>Daily Meals:</b> Enjoy complimentary lunch and tea/coffee.</li><li><b>Recreational Activities:</b> Monthly sports activities and annual company tours.</li></ul><p><b>Role Overview</b></p><p>We are hiring a Mid-Level Software Engineer who is strong in TypeScript, has solid backend architecture and database experience, and has hands-on exposure to DevOps in real production environments.</p><p>This role sits between junior execution and senior delivery ownership. You will work under a Senior Software Engineer to own features end-to-end, mentor junior engineers, and support deployments. This is a role for a builder who thinks in terms of edge cases, data integrity, and failure scenarios &mdash; not just happy paths.</p><p><b>Key Responsibilities</b></p><ul><li>Own full features/modules from implementation to release. Design the approach before coding and ensure features are stable, tested, and production-ready.</li><li>Design REST APIs with proper validation and error handling. Implement layered backend architectures (controllers, services, data access) and handle role-based access control.</li><li>Build production-ready interfaces using React.js and Next.js. Handle client-side/server-side rendering and state management.</li><li>Translate high-level user stories into clear tasks for junior engineers. Review PRs and guide juniors to reduce rework.</li><li>Handle deployments to staging and production (Linux/Cloud &mdash; AWS/DigitalOcean), debug basic production issues, check logs, and manage environment variables.</li></ul><p><b>Required Qualifications</b></p><ul><li>2&ndash;3 years of real production experience. You must have shipped real features to production.</li><li>Technical Stack (Non-Negotiable):</li><li><b>Primary Language:</b> TypeScript (large codebases, interfaces, generics, strict type safety ).</li><li><b>Frontend:</b> React.js, Next.js, component-based architecture.</li><li><b>Databases:</b> PostgreSQL, MongoDB, or MySQL with schema design, data modeling, and ORMs (Prisma, TypeORM, Mongoose).</li><li><b>Auth:</b> Supabase Auth, Firebase, Auth0, or NextAuth.</li><li><b>Integrations:</b> Third-party APIs (Stripe, Twilio, OpenAI), real-time features (WebSockets/Supabase Realtime), or cloud storage (AWS S3).</li></ul><p><b>Soft Skills &amp; Mindset</b></p><ul><li>You take responsibility for your code and decisions.</li><li>You communicate clearly, ask questions early, and respect engineering processes.</li></ul><p><b>Work Schedule</b></p><p>Standard Hours: 12:00 PM &ndash; 09:00 PM, Monday to Friday.</p><p><b>Salary Range</b></p><p>PKR 200,000 &ndash; PKR 250,000</p><p>Job Type: Full-time</p><p>Pay: Rs200,000.00 - Rs250,000.00 per month</p><p>Application Question(s):</p><ul><li>Kindly share your GitHub profile link</li></ul><p>Education:</p><ul><li>Bachelor's (Preferred)</li></ul><p>Experience:</p><ul><li> real production: 3 years (Preferred)</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 0,
+        "jobKey": "5968d5407a01801d",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=5968d5407a01801d",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Quality Assurance Engineer",
+        "companyName": "Constelle Business Solutions",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "11 days ago",
+        "datePublished": "2026-03-04",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Constelle-Business-Solutions",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "About Position:\n\nAs an Automation QA Engineer, you will be responsible for developing and implementing automated test scripts to verify the functionality and performance of our fintech applications. Your expertise will be crucial in maintaining the high quality and security standards that our clients expect.\n\nJob Tittle:\n\nSoftware Quality Assurance Engineer\n\nTimings: 9:00 am – 6:00 pm\n\nLocation: Gulberg Greens, Islamabad\n\nKey Responsibilities:\n\n* Develop and maintain automated test scripts using industry-standard tools for fintech applications.\n\n* Collaborate with the development team to understand application requirements and ensure test coverage.\n\n* Execute test cases to verify the functionality, performance, and security of fintech applications.\n\n* Participate in the design and execution of load and performance testing. • Work closely with cross-functional teams to identify and troubleshoot issues, and ensure t imely resolution.\n\n* Create and maintain comprehensive test documentation, including test plans and test reports.\n\n* Implement and maintain CI/CD pipelines for automated testing and integration.\n\nRequired Qualifications:\n\n* Bachelor’s degree in computer science, Information Technology, or a related field (or equivalent work experience).\n\n* Proven experience of 3-5 years as an Automation QA Engineer, with a strong background in f intech and Telco industry\n\n* Proficiency in test automation tools and frameworks, such as Selenium, Appium, or similar. • Experience with scripting and programming languages, e.g., Java, Python, or Ruby.\n\n* Familiarity with fintech applications, financial protocols, and data security.\n\n* Solid understanding of software development processes and methodologies.\n\n* Strong problem-solving skills and the ability to analyze and report defects effectively.\n\n* Excellent communication and collaboration skills.\n\n* Performance test results experience with Postman, Jmeter and K6 Preferred\n\nQualifications:\n\n* Relevant certifications in quality assurance, test automation, or fintech.\n\n* Experience with test management tools like JIRA, TestRail, or similar.\n\n* Knowledge of continuous integration and continuous deployment (CI/CD) pipelines.\n\n* Familiarity with financial regulatory standards and compliance in the fintech industry.\n\n* Previous experience in testing mobile applications and APIs.\n\nJob Type: Full-time\n\nPay: Up to Rs250,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p>About Position:</p><p>As an Automation QA Engineer, you will be responsible for developing and implementing automated test scripts to verify the functionality and performance of our fintech applications. Your expertise will be crucial in maintaining the high quality and security standards that our clients expect.</p><p>Job Tittle:</p><p>Software Quality Assurance Engineer</p><p>Timings: 9:00 am &ndash; 6:00 pm</p><p>Location: Gulberg Greens, Islamabad</p><p>Key Responsibilities:</p><ul><li>Develop and maintain automated test scripts using industry-standard tools for fintech applications.</li></ul><ul><li>Collaborate with the development team to understand application requirements and ensure test coverage.</li></ul><ul><li>Execute test cases to verify the functionality, performance, and security of fintech applications.</li></ul><ul><li>Participate in the design and execution of load and performance testing. &bull; Work closely with cross-functional teams to identify and troubleshoot issues, and ensure t imely resolution.</li></ul><ul><li>Create and maintain comprehensive test documentation, including test plans and test reports.</li></ul><ul><li>Implement and maintain CI/CD pipelines for automated testing and integration.</li></ul><p>Required Qualifications:</p><ul><li>Bachelor&rsquo;s degree in computer science, Information Technology, or a related field (or equivalent work experience).</li></ul><ul><li>Proven experience of 3-5 years as an Automation QA Engineer, with a strong background in f intech and Telco industry</li></ul><ul><li>Proficiency in test automation tools and frameworks, such as Selenium, Appium, or similar. &bull; Experience with scripting and programming languages, e.g., Java, Python, or Ruby.</li></ul><ul><li>Familiarity with fintech applications, financial protocols, and data security.</li></ul><ul><li>Solid understanding of software development processes and methodologies.</li></ul><ul><li>Strong problem-solving skills and the ability to analyze and report defects effectively.</li></ul><ul><li>Excellent communication and collaboration skills.</li></ul><ul><li>Performance test results experience with Postman, Jmeter and K6 Preferred</li></ul><p>Qualifications:</p><ul><li>Relevant certifications in quality assurance, test automation, or fintech.</li></ul><ul><li>Experience with test management tools like JIRA, TestRail, or similar.</li></ul><ul><li>Knowledge of continuous integration and continuous deployment (CI/CD) pipelines.</li></ul><ul><li>Familiarity with financial regulatory standards and compliance in the fintech industry.</li></ul><ul><li>Previous experience in testing mobile applications and APIs.</li></ul><p>Job Type: Full-time</p><p>Pay: Up to Rs250,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Software Quality Assurance Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 1,
+        "jobKey": "34961bb116e1783f",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=34961bb116e1783f",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Database Engineer",
+        "companyName": "Binary Brix ",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-18",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Binary-Brix-1",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "Database / Systems Engineer (Visual Object Indexing & Retrieval)\nExperience: 3–5 Years\nLocation: Remote\n\nJob Overview\n\nHiring a Database / Systems Engineer to design and build high-performance systems for storing and retrieving visual object data. You will work on scalable object memory systems that help AI and robotics platforms recognize, compare, and reason about objects using images, embeddings, and metadata.\n\nKey Responsibilities\n\n* Design and develop scalable databases for visual object storage.\n* Implement fast similarity search and ANN (Approximate Nearest Neighbor) systems.\n* Build data ingestion pipelines for images, embeddings, and metadata.\n* Optimize indexing strategies, memory usage, and query performance.\n* Design flexible schemas with versioning and future scalability.\n* Develop APIs for object search, confidence scoring, and novelty detection.\n* Maintain and rebuild indexes for large-scale datasets.\n* Monitor system performance, latency, and retrieval accuracy.\n* Collaborate with ML engineers to improve embedding quality and results.\n\nRequired Qualifications\n\n* Bachelor’s degree in Computer Science, Software Engineering, or a related field.\n* 3–5 years of experience in backend, systems, or database engineering.\n* Strong experience with SQL and/or NoSQL databases.\n* Experience building scalable data pipelines.\n* Good understanding of indexing, caching, and system performance.\n\nNice to Have (Bonus Skills)\n\n* Experience with vector search tools (FAISS, Milvus, Pinecone, HNSWlib, Annoy).\n* Experience with ML pipelines or image processing systems.\n* Knowledge of ANN algorithms.\n* Interest in robotics, AI, or computer vision.\n\nHiring\n\nJob Type: Full-time\n\nPay: Rs300,000.00 - Rs350,000.00 per month\n\nWork Location: Remote",
+        "descriptionHtml": "<p>Database / Systems Engineer (Visual Object Indexing &amp; Retrieval)<br/>Experience: 3&ndash;5 Years<br/>Location: Remote</p><p>Job Overview</p><p>Hiring a Database / Systems Engineer to design and build high-performance systems for storing and retrieving visual object data. You will work on scalable object memory systems that help AI and robotics platforms recognize, compare, and reason about objects using images, embeddings, and metadata.</p><p>Key Responsibilities</p><ul><li>Design and develop scalable databases for visual object storage.</li><li>Implement fast similarity search and ANN (Approximate Nearest Neighbor) systems.</li><li>Build data ingestion pipelines for images, embeddings, and metadata.</li><li>Optimize indexing strategies, memory usage, and query performance.</li><li>Design flexible schemas with versioning and future scalability.</li><li>Develop APIs for object search, confidence scoring, and novelty detection.</li><li>Maintain and rebuild indexes for large-scale datasets.</li><li>Monitor system performance, latency, and retrieval accuracy.</li><li>Collaborate with ML engineers to improve embedding quality and results.</li></ul><p>Required Qualifications</p><ul><li>Bachelor&rsquo;s degree in Computer Science, Software Engineering, or a related field.</li><li>3&ndash;5 years of experience in backend, systems, or database engineering.</li><li>Strong experience with SQL and/or NoSQL databases.</li><li>Experience building scalable data pipelines.</li><li>Good understanding of indexing, caching, and system performance.</li></ul><p>Nice to Have (Bonus Skills)</p><ul><li>Experience with vector search tools (FAISS, Milvus, Pinecone, HNSWlib, Annoy).</li><li>Experience with ML pipelines or image processing systems.</li><li>Knowledge of ANN algorithms.</li><li>Interest in robotics, AI, or computer vision.</li></ul><p>Hiring</p><p>Job Type: Full-time</p><p>Pay: Rs300,000.00 - Rs350,000.00 per month</p><p>Work Location: Remote</p>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Database Administrators & Architects",
+            "Database Architects"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 2,
+        "jobKey": "1fb36b619e77b80a",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=1fb36b619e77b80a",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Mid-Level Software Engineer (TypeScript / Full Stack)",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/a039c163df4333baf268c0ea2b15ea92",
+        "companyName": "Devfum",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "3 months ago",
+        "datePublished": "2025-12-30",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/381aaec178519ed6acff9d6bc7e0838f",
+        "companyUrl": "https://www.indeed.com/cmp/Devfum",
+        "rating": {
+            "rating": 5,
+            "count": 5
+        },
+        "descriptionText": "*About Devfum*\n\nDevfum is a forward-thinking technology company focused on delivering web development, AI, and extended reality (XR) solutions that redefine industries. At Devfum, we foster a collaborative environment where top talent can thrive. You will work on cutting-edge technologies, contribute to impactful projects, and enjoy opportunities for continuous learning and career growth. Join us and be part of a team shaping the future of digital innovation.\n\n*Vision:* _“To be the world’s pioneering digital experience provider.”_\n\n*Why Join Devfum?*\n\nWe offer an environment that fosters growth, learning, and work-life balance, ensuring that our employees feel valued and motivated.\n\n* *Bi-Annual Salary Increments:* Recognizing your contributions regularly.\n* *Clear Career Growth Roadmap:* Software Engineer → Senior Software Engineer → Engineering Manager.\n* *Continuous Learning:* Access to paid courses to enhance your skills.\n* *Daily Meals:* Enjoy complimentary lunch and tea/coffee.\n* *Recreational Activities:* Monthly sports activities and annual company tours.\n\n*Role Overview*\n\nWe are hiring a Mid-Level Software Engineer who is strong in TypeScript, has solid backend architecture and database experience, and has hands-on exposure to DevOps in real production environments.\n\nThis role sits between junior execution and senior delivery ownership. You will work under a Senior Software Engineer to own features end-to-end, mentor junior engineers, and support deployments. This is a role for a builder who thinks in terms of edge cases, data integrity, and failure scenarios — not just happy paths.\n\n*Key Responsibilities*\n\n* Own full features/modules from implementation to release. Design the approach before coding and ensure features are stable, tested, and production-ready.\n* Design REST APIs with proper validation and error handling. Implement layered backend architectures (controllers, services, data access) and handle role-based access control.\n* Build production-ready interfaces using React.js and Next.js. Handle client-side/server-side rendering and state management.\n* Translate high-level user stories into clear tasks for junior engineers. Review PRs and guide juniors to reduce rework.\n* Handle deployments to staging and production (Linux/Cloud — AWS/DigitalOcean), debug basic production issues, check logs, and manage environment variables.\n\n*Required Qualifications*\n\n* 1.5–3 years of real production experience. You must have shipped real features to production.\n* Technical Stack (Non-Negotiable):\n* *Primary Language:* TypeScript (large codebases, interfaces, generics, strict type safety ).\n* *Frontend:* React.js, Next.js, component-based architecture.\n* *Databases:* PostgreSQL, MongoDB, or MySQL with schema design, data modeling, and ORMs (Prisma, TypeORM, Mongoose).\n* *Auth:* Supabase Auth, Firebase, Auth0, or NextAuth.\n* *Integrations:* Third-party APIs (Stripe, Twilio, OpenAI), real-time features (WebSockets/Supabase Realtime), or cloud storage (AWS S3).\n\n*Soft Skills & Mindset*\n\n* You take responsibility for your code and decisions.\n* You communicate clearly, ask questions early, and respect engineering processes.\n\n*Work Schedule*\n\nStandard Hours: 12:00 PM – 09:00 PM, Monday to Friday.\n\n*Salary Range*\n\nPKR 150,000 – PKR 250,000\n\nJob Type: Full-time\n\nPay: Rs200,000.00 - Rs250,000.00 per month\n\n\n\nApplication Question(s):\n* Kindly share your GitHub profile link\n\nEducation:\n* Bachelor's (Preferred)\n\nExperience:\n*  real production: 3 years (Preferred)\n\nLocation:\n* Lahore (Preferred)\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>About Devfum</b></p><p>Devfum is a forward-thinking technology company focused on delivering web development, AI, and extended reality (XR) solutions that redefine industries. At Devfum, we foster a collaborative environment where top talent can thrive. You will work on cutting-edge technologies, contribute to impactful projects, and enjoy opportunities for continuous learning and career growth. Join us and be part of a team shaping the future of digital innovation.</p><p><b>Vision:</b> <i>&ldquo;To be the world&rsquo;s pioneering digital experience provider.&rdquo;</i></p><p><b>Why Join Devfum?</b></p><p>We offer an environment that fosters growth, learning, and work-life balance, ensuring that our employees feel valued and motivated.</p><ul><li><b>Bi-Annual Salary Increments:</b> Recognizing your contributions regularly.</li><li><b>Clear Career Growth Roadmap:</b> Software Engineer &rarr; Senior Software Engineer &rarr; Engineering Manager.</li><li><b>Continuous Learning:</b> Access to paid courses to enhance your skills.</li><li><b>Daily Meals:</b> Enjoy complimentary lunch and tea/coffee.</li><li><b>Recreational Activities:</b> Monthly sports activities and annual company tours.</li></ul><p><b>Role Overview</b></p><p>We are hiring a Mid-Level Software Engineer who is strong in TypeScript, has solid backend architecture and database experience, and has hands-on exposure to DevOps in real production environments.</p><p>This role sits between junior execution and senior delivery ownership. You will work under a Senior Software Engineer to own features end-to-end, mentor junior engineers, and support deployments. This is a role for a builder who thinks in terms of edge cases, data integrity, and failure scenarios &mdash; not just happy paths.</p><p><b>Key Responsibilities</b></p><ul><li>Own full features/modules from implementation to release. Design the approach before coding and ensure features are stable, tested, and production-ready.</li><li>Design REST APIs with proper validation and error handling. Implement layered backend architectures (controllers, services, data access) and handle role-based access control.</li><li>Build production-ready interfaces using React.js and Next.js. Handle client-side/server-side rendering and state management.</li><li>Translate high-level user stories into clear tasks for junior engineers. Review PRs and guide juniors to reduce rework.</li><li>Handle deployments to staging and production (Linux/Cloud &mdash; AWS/DigitalOcean), debug basic production issues, check logs, and manage environment variables.</li></ul><p><b>Required Qualifications</b></p><ul><li>1.5&ndash;3 years of real production experience. You must have shipped real features to production.</li><li>Technical Stack (Non-Negotiable):</li><li><b>Primary Language:</b> TypeScript (large codebases, interfaces, generics, strict type safety ).</li><li><b>Frontend:</b> React.js, Next.js, component-based architecture.</li><li><b>Databases:</b> PostgreSQL, MongoDB, or MySQL with schema design, data modeling, and ORMs (Prisma, TypeORM, Mongoose).</li><li><b>Auth:</b> Supabase Auth, Firebase, Auth0, or NextAuth.</li><li><b>Integrations:</b> Third-party APIs (Stripe, Twilio, OpenAI), real-time features (WebSockets/Supabase Realtime), or cloud storage (AWS S3).</li></ul><p><b>Soft Skills &amp; Mindset</b></p><ul><li>You take responsibility for your code and decisions.</li><li>You communicate clearly, ask questions early, and respect engineering processes.</li></ul><p><b>Work Schedule</b></p><p>Standard Hours: 12:00 PM &ndash; 09:00 PM, Monday to Friday.</p><p><b>Salary Range</b></p><p>PKR 150,000 &ndash; PKR 250,000</p><p>Job Type: Full-time</p><p>Pay: Rs200,000.00 - Rs250,000.00 per month</p><p>Application Question(s):</p><ul><li>Kindly share your GitHub profile link</li></ul><p>Education:</p><ul><li>Bachelor's (Preferred)</li></ul><p>Experience:</p><ul><li> real production: 3 years (Preferred)</li></ul><p>Location:</p><ul><li>Lahore (Preferred)</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 3,
+        "jobKey": "4c74da93953b7747",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=4c74da93953b7747",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "SQA Engineer",
+        "companyName": "MTBC CareCloud",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "18 days ago",
+        "datePublished": "2026-02-26",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Mtbc-Carecloud",
+        "rating": {
+            "rating": 4,
+            "count": 5
+        },
+        "descriptionText": "*Job Summary:*\n\nWe are looking for a detail-oriented and proactive *Software Quality Assurance (SQA) Engineer* to join our QA team. The ideal candidate will be responsible for ensuring the quality, reliability, and performance of our software applications through thorough testing, effective collaboration, and continuous process improvement.\n\n*Key Responsibilities:*\n\n* *Testing and Analysis:* Conduct comprehensive testing of software applications to identify bugs, errors, and usability issues across platforms.\n* *Test Planning:* Develop detailed test plans, test cases, and test scenarios based on project requirements and technical documentation.\n* *Documentation:* Create and maintain test documentation including test cases, procedures, and test results.\n* *Defect Tracking:* Identify, document, and manage software defects using defect tracking tools (e.g., JIRA, Bugzilla).\n* *Regression Testing:* Execute regression tests to ensure system integrity following code changes or updates.\n* *Automation:* Develop and maintain automated test scripts to streamline and scale testing efforts where applicable.\n* *Collaboration:* Work closely with developers, product managers, and other stakeholders to ensure alignment on quality expectations and product goals.\n* *Quality Assurance Processes:* Contribute to the continuous improvement of QA methodologies, standards, and best practices.\n\n*Required Skills and Qualifications:*\n\n* *Testing Expertise:* Strong knowledge of various testing types (manual, automated, regression, functional, performance, etc.).\n* *Programming Knowledge:* Understanding of programming/scripting languages (e.g., Python, Java, JavaScript) to develop automated tests.\n* *Analytical Skills:* Ability to interpret software requirements and translate them into actionable test cases.\n* *Attention to Detail:* Precision in identifying and documenting software issues.\n* *Communication:* Excellent verbal and written communication skills for effective collaboration with cross-functional teams.\n* *Problem-Solving:* Strong troubleshooting skills to analyze and resolve software defects.\n* *Adaptability:* Willingness to learn new tools and adapt to changing technologies and project needs.\n\n*Preferred Qualifications:*\n\n* Experience with automated testing tools (e.g., Selenium, Cypress, TestNG, JUnit).\n* Familiarity with CI/CD pipelines and tools (e.g., Jenkins, GitLab CI).\n* Experience working in Agile/Scrum environments.\n* Knowledge of performance and security testing practices.\n\n*Education & Experience:*\n\n* Bachelor’s degree in Computer Science, Engineering, Information Technology, or a related field.\n* 2+ years of experience in software testing or quality assurance roles.\n\nJob Type: Full-time\n\nPay: Rs150,000.00 - Rs300,000.00 per month\n\n\n\nApplication Question(s):\n* What is your current salary?\n* What is your expected salary?\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Job Summary:</b></p><p>We are looking for a detail-oriented and proactive <b>Software Quality Assurance (SQA) Engineer</b> to join our QA team. The ideal candidate will be responsible for ensuring the quality, reliability, and performance of our software applications through thorough testing, effective collaboration, and continuous process improvement.</p><p><b>Key Responsibilities:</b></p><ul><li><b>Testing and Analysis:</b> Conduct comprehensive testing of software applications to identify bugs, errors, and usability issues across platforms.</li><li><b>Test Planning:</b> Develop detailed test plans, test cases, and test scenarios based on project requirements and technical documentation.</li><li><b>Documentation:</b> Create and maintain test documentation including test cases, procedures, and test results.</li><li><b>Defect Tracking:</b> Identify, document, and manage software defects using defect tracking tools (e.g., JIRA, Bugzilla).</li><li><b>Regression Testing:</b> Execute regression tests to ensure system integrity following code changes or updates.</li><li><b>Automation:</b> Develop and maintain automated test scripts to streamline and scale testing efforts where applicable.</li><li><b>Collaboration:</b> Work closely with developers, product managers, and other stakeholders to ensure alignment on quality expectations and product goals.</li><li><b>Quality Assurance Processes:</b> Contribute to the continuous improvement of QA methodologies, standards, and best practices.</li></ul><p><b>Required Skills and Qualifications:</b></p><ul><li><b>Testing Expertise:</b> Strong knowledge of various testing types (manual, automated, regression, functional, performance, etc.).</li><li><b>Programming Knowledge:</b> Understanding of programming/scripting languages (e.g., Python, Java, JavaScript) to develop automated tests.</li><li><b>Analytical Skills:</b> Ability to interpret software requirements and translate them into actionable test cases.</li><li><b>Attention to Detail:</b> Precision in identifying and documenting software issues.</li><li><b>Communication:</b> Excellent verbal and written communication skills for effective collaboration with cross-functional teams.</li><li><b>Problem-Solving:</b> Strong troubleshooting skills to analyze and resolve software defects.</li><li><b>Adaptability:</b> Willingness to learn new tools and adapt to changing technologies and project needs.</li></ul><p><b>Preferred Qualifications:</b></p><ul><li>Experience with automated testing tools (e.g., Selenium, Cypress, TestNG, JUnit).</li><li>Familiarity with CI/CD pipelines and tools (e.g., Jenkins, GitLab CI).</li><li>Experience working in Agile/Scrum environments.</li><li>Knowledge of performance and security testing practices.</li></ul><p><b>Education &amp; Experience:</b></p><ul><li>Bachelor&rsquo;s degree in Computer Science, Engineering, Information Technology, or a related field.</li><li>2+ years of experience in software testing or quality assurance roles.</li></ul><p>Job Type: Full-time</p><p>Pay: Rs150,000.00 - Rs300,000.00 per month</p><p>Application Question(s):</p><ul><li>What is your current salary?</li><li>What is your expected salary?</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Software Quality Assurance Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 4,
+        "jobKey": "fc2dada21d34fcca",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=fc2dada21d34fcca",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Senior Software Engineer / Full Stack Developer",
+        "companyName": "VQode Solutions PVT. LTD.",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 hours ago",
+        "datePublished": "2026-03-16",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Vqode-Solutions-Pvt.-Ltd.",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*About the Role*\n\nWe are seeking a *highly skilled and self-driven Senior Software Engineer / Full Stack Developer* with deep expertise in *React*, *Next.js*, and *AWS DevOps*. This role requires someone who can both execute and lead — an engineer who thrives in fast-paced environments, takes ownership, and is passionate about building scalable, modern web applications.\n\nAs a senior member of our engineering team, you will be responsible for full-cycle product development — from system architecture and coding to deployment and team mentoring.\n\n*Key Responsibilities*\n\n* Design, develop, and maintain scalable web applications using *React* and *Next.js*\n* Architect full-stack solutions and ensure best practices in performance, security, and scalability\n* Drive DevOps workflows, CI/CD pipelines, infrastructure-as-code, and deployment automation using *AWS*\n* Lead technical discussions, code reviews, and guide junior developers\n* Collaborate closely with product managers, designers, and cross-functional teams to deliver impactful features\n* Monitor and optimize application performance and infrastructure costs\n* Proactively identify and resolve technical issues or roadblocks\n\n*Requirements*\n\n* *10+ years* of professional software development experience, ideally in a fast-paced or startup environment\n* Strong proficiency in *React*, *Next.js*, JavaScript/TypeScript\n* Deep experience with *AWS services* such as EC2, S3, Lambda, CloudFormation, CodePipeline, etc.\n* Solid understanding of backend development (Node.js preferred) and RESTful API design\n* Experience with databases (SQL/NoSQL), caching, and scalable architecture patterns\n* Strong DevOps mindset — comfortable with CI/CD, logging, monitoring, and infrastructure automation\n* Ability to lead and mentor a team, drive initiatives independently, and communicate effectively\n\n*Preferred Qualifications*\n\n* Experience with GraphQL and microservices\n* Familiarity with containerization tools (Docker, ECS, Kubernetes)\n* Exposure to Agile methodologies and version control systems (e.g., Git)\n\n*What We Offer*\n\n* Competitive salary and performance-based bonuses\n* Flexible work schedule and remote-first culture\n* Opportunity to take full ownership of projects and shape technical direction\n* A collaborative, engineering-driven culture\n\nJob Type: Full-time\n\nPay: From Rs400,000.00 per month\n\n\n\nApplication Question(s):\n* What salary package are you expecting? (required to be considered for this opportunity)\n* How soon can you join us?\n\nExperience:\n* Software Development: 10 years (Required)\n* Nodejs: 5 years (Required)\n* Nextjs: 5 years (Required)\n\nWork Location: Remote",
+        "descriptionHtml": "<p><b>About the Role</b></p><p>We are seeking a <b>highly skilled and self-driven Senior Software Engineer / Full Stack Developer</b> with deep expertise in <b>React</b>, <b>Next.js</b>, and <b>AWS DevOps</b>. This role requires someone who can both execute and lead &mdash; an engineer who thrives in fast-paced environments, takes ownership, and is passionate about building scalable, modern web applications.</p><p>As a senior member of our engineering team, you will be responsible for full-cycle product development &mdash; from system architecture and coding to deployment and team mentoring.</p><p><b>Key Responsibilities</b></p><ul><li>Design, develop, and maintain scalable web applications using <b>React</b> and <b>Next.js</b></li><li>Architect full-stack solutions and ensure best practices in performance, security, and scalability</li><li>Drive DevOps workflows, CI/CD pipelines, infrastructure-as-code, and deployment automation using <b>AWS</b></li><li>Lead technical discussions, code reviews, and guide junior developers</li><li>Collaborate closely with product managers, designers, and cross-functional teams to deliver impactful features</li><li>Monitor and optimize application performance and infrastructure costs</li><li>Proactively identify and resolve technical issues or roadblocks</li></ul><p><b>Requirements</b></p><ul><li><b>10+ years</b> of professional software development experience, ideally in a fast-paced or startup environment</li><li>Strong proficiency in <b>React</b>, <b>Next.js</b>, JavaScript/TypeScript</li><li>Deep experience with <b>AWS services</b> such as EC2, S3, Lambda, CloudFormation, CodePipeline, etc.</li><li>Solid understanding of backend development (Node.js preferred) and RESTful API design</li><li>Experience with databases (SQL/NoSQL), caching, and scalable architecture patterns</li><li>Strong DevOps mindset &mdash; comfortable with CI/CD, logging, monitoring, and infrastructure automation</li><li>Ability to lead and mentor a team, drive initiatives independently, and communicate effectively</li></ul><p><b>Preferred Qualifications</b></p><ul><li>Experience with GraphQL and microservices</li><li>Familiarity with containerization tools (Docker, ECS, Kubernetes)</li><li>Exposure to Agile methodologies and version control systems (e.g., Git)</li></ul><p><b>What We Offer</b></p><ul><li>Competitive salary and performance-based bonuses</li><li>Flexible work schedule and remote-first culture</li><li>Opportunity to take full ownership of projects and shape technical direction</li><li>A collaborative, engineering-driven culture</li></ul><p>Job Type: Full-time</p><p>Pay: From Rs400,000.00 per month</p><p>Application Question(s):</p><ul><li>What salary package are you expecting? (required to be considered for this opportunity)</li><li>How soon can you join us?</li></ul><p>Experience:</p><ul><li>Software Development: 10 years (Required)</li><li>Nodejs: 5 years (Required)</li><li>Nextjs: 5 years (Required)</li></ul><p>Work Location: Remote</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": true,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 5,
+        "jobKey": "ff201a1d1a6023ca",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=ff201a1d1a6023ca",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Sr. Infrastructure Engineer",
+        "companyName": "Recruitingers",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "21 days ago",
+        "datePublished": "2026-02-23",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Recruitingers",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Please note this is full-time remote position for committed and dedicated resource, who will be working from 12PM to 9PM. Monday to Friday. *\n\nKIDAN is more than a family-owned and multi-cultural international IT consultancy firm. We've grown from a single client to a family of over 900+ enterprises worldwide, cementing ourselves as trusted IT management and security advisors.\n\nOur strength lies in our proactive problem-solving approach. By asking the right questions and strategizing effective solutions, we've consistently delivered secure, reliable IT systems, leaving a trail of success stories in our wake. Our talented team of experts is the driving force behind these achievements.\n\nJob Title: Infrastructure Engineer\n\n*Job Summary*\n\nWe are seeking a Senior Infrastructure Engineer who will operate as both a technical consultant and hands-on engineer, responsible for advising, planning, designing, and implementing modern infrastructure solutions. The role requires proven expertise across SASE and Zero Trust Network Access (ZTNA), Endpoint Management and Security, and a strong foundation in enterprise networking, including routing, switching, firewalls, VPNs, SDWAN and endpoint management platforms.\n\n*Experience:* 8+ Years\n\n*Key Responsibilities*\n\n* Advise on and support network architecture fundamentals, routing, switching, firewall, and network security\n\n* VPN technologies (site-to-site and remote access) and SDWAN.\n\n* Advise, design, implement and support SASE based solutions including ZTNA, CASB, Secure Web gateway, RBI and more.\n\n* Advise, design, implement, and manage Unified Endpoint Management and Security solution.\n\n* Advise and implement enterprise endpoint management and security standards and best practices, covering vulnerabilities management and patching strategies, software deployments and distributions, browser security, application control, and Bitlocker.\n\n* Manage and optimize endpoint asset management and inventory, ensuring accurate visibility, reporting, and tracking.\n\n* Design and advise on OS deployment strategies (traditional imaging and modern provisioning)\n\n* Provide advanced operational support and insights, including endpoint inventory, asset visibility, reporting, troubleshooting, and support.\n\n•\n\nRequired Skills & Qualifications\n\nCore Skills\n\n* Bachelor’s degree in Computer Engineering, Information Technology, or a related field; Master’s degree preferred\n* 8+ years of experience in infrastructure engineering roles\n* Solid knowledge of networking fundamentals (routing, switching, firewalls, VPN)\n* Strong knowledge and experience with Zero Trust, ZTNA, SASE, and SD-WAN concepts\n* Strong knowledge and experience with UEMS and with managing enterprise-scale identity, endpoint, and compliance environments\n* Strong understanding identity platforms and directory services, such as Active Directory and Microsoft Entra ID.\n\nSoft Skills\n\n* Strong consulting, communication, and stakeholder engagement skills\n* Ability to explain technical concepts to non-technical audiences\n* Strong troubleshooting and analytical skills\n* Excellent communication and documentation abilities\n\nJob Title: Infrastructure Engineer\n\n*Job Summary*\n\nWe are seeking a Senior Infrastructure Engineer who will operate as both a technical consultant and hands-on engineer, responsible for advising, planning, designing, and implementing modern infrastructure solutions. The role requires proven expertise across SASE and Zero Trust Network Access (ZTNA), Endpoint Management and Security, and a strong foundation in enterprise networking, including routing, switching, firewalls, VPNs, SDWAN and endpoint management platforms.\n\n*Experience:* 8+ Years\n\n*Key Responsibilities*\n\n* Advise on and support network architecture fundamentals, routing, switching, firewall, and network security\n\n* VPN technologies (site-to-site and remote access) and SDWAN.\n\n* Advise, design, implement and support SASE based solutions including ZTNA, CASB, Secure Web gateway, RBI and more.\n\n* Advise, design, implement, and manage Unified Endpoint Management and Security solution.\n\n* Advise and implement enterprise endpoint management and security standards and best practices, covering vulnerabilities management and patching strategies, software deployments and distributions, browser security, application control, and Bitlocker.\n\n* Manage and optimize endpoint asset management and inventory, ensuring accurate visibility, reporting, and tracking.\n\n* Design and advise on OS deployment strategies (traditional imaging and modern provisioning)\n\n* Provide advanced operational support and insights, including endpoint inventory, asset visibility, reporting, troubleshooting, and support.\n\n•\n\nRequired Skills & Qualifications\n\nCore Skills\n\n* Bachelor’s degree in Computer Engineering, Information Technology, or a related field; Master’s degree preferred\n* 8+ years of experience in infrastructure engineering roles\n* Solid knowledge of networking fundamentals (routing, switching, firewalls, VPN)\n* Strong knowledge and experience with Zero Trust, ZTNA, SASE, and SD-WAN concepts\n* Strong knowledge and experience with UEMS and with managing enterprise-scale identity, endpoint, and compliance environments\n* Strong understanding identity platforms and directory services, such as Active Directory and Microsoft Entra ID.\n\nSoft Skills\n\n* Strong consulting, communication, and stakeholder engagement skills\n* Ability to explain technical concepts to non-technical audiences\n* Strong troubleshooting and analytical skills\n* Excellent communication and documentation abilities\n\n*Ideal Candidate Profile*\n\n* Mid-career professional with a track record of impactful work\n* Experience in both corporate and creative agency/studio environments\n* A visionary who thrives at the intersection of creativity and technology\n* A culture fit for KIDAN: innovative, ethical, and globally minded\n\n*Work Environment:*\n\n* Full-time remote job\n* 8 hours per day from 11 AM to 8 PM PST (Monday to Friday)\n\nJob Type: Full-time\n\nPay: Rs300,000.00 - Rs400,000.00 per month\n\n\n\nApplication Question(s):\n* Kindly let us know what is your Salary expectation for this full-time remote position?\n\nWork Location: Remote",
+        "descriptionHtml": "<p><b>Please note this is full-time remote position for committed and dedicated resource, who will be working from 12PM to 9PM. Monday to Friday. </b></p><p>KIDAN is more than a family-owned and multi-cultural international IT consultancy firm. We've grown from a single client to a family of over 900+ enterprises worldwide, cementing ourselves as trusted IT management and security advisors.</p><p>Our strength lies in our proactive problem-solving approach. By asking the right questions and strategizing effective solutions, we've consistently delivered secure, reliable IT systems, leaving a trail of success stories in our wake. Our talented team of experts is the driving force behind these achievements.</p><p>Job Title: Infrastructure Engineer</p><p><b>Job Summary</b></p><p>We are seeking a Senior Infrastructure Engineer who will operate as both a technical consultant and hands-on engineer, responsible for advising, planning, designing, and implementing modern infrastructure solutions. The role requires proven expertise across SASE and Zero Trust Network Access (ZTNA), Endpoint Management and Security, and a strong foundation in enterprise networking, including routing, switching, firewalls, VPNs, SDWAN and endpoint management platforms.</p><p><b>Experience:</b> 8+ Years</p><p><b>Key Responsibilities</b></p><ul><li>Advise on and support network architecture fundamentals, routing, switching, firewall, and network security</li></ul><ul><li>VPN technologies (site-to-site and remote access) and SDWAN.</li></ul><ul><li>Advise, design, implement and support SASE based solutions including ZTNA, CASB, Secure Web gateway, RBI and more.</li></ul><ul><li>Advise, design, implement, and manage Unified Endpoint Management and Security solution.</li></ul><ul><li>Advise and implement enterprise endpoint management and security standards and best practices, covering vulnerabilities management and patching strategies, software deployments and distributions, browser security, application control, and Bitlocker.</li></ul><ul><li>Manage and optimize endpoint asset management and inventory, ensuring accurate visibility, reporting, and tracking.</li></ul><ul><li>Design and advise on OS deployment strategies (traditional imaging and modern provisioning)</li></ul><ul><li>Provide advanced operational support and insights, including endpoint inventory, asset visibility, reporting, troubleshooting, and support.</li></ul><p>&bull;</p><p>Required Skills &amp; Qualifications</p><p>Core Skills</p><ul><li>Bachelor&rsquo;s degree in Computer Engineering, Information Technology, or a related field; Master&rsquo;s degree preferred</li><li>8+ years of experience in infrastructure engineering roles</li><li>Solid knowledge of networking fundamentals (routing, switching, firewalls, VPN)</li><li>Strong knowledge and experience with Zero Trust, ZTNA, SASE, and SD-WAN concepts</li><li>Strong knowledge and experience with UEMS and with managing enterprise-scale identity, endpoint, and compliance environments</li><li>Strong understanding identity platforms and directory services, such as Active Directory and Microsoft Entra ID.</li></ul><p>Soft Skills</p><ul><li>Strong consulting, communication, and stakeholder engagement skills</li><li>Ability to explain technical concepts to non-technical audiences</li><li>Strong troubleshooting and analytical skills</li><li>Excellent communication and documentation abilities</li></ul><p>Job Title: Infrastructure Engineer</p><p><b>Job Summary</b></p><p>We are seeking a Senior Infrastructure Engineer who will operate as both a technical consultant and hands-on engineer, responsible for advising, planning, designing, and implementing modern infrastructure solutions. The role requires proven expertise across SASE and Zero Trust Network Access (ZTNA), Endpoint Management and Security, and a strong foundation in enterprise networking, including routing, switching, firewalls, VPNs, SDWAN and endpoint management platforms.</p><p><b>Experience:</b> 8+ Years</p><p><b>Key Responsibilities</b></p><ul><li>Advise on and support network architecture fundamentals, routing, switching, firewall, and network security</li></ul><ul><li>VPN technologies (site-to-site and remote access) and SDWAN.</li></ul><ul><li>Advise, design, implement and support SASE based solutions including ZTNA, CASB, Secure Web gateway, RBI and more.</li></ul><ul><li>Advise, design, implement, and manage Unified Endpoint Management and Security solution.</li></ul><ul><li>Advise and implement enterprise endpoint management and security standards and best practices, covering vulnerabilities management and patching strategies, software deployments and distributions, browser security, application control, and Bitlocker.</li></ul><ul><li>Manage and optimize endpoint asset management and inventory, ensuring accurate visibility, reporting, and tracking.</li></ul><ul><li>Design and advise on OS deployment strategies (traditional imaging and modern provisioning)</li></ul><ul><li>Provide advanced operational support and insights, including endpoint inventory, asset visibility, reporting, troubleshooting, and support.</li></ul><p>&bull;</p><p>Required Skills &amp; Qualifications</p><p>Core Skills</p><ul><li>Bachelor&rsquo;s degree in Computer Engineering, Information Technology, or a related field; Master&rsquo;s degree preferred</li><li>8+ years of experience in infrastructure engineering roles</li><li>Solid knowledge of networking fundamentals (routing, switching, firewalls, VPN)</li><li>Strong knowledge and experience with Zero Trust, ZTNA, SASE, and SD-WAN concepts</li><li>Strong knowledge and experience with UEMS and with managing enterprise-scale identity, endpoint, and compliance environments</li><li>Strong understanding identity platforms and directory services, such as Active Directory and Microsoft Entra ID.</li></ul><p>Soft Skills</p><ul><li>Strong consulting, communication, and stakeholder engagement skills</li><li>Ability to explain technical concepts to non-technical audiences</li><li>Strong troubleshooting and analytical skills</li><li>Excellent communication and documentation abilities</li></ul><p><b>Ideal Candidate Profile</b></p><ul><li>Mid-career professional with a track record of impactful work</li><li>Experience in both corporate and creative agency/studio environments</li><li>A visionary who thrives at the intersection of creativity and technology</li><li>A culture fit for KIDAN: innovative, ethical, and globally minded</li></ul><p><b>Work Environment:</b></p><ul><li>Full-time remote job</li><li>8 hours per day from 11 AM to 8 PM PST (Monday to Friday)</li></ul><p>Job Type: Full-time</p><p>Pay: Rs300,000.00 - Rs400,000.00 per month</p><p>Application Question(s):</p><ul><li>Kindly let us know what is your Salary expectation for this full-time remote position?</li></ul><p>Work Location: Remote</p>",
+        "benefits": [],
+        "occupation": [
+            "Technology Infrastructure Engineers",
+            "Technology Infrastructure & Security Occupations",
+            "Technology Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 6,
+        "jobKey": "58fbc6be60b3a395",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=58fbc6be60b3a395",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "AI Engineer",
+        "companyName": "Cortech sols pvt ltd",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-13",
+        "jobType": [
+            "Full-time",
+            "Contract"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Cortech-Sols-Pvt-Ltd",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Job Title: AI Engineer*\n\nLocation: Gulberg Greens, Islamabad.\n\nExperience Required: 2-3 years.\n\nType: Full Time, Onsite Role.\n\nJob Overview\n\nWe are seeking a skilled AI Engineer specializing in Large Language Models (LLMs) and Generative AI with 2–3 years of hands-on experience in building, deploying, and optimizing AI-driven solutions. The role involves working closely with cross-functional teams to develop scalable, production-ready AI applications that deliver real business value.\n\n*Key Responsibilities*\n\n\\* Develop and deploy applications using LLMs (e.g., GPT, Claude, LLaMA, Mistral)\n\n\\* Implement prompt engineering, RAG (Retrieval-Augmented Generation), MCP Servers and embedding-based solutions.\n\n\\* Fine-tune and optimize generative models for domain-specific use cases.\n\n\\* Design end-to-end Generative AI pipelines and workflows\n\n\\* Integrate AI capabilities into existing products via APIs and microservices.\n\n\\* Evaluate model performance, accuracy, latency, and cost efficiency.\n\n\\* Work with vector databases such as Pinecone, FAISS, or Weaviate.\n\n\\* Ensure ethical AI usage, data privacy, and security compliance.\n\n*Required Qualifications*\n\n\\* Bachelor’s degree in Computer Science, Artificial Intelligence, Data Science, or a related field.\n\n\\* 2–3 years of practical experience in AI/ML or applied Generative AI.\n\n\\* Strong proficiency in Python and AI/ML frameworks (PyTorch, TensorFlow, Hugging Face).\n\n\\* Hands-on experience with LLMs, transformers, and generative models.\n\n\\* Strong expertise to work with MCP servers and LangGraph.\n\n\\* Experience with prompt engineering, embeddings, and RAG architectures.\n\n\\* Familiarity with RESTful APIs and cloud platforms (AWS, GCP, Azure)\n\n\\* Solid understanding of software engineering best practices.\n\n*Preferred Skills*\n\n\\* Experience fine-tuning open-source LLMs (LLaMA, Falcon, Mistral, etc.)\n\n\\* Knowledge of LangChain, LIamaIndex, or similar orchestration frameworks.\n\n\\* Experience with Docker, Kubernetes, and CI/CD pipelines.\n\n\\* Understanding of MLOps concepts and model monitoring.\n\n\\* Exposure to multimodal AI (text, image, or audio-based models).\n\nJob Types: Full-time, Contract\n\nPay: Rs140,000.00 - Rs150,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Job Title: AI Engineer</b></p><p>Location: Gulberg Greens, Islamabad.</p><p>Experience Required: 2-3 years.</p><p>Type: Full Time, Onsite Role.</p><p>Job Overview</p><p>We are seeking a skilled AI Engineer specializing in Large Language Models (LLMs) and Generative AI with 2&ndash;3 years of hands-on experience in building, deploying, and optimizing AI-driven solutions. The role involves working closely with cross-functional teams to develop scalable, production-ready AI applications that deliver real business value.</p><p><b>Key Responsibilities</b></p><p>* Develop and deploy applications using LLMs (e.g., GPT, Claude, LLaMA, Mistral)</p><p>* Implement prompt engineering, RAG (Retrieval-Augmented Generation), MCP Servers and embedding-based solutions.</p><p>* Fine-tune and optimize generative models for domain-specific use cases.</p><p>* Design end-to-end Generative AI pipelines and workflows</p><p>* Integrate AI capabilities into existing products via APIs and microservices.</p><p>* Evaluate model performance, accuracy, latency, and cost efficiency.</p><p>* Work with vector databases such as Pinecone, FAISS, or Weaviate.</p><p>* Ensure ethical AI usage, data privacy, and security compliance.</p><p><b>Required Qualifications</b></p><p>* Bachelor&rsquo;s degree in Computer Science, Artificial Intelligence, Data Science, or a related field.</p><p>* 2&ndash;3 years of practical experience in AI/ML or applied Generative AI.</p><p>* Strong proficiency in Python and AI/ML frameworks (PyTorch, TensorFlow, Hugging Face).</p><p>* Hands-on experience with LLMs, transformers, and generative models.</p><p>* Strong expertise to work with MCP servers and LangGraph.</p><p>* Experience with prompt engineering, embeddings, and RAG architectures.</p><p>* Familiarity with RESTful APIs and cloud platforms (AWS, GCP, Azure)</p><p>* Solid understanding of software engineering best practices.</p><p><b>Preferred Skills</b></p><p>* Experience fine-tuning open-source LLMs (LLaMA, Falcon, Mistral, etc.)</p><p>* Knowledge of LangChain, LIamaIndex, or similar orchestration frameworks.</p><p>* Experience with Docker, Kubernetes, and CI/CD pipelines.</p><p>* Understanding of MLOps concepts and model monitoring.</p><p>* Exposure to multimodal AI (text, image, or audio-based models).</p><p>Job Types: Full-time, Contract</p><p>Pay: Rs140,000.00 - Rs150,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Scientists & Statisticians"
+        ],
+        "attributes": [
+            "Full-time",
+            "Contract"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 7,
+        "jobKey": "ad1805bc63d5c82f",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=ad1805bc63d5c82f",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer",
+        "companyName": "Byonyks Pvt Ltd",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-18",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Byonyks-Pvt-Ltd-1",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Position:* Software Engineer\n*Department:* Software Department\n*Experience:* Fresh to 2 Years (1–3 Years relevant experience preferred)\n*Qualification:* BS Computer Science\n*Open Positions:* 2\n*Location:* DHA-3\n\nWe are looking for a Software Engineer with hands-on experience in modern C++ development within a Linux environment. The ideal candidate should have strong fundamentals in object-oriented programming, concurrent system design, and modern software development workflows. This role requires writing efficient, maintainable, and well-tested code while collaborating within a structured development lifecycle.\n\n*Key Responsibilities*\n\n* Develop and maintain software applications using C++17 in a Linux environment.\n* Design and implement concurrent and multi-threaded systems.\n* Apply object-oriented programming principles, C++ templates, and established design patterns.\n* Write clean, modular, and maintainable code aligned with industry best practices.\n* Develop and maintain unit tests using standard C++ testing frameworks.\n* Participate in code reviews to ensure code quality and consistency.\n* Manage source code using Git and follow modern branching and build workflows.\n* Troubleshoot, debug, and optimize existing software modules.\n* Document software designs, implementation details, and testing procedures.\n\n*Preferred Skills & Technical Competencies:*\n\n* Strong experience with C++17 in Linux-based environments.\n* Hands-on experience with concurrent and multi-threaded programming.\n* Solid understanding of OOP concepts, templates, and software design patterns.\n* Proficiency in Git for version control.\n* Familiarity with modern build systems and CI/CD workflows.\n* Experience with C++ unit testing frameworks (e.g., Goggle Test or similar).\n* Strong analytical and problem-solving skills.\n\nThis role is suitable for candidates looking to grow in high-performance and system-level software development within a structured engineering environment.\n\nJob Type: Full-time\n\nPay: Rs150,000.00 - Rs200,000.00 per month\n\n\n\nEducation:\n* Bachelor's (Required)\n\nLocation:\n* Lahore (Required)\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Position:</b> Software Engineer<br/><b>Department:</b> Software Department<br/><b>Experience:</b> Fresh to 2 Years (1&ndash;3 Years relevant experience preferred)<br/><b>Qualification:</b> BS Computer Science<br/><b>Open Positions:</b> 2<br/><b>Location:</b> DHA-3</p><p>We are looking for a Software Engineer with hands-on experience in modern C++ development within a Linux environment. The ideal candidate should have strong fundamentals in object-oriented programming, concurrent system design, and modern software development workflows. This role requires writing efficient, maintainable, and well-tested code while collaborating within a structured development lifecycle.</p><p><b>Key Responsibilities</b></p><ul><li>Develop and maintain software applications using C++17 in a Linux environment.</li><li>Design and implement concurrent and multi-threaded systems.</li><li>Apply object-oriented programming principles, C++ templates, and established design patterns.</li><li>Write clean, modular, and maintainable code aligned with industry best practices.</li><li>Develop and maintain unit tests using standard C++ testing frameworks.</li><li>Participate in code reviews to ensure code quality and consistency.</li><li>Manage source code using Git and follow modern branching and build workflows.</li><li>Troubleshoot, debug, and optimize existing software modules.</li><li>Document software designs, implementation details, and testing procedures.</li></ul><p><b>Preferred Skills &amp; Technical Competencies:</b></p><ul><li>Strong experience with C++17 in Linux-based environments.</li><li>Hands-on experience with concurrent and multi-threaded programming.</li><li>Solid understanding of OOP concepts, templates, and software design patterns.</li><li>Proficiency in Git for version control.</li><li>Familiarity with modern build systems and CI/CD workflows.</li><li>Experience with C++ unit testing frameworks (e.g., Goggle Test or similar).</li><li>Strong analytical and problem-solving skills.</li></ul><p>This role is suitable for candidates looking to grow in high-performance and system-level software development within a structured engineering environment.</p><p>Job Type: Full-time</p><p>Pay: Rs150,000.00 - Rs200,000.00 per month</p><p>Education:</p><ul><li>Bachelor's (Required)</li></ul><p>Location:</p><ul><li>Lahore (Required)</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 8,
+        "jobKey": "932f602fefe4844f",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=932f602fefe4844f",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer Intern (Backend)",
+        "companyName": "United Sol (Pvt.) Ltd",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "11 days ago",
+        "datePublished": "2026-03-05",
+        "jobType": [
+            "Full-time",
+            "Internship"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/United-Sol-(pvt.)-Ltd",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "We are hiring a Software Engineer Intern (Backend) in our team!\n\n*Requirements:*\n\n* Bachelor's degree in Computer Science, Software Engineering or other related fields.\n* Basic understanding of PHP, MySQL, HTML, CSS, JavaScript\n* Strong understanding of Object-Oriented Programming (OOP) principles and logical problem-solving skills.\n* Prior experience in backend or ecommerce development through projects or internships.\n* Knowledge of e-commerce platforms and technologies.\n* Strong problem-solving skills and attention to detail.\n* Ability to work independently and as part of a team.\n* Eagerness to learn and grow in a professional development environment.\n* Good communication and collaboration skills.\n\n*What We Offer:*\n\n* Competitive stipend during the internship period.\n* Lunch Facility\n* Mentorship from experienced developers.\n* Hands-on experience with real-world projects.\n* Opportunities for professional growth and development.\n\nIf you are passionate about e-commerce development and eager to launch your career with a leading solutions provider, apply now! Or send your CV to career@unitedsol.net.\n\nJob Types: Full-time, Internship\n\nPay: Rs30,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p>We are hiring a Software Engineer Intern (Backend) in our team!</p><p><b>Requirements:</b></p><ul><li>Bachelor's degree in Computer Science, Software Engineering or other related fields.</li><li>Basic understanding of PHP, MySQL, HTML, CSS, JavaScript</li><li>Strong understanding of Object-Oriented Programming (OOP) principles and logical problem-solving skills.</li><li>Prior experience in backend or ecommerce development through projects or internships.</li><li>Knowledge of e-commerce platforms and technologies.</li><li>Strong problem-solving skills and attention to detail.</li><li>Ability to work independently and as part of a team.</li><li>Eagerness to learn and grow in a professional development environment.</li><li>Good communication and collaboration skills.</li></ul><p><b>What We Offer:</b></p><ul><li>Competitive stipend during the internship period.</li><li>Lunch Facility</li><li>Mentorship from experienced developers.</li><li>Hands-on experience with real-world projects.</li><li>Opportunities for professional growth and development.</li></ul><p>If you are passionate about e-commerce development and eager to launch your career with a leading solutions provider, apply now! Or send your CV to career@unitedsol.net.</p><p>Job Types: Full-time, Internship</p><p>Pay: Rs30,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Back End Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time",
+            "Internship"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 9,
+        "jobKey": "da93a10fb0a757d4",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=da93a10fb0a757d4",
+        "emails": [
+            "career@unitedsol.net"
+        ],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/6799a123ca5d6fd1b8a5b3511c0ef462",
+        "companyName": "WallStreetBets",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "4 months ago",
+        "datePublished": "2025-11-29",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Wallstreetbets",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "About us\n\nWallStreetBets is the largest finance community in the world.\n\nWith over 20 million users, we’re the movement that helped redefine retail investing and put power back into the hands of everyday traders. From our humble beginnings on Reddit to becoming a global household name during the GameStop saga, our influence has shaped markets, culture, and the future of finance.\n\nAnd we’re just getting started.\n\nToday, our mission is stronger than ever: minimize the gap between retail and institutions by giving people access to world-class tools, real-time data, community intelligence, and a platform built for the next generation of traders. Our goal? Accelerate one billion people to financial security, and have fun doing it.\n\nPosition summary\n\nWe’re looking for a Full Stack Software Engineer to help build the core infrastructure behind the new WallStreetBets platform, powering real-time data, earnings call insights, social sentiment, community feeds, and trader-focused tools.\n\nYou'll work across the stack to ship high-performance, scalable features used by millions of traders. From backend services and APIs to front-end components and data-driven experiences, you’ll play a key role in defining the engineering foundation of a globally recognized fintech product.\n\nThis is an opportunity to join early, move fast, and build something that truly impacts how retail traders interact with markets. This role is open to applicants anywhere in the world and will be hired as a contractor. At WallStreetBets, we believe great ideas come from everywhere, and we’re committed to building a diverse, inclusive team where all voices are heard.\n\nIf building the future of social finance with speed, creativity, and WSB swagger sounds like your kind of challenge, we’d love to meet you.\n\nWhat you’ll do:\n\nDesign, build, and maintain scalable backend services, APIs, and data pipelines.\n\nDevelop responsive, high-quality web features using modern frontend frameworks.\n\nWork with real-time financial data, websockets, event-driven systems, and market APIs.\n\nBuild community-driven experiences such as feeds, notifications, and sentiment tools.\n\nImplement dashboards and interfaces that make financial data clear and accessible.\n\nCollaborate closely with product, design, and mobile teams to deliver features quickly.\n\nImprove overall system performance, reliability, testing, and automation.\n\nParticipate in architectural planning and long-term technical decision-making.\n\nWhat you bring:\n\n5+ years of software engineering experience in a full stack or backend-focused role.\n\nProficiency in one or more modern programming languages such as TypeScript, JavaScript, Python, Go, or Java.\n\nExperience with modern frontend frameworks such as React, Next.js, Vue, or Svelte.\n\nStrong understanding of RESTful or GraphQL API design and integration.\n\nComfort working with relational or NoSQL databases.\n\nFamiliarity with cloud environments, CI/CD pipelines, and modern testing practices (TDD, automated tests).\n\nConfidence developing with modern application security best practices\n\nA strong sense of ownership, product thinking, and comfort working in a fast-moving startup environment.\n\nCollaborative mindset, and the ability to work with a globally distributed team\n\nBonus\n\nExposure to fintech, trading, or data-heavy applications.\n\nExperience with websockets, real-time systems, or event-driven architecture.\n\nFamiliarity with financial data providers or market data APIs.\n\nOpen-source contributions or experience building social or community-driven platforms.\n\nExperience with common compliance frameworks (SOC2, PCI DSS, GDRP)\n\nWhat we offer\n\nThe opportunity to build a platform used by millions of passionate traders around the world.\n\nA mission-driven environment dedicated to democratizing financial tools and insights.\n\nA remote-friendly culture with flexibility and trust.\n\nCompetitive compensation and meaningful growth opportunities.\n\nA chance to help shape one of the most recognizable brands in modern finance.\n\nA collaborative, fast-paced team that values experimentation, creativity, and fu",
+        "descriptionHtml": "<div><h1 class=\"jobSectionHeader\"><b>About us</b></h1><p>\nWallStreetBets is the largest finance community in the world.</p><p>\nWith over 20 million users, we&rsquo;re the movement that helped redefine retail investing and put power back into the hands of everyday traders. From our humble beginnings on Reddit to becoming a global household name during the GameStop saga, our influence has shaped markets, culture, and the future of finance.</p><p>\nAnd we&rsquo;re just getting started.</p><p>\nToday, our mission is stronger than ever: minimize the gap between retail and institutions by giving people access to world-class tools, real-time data, community intelligence, and a platform built for the next generation of traders. Our goal? Accelerate one billion people to financial security, and have fun doing it.</p><p></p><h1 class=\"jobSectionHeader\"><b>\nPosition summary</b></h1><p>\nWe&rsquo;re looking for a Full Stack Software Engineer to help build the core infrastructure behind the new WallStreetBets platform, powering real-time data, earnings call insights, social sentiment, community feeds, and trader-focused tools.</p><p>\nYou'll work across the stack to ship high-performance, scalable features used by millions of traders. From backend services and APIs to front-end components and data-driven experiences, you&rsquo;ll play a key role in defining the engineering foundation of a globally recognized fintech product.</p><p>\nThis is an opportunity to join early, move fast, and build something that truly impacts how retail traders interact with markets. This role is open to applicants anywhere in the world and will be hired as a contractor. At WallStreetBets, we believe great ideas come from everywhere, and we&rsquo;re committed to building a diverse, inclusive team where all voices are heard.</p><p>\nIf building the future of social finance with speed, creativity, and WSB swagger sounds like your kind of challenge, we&rsquo;d love to meet you.</p><p></p><h1 class=\"jobSectionHeader\"><b><br>\nWhat you&rsquo;ll do:</b></h1><ul><li><p>\nDesign, build, and maintain scalable backend services, APIs, and data pipelines.</p></li><li><p>\nDevelop responsive, high-quality web features using modern frontend frameworks.</p></li><li><p>\nWork with real-time financial data, websockets, event-driven systems, and market APIs.</p></li><li><p>\nBuild community-driven experiences such as feeds, notifications, and sentiment tools.</p></li><li><p>\nImplement dashboards and interfaces that make financial data clear and accessible.</p></li><li><p>\nCollaborate closely with product, design, and mobile teams to deliver features quickly.</p></li><li><p>\nImprove overall system performance, reliability, testing, and automation.</p></li><li><p>\nParticipate in architectural planning and long-term technical decision-making.</p></li></ul><p></p><h1 class=\"jobSectionHeader\"><b>\nWhat you bring:</b></h1><ul><li><p>\n5+ years of software engineering experience in a full stack or backend-focused role.</p></li><li><p>\nProficiency in one or more modern programming languages such as TypeScript, JavaScript, Python, Go, or Java.</p></li><li><p>\nExperience with modern frontend frameworks such as React, Next.js, Vue, or Svelte.</p></li><li><p>\nStrong understanding of RESTful or GraphQL API design and integration.</p></li><li><p>\nComfort working with relational or NoSQL databases.</p></li><li><p>\nFamiliarity with cloud environments, CI/CD pipelines, and modern testing practices (TDD, automated tests).</p></li><li><p>\nConfidence developing with modern application security best practices</p></li><li><p>\nA strong sense of ownership, product thinking, and comfort working in a fast-moving startup environment.</p></li><li><p>\nCollaborative mindset, and the ability to work with a globally distributed team</p></li></ul><p></p><h1 class=\"jobSectionHeader\"><b>\nBonus</b></h1><ul><li><p>\nExposure to fintech, trading, or data-heavy applications.</p></li><li><p>\nExperience with websockets, real-time systems, or event-driven architecture.</p></li><li><p>\nFamiliarity with financial data providers or market data APIs.</p></li><li><p>\nOpen-source contributions or experience building social or community-driven platforms.</p></li><li><p>\nExperience with common compliance frameworks (SOC2, PCI DSS, GDRP)</p></li></ul><p></p><h1 class=\"jobSectionHeader\"><b>\nWhat we offer</b></h1><ul><li><p>\nThe opportunity to build a platform used by millions of passionate traders around the world.</p></li><li><p>\nA mission-driven environment dedicated to democratizing financial tools and insights.</p></li><li><p>\nA remote-friendly culture with flexibility and trust.</p></li><li><p>\nCompetitive compensation and meaningful growth opportunities.</p></li><li><p>\nA chance to help shape one of the most recognizable brands in modern finance.</p></li><li><p>\nA collaborative, fast-paced team that values experimentation, creativity, and fu</p></li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "WallStreetBets",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 10,
+        "jobKey": "7526916d5b8fbe44",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=7526916d5b8fbe44",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Technical Support Engineer - Electrical Engineering - Fresh Graduate (Networking)",
+        "companyName": "Sybrid Pvt Ltd (The Lakson Group of Companies)",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "3 months ago",
+        "datePublished": "2025-12-13",
+        "jobType": [
+            "Fresher",
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Sybrid-Pvt-Ltd-(the-Lakson-Group-of-Companies)",
+        "rating": {
+            "rating": 3.1,
+            "count": 14
+        },
+        "descriptionText": "Fresh Graduate in Electrical Engineering (Networking) will reports to Manager IT, he is responsible for 1st Level Support for Systems related issues, Maintaining Systems & Security Company-wide. This includes LAN, Active Directory, Proxy, Email Server, Antivirus and Security.\n\n*Key Responsibilities and Duties/Results Expected/KPI*\n\n* Manage workflow and service request through Client’s call ticketing system\n* Software installation, configuration, and troubleshooting for end-users\n* Performance of IT supports duties as defined by the appropriate I.T Support team leader.\n* Network printer installation/configuration\n* General Desktop Support/Project Coordination/Move activities\n* Monitor, analyze and address reliability and performance issues\n* Analyze problems, develop creative solutions and assess risks/benefits\n* Assess and address compliance with applicable IP Policies, Standards, and Technical controls.\n* Document supported system and application procedures and processes.\n* Staffing the help desk as needed.\n* Keep abreast of technology changes and Client's operating environment changes to assess potential\n* Should be responsible to comply with the standards within the company for e.g. ISMS, HIPPA, etc.\n* To report security weaknesses/incident through Information security incident & weakness reporting mechanism.\n\n*Competencies and Critical Success Factors*\n\n*Values, Ethics and Professionalism*\n\n* Demonstrating professional integrity by modeling Sybrid’s values and ethical standards.\n* Demonstrating initiative, consistency, transparency, personal accountability and reliability to meet work demands according to the highest standards.\n* Demonstrating the highest level of business ethics and consistently adheres to and promotes key values and principles in all business and personal transactions.\n* Demonstrating resilience, drive, commitment to results and responsibility y for own actions\n\n*Resilience*\n\n* Showing persistence, perseverance, and determination.\n* Demonstrating adaptability and flexibility in overcoming challenging situations.\n* Showing resolve in searching for alternative solutions to problems.\n\n*Results Orientation*\n\nMaintaining focus on those activities that have the greatest impact on meeting work commitments.\n\n*Continuous Learning*\n\n* Proactively seeking performance feedback and identifies approaches to improve own and others’ performance and learning.\n* Taking personal responsibility to grow and change.\n* Supporting opportunities for positive change and actively looks for ways to improve what they do.\n* Consistently coaching and developing team members by articulating key expectations, identifying strengths and development needs and provide ongoing support to maximize performance.\n\nJob Types: Full-time, Fresher\n\nPay: Rs40,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p>Fresh Graduate in Electrical Engineering (Networking) will reports to Manager IT, he is responsible for 1st Level Support for Systems related issues, Maintaining Systems &amp; Security Company-wide. This includes LAN, Active Directory, Proxy, Email Server, Antivirus and Security.</p><p><b>Key Responsibilities and Duties/Results Expected/KPI</b></p><ul><li>Manage workflow and service request through Client&rsquo;s call ticketing system</li><li>Software installation, configuration, and troubleshooting for end-users</li><li>Performance of IT supports duties as defined by the appropriate I.T Support team leader.</li><li>Network printer installation/configuration</li><li>General Desktop Support/Project Coordination/Move activities</li><li>Monitor, analyze and address reliability and performance issues</li><li>Analyze problems, develop creative solutions and assess risks/benefits</li><li>Assess and address compliance with applicable IP Policies, Standards, and Technical controls.</li><li>Document supported system and application procedures and processes.</li><li>Staffing the help desk as needed.</li><li>Keep abreast of technology changes and Client's operating environment changes to assess potential</li><li>Should be responsible to comply with the standards within the company for e.g. ISMS, HIPPA, etc.</li><li>To report security weaknesses/incident through Information security incident &amp; weakness reporting mechanism.</li></ul><p><b>Competencies and Critical Success Factors</b></p><p><b>Values, Ethics and Professionalism</b></p><ul><li>Demonstrating professional integrity by modeling Sybrid&rsquo;s values and ethical standards.</li><li>Demonstrating initiative, consistency, transparency, personal accountability and reliability to meet work demands according to the highest standards.</li><li>Demonstrating the highest level of business ethics and consistently adheres to and promotes key values and principles in all business and personal transactions.</li><li>Demonstrating resilience, drive, commitment to results and responsibility y for own actions</li></ul><p><b>Resilience</b></p><ul><li>Showing persistence, perseverance, and determination.</li><li>Demonstrating adaptability and flexibility in overcoming challenging situations.</li><li>Showing resolve in searching for alternative solutions to problems.</li></ul><p><b>Results Orientation</b></p><p>Maintaining focus on those activities that have the greatest impact on meeting work commitments.</p><p><b>Continuous Learning</b></p><ul><li>Proactively seeking performance feedback and identifies approaches to improve own and others&rsquo; performance and learning.</li><li>Taking personal responsibility to grow and change.</li><li>Supporting opportunities for positive change and actively looks for ways to improve what they do.</li><li>Consistently coaching and developing team members by articulating key expectations, identifying strengths and development needs and provide ongoing support to maximize performance.</li></ul><p>Job Types: Full-time, Fresher</p><p>Pay: Rs40,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Technology Occupations",
+            "Technical Support Occupations"
+        ],
+        "attributes": [
+            "Fresher",
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 11,
+        "jobKey": "6f08283a9e44a715",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=6f08283a9e44a715",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Technical Support Engineer – Tier 1",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/158511b347ba1a71c3f753d998e8ca29",
+        "companyName": "ePAGING Pvt. LTD",
+        "location": {
+            "city": "Karachi",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Karachi",
+            "formattedAddressShort": "Karachi",
+            "latitude": 24.892857,
+            "longitude": 67.02747,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "13 days ago",
+        "datePublished": "2026-03-02",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/7fed213b91458e9dce9eec3fd5a08b9c",
+        "companyUrl": "https://www.indeed.com/cmp/Epaging-Pvt.-Ltd",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Job Summary:* Hardware Support Engineer will provide our customers with in-depth troubleshooting and hardware support. Willing to learn and adapt to new concepts, provide exceptional customer services remotely, and support a variety of applications and hardware. Having excellent communication skills in English.\n\n*Key Duties*\n\n* Responding to help desk tickets and phone calls from pharmacies in a timely manner.\n* Troubleshooting and resolving technical issues related to printers, computers, interfaces, and networking equipment used in the pharmacy.\n* Consulting with pharmacy staff to optimize their technology setup and make recommendations for improvements.\n* Providing training to pharmacy staff on how to use various software applications and hardware devices.\n* Documenting technical support activities and maintaining detailed records of all interactions with pharmacies.\n* Providing superior customer service and ensuring a positive experience for all pharmacy staff who interact with the technical support team.\n* Collaborating with other technical support team members to resolve complex issues and ensure continuity of service.\n* Identifying recurring technical issues and reporting/working to develop permanent solutions to prevent them from happening in the future.\n\n*Requirement*\n\n* Bachelor's degree in computer science or related field.\n* 2+ years of experience in IT systems and installation/application support.\n* 1+ year of experience in a remote IT Help Desk environment.\n* Excellent phone communication skills, including a professional and confident speaking tone in English.\n\nPay: Rs90,000.00 - Rs125,000.00 per month\n\n\n\nAbility to commute/relocate:\n* Karachi: Reliably commute or planning to relocate before starting work (Preferred)\n\nEducation:\n* Bachelor's (Preferred)\n\nExperience:\n* Hardware Support: 1 year (Preferred)\n\nLanguage:\n* English (Preferred)\n\nLocation:\n* Karachi (Preferred)\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Job Summary:</b> Hardware Support Engineer will provide our customers with in-depth troubleshooting and hardware support. Willing to learn and adapt to new concepts, provide exceptional customer services remotely, and support a variety of applications and hardware. Having excellent communication skills in English.</p><p><b>Key Duties</b></p><ul><li>Responding to help desk tickets and phone calls from pharmacies in a timely manner.</li><li>Troubleshooting and resolving technical issues related to printers, computers, interfaces, and networking equipment used in the pharmacy.</li><li>Consulting with pharmacy staff to optimize their technology setup and make recommendations for improvements.</li><li>Providing training to pharmacy staff on how to use various software applications and hardware devices.</li><li>Documenting technical support activities and maintaining detailed records of all interactions with pharmacies.</li><li>Providing superior customer service and ensuring a positive experience for all pharmacy staff who interact with the technical support team.</li><li>Collaborating with other technical support team members to resolve complex issues and ensure continuity of service.</li><li>Identifying recurring technical issues and reporting/working to develop permanent solutions to prevent them from happening in the future.</li></ul><p><b>Requirement</b></p><ul><li>Bachelor's degree in computer science or related field.</li><li>2+ years of experience in IT systems and installation/application support.</li><li>1+ year of experience in a remote IT Help Desk environment.</li><li>Excellent phone communication skills, including a professional and confident speaking tone in English.</li></ul><p>Pay: Rs90,000.00 - Rs125,000.00 per month</p><p>Ability to commute/relocate:</p><ul><li>Karachi: Reliably commute or planning to relocate before starting work (Preferred)</li></ul><p>Education:</p><ul><li>Bachelor's (Preferred)</li></ul><p>Experience:</p><ul><li>Hardware Support: 1 year (Preferred)</li></ul><p>Language:</p><ul><li>English (Preferred)</li></ul><p>Location:</p><ul><li>Karachi (Preferred)</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Technology Occupations",
+            "Technical Support Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": true,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 12,
+        "jobKey": "3a7027c043b48d95",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=3a7027c043b48d95",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer",
+        "companyName": "Byonyks Pvt Ltd",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-18",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Byonyks-Pvt-Ltd-1",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Position:* Software Engineer\n*Department:* Software\n*Experience:* Fresh to 2 Years\n*Qualification:* BS Computer Science\n*Open Positions:* 1\n*Location:* DHA-3\n\nWe are looking for a Software Engineer with strong hands-on experience in C++17 development within a Linux environment and proficiency in Qt (Widgets/QML). The ideal candidate will have experience designing reusable UI components, handling events and layouts in Qt, and implementing concurrent, multi-threaded systems. The role involves developing high-quality software, writing unit tests, and collaborating with cross-functional teams in a structured development environment.\n\n*Key Responsibilities:*\n\n* Design and implement custom Qt widgets and UI components using Qt Widgets or QML.\n* Develop and maintain software applications in C++17 within a Linux environment.\n* Implement and manage concurrent/multi-threaded systems and IPC mechanisms.\n* Apply object-oriented programming principles, C++ templates, and software design patterns.\n* Write, execute, and maintain unit tests using standard C++ testing frameworks.\n* Manage source code using Git and follow modern build and development workflows.\n* Collaborate with cross-functional teams to integrate software with hardware and embedded systems.\n* Troubleshoot, debug, and optimize software for performance and reliability.\n* Document software designs, architecture, implementation, and test procedures.\n\n*Preferred Skills & Technical Competencies:*\n\n* Strong experience with Qt (Widgets/QML), including UI design, event handling, and layout management.\n* Proficiency in C++17 development in Linux-based environments.\n* Hands-on experience with IPC and multi-threaded programming.\n* Solid understanding of OOP, C++ templates, and common software design patterns.\n* Experience with Git version control and modern build workflows.\n* Experience with C++ unit testing frameworks (e.g., Google Test).\n* Strong analytical, problem-solving, and documentation skills.\n\nJob Type: Full-time\n\nPay: Rs70,000.00 - Rs150,000.00 per month\n\n\n\nEducation:\n* Bachelor's (Required)\n\nLocation:\n* Lahore (Required)\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Position:</b> Software Engineer<br/><b>Department:</b> Software<br/><b>Experience:</b> Fresh to 2 Years<br/><b>Qualification:</b> BS Computer Science<br/><b>Open Positions:</b> 1<br/><b>Location:</b> DHA-3</p><p>We are looking for a Software Engineer with strong hands-on experience in C++17 development within a Linux environment and proficiency in Qt (Widgets/QML). The ideal candidate will have experience designing reusable UI components, handling events and layouts in Qt, and implementing concurrent, multi-threaded systems. The role involves developing high-quality software, writing unit tests, and collaborating with cross-functional teams in a structured development environment.</p><p><b>Key Responsibilities:</b></p><ul><li>Design and implement custom Qt widgets and UI components using Qt Widgets or QML.</li><li>Develop and maintain software applications in C++17 within a Linux environment.</li><li>Implement and manage concurrent/multi-threaded systems and IPC mechanisms.</li><li>Apply object-oriented programming principles, C++ templates, and software design patterns.</li><li>Write, execute, and maintain unit tests using standard C++ testing frameworks.</li><li>Manage source code using Git and follow modern build and development workflows.</li><li>Collaborate with cross-functional teams to integrate software with hardware and embedded systems.</li><li>Troubleshoot, debug, and optimize software for performance and reliability.</li><li>Document software designs, architecture, implementation, and test procedures.</li></ul><p><b>Preferred Skills &amp; Technical Competencies:</b></p><ul><li>Strong experience with Qt (Widgets/QML), including UI design, event handling, and layout management.</li><li>Proficiency in C++17 development in Linux-based environments.</li><li>Hands-on experience with IPC and multi-threaded programming.</li><li>Solid understanding of OOP, C++ templates, and common software design patterns.</li><li>Experience with Git version control and modern build workflows.</li><li>Experience with C++ unit testing frameworks (e.g., Google Test).</li><li>Strong analytical, problem-solving, and documentation skills.</li></ul><p>Job Type: Full-time</p><p>Pay: Rs70,000.00 - Rs150,000.00 per month</p><p>Education:</p><ul><li>Bachelor's (Required)</li></ul><p>Location:</p><ul><li>Lahore (Required)</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 13,
+        "jobKey": "86420e0f9e276b08",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=86420e0f9e276b08",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Remote SQA Engineer Software Tester (Manual+Automation)",
+        "companyName": "VQode Solutions PVT. LTD.",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 hours ago",
+        "datePublished": "2026-03-16",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Vqode-Solutions-Pvt.-Ltd.",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Position Overview:*\n\nWe're seeking an experienced SQA (Automation + Manual) Tester to ensure the quality and reliability of our software products. The ideal candidate will have 3-4 years of experience in both manual and automated testing methodologies.\n\n*Key Responsibilities:*\n\n* Develop and execute comprehensive test plans, test cases, and test scripts.\n* Collaborate with cross-functional teams to comprehend product requirements thoroughly.\n* Identify, track, and resolve software defects efficiently.\n* Design, implement, and uphold automated test suites.\n* Conduct rigorous regression testing and meticulously analyze results.\n* Continuously enhance testing processes for optimal efficiency.\n* Write detailed test cases and proficiently execute them.\n* Demonstrate expertise in both Automation and Manual Testing.\n* Assess product quality meticulously.\n* Ensure interface compliance and compatibility.\n* Perform thorough end-to-end system integration and regression testing.\n* Execute QA plans and tests in close collaboration with the development team.\n* Maintain open and effective communication channels to ensure project success.\n\n*Qualifications:*\n\n* Bachelor's degree in Computer Science or related field.\n* Strong proficiency in testing tools and frameworks (e.g., Selenium, Appium).\n* Experience with scripting and programming languages\n* Understanding of SDLC and Agile methodologies.\n* Excellent analytical and problem-solving skills.\n\n*Preferred Qualifications:*\n\n* Familiarity with CI/CD pipelines and tools.\n* Knowledge of performance testing.\n* Experience with cloud platforms.\n\nJob Type: Full-time\n\nPay: Rs150,000.00 - Rs200,000.00 per month\n\n\n\nExperience:\n* SQA: 3 years (Required)\n* SQA Automation: 2 years (Required)\n\nWork Location: Remote",
+        "descriptionHtml": "<p><b>Position Overview:</b></p><p>We're seeking an experienced SQA (Automation + Manual) Tester to ensure the quality and reliability of our software products. The ideal candidate will have 3-4 years of experience in both manual and automated testing methodologies.</p><p><b>Key Responsibilities:</b></p><ul><li>Develop and execute comprehensive test plans, test cases, and test scripts.</li><li>Collaborate with cross-functional teams to comprehend product requirements thoroughly.</li><li>Identify, track, and resolve software defects efficiently.</li><li>Design, implement, and uphold automated test suites.</li><li>Conduct rigorous regression testing and meticulously analyze results.</li><li>Continuously enhance testing processes for optimal efficiency.</li><li>Write detailed test cases and proficiently execute them.</li><li>Demonstrate expertise in both Automation and Manual Testing.</li><li>Assess product quality meticulously.</li><li>Ensure interface compliance and compatibility.</li><li>Perform thorough end-to-end system integration and regression testing.</li><li>Execute QA plans and tests in close collaboration with the development team.</li><li>Maintain open and effective communication channels to ensure project success.</li></ul><p><b>Qualifications:</b></p><ul><li>Bachelor's degree in Computer Science or related field.</li><li>Strong proficiency in testing tools and frameworks (e.g., Selenium, Appium).</li><li>Experience with scripting and programming languages</li><li>Understanding of SDLC and Agile methodologies.</li><li>Excellent analytical and problem-solving skills.</li></ul><p><b>Preferred Qualifications:</b></p><ul><li>Familiarity with CI/CD pipelines and tools.</li><li>Knowledge of performance testing.</li><li>Experience with cloud platforms.</li></ul><p>Job Type: Full-time</p><p>Pay: Rs150,000.00 - Rs200,000.00 per month</p><p>Experience:</p><ul><li>SQA: 3 years (Required)</li><li>SQA Automation: 2 years (Required)</li></ul><p>Work Location: Remote</p>",
+        "benefits": [],
+        "occupation": [
+            "Technology Occupations",
+            "Software Development & Architecture Occupations",
+            "Software Quality Assurance Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": true,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 14,
+        "jobKey": "6441e9c9fb28ad48",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=6441e9c9fb28ad48",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Associate Software Engineer",
+        "companyName": "Dubizzle Labs",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-06",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Dubizzle-Labs",
+        "rating": {
+            "rating": 4,
+            "count": 4
+        },
+        "descriptionText": "At Dubizzle Labs, we are looking to further expand our Pakistan engineering office of already 300+. We are most interested in bringing on board colleagues who love to learn, perform, and teach. We are building a high-quality engineering environment with a super focus on delivering value to customers. Your primary responsibility would be to build world-class suite products to support the hyper-growth of our businesses in 10 countries.\n\nAbout the Job:\n\nYou will be working with real estate industry shapers and leaders to define a remarkable experience for our 5 million monthly consumers looking for renting or buying a property. You will be employing real user data to make design decisions and help define the vision for the product by incorporating the client's feedback.\n\nLocation: Lahore, PK\n\nTotal Positions: 10+\n\nRequired Skill Set:\n\n• Fresh Graduates\n\n• Understanding of web architecture and database fundamental\n\n• Demonstrate the ability to work independently and as part of a development\n\n• Knowledge of OOP principles, JavaScript and MVC frameworks\n\nGood Luck!\n\n#LI-TM1",
+        "descriptionHtml": "<div><p>At Dubizzle Labs, we are looking to further expand our Pakistan engineering office of already 300+. We are most interested in bringing on board colleagues who love to learn, perform, and teach. We are building a high-quality engineering environment with a super focus on delivering value to customers. Your primary responsibility would be to build world-class suite products to support the hyper-growth of our businesses in 10 countries.</p><br>\n<p>About the Job:</p>\n<p>You will be working with real estate industry shapers and leaders to define a remarkable experience for our 5 million monthly consumers looking for renting or buying a property. You will be employing real user data to make design decisions and help define the vision for the product by incorporating the client's feedback.</p>\n<p>Location: Lahore, PK</p>\n<p>Total Positions: 10+</p>\n<p>Required Skill Set:</p>\n<ul><li>Fresh Graduates</li></ul><br>\n<ul><li>Understanding of web architecture and database fundamental</li></ul>\n<ul><li>Demonstrate the ability to work independently and as part of a development</li></ul>\n<ul><li>Knowledge of OOP principles, JavaScript and MVC frameworks</li></ul><br>\n<p>Good Luck!</p>\n<p>#LI-TM1</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Dubizzle Labs",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 15,
+        "jobKey": "98e0fdbc2c4aaac3",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=98e0fdbc2c4aaac3",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "AI Engineer",
+        "companyName": "MeshSquare",
+        "location": {
+            "city": "Rawalpindi Asghar Mall",
+            "postalCode": "46040",
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Rawalpindi Asghar Mall",
+            "formattedAddressShort": "Rawalpindi Asghar Mall",
+            "latitude": 33.5999,
+            "longitude": 73.0217,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "2 months ago",
+        "datePublished": "2026-01-27",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Meshsquare",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "We are seeking a skilled AI Engineer to design, develop, and deploy AI-driven solutions that solve\n\nreal business problems. The ideal candidate will work closely with software engineers, product\n\nmanagers, and stakeholders to build scalable, secure, and high-performance AI systems.\n\n*Key Responsibilities*\n\nDesign, develop, and deploy AI/ML models for production use\n\nWork with structured and unstructured data (text, images, logs, etc.)\n\nImplement and fine-tune machine learning, deep learning, and NLP models\n\nIntegrate AI models into web or mobile applications via APIs\n\nOptimize models for performance, accuracy, and scalability\n\nMonitor model performance and retrain models as needed\n\nEnsure data security, privacy, and ethical AI practices\n\nDocument models, workflows, and technical decisions\n\n*Required Skills & Qualifications*\n\nBachelor’s or Master’s degree in Computer Science, AI, Data Science, or related field\n\nStrong proficiency in Python\n\nHands-on experience with Machine Learning & Deep Learning\n\nExperience with frameworks such as TensorFlow, PyTorch, Scikit-learn\n\nKnowledge of NLP, Computer Vision, or Generative AI (LLMs)\n\nExperience working with APIs and integrating AI into applications\n\nFamiliarity with databases (SQL/NoSQL)\n\nUnderstanding of model evaluation and performance metrics\n\nPreferred / Nice-to-Have\n\nExperience with LLMs (OpenAI, HuggingFace, LangChain, RAG)\n\nExperience with MLOps, model deployment, and monitoring\n\nCloud experience (AWS, Azure, GCP)\n\nExperience in chatbot development or AI automation\n\nKnowledge of data pipelines and ETL processes\n\n*What We Offer*\n\nOpportunity to work on cutting-edge AI solutions\n\nCollaborative and growth-oriented environment\n\nCompetitive compensation\n\nLearning and development opportunities\n*Job Rewards and Benefits:*\n\n1. Paid Leaves\n\n2. HR Bonus\n\n3. Inflation Bonus\n\n4. Promotion\n\n5. Increments\n\n6. Medical (TBD)\n\n7. Employee Equity Funds Program (EEFP)\n\n8. Saturday and Sunday Off\n\n9. Transportation allowances only for female staff\n\n10. Complementary Food (Dinner) & Tea/Green Tea (Two times)\n\nJob Type: Full-time\n\nPay: Rs100,000.00 - Rs175,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p>We are seeking a skilled AI Engineer to design, develop, and deploy AI-driven solutions that solve</p><p>real business problems. The ideal candidate will work closely with software engineers, product</p><p>managers, and stakeholders to build scalable, secure, and high-performance AI systems.</p><p><b>Key Responsibilities</b></p><p>Design, develop, and deploy AI/ML models for production use</p><p>Work with structured and unstructured data (text, images, logs, etc.)</p><p>Implement and fine-tune machine learning, deep learning, and NLP models</p><p>Integrate AI models into web or mobile applications via APIs</p><p>Optimize models for performance, accuracy, and scalability</p><p>Monitor model performance and retrain models as needed</p><p>Ensure data security, privacy, and ethical AI practices</p><p>Document models, workflows, and technical decisions</p><p><b>Required Skills &amp; Qualifications</b></p><p>Bachelor&rsquo;s or Master&rsquo;s degree in Computer Science, AI, Data Science, or related field</p><p>Strong proficiency in Python</p><p>Hands-on experience with Machine Learning &amp; Deep Learning</p><p>Experience with frameworks such as TensorFlow, PyTorch, Scikit-learn</p><p>Knowledge of NLP, Computer Vision, or Generative AI (LLMs)</p><p>Experience working with APIs and integrating AI into applications</p><p>Familiarity with databases (SQL/NoSQL)</p><p>Understanding of model evaluation and performance metrics</p><p>Preferred / Nice-to-Have</p><p>Experience with LLMs (OpenAI, HuggingFace, LangChain, RAG)</p><p>Experience with MLOps, model deployment, and monitoring</p><p>Cloud experience (AWS, Azure, GCP)</p><p>Experience in chatbot development or AI automation</p><p>Knowledge of data pipelines and ETL processes</p><p><b>What We Offer</b></p><p>Opportunity to work on cutting-edge AI solutions</p><p>Collaborative and growth-oriented environment</p><p>Competitive compensation</p><p>Learning and development opportunities<br/><b>Job Rewards and Benefits:</b></p><p>1. Paid Leaves</p><p>2. HR Bonus</p><p>3. Inflation Bonus</p><p>4. Promotion</p><p>5. Increments</p><p>6. Medical (TBD)</p><p>7. Employee Equity Funds Program (EEFP)</p><p>8. Saturday and Sunday Off</p><p>9. Transportation allowances only for female staff</p><p>10. Complementary Food (Dinner) &amp; Tea/Green Tea (Two times)</p><p>Job Type: Full-time</p><p>Pay: Rs100,000.00 - Rs175,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Scientists & Statisticians"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 16,
+        "jobKey": "58a9da5fda31a9ae",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=58a9da5fda31a9ae",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Service Engineer",
+        "companyName": "This company is a High-Tech Electronic Company",
+        "location": {
+            "city": "Peshawar",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Peshawar",
+            "formattedAddressShort": "Peshawar",
+            "latitude": 34.002747,
+            "longitude": 71.54395,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "10 days ago",
+        "datePublished": "2026-03-06",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/This-Company-Is-A-High--tech-Electronic-Company",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Qualifications*:\n\n* Education: DAE Electronics, Degree in Electrical Engineering, Degree in Biomedical\n* Experience: Fresh candidates are encouraged to apply.\n* Age: Candidates around 20-25 years are encouraged to apply.\n\n*Competencies:*\n\n* Candidates must possess strong electrical engineering, network engineering, and electronic skills.\n\n*Job Description:*\n\n* · Install, test, and commission CR / DR and printers at hospitals and diagnostic centres\n* · Perform preventive and corrective maintenance of medical printers\n* · Diagnose and troubleshoot hardware and basic software faults\n* · Replace and adjust spare parts, boards, sensors, and consumables\n* · Attend breakdown calls and resolve issues within defined TAT\n* · Maintain service reports, job cards, and customer service records\n* · Coordinate with Head Office and senior engineers for technical escalation\n* · Ensure compliance with medical equipment safety and quality standards\n* Guide customers on proper handling and basic operation of printers.\n\nJob Type: Full-time\n\nPay: From Rs50,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Qualifications</b>:</p><ul><li>Education: DAE Electronics, Degree in Electrical Engineering, Degree in Biomedical</li><li>Experience: Fresh candidates are encouraged to apply.</li><li>Age: Candidates around 20-25 years are encouraged to apply.</li></ul><p><b>Competencies:</b></p><ul><li>Candidates must possess strong electrical engineering, network engineering, and electronic skills.</li></ul><p><b>Job Description:</b></p><ul><li>&middot; Install, test, and commission CR / DR and printers at hospitals and diagnostic centres</li><li>&middot; Perform preventive and corrective maintenance of medical printers</li><li>&middot; Diagnose and troubleshoot hardware and basic software faults</li><li>&middot; Replace and adjust spare parts, boards, sensors, and consumables</li><li>&middot; Attend breakdown calls and resolve issues within defined TAT</li><li>&middot; Maintain service reports, job cards, and customer service records</li><li>&middot; Coordinate with Head Office and senior engineers for technical escalation</li><li>&middot; Ensure compliance with medical equipment safety and quality standards</li><li>Guide customers on proper handling and basic operation of printers.</li></ul><p>Job Type: Full-time</p><p>Pay: From Rs50,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Electronics Installation & Repair Occupations",
+            "Biomedical Equipment Technicians",
+            "Repair, Maintenance & Installation Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 17,
+        "jobKey": "f013c0856c1da01a",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=f013c0856c1da01a",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Mid-Level AI Engineer ( Backend Heavy )",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/a039c163df4333baf268c0ea2b15ea92",
+        "companyName": "Devfum",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "2 months ago",
+        "datePublished": "2026-01-22",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/381aaec178519ed6acff9d6bc7e0838f",
+        "companyUrl": "https://www.indeed.com/cmp/Devfum",
+        "rating": {
+            "rating": 5,
+            "count": 5
+        },
+        "descriptionText": "*About Devfum*\n\nAt Devfum, we leverage cutting-edge technologies such as *web development*, *artificial intelligence (AI)*, and *extended reality (XR)* to automate business processes, enhance customer experiences, and drive sustainable growth worldwide.We foster a collaborative environment where you’ll work on cutting-edge technology, contribute to impactful projects, and grow through continuous learning and career development.\n\n*Role Overview:*Devfum is hiring a Mid-Level AI Engineer to design, build, deploy, and operate production-grade AI systems.This is not a research only role and not a pure backend role. It is a backend heavy AI engineering role focused on building real AI products end to end.\n\nYou will work on:\n\n* AI system architecture\n* LLM-powered automation and agent systems\n* Custom model training and fine-tuning\n* GPU-based deployment and inference optimization\n* Production AI infrastructure and monitoring\n\n*1. Key Responsibilities*\n\n* Design AI solutions from problem definition to production\n* Architect LLM-based systems (agents, tool-calling, workflows, RAG, hybrid approaches)\n* Integrate third-party LLM APIs and custom models into backend services\n* Train or fine-tune generative models when APIs are insufficient; replicate research into deployable pipelines\n* Build and maintain AI inference + workflow APIs using FastAPI/Flask (async inference, background jobs, retries, rate limiting, error handling)\n* Deploy and operate AI systems on GPU infrastructure (CUDA/NVIDIA), across single- and multi-GPU environments\n* Optimize inference for cost, latency, throughput, memory usage, and reliability (batching, caching, CPU vs GPU tradeoffs)\n* Apply model optimization techniques (FP16/INT8 quantization, ONNX, TensorRT, pruning, distillation) when needed\n* Debug production issues (model failures, drift, quality degradation, latency regressions) and drive long-term stability\n* Implement monitoring/observability for performance, drift, and output quality; trigger tuning/retraining when required\n* Build CI/CD for AI services (model builds, deployments, versioning, rollbacks) and automate ops with Linux + Bash\n\n*2. Requirements*\n\n* Bachelor’s degree in Computer Science, Software Engineering, Data Science, AI/ML (or equivalent practical experience)\n* 2–3 years of real AI/ML engineering experience\n* Proven experience deploying AI/ML or LLM systems to production\n* Hands-on experience with GPUs (CUDA/NVIDIA), and operating inference workloads on GPU servers\n* Strong knowledge and hands-on experience building AI automation systems using LangChain and LangGraph.\n* Strong Python backend engineering skills; experience building production APIs (FastAPI/Flask)\n* Experience with Docker and CI/CD pipelines for deploying services/models\n* Experience debugging live AI systems in production (failures, drift, latency, reliability issues)\n* Familiarity with LLM systems: agents, tool calling, workflows, RAG, and evaluation approaches\n* Familiarity with inference optimization concepts (batching, quantization FP16/INT8, ONNX/TensorRT)\n* Ownership mindset: takes responsibility end-to-end and drives tasks to completion\n* Calm under failure; handles incidents and ambiguity without panic\n* Clear communicator (written + verbal), can explain tradeoffs and decisions\n* Prioritizes reliability and measurable outcomes over hype and experimentation for its own sake\n* Comfortable with responsibility and operating production systems on Linux environments\n\n*Why Join Devfum?*\n\nWe offer an environment that fosters growth, learning, and work-life balance, ensuring that our employees feel valued and motivated.\n\n* *Bi-Annual Salary Increments:* Recognizing your contributions regularly.\n* *Clear Career Growth Roadmap:* Software Engineer → Senior Software Engineer → Engineering Manager.\n* *Continuous Learning:* Access to paid courses to enhance your skills.\n* *Daily Meals:* Enjoy complimentary lunch and tea/coffee.\n* *Recreational Activities:* Monthly sports activities and annual company tours.\n\n*Work Schedule*\n\n* Monday – Friday, *12 PM – 9 PM*\n\n*Why Join Devfum?*\n\nWe foster an environment that encourages growth, learning, and work-life balance to ensure our employees feel valued and motivated.\n\n* *Clear Career Growth Roadmap* – A structured path for your professional development\n* *Continuous Learning Opportunities* – Access to paid courses to sharpen your skills\n* *Daily Lunch & Tea* – Complimentary meals and refreshments\n* *Monthly Sports Activities* – Fun activities to stay active\n\n*Submit your application today!*\n\nJob Type: Full-time\n\nPay: Rs150,000.00 - Rs250,000.00 per month\n\n\n\nApplication Question(s):\n* Kindly share your GitHub profile link\n* How many years of real AI/ML engineering experience\n\nEducation:\n* Bachelor's (Required)\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>About Devfum</b></p><p>At Devfum, we leverage cutting-edge technologies such as <b>web development</b>, <b>artificial intelligence (AI)</b>, and <b>extended reality (XR)</b> to automate business processes, enhance customer experiences, and drive sustainable growth worldwide.We foster a collaborative environment where you&rsquo;ll work on cutting-edge technology, contribute to impactful projects, and grow through continuous learning and career development.</p><p><b>Role Overview:</b>Devfum is hiring a Mid-Level AI Engineer to design, build, deploy, and operate production-grade AI systems.This is not a research only role and not a pure backend role. It is a backend heavy AI engineering role focused on building real AI products end to end.</p><p>You will work on:</p><ul><li>AI system architecture</li><li>LLM-powered automation and agent systems</li><li>Custom model training and fine-tuning</li><li>GPU-based deployment and inference optimization</li><li>Production AI infrastructure and monitoring</li></ul><p><b>1. Key Responsibilities</b></p><ul><li>Design AI solutions from problem definition to production</li><li>Architect LLM-based systems (agents, tool-calling, workflows, RAG, hybrid approaches)</li><li>Integrate third-party LLM APIs and custom models into backend services</li><li>Train or fine-tune generative models when APIs are insufficient; replicate research into deployable pipelines</li><li>Build and maintain AI inference + workflow APIs using FastAPI/Flask (async inference, background jobs, retries, rate limiting, error handling)</li><li>Deploy and operate AI systems on GPU infrastructure (CUDA/NVIDIA), across single- and multi-GPU environments</li><li>Optimize inference for cost, latency, throughput, memory usage, and reliability (batching, caching, CPU vs GPU tradeoffs)</li><li>Apply model optimization techniques (FP16/INT8 quantization, ONNX, TensorRT, pruning, distillation) when needed</li><li>Debug production issues (model failures, drift, quality degradation, latency regressions) and drive long-term stability</li><li>Implement monitoring/observability for performance, drift, and output quality; trigger tuning/retraining when required</li><li>Build CI/CD for AI services (model builds, deployments, versioning, rollbacks) and automate ops with Linux + Bash</li></ul><p><b>2. Requirements</b></p><ul><li>Bachelor&rsquo;s degree in Computer Science, Software Engineering, Data Science, AI/ML (or equivalent practical experience)</li><li>2&ndash;3 years of real AI/ML engineering experience</li><li>Proven experience deploying AI/ML or LLM systems to production</li><li>Hands-on experience with GPUs (CUDA/NVIDIA), and operating inference workloads on GPU servers</li><li>Strong knowledge and hands-on experience building AI automation systems using LangChain and LangGraph.</li><li>Strong Python backend engineering skills; experience building production APIs (FastAPI/Flask)</li><li>Experience with Docker and CI/CD pipelines for deploying services/models</li><li>Experience debugging live AI systems in production (failures, drift, latency, reliability issues)</li><li>Familiarity with LLM systems: agents, tool calling, workflows, RAG, and evaluation approaches</li><li>Familiarity with inference optimization concepts (batching, quantization FP16/INT8, ONNX/TensorRT)</li><li>Ownership mindset: takes responsibility end-to-end and drives tasks to completion</li><li>Calm under failure; handles incidents and ambiguity without panic</li><li>Clear communicator (written + verbal), can explain tradeoffs and decisions</li><li>Prioritizes reliability and measurable outcomes over hype and experimentation for its own sake</li><li>Comfortable with responsibility and operating production systems on Linux environments</li></ul><p><b>Why Join Devfum?</b></p><p>We offer an environment that fosters growth, learning, and work-life balance, ensuring that our employees feel valued and motivated.</p><ul><li><b>Bi-Annual Salary Increments:</b> Recognizing your contributions regularly.</li><li><b>Clear Career Growth Roadmap:</b> Software Engineer &rarr; Senior Software Engineer &rarr; Engineering Manager.</li><li><b>Continuous Learning:</b> Access to paid courses to enhance your skills.</li><li><b>Daily Meals:</b> Enjoy complimentary lunch and tea/coffee.</li><li><b>Recreational Activities:</b> Monthly sports activities and annual company tours.</li></ul><p><b>Work Schedule</b></p><ul><li>Monday &ndash; Friday, <b>12 PM &ndash; 9 PM</b></li></ul><p><b>Why Join Devfum?</b></p><p>We foster an environment that encourages growth, learning, and work-life balance to ensure our employees feel valued and motivated.</p><ul><li><b>Clear Career Growth Roadmap</b> &ndash; A structured path for your professional development</li><li><b>Continuous Learning Opportunities</b> &ndash; Access to paid courses to sharpen your skills</li><li><b>Daily Lunch &amp; Tea</b> &ndash; Complimentary meals and refreshments</li><li><b>Monthly Sports Activities</b> &ndash; Fun activities to stay active</li></ul><p><b>Submit your application today!</b></p><p>Job Type: Full-time</p><p>Pay: Rs150,000.00 - Rs250,000.00 per month</p><p>Application Question(s):</p><ul><li>Kindly share your GitHub profile link</li><li>How many years of real AI/ML engineering experience</li></ul><p>Education:</p><ul><li>Bachelor's (Required)</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Scientists & Statisticians"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 18,
+        "jobKey": "0b34adb7178484f2",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=0b34adb7178484f2",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    }
+]

@@ -375,57 +375,8 @@ class JobService:
         }
 
     def get_job_counts_by_location(self, country):
-        raw_counts = self.repository.get_job_counts_by_location(country)
-        if not raw_counts:
+        if not country:
             return []
-
-        locations_list = [r["location"] for r in raw_counts if r.get("location")]
-        if not locations_list:
-            return []
-
-        prompt = (
-            f"Normalize the following job location strings into their primary major city in {country}. "
-            f"Group sub-areas and variations into their main city name (e.g., 'Johar Town', 'Johar Town, Punjab', 'Lahore, Punjab' all map to 'Lahore'). "
-            f"Map 'Karāchi', 'Karachi Division' to 'Karachi'. "
-            f"If it's a generic country like '{country}' or 'Remote', map it to '{country}'. "
-            f"Return ONLY a strictly valid JSON object mapping every exact raw location string to its normalized city name."
-            f"\n\nLocations:\n{json.dumps(locations_list)}"
-        )
-
-        try:
-            content = self._call_ollama(
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are a data cleaner. Respond ONLY with a valid JSON object of key-value string pairs.",
-                    },
-                    {"role": "user", "content": prompt},
-                ]
-            )
-            mapping = self._extract_json_object(content)
-
-            if mapping and isinstance(mapping, dict):
-                aggregated = {}
-                for row in raw_counts:
-                    raw_loc = row.get("location")
-                    if not raw_loc:
-                        continue
-                    
-                    count = row.get("count", 0)
-                    norm_loc = mapping.get(raw_loc)
-                    if not norm_loc or not isinstance(norm_loc, str):
-                        norm_loc = raw_loc
-                        
-                    norm_loc = norm_loc.strip().title()
-                    
-                    aggregated[norm_loc] = aggregated.get(norm_loc, 0) + count
-
-                return sorted(
-                    [{"location": k, "count": v} for k, v in aggregated.items()],
-                    key=lambda x: x["count"],
-                    reverse=True
-                )
-        except Exception as exc:
-            print(f"Ollama normalization failed: {exc}")
-
-        return raw_counts
+        
+        # Now returns pre-normalized (or COALESCED) locations from the DB
+        return self.repository.get_job_counts_by_location(country)

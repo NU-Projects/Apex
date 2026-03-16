@@ -156,11 +156,11 @@ class JobRepository:
             conn = self.get_db_connection()
             cur = conn.cursor()
             query = """
-                SELECT location, COUNT(*) 
+                SELECT COALESCE(normalized_location, location) as loc, COUNT(*) 
                 FROM jobs 
                 WHERE country ILIKE %s 
-                GROUP BY location 
-                ORDER BY COUNT(*) DESC
+                GROUP BY 1 
+                ORDER BY 2 DESC
             """
             cur.execute(query, (f"%{country}%",))
             rows = cur.fetchall()

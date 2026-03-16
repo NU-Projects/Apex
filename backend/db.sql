@@ -25,6 +25,7 @@ CREATE TABLE jobs (
   description TEXT,         
   url TEXT,
   location TEXT,
+  normalized_location TEXT, -- AI-categorized location
   experience_level TEXT,
   contract_type TEXT,
   country TEXT,

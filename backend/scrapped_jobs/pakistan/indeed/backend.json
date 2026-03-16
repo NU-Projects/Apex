@@ -1,0 +1,786 @@
+[
+    {
+        "title": "MERN Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/8c04621d7c32cfc14de4eef1f004e603",
+        "companyName": "Code District",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "9 months ago",
+        "datePublished": "2025-06-19",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/405e54e84298fe34b935b4f6650415e7",
+        "companyUrl": "https://www.indeed.com/cmp/Code-District",
+        "rating": {
+            "rating": 1,
+            "count": 1
+        },
+        "descriptionText": "Code District is looking for passionate Software Engineers with 1-3 years of experience to join our growing engineering team. You will work on modern web applications using React/Next.js, Node.js/NestJS, SQL and NoSQL databases, and core AWS cloud services, contributing to scalable, secure, and well-structured systems.\n\nWere an AI-first engineering organization: we want developers who are comfortable using tools like Copilot, Cursor, and LLMs to work smarter, but who also have strong fundamentals and can think independently\n\nKey Responsibilities\n\nDevelop, enhance, and maintain web applications using React/Next.js on the frontend and Node.js/NestJS on the backend.\nDesign, build, and consume RESTful APIs and integrate with internal and external services.\nWork with SQL databases (e.g., PostgreSQL/MySQL) and NoSQL (e.g., MongoDB) for data modeling and query optimization.\nUse core AWS services (e.g., EC2, S3, RDS, Lambda, API Gateway) for application hosting, storage, and integrations\nWrite clean, maintainable, and testable code following best coding practices and team standards.\nUse Git effectively: branching, pull requests, code reviews, and CI-friendly workflows.\nCollaborate with product managers, designers, QA, and other engineers in an Agile environment.\nParticipate in code reviews, estimations, and technical discussions.\nProactively improve performance, scalability, and reliability of existing systems.\nUse AI-powered tools (Copilot, Cursor, ChatGPT, etc.) to speed up development while maintaining high code quality.\n\nRequirements\n\n1-3 years of professional experience in web application development.\nStrong proficiency in JavaScript (ES6+); familiarity with TypeScript is a plus.\nHands-on experience with React (Next.js preferred) and Node.js (NestJS is a plus).\nStrong foundation in SQL databases; experience with MongoDB/NoSQL is preferred.\nExperience building and consuming REST APIs.\nGood understanding of version control (Git) and modern development workflows.\nWorking knowledge of cloud platforms, especially core AWS services (EC2, S3, RDS, Lambda, API Gateway, etc.).\nExperience working in Agile/Scrum teams.\nDisciplined, reliable, and highly committed to delivering on responsibilities and timelines.\nDemonstrated ability and willingness to learn new technologies and tools.\nPreferably experienced with AI-assisted development tools (Copilot, Cursor, etc.) and exposure to public LLMs (OpenAI, etc.)\nStrong communication skills and ability to work effectively in cross-functional teams.",
+        "descriptionHtml": "<div><p>Code District is looking for passionate <b>Software Engineers</b> with 1-3 years of experience to join our growing engineering team. You will work on modern web applications using <b>React/Next.js, Node.js/NestJS, SQL and NoSQL databases</b>, and <b>core AWS cloud services</b>, contributing to scalable, secure, and well-structured systems.</p><p>\nWere an <b>AI-first</b> engineering organization: we want developers who are comfortable using tools like <b>Copilot, Cursor, and LLMs</b> to work smarter, but who also have strong fundamentals and can think independently</p><p><b>\nKey Responsibilities</b></p><ul><li>\nDevelop, enhance, and maintain web applications using React/Next.js on the frontend and Node.js/NestJS on the backend.</li><li>\nDesign, build, and consume RESTful APIs and integrate with internal and external services.</li><li>\nWork with SQL databases (e.g., PostgreSQL/MySQL) and NoSQL (e.g., MongoDB) for data modeling and query optimization.</li><li>\nUse core AWS services (e.g., EC2, S3, RDS, Lambda, API Gateway) for application hosting, storage, and integrations<br>\nWrite clean, maintainable, and testable code following best coding practices and team standards.</li><li>\nUse Git effectively: branching, pull requests, code reviews, and CI-friendly workflows.</li><li>\nCollaborate with product managers, designers, QA, and other engineers in an Agile environment.</li><li>\nParticipate in code reviews, estimations, and technical discussions.</li><li>\nProactively improve performance, scalability, and reliability of existing systems.</li><li>\nUse AI-powered tools (Copilot, Cursor, ChatGPT, etc.) to speed up development while maintaining high code quality.</li></ul><p><b>\nRequirements</b></p><ul><li>\n1-3 years of professional experience in web application development.</li><li>\nStrong proficiency in JavaScript (ES6+); familiarity with TypeScript is a plus.</li><li>\nHands-on experience with React (Next.js preferred) and Node.js (NestJS is a plus).</li><li>\nStrong foundation in SQL databases; experience with MongoDB/NoSQL is preferred.</li><li>\nExperience building and consuming REST APIs.</li><li>\nGood understanding of version control (Git) and modern development workflows.</li><li>\nWorking knowledge of cloud platforms, especially core AWS services (EC2, S3, RDS, Lambda, API Gateway, etc.).</li><li>\nExperience working in Agile/Scrum teams.</li><li>\nDisciplined, reliable, and highly committed to delivering on responsibilities and timelines.</li><li>\nDemonstrated ability and willingness to learn new technologies and tools.</li><li>\nPreferably experienced with AI-assisted development tools (Copilot, Cursor, etc.) and exposure to public LLMs (OpenAI, etc.)</li><li>\nStrong communication skills and ability to work effectively in cross-functional teams.</li></ul></div>",
+        "benefits": [],
+        "occupation": [],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Code District",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 0,
+        "jobKey": "7a9a6d49576db017",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=7a9a6d49576db017",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/8c04621d7c32cfc14de4eef1f004e603",
+        "companyName": "Code District",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "25 days ago",
+        "datePublished": "2026-02-19",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/405e54e84298fe34b935b4f6650415e7",
+        "companyUrl": "https://www.indeed.com/cmp/Code-District",
+        "rating": {
+            "rating": 1,
+            "count": 1
+        },
+        "descriptionText": "Job Description:\n\nCode District is one of the leading software development companies providing high-end software solutions to enterprises, growing businesses, and startups. We help businesses grow through innovative software solutions and digital transformation using the latest technological approaches.\n\n Location: Gulberg, Lahore (On-site)\n\nKey Responsibilities:\n\nWere looking for a PHP Developer to join our team and contribute to building robust, high-performance web applications. You will focus on writing clean backend code, integrating front-end components, and ensuring the application logic is sound and scalable.\n\nRequirements:\n\n2-4 years of hands-on experience with PHP and Laravel\nStrong command of JavaScript (must-have)\nExperience working with React.js or Angular & Core PHP (Preferred)\nPrior work with Core PHP and CodeIgniter is a plus\nProficiency in SQL and database design\nGood understanding of RESTful APIs and integration techniques\nFamiliarity with version control systems like Git\nSolid grasp of object-oriented programming and MVC architecture\nAbility to work in a collaborative, fast-paced environment\nBachelors degree in Computer Science or a related field\nGood communication skills in English.",
+        "descriptionHtml": "<div><p><b>Job Description:</b></p><p><b>\nCode District</b> is one of the leading software development companies providing high-end software solutions to enterprises, growing businesses, and startups. We help businesses grow through innovative software solutions and digital transformation using the latest technological approaches.</p><p><b>\n Location:</b> Gulberg, Lahore (On-site)</p><p><b>\nKey Responsibilities:</b></p><p>\nWere looking for a PHP Developer to join our team and contribute to building robust, high-performance web applications. You will focus on writing clean backend code, integrating front-end components, and ensuring the application logic is sound and scalable.</p><p><b>\nRequirements</b>:</p><ul><li><b>\n2-4 years</b> of hands-on experience with <b>PHP</b> and <b>Laravel</b></li><li>\nStrong command of <b>JavaScript</b> (must-have)</li><li>\nExperience working with <b>React.js</b> or <b>Angular &amp; Core PHP (Preferred)</b></li><li>\nPrior work with Core PHP and CodeIgniter is a plus</li><li>\nProficiency in <b>SQL</b> and database design</li><li>\nGood understanding of RESTful APIs and integration techniques</li><li>\nFamiliarity with version control systems like Git</li><li>\nSolid grasp of object-oriented programming and MVC architecture</li><li>\nAbility to work in a collaborative, fast-paced environment</li><li>\nBachelors degree in Computer Science or a related field</li><li>\nGood communication skills in English.</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Code District",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 1,
+        "jobKey": "721cd58eb7b73dc0",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=721cd58eb7b73dc0",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer - Backend .Net",
+        "companyName": "VIDIZMO LLC",
+        "location": {
+            "city": "Karachi",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Karachi",
+            "formattedAddressShort": "Karachi",
+            "latitude": 24.892857,
+            "longitude": 67.02747,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "5 months ago",
+        "datePublished": "2025-10-07",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Vidizmo-LLC",
+        "rating": {
+            "rating": 3.5,
+            "count": 2
+        },
+        "descriptionText": "We're seeking passionate, driven, and self-motivated individuals to join our team. If you're eager to grow in a dynamic environment and be part of a company that’s at the forefront of AI innovation, this is your chance to hit the ground running.\n\nVIDIZMO is a USA-based technology company headquartered in Tysons, Virginia, and a Microsoft Solutions Partner in Data & AI, Infrastructure, and Digital & App Innovation. Offering a AI-Powered Intelligence Hub, we empower Fortune 500 companies, large enterprises, governments, and the public sector to securely manage, analyze, and govern their data with complete control and compliance.\n\nOur Multimodal AI Data Intelligence Platform leverages Large Language Models (LLMs) and RAG (Retrieval-Augmented Generation) to deliver powerful capabilities such as auto-tagging, redaction, content summarization, OCR, translation, subtitle creation, object detection and tracking, content search, sentiment and emotion analysis, topic extraction, document classification, and facial attribute detection.\n\nAI Output Verification & Accountability (Required Competency)\n\nThe candidate must be capable of effectively using AI tools (e.g., Claude, ChatGPT, Copilot, or similar) to support work outputs such as content, analysis, documentation, or code. However, the candidate must also demonstrate strong judgment and ownership of the final deliverables. AI-generated output must never be treated as final without review. The candidate is expected to validate accuracy, completeness, logic, compliance, and alignment with business requirements, and refine AI-assisted work to meet the expected quality standards. The individual will be held accountable for the final output, regardless of whether AI tools were used during execution.\n\nResponsibilities:\n\nBuild server-side web technology stack that provides API for various products and integrations\nResponsibility for reviewing and validating AI-generated outputs\nOwnership of final deliverables, regardless of AI assistance\nAbility to critically evaluate AI results and ensure they meet defined requirements\nAccountability for accuracy, quality, and compliance\n\nDevelop and enhance back-end processing pipeline with evolving needs\nWork with Product Analyst, Web Engineers, and other Front and Back end engineers to provide necessary support building new features\nSecuring and ensuring the back-end stack is scalable, elastic and can support millions of concurrent users\nPerform unit, integration testing of developed modules and systems as well as participate in weekly bug bash activity\nPerform Peer code reviews to improve code quality\nFollow and enforce SCRUM/Agile practices as well as work with Product Manager, maintaining product and spring backlog\nPropose and participate in the adoption of new technologies and trends\n\nEssential Skills:\n\nMust have worked with at least one server-side technology for developing web application such as ASP.NET OR C# OR Java Spring/Spring Boot OR NodeJS OR Python\nHave experience developing and designing API and Middle-ware for the web\nHands on experience working on Visual Studio 2019, SQL Server Management Studio\nProficient knowledge and in-depth understanding of underlying frameworks like .NET, Java, etc.\nHave experience and knowledge of designing scalable application\nSkilled in implementing design patterns and logic development\nThe ideal candidate demonstrates strong business acumen, translates objectives into impactful solutions, and effectively leverages AI tools for efficiency. Proficiency in Claude (mandatory) and familiarity with tools such as ChatGPT are required. An ownership mindset and the ability to deliver results independently are essential. Successful completion of a Claude-based assessment is required as part of the hiring process.\n\nPreferred Skills:\n\nHave created an application using ASP.NET Core, ASP.NET 5, libraries in .NET and Windows services\nHave worked on SignalR OR gRPC OR WebSockets\nHave worked with Azure Devops OR AWS OR Google PaaS Services\nHave done system-level programming such as sockets, multi-threading, or designed distributed applications\nHave worked on video streaming technology or encoders/decoders\nContainers, Elastic Search, Dapper, Kafka, RabbitMQ, Zipkin, Consul, Zookeeper, Redis, WSL/2, gRPC protocols, mDNS\n\nRequired Qualification:\n\nBS/BSc or above in Computer Science\n0 - 5+ years experience in backend development\nCan work independently and have a go-getter attitude\nGood English language verbal and writing communication skills\nAuthorized to work legally\n\nBenefits: Health Insurance (OPD/IPD), Daily Lunch Facility, Separate Maternity Cover, Leave encashment, Car Support Program, Referral Bonus, EOBI, Bi-Annual Increment. Provident Fund, Career Growth, Bonus (benefits vary based on location)\n\nMultiple Locations: Pakistan, India, UAE, Australia, Canada & USA",
+        "descriptionHtml": "<div><p>We're seeking passionate, driven, and self-motivated individuals to join our team. If you're eager to grow in a dynamic environment and be part of a company that&rsquo;s at the forefront of AI innovation, this is your chance to hit the ground running.</p><br>\n<p></p>\n<p>\nVIDIZMO is a USA-based technology company headquartered in Tysons, Virginia, and a <b>Microsoft Solutions Partner</b> in <b>Data &amp; AI</b>, <b>Infrastructure</b>, and <b>Digital &amp; App Innovation</b>. Offering a <b>AI-Powered Intelligence Hub</b>, we empower <b>Fortune 500 companies</b>, <b>large enterprises</b>, governments, and the <b>public sector</b> to securely manage, analyze, and govern their data with complete control and compliance.</p><br>\n<p></p>\n<p>\nOur <b>Multimodal AI Data Intelligence Platform</b> leverages <b>Large Language Models (LLMs)</b> and <b>RAG (Retrieval-Augmented Generation)</b> to deliver powerful capabilities such as <b>auto-tagging</b>, <b>redaction</b>, <b>content summarization</b>, <b>OCR</b>, <b>translation</b>, <b>subtitle creation</b>, <b>object detection and tracking</b>, <b>content search</b>, <b>sentiment and emotion analysis</b>, <b>topic extraction</b>, <b>document classification</b>, and <b>facial attribute detection.</b></p><p></p><p><b><br>\nAI Output Verification &amp; Accountability (Required Competency)</b></p><p></p><p><br>\nThe candidate must be capable of effectively using AI tools (e.g., Claude, ChatGPT, Copilot, or similar) to support work outputs such as content, analysis, documentation, or code. However, the candidate must also demonstrate strong judgment and ownership of the final deliverables. AI-generated output must never be treated as final without review. The candidate is expected to validate accuracy, completeness, logic, compliance, and alignment with business requirements, and refine AI-assisted work to meet the expected quality standards. The individual will be held accountable for the final output, regardless of whether AI tools were used during execution.</p><p></p><p><b><br>\nResponsibilities:</b></p>\n<ul>\n<li>Build server-side web technology stack that provides API for various products and integrations</li>\n</ul><ul><li>Responsibility for reviewing and validating AI-generated outputs</li>\n<li>Ownership of final deliverables, regardless of AI assistance</li>\n<li>Ability to critically evaluate AI results and ensure they meet defined requirements</li>\n<li>Accountability for accuracy, quality, and compliance<br>\n</li>\n<li>Develop and enhance back-end processing pipeline with evolving needs</li>\n<li>Work with Product Analyst, Web Engineers, and other Front and Back end engineers to provide necessary support building new features</li>\n<li>Securing and ensuring the back-end stack is scalable, elastic and can support millions of concurrent users</li>\n<li>Perform unit, integration testing of developed modules and systems as well as participate in weekly bug bash activity</li>\n<li>Perform Peer code reviews to improve code quality</li>\n<li>Follow and enforce SCRUM/Agile practices as well as work with Product Manager, maintaining product and spring backlog</li>\n<li>Propose and participate in the adoption of new technologies and trends</li></ul><p></p><p><b><br>\nEssential Skills:</b></p>\n<ul>\n<li>Must have worked with at least one server-side technology for developing web application such as ASP.NET OR C# OR Java Spring/Spring Boot OR NodeJS OR Python</li>\n<li>Have experience developing and designing API and Middle-ware for the web</li>\n<li>Hands on experience working on Visual Studio 2019, SQL Server Management Studio</li>\n<li>Proficient knowledge and in-depth understanding of underlying frameworks like .NET, Java, etc.</li>\n<li>Have experience and knowledge of designing scalable application</li>\n<li>Skilled in implementing design patterns and logic development</li>\n<li>The ideal candidate demonstrates strong business acumen, translates objectives into impactful solutions, and effectively leverages AI tools for efficiency. Proficiency in Claude (mandatory) and familiarity with tools such as ChatGPT are required. An ownership mindset and the ability to deliver results independently are essential. Successful completion of a Claude-based assessment is required as part of the hiring process.</li></ul><br>\n<p></p>\n<p><b>\nPreferred Skills:</b></p>\n<ul>\n<li>Have created an application using ASP.NET Core, ASP.NET 5, libraries in .NET and Windows services</li>\n<li>Have worked on SignalR OR gRPC OR WebSockets</li>\n<li>Have worked with Azure Devops OR AWS OR Google PaaS Services</li>\n<li>Have done system-level programming such as sockets, multi-threading, or designed distributed applications</li>\n</ul><ul><li>Have worked on video streaming technology or encoders/decoders</li>\n<li>Containers, Elastic Search, Dapper, Kafka, RabbitMQ, Zipkin, Consul, Zookeeper, Redis, WSL/2, gRPC protocols, mDNS</li></ul><br>\n<p></p>\n<p><b>\nRequired Qualification:</b></p>\n<ul>\n<li>BS/BSc or above in Computer Science</li>\n<li>0 - 5+ years experience in backend development</li>\n<li>Can work independently and have a go-getter attitude</li>\n<li>Good English language verbal and writing communication skills</li>\n<li>Authorized to work legally</li></ul><br>\n<p></p>\n<p>\nBenefits: Health Insurance (OPD/IPD), Daily Lunch Facility, Separate Maternity Cover, Leave encashment, Car Support Program, Referral Bonus, EOBI, Bi-Annual Increment. Provident Fund, Career Growth, Bonus (benefits vary based on location)</p><p></p><p><br>\nMultiple Locations: Pakistan, India, UAE, Australia, Canada &amp; USA</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Back End Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "VIDIZMO LLC",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 2,
+        "jobKey": "22e4d0d44c03253c",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=22e4d0d44c03253c",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer (Full Stack)",
+        "companyName": "DigiU Pty Ltd",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a year ago",
+        "datePublished": "2025-02-11",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Digiu-Pty-Ltd",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "About DigiU\n\nAt DigiU, we build next-gen digital products and platforms for businesses looking to scale smart and fast. We’re on the lookout for a Full Stack Software Engineer who’s passionate about crafting elegant code, solving real-world problems, and working on everything from backend APIs to frontend interfaces.\n\nRole Overview\n\nAs a Full Stack Developer, you'll be responsible for designing, building, and maintaining robust backend services and sleek frontend interfaces. You’ll work closely with cross-functional teams to deliver scalable software solutions with high performance and reliability.\n\nKey Responsibilities Backend Development\n\nDesign and build scalable backend services using Python (Django / FastAPI) and Node.js\nDevelop and maintain REST APIs and support third-party API integrations\nUse tools like Postman for testing and debugging APIs\nEnsure backend performance, security, and data integrity\n\nFrontend Development\n\nBuild intuitive and responsive user interfaces using React.js\nCollaborate with UI/UX designers to bring mockups to life\nOptimize front-end performance across devices and browsers\n\nGeneral Responsibilities\n\nParticipate in the full software development lifecycle: planning, coding, testing, deployment, and support\nWrite clean, maintainable, and well-documented code\nDebug and resolve issues across the stack\nWork in an agile, fast-paced environment and contribute to sprint planning and reviews\nCollaborate closely with product, design, and QA teams\n\nRequired Skills & Experience\n\n2–5 years of hands-on experience as a Full Stack Developer\nStrong experience with:\nBackend: Python, Django, FastAPI, Node.js, REST APIs, API integrations\nFrontend: React.js\nTools: Postman, Git\nSolid understanding of web application architecture, security, and scalability\nExperience working with relational databases (e.g., PostgreSQL, MySQL)\n\nNice to Have\n\nFamiliarity with containerization (Docker)\nExperience with CI/CD pipelines\nKnowledge of modern development workflows and tools (Jira, GitHub, etc.)\nExperience in cloud environments (AWS, Azure, etc.)\n\nSoft Skills\n\nStrong problem-solving abilities and attention to detail\nExcellent communication and teamwork skills\nSelf-driven and capable of working independently and collaboratively\nA learning mindset and openness to feedback",
+        "descriptionHtml": "<div><p>About DigiU</p>\n<p>\nAt DigiU, we build next-gen digital products and platforms for businesses looking to scale smart and fast. We&rsquo;re on the lookout for a Full Stack Software Engineer who&rsquo;s passionate about crafting elegant code, solving real-world problems, and working on everything from backend APIs to frontend interfaces.</p>\n<p>\nRole Overview</p>\n<p>\nAs a Full Stack Developer, you'll be responsible for designing, building, and maintaining robust backend services and sleek frontend interfaces. You&rsquo;ll work closely with cross-functional teams to deliver scalable software solutions with high performance and reliability.</p>\n<p>\nKey Responsibilities Backend Development</p>\n<ul>\n<li>Design and build scalable backend services using Python (Django / FastAPI) and Node.js</li>\n<li>Develop and maintain REST APIs and support third-party API integrations</li>\n<li>Use tools like Postman for testing and debugging APIs</li>\n<li>Ensure backend performance, security, and data integrity</li>\n</ul>\n<p>Frontend Development</p>\n<ul>\n<li>Build intuitive and responsive user interfaces using React.js</li>\n<li>Collaborate with UI/UX designers to bring mockups to life</li>\n<li>Optimize front-end performance across devices and browsers</li>\n</ul>\n<p>General Responsibilities</p>\n<ul>\n<li>Participate in the full software development lifecycle: planning, coding, testing, deployment, and support</li>\n<li>Write clean, maintainable, and well-documented code</li>\n<li>Debug and resolve issues across the stack</li>\n<li>Work in an agile, fast-paced environment and contribute to sprint planning and reviews</li>\n<li>Collaborate closely with product, design, and QA teams</li>\n</ul>\n<p>Required Skills &amp; Experience</p>\n<ul>\n<li>2&ndash;5 years of hands-on experience as a Full Stack Developer</li>\n<li>Strong experience with:\n<ul><li>Backend: Python, Django, FastAPI, Node.js, REST APIs, API integrations</li>\n<li>Frontend: React.js</li>\n<li>Tools: Postman, Git</li>\n</ul></li><li>Solid understanding of web application architecture, security, and scalability</li>\n<li>Experience working with relational databases (e.g., PostgreSQL, MySQL)</li>\n</ul>\n<p>Nice to Have</p>\n<ul>\n<li>Familiarity with containerization (Docker)</li>\n<li>Experience with CI/CD pipelines</li>\n<li>Knowledge of modern development workflows and tools (Jira, GitHub, etc.)</li>\n<li>Experience in cloud environments (AWS, Azure, etc.)</li>\n</ul>\n<p>Soft Skills</p>\n<ul>\n<li>Strong problem-solving abilities and attention to detail</li>\n<li>Excellent communication and teamwork skills</li>\n<li>Self-driven and capable of working independently and collaboratively</li>\n<li>A learning mindset and openness to feedback</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "DigiU Pty Ltd",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 3,
+        "jobKey": "be62fb66b9da9417",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=be62fb66b9da9417",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "PHP Developer",
+        "companyName": "WADIC",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "6 months ago",
+        "datePublished": "2025-09-11",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Wadic",
+        "rating": {
+            "rating": 3.3,
+            "count": 8
+        },
+        "descriptionText": "We are Hiring-PHP Developer\n\nWe deliver our customers peace of mind every day by helping them protect what they value most. Our passion for placing the customer at the center of everything we do is driving a transformational shift at WADIC\n\nOperating as an Agile team as a USA based company, we are on the front edge of an IT transformation for how people work and deliver solutions. Our passion for placing the user at the center of everything we do is driving our incremental approach to software feature development and delivery.\n\nPHP Developer\n\nIf you are a PHP Developer with over 4+ years of experience, and you're looking for a new career opportunity, with a company that has been listed as a Top agile development firm by CIO review, then this message is for you!! Top Reasons to Work with Us\n\n1. Our culture is challenging and goal oriented. If you feel most alive when you generate results that many would say are impossible, then you will be a star here!!\n\n2. We have increased our engineering headcount by over 55% in the last 6 months! We believe that our engineering team is the heart of our organization and is what we need to focus on to be successful and competitive!\n\n3. We work on cutting edge technologies and you will have a lot of opportunities to grow in different technologies.\n\n4. Our senior developers mentor you so that you can climb up the corporate ladder fast!\n\n5. Stable company with over a 15+ years of proven track history!\n\nWhat You Will Be Doing\n\n· You will be working with our team of 20+ LAMP engineers.\n\n· You will be working on adding features and functionality to open source frameworks.\n\n· You should have frontend and backend experience. MVC architecture knowledge is a must!\n\nWhat You Need for this Position\n\n· PHP\n\n· Laravel, Symphony, CakePHP (or any MVC framework)\n\n· MySQL\n\n· Linux\n\n· VueJS / Angular (or any JavaScript framework)\n\n· jQuery What's In It for You\n\n· Good salary package\n\n· Paid Vacations\n\n· Financial Assistance Perks\n\n· Remote work perks when needed What are you waiting for? If you are looking for a stable job, good mentorship and a company where you can grow, let's talk!",
+        "descriptionHtml": "<div><p><b>We are Hiring-PHP Developer</b></p><p>\nWe deliver our customers peace of mind every day by helping them protect what they value most. Our passion for placing the customer at the center of everything we do is driving a transformational shift at WADIC</p><p>\nOperating as an Agile team as a USA based company, we are on the front edge of an IT transformation for how people work and deliver solutions. Our passion for placing the user at the center of everything we do is driving our incremental approach to software feature development and delivery.</p><p><b>\nPHP Developer</b></p><p>\nIf you are a PHP Developer with over 4+ years of experience, and you're looking for a new career opportunity, with a company that has been listed as a Top agile development firm by CIO review, then this message is for you!! Top Reasons to Work with Us</p><p>\n1. Our culture is challenging and goal oriented. If you feel most alive when you generate results that many would say are impossible, then you will be a star here!!</p><p>\n2. We have increased our engineering headcount by over 55% in the last 6 months! We believe that our engineering team is the heart of our organization and is what we need to focus on to be successful and competitive!</p><p>\n3. We work on cutting edge technologies and you will have a lot of opportunities to grow in different technologies.</p><p>\n4. Our senior developers mentor you so that you can climb up the corporate ladder fast!</p><p>\n5. Stable company with over a 15+ years of proven track history!</p><p><b>\nWhat You Will Be Doing</b></p><ul><li>You will be working with our team of 20+ LAMP engineers.</li><li>You will be working on adding features and functionality to open source frameworks.</li><li>You should have frontend and backend experience. MVC architecture knowledge is a must!</li></ul><p><b>\nWhat You Need for this Position</b></p><ul><li>PHP</li><li>Laravel, Symphony, CakePHP (or any MVC framework)</li><li>MySQL</li><li>Linux</li><li>VueJS / Angular (or any JavaScript framework)</li><li>jQuery What's In It for You</li><li>Good salary package</li><li>Paid Vacations</li><li>Financial Assistance Perks</li><li>Remote work perks when needed What are you waiting for? If you are looking for a stable job, good mentorship and a company where you can grow, let's talk!</li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Back End Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Wadic",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 4,
+        "jobKey": "fec217c44062bfc2",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=fec217c44062bfc2",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Full-Stack Developer (Laravel and VueJS)",
+        "companyName": "Appetiser",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a year ago",
+        "datePublished": "2024-11-25",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Appetiser",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "\"Appetiser challenges me to give the best version of myself. I like how the company is transparent about its business model and anyone can contribute with an idea for its improvement. The culture within the team is unique and everyone is talented and skillful in their profession. We set goals guided by virtues created by the team rather than the traditional core values.” - Jeff Miralles / iOS Developer\n\nAre you someone who is DRIVING themselves to peak performance?\nAre you excited by HELPING PEOPLE create technology that impacts millions every day?\n\nIf you answered YES to these questions, you may be a fit for Appetiser Apps.\n\nJoin a high-performance team who are striving to go from an Australian market leader to a worldwide phenomenon. Our competitors cannot keep up with our technology, pace, and track record of successful clients.\n\nWe need ambitious people like YOU to help us grow by 10X over the next 5 years.\n\nYOU WILL:\n\nBUILD beautiful websites using HTML and CSS to bring creative ideas to life.\nCOLLABORATE with designers and developers to create web apps and backend mobile solutions.\nCOORDINATE with teams to launch content, setting clear timelines and expectations.\nPLAN for the unexpected by preparing backup solutions to ensure site reliability.\nGROW and maintain the website by expanding its features and keeping content fresh.\nLEAD projects and, when needed, take charge of a team from start to finish.\nADAPT quickly and take on new tasks as they arise.\n\nThe right fit for this role is DETERMINED and AMBITIOUS with:\n\nWORK ETHIC that leaves others in their dust\nRelentless desire to BECOME YOUR VERY BEST, and can prove it!\nDEEP KNOWLEDGE in technology\nA TRACK RECORD of IT experience, with a strong background in mobile and web app development, plus a solid grasp of programming basics.\nBONUS: Past experience as a DEVELOPER, ENGINEER, or PRODUCT MANAGER.\n\nFrontend/Backend\n\nProficient in using Git for version control and collaboration\nExperience in writing unit tests and building testable, maintainable code\nSolid experience working with Stripe API and documentation\nUnderstanding of Agile software development practices (Scrum or Kanban)\nReliable internet connection (minimum 30 Mbps download / 10 Mbps upload)\nMust own a personal laptop or desktop capable of handling development workloads\n\nBackend:\n\nIn-depth experience with Laravel 10 or later and a strong grasp of the Laravel ecosystem\nSolid knowledge of SQL schema design and SOLID principles\nExperience with MySQL query optimization and performance profiling\nUnderstanding of scalable application architecture and design patterns\nProficient in developing RESTful APIs, including documentation using tools like Bruno, Insomnia, or Postman\nFamiliarity with server setup and deployment, or experience using Amazon Web Services (AWS)\n\nFrontend:\n\nProficient in HTML5, CSS3, JavaScript, and pre-processors like Sass\nExperience with the Nuxt.js framework\nUnderstanding of modern frontend practices: composables, state management, component reuse, and responsive design\nBonus: Hands-on experience with Vitest, Cypress/Playwright, and TypeScript\n\nJoin our team!\nFlexible Work Arrangements: The ability to work from anywhere in the world as long as you perform.\nAccelerate Your Career: After probation, you get performance reviews every 6 months. Progress based on merit faster than ever before.\nBecome Your Best: Set personal & professional goals every quarter with your talent coach. Get optional counselling along the way.\nGlobal Impact: Build products that reach users worldwide and truly make a difference in the world!\nPublic Recognition: Track your achievements as you build a personal portfolio & track record.\nJoin a Culture of Drivers: Become part of a team that’s striving to be their very best.\n\nIf this resonates with you, please apply today.\n\nP.S. We're hiring multiple individuals. If you want to recommend someone, please email us; an attractive referral bonus awaits!\n\nP.P.S. If you have any questions, email us at talent.acquisition@appetiserapps.com",
+        "descriptionHtml": "<div><p><b><i>&quot;</i></b><i>Appetiser challenges me to give the best version of myself. I like how the company is transparent about its business model and anyone can contribute with an idea for its improvement. The culture within the team is unique and everyone is talented and skillful in their profession. We set goals guided by virtues created by the team rather than the traditional core values.</i><b><i>&rdquo;</i></b> - Jeff Miralles / iOS Developer</p><br>\n<ul><li>\nAre you someone who is <b>DRIVING</b> themselves to peak performance?</li><li>\nAre you excited by <b>HELPING PEOPLE</b> create technology that impacts millions every day?</li></ul><p></p><p>\nIf you answered <b>YES</b> to these questions, you may be a fit for <b>Appetiser Apps</b>.\n<br>\n<br>\nJoin a high-performance team who are striving to go from an Australian market leader to a worldwide phenomenon. Our competitors cannot keep up with our technology, pace, and track record of successful clients.</p><p><br>\nWe need ambitious people like YOU to help us grow by 10X over the next 5 years.</p><p><b><br>\nYOU WILL:</b></p><ul><li><b>\nBUILD</b> beautiful websites using HTML and CSS to bring creative ideas to life.</li><li><b>\nCOLLABORATE</b> with designers and developers to create web apps and backend mobile solutions.</li><li><b>\nCOORDINATE</b> with teams to launch content, setting clear timelines and expectations.</li><li><b>\nPLAN</b> for the unexpected by preparing backup solutions to ensure site reliability.</li><li><b>\nGROW</b> and maintain the website by expanding its features and keeping content fresh.</li><li><b>\nLEAD</b> projects and, when needed, take charge of a team from start to finish.</li><li><b>\nADAPT</b> quickly and take on new tasks as they arise.</li></ul><p><br>\nThe right fit for this role is <b>DETERMINED </b>and <b>AMBITIOUS </b>with<b>:\n</b></p><ul><li><b>WORK ETHIC</b> that leaves others in their dust</li></ul><ul><li>\nRelentless desire to <b>BECOME YOUR VERY BEST</b>, and can prove it!</li><li><b>\nDEEP KNOWLEDGE</b> in technology</li><li>\nA <b>TRACK RECORD</b> of IT experience, with a strong background in mobile and web app development, plus a solid grasp of programming basics.</li><li><i>\nBONUS</i>: Past experience as a <b>DEVELOPER</b>, <b>ENGINEER,</b> or <b>PRODUCT</b> <b>MANAGER</b>.</li></ul><p></p><p><b>\nFrontend/Backend</b></p><ul><li>\nProficient in using Git for version control and collaboration</li><li>\nExperience in writing unit tests and building testable, maintainable code</li><li>\nSolid experience working with Stripe API and documentation</li><li>\nUnderstanding of Agile software development practices (Scrum or Kanban)</li><li>\nReliable internet connection (minimum 30 Mbps download / 10 Mbps upload)</li><li>\nMust own a personal laptop or desktop capable of handling development workloads</li></ul><p></p><p><b><i>\nBackend:</i></b></p><ul><li>\nIn-depth experience with Laravel 10 or later and a strong grasp of the Laravel ecosystem</li><li>\nSolid knowledge of SQL schema design and SOLID principles</li><li>\nExperience with MySQL query optimization and performance profiling</li><li>\nUnderstanding of scalable application architecture and design patterns</li><li>\nProficient in developing RESTful APIs, including documentation using tools like Bruno, Insomnia, or Postman</li><li>\nFamiliarity with server setup and deployment, or experience using Amazon Web Services (AWS)</li></ul><p><b><i>\nFrontend:</i></b></p><ul><li>\nProficient in HTML5, CSS3, JavaScript, and pre-processors like Sass</li><li>\nExperience with the Nuxt.js framework</li><li>\nUnderstanding of modern frontend practices: composables, state management, component reuse, and responsive design</li><li>\nBonus: Hands-on experience with Vitest, Cypress/Playwright, and TypeScript</li></ul><p></p><h3 class=\"jobSectionHeader\"><b>\nJoin our team!</b></h3><ul><li><b>\nFlexible Work Arrangements: </b>The ability to work from anywhere in the world as long as you perform.</li><li><b>\nAccelerate Your Career: </b>After probation, you get performance reviews every 6 months. Progress based on merit faster than ever before.</li><li><b>\nBecome Your Best: </b>Set personal &amp; professional goals every quarter with your talent coach. Get optional counselling along the way.</li><li><b>\nGlobal Impact: </b>Build products that reach users worldwide and truly make a difference in the world!</li><li><b>\nPublic Recognition:</b> Track your achievements as you build a personal portfolio &amp; track record.</li><li><b>\nJoin a Culture of Drivers</b>: Become part of a team that&rsquo;s striving to be their very best.</li></ul><p>\nIf this resonates with you, please apply today.</p><p><br>\nP.S. We're hiring multiple individuals. If you want to recommend someone, please email us; an attractive referral bonus awaits!</p><p><br>\nP.P.S. If you have any questions, email us at talent.acquisition@appetiserapps.com</p></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Appetiser",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 5,
+        "jobKey": "a7aea9200d48b4f6",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=a7aea9200d48b4f6",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Sr. Software Architect./ Engineering Manager",
+        "companyName": "31 Green Ltd",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "6 months ago",
+        "datePublished": "2025-09-16",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/31-Green-Ltd",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "10+ years (including 3 to 4+ years in\narchitecture, leadership, and project\nownership)\n\nAbout the Role\n31G Ltd. is seeking a highly experienced Technical Lead / Software Architect to drive the\ntechnical vision, design, and execution of enterprise-level software projects. The ideal candidate\nmust have deep expertise in Python frameworks (Django, FastAPI), modern frontend\ntechnologies (React), and strong architectural skills experience with AI, ML and Agentic AI. This\nrole requires end-to-end ownership: architecting complex systems, leading engineering teams,\ncontributing to pre-sales, building technical solutions, and ensuring timely delivery of all IT\nprojects from conception to deployment.\nThis is a senior, client-facing, and leadership-focused role requiring both technical depth and\nstrategic decision-making.\n\nKey Responsibilities\n● Architect complete enterprise-level systems, including backend, frontend, databases,\nintegrations, and cloud infrastructure.\n● Lead, mentor, and manage a team of 15+ engineers across backend, frontend, QA, and\nDevOps.\n● Work proactively on pre-sales, including requirement analysis, solution design,\nestimations, and client technical presentations.\n● Oversee multiple projects simultaneously, ensuring quality, timelines, and alignment with\nbusiness objectives.\n● Design and develop backend services using Python frameworks such as Django, DRF,\nand FastAPI.\n● Lead and guide frontend architecture using React and related frameworks.\n● Conduct high-level and low-level architecture planning, including diagrams, workflows,\nand documentation.\n● Review code, enforce best engineering practices, and maintain clean, secure, scalable\nsolutions.\n● Collaborate with product, design, QA, and DevOps to ensure smooth, reliable delivery.\n● Identify risks, bottlenecks, and architectural gaps, offering clear mitigation strategies.\n● Drive DevOps practices such as CI/CD, versioning, automated testing, and monitoring.\n● Ensure systems are designed with performance, security, and scalability in mind.\n\nRequirements\n● Bachelor’s or Master’s degree in Computer Science, Engineering, or a related field.\n● 10+ years of professional software development experience.\n● 3 to 4+ years in technical leadership, architecture, or management of engineering teams.\n● Strong hands-on expertise in Python and frameworks such as Django, DRF, and\nFastAPI, AI, ML, Agentic AI (is a plus).\n● Solid proficiency in frontend development using React and modern\nJavaScript/TypeScript frameworks.\n● Strong understanding of system design, architecture patterns, REST APIs,\nmicroservices, and event-driven designs.\n● Experience with SQL and NoSQL databases (PostgreSQL, MySQL, MongoDB, Redis).\n● Proficiency with Git, CI/CD pipelines, and cloud infrastructure (AWS, Azure, or GCP).\n● Excellent communication, leadership, analytical, and problem-solving skills.\n● Ability to balance deep technical execution with leadership and delivery responsibilities.\n\nNice-to-Have\n● Experience with Docker, Kubernetes, and containerized deployments.\n● Understanding of distributed systems and microservices architecture.\n● Exposure to Agile/Scrum methodologies.\n● Experience with message brokers and asynchronous frameworks (RabbitMQ, Kafka,\nCelery).\n● Knowledge of AI/ML model integration, pipelines, or data engineering.\n● Understanding of blockchain fundamentals or experience with smart contract\nintegrations.\n● Experience working with compliance heavy environments (GDPR, NHS DSPT, DPIA\netc).\n● Experience with system security, data governance, and compliance-driven architectures",
+        "descriptionHtml": "<div><p><b>10+ years (including 3 to 4+ years in</b><br>\n<b>architecture, leadership, and project</b><br>\n<b>ownership)</b></p><p></p><p><b><br>\nAbout the Role</b><br>\n31G Ltd. is seeking a highly experienced Technical Lead / Software Architect to drive the<br>\ntechnical vision, design, and execution of enterprise-level software projects. The ideal candidate<br>\nmust have deep expertise in Python frameworks (Django, FastAPI), modern frontend<br>\ntechnologies (React), and strong architectural skills experience with AI, ML and Agentic AI. This<br>\nrole requires end-to-end ownership: architecting complex systems, leading engineering teams,<br>\ncontributing to pre-sales, building technical solutions, and ensuring timely delivery of all IT<br>\nprojects from conception to deployment.<br>\nThis is a senior, client-facing, and leadership-focused role requiring both technical depth and<br>\nstrategic decision-making.</p><p></p><div><b><br>\nKey Responsibilities</b><br>\n<ul><li>Architect complete enterprise-level systems, including backend, frontend, databases,</li></ul>\nintegrations, and cloud infrastructure.<br>\n<ul><li>Lead, mentor, and manage a team of 15+ engineers across backend, frontend, QA, and</li></ul>\nDevOps.<br>\n<ul><li>Work proactively on pre-sales, including requirement analysis, solution design,</li></ul>\nestimations, and client technical presentations.<br>\n<ul><li>Oversee multiple projects simultaneously, ensuring quality, timelines, and alignment with</li></ul>\nbusiness objectives.<br>\n<ul><li>Design and develop backend services using Python frameworks such as Django, DRF,</li></ul>\nand FastAPI.<br>\n<ul><li>Lead and guide frontend architecture using React and related frameworks.</li><li>Conduct high-level and low-level architecture planning, including diagrams, workflows,</li></ul>\nand documentation.<br>\n<ul><li>Review code, enforce best engineering practices, and maintain clean, secure, scalable</li></ul>\nsolutions.<br>\n<ul><li>Collaborate with product, design, QA, and DevOps to ensure smooth, reliable delivery.</li><li>Identify risks, bottlenecks, and architectural gaps, offering clear mitigation strategies.</li><li>Drive DevOps practices such as CI/CD, versioning, automated testing, and monitoring.</li><li>Ensure systems are designed with performance, security, and scalability in mind.</li></ul></div><p></p><div><b><br>\nRequirements</b><br>\n<ul><li>Bachelor&rsquo;s or Master&rsquo;s degree in Computer Science, Engineering, or a related field.</li><li>10+ years of professional software development experience.</li><li>3 to 4+ years in technical leadership, architecture, or management of engineering teams.</li><li>Strong hands-on expertise in Python and frameworks such as Django, DRF, and</li></ul>\nFastAPI, AI, ML, Agentic AI (is a plus).<br>\n<ul><li>Solid proficiency in frontend development using React and modern</li></ul>\nJavaScript/TypeScript frameworks.<br>\n<ul><li>Strong understanding of system design, architecture patterns, REST APIs,</li></ul>\nmicroservices, and event-driven designs.<br>\n<ul><li>Experience with SQL and NoSQL databases (PostgreSQL, MySQL, MongoDB, Redis).</li><li>Proficiency with Git, CI/CD pipelines, and cloud infrastructure (AWS, Azure, or GCP).</li><li>Excellent communication, leadership, analytical, and problem-solving skills.</li><li>Ability to balance deep technical execution with leadership and delivery responsibilities.</li></ul></div><p></p><div><b><br>\nNice-to-Have</b><br>\n<ul><li>Experience with Docker, Kubernetes, and containerized deployments.</li><li>Understanding of distributed systems and microservices architecture.</li><li>Exposure to Agile/Scrum methodologies.</li><li>Experience with message brokers and asynchronous frameworks (RabbitMQ, Kafka,</li></ul>\nCelery).<br>\n<ul><li>Knowledge of AI/ML model integration, pipelines, or data engineering.</li><li>Understanding of blockchain fundamentals or experience with smart contract</li></ul>\nintegrations.<br>\n<ul><li>Experience working with compliance heavy environments (GDPR, NHS DSPT, DPIA</li></ul>\netc).<br>\n<ul><li>Experience with system security, data governance, and compliance-driven architectures</li></ul></div></div>",
+        "benefits": [],
+        "occupation": [
+            "Software & Web Architects",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "31 Green Ltd",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 6,
+        "jobKey": "191e8772d9c24a59",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=191e8772d9c24a59",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Senior Conversational AI Engineer - Google",
+        "companyName": "Ontrac Solutions",
+        "location": {
+            "city": "Karachi",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Karachi",
+            "formattedAddressShort": "Karachi",
+            "latitude": 24.892857,
+            "longitude": 67.02747,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "8 months ago",
+        "datePublished": "2025-07-25",
+        "jobType": [
+            "Contract"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Ontrac-Solutions",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "Ontrac Solutions is a leading technology consulting firm specializing in cutting-edge solutions that drive business transformation. We partner with organizations to modernize their infrastructure, streamline processes, and deliver tangible results.\n\nOur client is actively seeking a Conversational AI Engineer with deep hands-on experience in Google Contact Center AI (CCAI) to join a high-impact digital transformation project via a GCP Premier Partner. As part of a staff augmentation model, you will be embedded within the client's technology or contact center innovation team, delivering scalable virtual agent solutions that improve customer experience, agent productivity, and call deflection.\n\nKey Responsibilities:\n\nLead the design and buildout of Dialogflow CX/ES agents across chat and voice channels.\n\nIntegrate virtual agents with client systems and platforms (e.g., Genesys, Twilio, NICE CXone, Salesforce).\n\nDevelop fulfillment logic using Google Cloud Functions, Cloud Run, and backend integrations (via REST APIs and webhooks).\n\nCollaborate with stakeholders to define intent models, entity schemas, and user flows.\n\nImplement Agent Assist and CCAI Insights to augment live agent productivity.\n\nLeverage Google Cloud tools including Pub/Sub, Logging, and BigQuery to support and monitor the solution.\n\nSupport tuning, regression testing, and enhancement of NLP performance using live utterance data.\n\nEnsure adherence to enterprise security and compliance requirements.\n\nRequired Skills & Qualifications:\n\n3+ years developing conversational AI experiences, including at least 1–2 years with Google Dialogflow CX or ES.\n\nSolid experience across GCP services (Functions, Cloud Run, IAM, BigQuery, etc.).\n\nStrong skills in Python or Node.js for webhook fulfillment and backend logic.\n\nKnowledge of NLU/NLP modeling, training, and performance tuning.\n\nPrior experience working in client-facing or embedded roles via consulting or staff augmentation.\n\nAbility to communicate effectively with technical and business stakeholders.\n\nNice to Have:\n\nHands-on experience with Agent Assist, CCAI Insights, or third-party CCaaS tools (Genesys, Twilio Flex, NICE CXone).\n\nFamiliarity with Vertex AI, AutoML, or other GCP ML services.\n\nExperience in regulated industries (healthcare, finance, insurance, etc.).\n\nGoogle Cloud certification in Cloud Developer or CCAI Engineer.",
+        "descriptionHtml": "<div><h3 class=\"jobSectionHeader\"><b>Ontrac Solutions is a leading technology consulting firm specializing in cutting-edge solutions that drive business transformation. We partner with organizations to modernize their infrastructure, streamline processes, and deliver tangible results.</b></h3><p>\nOur client is actively seeking a <b>Conversational AI Engineer</b> with deep hands-on experience in <b>Google Contact Center AI (CCAI)</b> to join a high-impact digital transformation project via a <b>GCP Premier Partner</b>. As part of a staff augmentation model, you will be embedded within the client's technology or contact center innovation team, delivering scalable virtual agent solutions that improve customer experience, agent productivity, and call deflection.</p>\n<p><b>Key Responsibilities:</b></p>\n<ul><li><p>Lead the design and buildout of <b>Dialogflow CX/ES agents</b> across chat and voice channels.</p>\n</li><li><p>Integrate virtual agents with client systems and platforms (e.g., Genesys, Twilio, NICE CXone, Salesforce).</p>\n</li><li><p>Develop fulfillment logic using <b>Google Cloud Functions</b>, <b>Cloud Run</b>, and <b>backend integrations</b> (via REST APIs and webhooks).</p>\n</li><li><p>Collaborate with stakeholders to define intent models, entity schemas, and user flows.</p>\n</li><li><p>Implement <b>Agent Assist</b> and <b>CCAI Insights</b> to augment live agent productivity.</p>\n</li><li><p>Leverage <b>Google Cloud tools</b> including Pub/Sub, Logging, and BigQuery to support and monitor the solution.</p>\n</li><li><p>Support tuning, regression testing, and enhancement of NLP performance using live utterance data.</p>\n</li><li><p>Ensure adherence to enterprise security and compliance requirements.</p>\n</li></ul><p><b>Required Skills &amp; Qualifications:</b></p>\n<ul><li><p>3+ years developing <b>conversational AI experiences</b>, including at least 1&ndash;2 years with <b>Google Dialogflow CX or ES</b>.</p>\n</li><li><p>Solid experience across <b>GCP services</b> (Functions, Cloud Run, IAM, BigQuery, etc.).</p>\n</li><li><p>Strong skills in <b>Python or Node.js</b> for webhook fulfillment and backend logic.</p>\n</li><li><p>Knowledge of <b>NLU/NLP modeling</b>, training, and performance tuning.</p>\n</li><li><p>Prior experience working in client-facing or embedded roles via consulting or staff augmentation.</p>\n</li><li><p>Ability to communicate effectively with technical and business stakeholders.</p>\n</li></ul><p><b>Nice to Have:</b></p>\n<ul><li><p>Hands-on experience with <b>Agent Assist, CCAI Insights</b>, or third-party CCaaS tools (Genesys, Twilio Flex, NICE CXone).</p>\n</li><li><p>Familiarity with <b>Vertex AI</b>, <b>AutoML</b>, or other GCP ML services.</p>\n</li><li><p>Experience in regulated industries (healthcare, finance, insurance, etc.).</p>\n</li><li><p><b>Google Cloud certification</b> in Cloud Developer or CCAI Engineer.</p></li></ul></div><p></p>",
+        "benefits": [],
+        "occupation": [
+            "Science & Research Occupations",
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Research Computer Scientists",
+            "Data Scientists & Statisticians"
+        ],
+        "attributes": [
+            "Contract"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Ontrac Solutions",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 7,
+        "jobKey": "f4825e3bdc6be4c5",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=f4825e3bdc6be4c5",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Backend Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/2f5faed12405bdef0de4cbcf159a286a",
+        "companyName": "Venturenox",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "10 months ago",
+        "datePublished": "2025-05-21",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/9ca89f495f196af80d2558eb54a8b7e2",
+        "companyUrl": "https://www.indeed.com/cmp/Venturenox",
+        "rating": {
+            "rating": 5,
+            "count": 2
+        },
+        "descriptionText": "The Backend Engineer at Venturenox is responsible for creating microservices, establishing inter-services communications and building APIs. Primary platforms to be used are NodeJS (Express), Python (FastAPI), Kafka, PostgreSQL and MongoDB.\n\nLocation: Lahore\n\nWork Mode: Hybrid with 2 days/week in office\n\nExperience: 1 - 2 years\n\nResponsibilities:\n\nDevelop server side logic and REST APIs and collaborate with cloud engineers to make the code suitable for deployment in cloud-native environments.\n\nDevelop database entity relationships and structures for every micro-service.\n\nDevelop sagas which represent event driven architecture and flow of information between microservices.\n\nDesired Skills:\n\nUnderstanding and experience with NodeJS (Express) and Python (FastAPI).\n\nExperience with using PostgreSQL along with solid concepts of SQL and ORM.\n\nExperience with any NoSQL database such as MongoDB\n\nUnderstanding of micro-services architecture and familiarity with API gateways is highly desirable. Familiarity with Kafka is also highly desirable.",
+        "descriptionHtml": "<div><p>The Backend Engineer at Venturenox is responsible for creating microservices, establishing inter-services communications and building APIs. Primary platforms to be used are NodeJS (Express), Python (FastAPI), Kafka, PostgreSQL and MongoDB.</p><p></p><p><br>\nLocation: Lahore</p><p>\nWork Mode: Hybrid with 2 days/week in office</p><p>\nExperience: 1 - 2 years</p><p></p><p><b><br>\nResponsibilities:</b></p><ul><li><p>\nDevelop server side logic and REST APIs and collaborate with cloud engineers to make the code suitable for deployment in cloud-native environments.</p></li><li><p>\nDevelop database entity relationships and structures for every micro-service.</p></li><li><p>\nDevelop sagas which represent event driven architecture and flow of information between microservices.</p></li></ul><p></p><p><b><br>\nDesired Skills:</b></p><ul><li><p>\nUnderstanding and experience with NodeJS (Express) and Python (FastAPI).</p></li><li><p>\nExperience with using PostgreSQL along with solid concepts of SQL and ORM.</p></li><li><p>\nExperience with any NoSQL database such as MongoDB</p></li><li><p>\nUnderstanding of micro-services architecture and familiarity with API gateways is highly desirable. Familiarity with Kafka is also highly desirable.</p></li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Back End Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Venturenox",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 8,
+        "jobKey": "60585955a21b476e",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=60585955a21b476e",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer Intern (Backend)",
+        "companyName": "United Sol (Pvt.) Ltd",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "11 days ago",
+        "datePublished": "2026-03-05",
+        "jobType": [
+            "Full-time",
+            "Internship"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/United-Sol-(pvt.)-Ltd",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "We are hiring a Software Engineer Intern (Backend) in our team!\n\n*Requirements:*\n\n* Bachelor's degree in Computer Science, Software Engineering or other related fields.\n* Basic understanding of PHP, MySQL, HTML, CSS, JavaScript\n* Strong understanding of Object-Oriented Programming (OOP) principles and logical problem-solving skills.\n* Prior experience in backend or ecommerce development through projects or internships.\n* Knowledge of e-commerce platforms and technologies.\n* Strong problem-solving skills and attention to detail.\n* Ability to work independently and as part of a team.\n* Eagerness to learn and grow in a professional development environment.\n* Good communication and collaboration skills.\n\n*What We Offer:*\n\n* Competitive stipend during the internship period.\n* Lunch Facility\n* Mentorship from experienced developers.\n* Hands-on experience with real-world projects.\n* Opportunities for professional growth and development.\n\nIf you are passionate about e-commerce development and eager to launch your career with a leading solutions provider, apply now! Or send your CV to career@unitedsol.net.\n\nJob Types: Full-time, Internship\n\nPay: Rs30,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p>We are hiring a Software Engineer Intern (Backend) in our team!</p><p><b>Requirements:</b></p><ul><li>Bachelor's degree in Computer Science, Software Engineering or other related fields.</li><li>Basic understanding of PHP, MySQL, HTML, CSS, JavaScript</li><li>Strong understanding of Object-Oriented Programming (OOP) principles and logical problem-solving skills.</li><li>Prior experience in backend or ecommerce development through projects or internships.</li><li>Knowledge of e-commerce platforms and technologies.</li><li>Strong problem-solving skills and attention to detail.</li><li>Ability to work independently and as part of a team.</li><li>Eagerness to learn and grow in a professional development environment.</li><li>Good communication and collaboration skills.</li></ul><p><b>What We Offer:</b></p><ul><li>Competitive stipend during the internship period.</li><li>Lunch Facility</li><li>Mentorship from experienced developers.</li><li>Hands-on experience with real-world projects.</li><li>Opportunities for professional growth and development.</li></ul><p>If you are passionate about e-commerce development and eager to launch your career with a leading solutions provider, apply now! Or send your CV to career@unitedsol.net.</p><p>Job Types: Full-time, Internship</p><p>Pay: Rs30,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Back End Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time",
+            "Internship"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 9,
+        "jobKey": "da93a10fb0a757d4",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=da93a10fb0a757d4",
+        "emails": [
+            "career@unitedsol.net"
+        ],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "ML/AI Engineer",
+        "companyName": "Recruitingers",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "21 days ago",
+        "datePublished": "2026-02-23",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Recruitingers",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Please note this is full-time remote position for committed and dedicated resource, who will be working from 12PM to 9PM. Monday to Friday. *\n\nKIDAN is more than a family-owned and multi-cultural international IT consultancy firm. We've grown from a single client to a family of over 900+ enterprises worldwide, cementing ourselves as trusted IT management and security advisors.\n\nOur strength lies in our proactive problem-solving approach. By asking the right questions and strategizing effective solutions, we've consistently delivered secure, reliable IT systems, leaving a trail of success stories in our wake. Our talented team of experts is the driving force behind these achievements.\n\nWe are seeking a highly skilled *AI & ML Engineer* to architect, build, and deploy our secure internal *AI platform*. This platform will act as a centralized intelligence layer supporting *security, directory services, internal data, workflows, *and *organizational automation*.\n\nThe ideal candidate has strong expertise in *AI/ML engineering, LLMs, IAM, enterprise security, cloud infrastructure, and API integrations*, with a proven track record in training and fine‑tuning *large language models*.\n\n*Key Responsibilities*\n\n* Build and maintain an internal AI platform for centralized organizational data, knowledge, and security.\n* Develop custom LLM-based tools for internal use (chatbots, automation agents, access‑control intelligence, internal search, compliance & policy monitoring).\n* Train and fine‑tune LLMs on internal datasets with strict security and privacy standards.\n* Implement RAG (Retrieval-Augmented Generation) pipelines using vector databases.\n* Automate internal workflows (referral requests, onboarding, compliance alerts, CRM updates, IAM tasks).\n* Build secure APIs and backend services enabling AI-driven operations and system integrations.\n* Deploy, monitor, scale, and optimize ML/LLM models in cloud or hybrid environments.\n* Collaborate with cross-functional teams (IT, Security, Ops) to integrate AI into existing internal systems.\n\n*Requirements*\n\n* *4+ years *of hands‑on experience in *Machine Learning*.\n* Strong expertise in *Python* and *ML frameworks *(TensorFlow, PyTorch, Scikit‑learn).\n* Proven experience training, fine‑tuning, optimizing, and deploying *LLMs*.\n* Experience with *RAG pipelines* and vector databases.\n* Solid understanding of *Identity & Access Management (IAM)* and enterprise security principles.\n* Strong experience building *APIs, backend services*, and integrating ML models into production systems.\n* *Cloud deployment experience *(AWS, Azure, GCP) for model hosting, scaling, and security.\n* Strong foundation in data pipelines, ML operations, and model optimization.\n* Full-time remote job\n* 8 hours per day from 11 AM to 8 PM PST (Monday to Friday)\n\nJob Type: Full-time\n\nPay: Rs150,000.00 - Rs200,000.00 per month\n\n\n\nApplication Question(s):\n* Kindly let us know what is your Salary expectation for this full-time remote position?\n\nWork Location: Remote",
+        "descriptionHtml": "<p><b>Please note this is full-time remote position for committed and dedicated resource, who will be working from 12PM to 9PM. Monday to Friday. </b></p><p>KIDAN is more than a family-owned and multi-cultural international IT consultancy firm. We've grown from a single client to a family of over 900+ enterprises worldwide, cementing ourselves as trusted IT management and security advisors.</p><p>Our strength lies in our proactive problem-solving approach. By asking the right questions and strategizing effective solutions, we've consistently delivered secure, reliable IT systems, leaving a trail of success stories in our wake. Our talented team of experts is the driving force behind these achievements.</p><p>We are seeking a highly skilled <b>AI &amp; ML Engineer</b> to architect, build, and deploy our secure internal <b>AI platform</b>. This platform will act as a centralized intelligence layer supporting <b>security, directory services, internal data, workflows, </b>and <b>organizational automation</b>.</p><p>The ideal candidate has strong expertise in <b>AI/ML engineering, LLMs, IAM, enterprise security, cloud infrastructure, and API integrations</b>, with a proven track record in training and fine‑tuning <b>large language models</b>.</p><p><b>Key Responsibilities</b></p><ul><li>Build and maintain an internal AI platform for centralized organizational data, knowledge, and security.</li><li>Develop custom LLM-based tools for internal use (chatbots, automation agents, access‑control intelligence, internal search, compliance &amp; policy monitoring).</li><li>Train and fine‑tune LLMs on internal datasets with strict security and privacy standards.</li><li>Implement RAG (Retrieval-Augmented Generation) pipelines using vector databases.</li><li>Automate internal workflows (referral requests, onboarding, compliance alerts, CRM updates, IAM tasks).</li><li>Build secure APIs and backend services enabling AI-driven operations and system integrations.</li><li>Deploy, monitor, scale, and optimize ML/LLM models in cloud or hybrid environments.</li><li>Collaborate with cross-functional teams (IT, Security, Ops) to integrate AI into existing internal systems.</li></ul><p><b>Requirements</b></p><ul><li><b>4+ years </b>of hands‑on experience in <b>Machine Learning</b>.</li><li>Strong expertise in <b>Python</b> and <b>ML frameworks </b>(TensorFlow, PyTorch, Scikit‑learn).</li><li>Proven experience training, fine‑tuning, optimizing, and deploying <b>LLMs</b>.</li><li>Experience with <b>RAG pipelines</b> and vector databases.</li><li>Solid understanding of <b>Identity &amp; Access Management (IAM)</b> and enterprise security principles.</li><li>Strong experience building <b>APIs, backend services</b>, and integrating ML models into production systems.</li><li><b>Cloud deployment experience </b>(AWS, Azure, GCP) for model hosting, scaling, and security.</li><li>Strong foundation in data pipelines, ML operations, and model optimization.</li><li>Full-time remote job</li><li>8 hours per day from 11 AM to 8 PM PST (Monday to Friday)</li></ul><p>Job Type: Full-time</p><p>Pay: Rs150,000.00 - Rs200,000.00 per month</p><p>Application Question(s):</p><ul><li>Kindly let us know what is your Salary expectation for this full-time remote position?</li></ul><p>Work Location: Remote</p>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Scientists & Statisticians"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 10,
+        "jobKey": "0e6ab906b0eb3834",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=0e6ab906b0eb3834",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Software Engineer",
+        "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/6799a123ca5d6fd1b8a5b3511c0ef462",
+        "companyName": "WallStreetBets",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "4 months ago",
+        "datePublished": "2025-11-29",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Wallstreetbets",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "About us\n\nWallStreetBets is the largest finance community in the world.\n\nWith over 20 million users, we’re the movement that helped redefine retail investing and put power back into the hands of everyday traders. From our humble beginnings on Reddit to becoming a global household name during the GameStop saga, our influence has shaped markets, culture, and the future of finance.\n\nAnd we’re just getting started.\n\nToday, our mission is stronger than ever: minimize the gap between retail and institutions by giving people access to world-class tools, real-time data, community intelligence, and a platform built for the next generation of traders. Our goal? Accelerate one billion people to financial security, and have fun doing it.\n\nPosition summary\n\nWe’re looking for a Full Stack Software Engineer to help build the core infrastructure behind the new WallStreetBets platform, powering real-time data, earnings call insights, social sentiment, community feeds, and trader-focused tools.\n\nYou'll work across the stack to ship high-performance, scalable features used by millions of traders. From backend services and APIs to front-end components and data-driven experiences, you’ll play a key role in defining the engineering foundation of a globally recognized fintech product.\n\nThis is an opportunity to join early, move fast, and build something that truly impacts how retail traders interact with markets. This role is open to applicants anywhere in the world and will be hired as a contractor. At WallStreetBets, we believe great ideas come from everywhere, and we’re committed to building a diverse, inclusive team where all voices are heard.\n\nIf building the future of social finance with speed, creativity, and WSB swagger sounds like your kind of challenge, we’d love to meet you.\n\nWhat you’ll do:\n\nDesign, build, and maintain scalable backend services, APIs, and data pipelines.\n\nDevelop responsive, high-quality web features using modern frontend frameworks.\n\nWork with real-time financial data, websockets, event-driven systems, and market APIs.\n\nBuild community-driven experiences such as feeds, notifications, and sentiment tools.\n\nImplement dashboards and interfaces that make financial data clear and accessible.\n\nCollaborate closely with product, design, and mobile teams to deliver features quickly.\n\nImprove overall system performance, reliability, testing, and automation.\n\nParticipate in architectural planning and long-term technical decision-making.\n\nWhat you bring:\n\n5+ years of software engineering experience in a full stack or backend-focused role.\n\nProficiency in one or more modern programming languages such as TypeScript, JavaScript, Python, Go, or Java.\n\nExperience with modern frontend frameworks such as React, Next.js, Vue, or Svelte.\n\nStrong understanding of RESTful or GraphQL API design and integration.\n\nComfort working with relational or NoSQL databases.\n\nFamiliarity with cloud environments, CI/CD pipelines, and modern testing practices (TDD, automated tests).\n\nConfidence developing with modern application security best practices\n\nA strong sense of ownership, product thinking, and comfort working in a fast-moving startup environment.\n\nCollaborative mindset, and the ability to work with a globally distributed team\n\nBonus\n\nExposure to fintech, trading, or data-heavy applications.\n\nExperience with websockets, real-time systems, or event-driven architecture.\n\nFamiliarity with financial data providers or market data APIs.\n\nOpen-source contributions or experience building social or community-driven platforms.\n\nExperience with common compliance frameworks (SOC2, PCI DSS, GDRP)\n\nWhat we offer\n\nThe opportunity to build a platform used by millions of passionate traders around the world.\n\nA mission-driven environment dedicated to democratizing financial tools and insights.\n\nA remote-friendly culture with flexibility and trust.\n\nCompetitive compensation and meaningful growth opportunities.\n\nA chance to help shape one of the most recognizable brands in modern finance.\n\nA collaborative, fast-paced team that values experimentation, creativity, and fu",
+        "descriptionHtml": "<div><h1 class=\"jobSectionHeader\"><b>About us</b></h1><p>\nWallStreetBets is the largest finance community in the world.</p><p>\nWith over 20 million users, we&rsquo;re the movement that helped redefine retail investing and put power back into the hands of everyday traders. From our humble beginnings on Reddit to becoming a global household name during the GameStop saga, our influence has shaped markets, culture, and the future of finance.</p><p>\nAnd we&rsquo;re just getting started.</p><p>\nToday, our mission is stronger than ever: minimize the gap between retail and institutions by giving people access to world-class tools, real-time data, community intelligence, and a platform built for the next generation of traders. Our goal? Accelerate one billion people to financial security, and have fun doing it.</p><p></p><h1 class=\"jobSectionHeader\"><b>\nPosition summary</b></h1><p>\nWe&rsquo;re looking for a Full Stack Software Engineer to help build the core infrastructure behind the new WallStreetBets platform, powering real-time data, earnings call insights, social sentiment, community feeds, and trader-focused tools.</p><p>\nYou'll work across the stack to ship high-performance, scalable features used by millions of traders. From backend services and APIs to front-end components and data-driven experiences, you&rsquo;ll play a key role in defining the engineering foundation of a globally recognized fintech product.</p><p>\nThis is an opportunity to join early, move fast, and build something that truly impacts how retail traders interact with markets. This role is open to applicants anywhere in the world and will be hired as a contractor. At WallStreetBets, we believe great ideas come from everywhere, and we&rsquo;re committed to building a diverse, inclusive team where all voices are heard.</p><p>\nIf building the future of social finance with speed, creativity, and WSB swagger sounds like your kind of challenge, we&rsquo;d love to meet you.</p><p></p><h1 class=\"jobSectionHeader\"><b><br>\nWhat you&rsquo;ll do:</b></h1><ul><li><p>\nDesign, build, and maintain scalable backend services, APIs, and data pipelines.</p></li><li><p>\nDevelop responsive, high-quality web features using modern frontend frameworks.</p></li><li><p>\nWork with real-time financial data, websockets, event-driven systems, and market APIs.</p></li><li><p>\nBuild community-driven experiences such as feeds, notifications, and sentiment tools.</p></li><li><p>\nImplement dashboards and interfaces that make financial data clear and accessible.</p></li><li><p>\nCollaborate closely with product, design, and mobile teams to deliver features quickly.</p></li><li><p>\nImprove overall system performance, reliability, testing, and automation.</p></li><li><p>\nParticipate in architectural planning and long-term technical decision-making.</p></li></ul><p></p><h1 class=\"jobSectionHeader\"><b>\nWhat you bring:</b></h1><ul><li><p>\n5+ years of software engineering experience in a full stack or backend-focused role.</p></li><li><p>\nProficiency in one or more modern programming languages such as TypeScript, JavaScript, Python, Go, or Java.</p></li><li><p>\nExperience with modern frontend frameworks such as React, Next.js, Vue, or Svelte.</p></li><li><p>\nStrong understanding of RESTful or GraphQL API design and integration.</p></li><li><p>\nComfort working with relational or NoSQL databases.</p></li><li><p>\nFamiliarity with cloud environments, CI/CD pipelines, and modern testing practices (TDD, automated tests).</p></li><li><p>\nConfidence developing with modern application security best practices</p></li><li><p>\nA strong sense of ownership, product thinking, and comfort working in a fast-moving startup environment.</p></li><li><p>\nCollaborative mindset, and the ability to work with a globally distributed team</p></li></ul><p></p><h1 class=\"jobSectionHeader\"><b>\nBonus</b></h1><ul><li><p>\nExposure to fintech, trading, or data-heavy applications.</p></li><li><p>\nExperience with websockets, real-time systems, or event-driven architecture.</p></li><li><p>\nFamiliarity with financial data providers or market data APIs.</p></li><li><p>\nOpen-source contributions or experience building social or community-driven platforms.</p></li><li><p>\nExperience with common compliance frameworks (SOC2, PCI DSS, GDRP)</p></li></ul><p></p><h1 class=\"jobSectionHeader\"><b>\nWhat we offer</b></h1><ul><li><p>\nThe opportunity to build a platform used by millions of passionate traders around the world.</p></li><li><p>\nA mission-driven environment dedicated to democratizing financial tools and insights.</p></li><li><p>\nA remote-friendly culture with flexibility and trust.</p></li><li><p>\nCompetitive compensation and meaningful growth opportunities.</p></li><li><p>\nA chance to help shape one of the most recognizable brands in modern finance.</p></li><li><p>\nA collaborative, fast-paced team that values experimentation, creativity, and fu</p></li></ul></div>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "WallStreetBets",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 11,
+        "jobKey": "7526916d5b8fbe44",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=7526916d5b8fbe44",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Junior Backend Engineer (Node.js + FastAPI)",
+        "companyName": "Lab23 Technology",
+        "location": {
+            "city": "Lahore",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Lahore",
+            "formattedAddressShort": "Lahore",
+            "latitude": 31.543957,
+            "longitude": 74.34066,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-15",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Lab23-Technology",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Job Title: Junior Backend Engineer (Node.js + FastAPI)*\n\n*Experience:* 1 – 1.5 Years\n*Location:* Bahria Town Lahore\n*Company:* LAB23 Technologies\n\n*About LAB23 Technologies*\n\nLAB23 Technologies is an AI-driven product development company building scalable SaaS platforms and AI Agents across E-commerce (Zanderio AI), Real Estate, FinTech, and Energy Systems.\n\nWe specialize in designing intelligent backend systems that power AI agents, automation workflows, predictive engines, and conversational systems.\n\nWe are looking for a driven *Junior Backend Engineer* who is comfortable working with both *Node.js and Python (FastAPI)* and is eager to contribute to AI-powered system architecture.\n\n*Role Overview*\n\nAs a Junior Backend Engineer, you will:\n\n* Build scalable backend systems\n* Work on AI Agent workflows and orchestration\n* Handle complex data structures and system logic\n* Contribute to multi-language backend architecture (Node.js + FastAPI)\n\nThis role is ideal for someone who understands backend fundamentals deeply and wants exposure to AI infrastructure and intelligent systems.\n\n*Key Responsibilities*\n\n* Develop and maintain backend services using *Node.js*\n* Build lightweight AI-related microservices using *Python (FastAPI)*\n* Design scalable RESTful APIs for SaaS and AI-driven applications\n* Work on AI Agent workflows (state management, memory, orchestration)\n* Manage structured and unstructured data pipelines\n* Integrate LLM APIs (OpenAI, Claude, etc.) with backend systems\n* Optimize backend performance and ensure production stability\n* Contribute to backend architecture planning and documentation\n* Debug and resolve system-level issues in staging/production\n* Collaborate with AI Engineers and Frontend teams\n\n*Technical Requirements*\n*Must Have:*\n\n* 1 – 1.5 years of backend experience\n* Strong proficiency in *Node.js*\n* Good working knowledge of *Python*\n* Experience building APIs using:\n* Express.js / Node frameworks\n* FastAPI (or similar Python framework)\n* Strong understanding of:\n* Async programming\n* Middleware architecture\n* JWT authentication\n* API security best practices\n* Experience with databases:\n* MongoDB (preferred)\n* OR PostgreSQL / MySQL\n* Understanding of system design basics\n* Experience with Git and version control\n\n*Good to Have:*\n\n* Experience integrating AI APIs (OpenAI, Anthropic, etc.)\n* Understanding of vector databases (Pinecone, Weaviate, etc.)\n* Knowledge of Redis / caching\n* Experience with Docker\n* Exposure to microservices architecture\n* Experience building SaaS backend systems\n\n*What We’re Looking For*\n\n* Strong logical and analytical mindset\n* Ability to understand complex workflows\n* Comfort working with data-heavy systems\n* Clean coding standards and modular design approach\n* Ownership mentality\n* Ability to work in a fast-paced startup environment\n\n*Growth Opportunity*\n\n*At LAB23, you will:*\n\n* Work on real AI Agent systems\n* Contribute to scalable SaaS platforms\n* Learn advanced backend and system architecture\n* Gain hands-on exposure to AI integrations\n* Grow into Mid-Level Backend or AI Systems Engineer\n\n*High performers can move toward:*\n\n* AI Backend Specialist\n* System Architect\n* Technical Lead (Long-term path)\n\n*Compensation*\n\nCompetitive salary based on skill and performance.\nPerformance-based growth opportunities available.\n\nJob Type: Full-time\n\nPay: From Rs50,000.00 per month\n\n\n\nAbility to commute/relocate:\n* Lahore: Reliably commute or planning to relocate before starting work (Preferred)\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Job Title: Junior Backend Engineer (Node.js + FastAPI)</b></p><p><b>Experience:</b> 1 &ndash; 1.5 Years<br/><b>Location:</b> Bahria Town Lahore<br/><b>Company:</b> LAB23 Technologies</p><p><b>About LAB23 Technologies</b></p><p>LAB23 Technologies is an AI-driven product development company building scalable SaaS platforms and AI Agents across E-commerce (Zanderio AI), Real Estate, FinTech, and Energy Systems.</p><p>We specialize in designing intelligent backend systems that power AI agents, automation workflows, predictive engines, and conversational systems.</p><p>We are looking for a driven <b>Junior Backend Engineer</b> who is comfortable working with both <b>Node.js and Python (FastAPI)</b> and is eager to contribute to AI-powered system architecture.</p><p><b>Role Overview</b></p><p>As a Junior Backend Engineer, you will:</p><ul><li>Build scalable backend systems</li><li>Work on AI Agent workflows and orchestration</li><li>Handle complex data structures and system logic</li><li>Contribute to multi-language backend architecture (Node.js + FastAPI)</li></ul><p>This role is ideal for someone who understands backend fundamentals deeply and wants exposure to AI infrastructure and intelligent systems.</p><p><b>Key Responsibilities</b></p><ul><li>Develop and maintain backend services using <b>Node.js</b></li><li>Build lightweight AI-related microservices using <b>Python (FastAPI)</b></li><li>Design scalable RESTful APIs for SaaS and AI-driven applications</li><li>Work on AI Agent workflows (state management, memory, orchestration)</li><li>Manage structured and unstructured data pipelines</li><li>Integrate LLM APIs (OpenAI, Claude, etc.) with backend systems</li><li>Optimize backend performance and ensure production stability</li><li>Contribute to backend architecture planning and documentation</li><li>Debug and resolve system-level issues in staging/production</li><li>Collaborate with AI Engineers and Frontend teams</li></ul><p><b>Technical Requirements</b><br/><b>Must Have:</b></p><ul><li>1 &ndash; 1.5 years of backend experience</li><li>Strong proficiency in <b>Node.js</b></li><li>Good working knowledge of <b>Python</b></li><li>Experience building APIs using:</li><li>Express.js / Node frameworks</li><li>FastAPI (or similar Python framework)</li><li>Strong understanding of:</li><li>Async programming</li><li>Middleware architecture</li><li>JWT authentication</li><li>API security best practices</li><li>Experience with databases:</li><li>MongoDB (preferred)</li><li>OR PostgreSQL / MySQL</li><li>Understanding of system design basics</li><li>Experience with Git and version control</li></ul><p><b>Good to Have:</b></p><ul><li>Experience integrating AI APIs (OpenAI, Anthropic, etc.)</li><li>Understanding of vector databases (Pinecone, Weaviate, etc.)</li><li>Knowledge of Redis / caching</li><li>Experience with Docker</li><li>Exposure to microservices architecture</li><li>Experience building SaaS backend systems</li></ul><p><b>What We&rsquo;re Looking For</b></p><ul><li>Strong logical and analytical mindset</li><li>Ability to understand complex workflows</li><li>Comfort working with data-heavy systems</li><li>Clean coding standards and modular design approach</li><li>Ownership mentality</li><li>Ability to work in a fast-paced startup environment</li></ul><p><b>Growth Opportunity</b></p><p><b>At LAB23, you will:</b></p><ul><li>Work on real AI Agent systems</li><li>Contribute to scalable SaaS platforms</li><li>Learn advanced backend and system architecture</li><li>Gain hands-on exposure to AI integrations</li><li>Grow into Mid-Level Backend or AI Systems Engineer</li></ul><p><b>High performers can move toward:</b></p><ul><li>AI Backend Specialist</li><li>System Architect</li><li>Technical Lead (Long-term path)</li></ul><p><b>Compensation</b></p><p>Competitive salary based on skill and performance.<br/>Performance-based growth opportunities available.</p><p>Job Type: Full-time</p><p>Pay: From Rs50,000.00 per month</p><p>Ability to commute/relocate:</p><ul><li>Lahore: Reliably commute or planning to relocate before starting work (Preferred)</li></ul><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Software Development Occupations",
+            "Back End Developers",
+            "Technology Occupations",
+            "Software Development & Architecture Occupations"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 12,
+        "jobKey": "d1e56f2c39d6a9c4",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=d1e56f2c39d6a9c4",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "Artificial Intelligence Engineer",
+        "companyName": "Darosoft",
+        "location": {
+            "city": "Karachi",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Karachi",
+            "formattedAddressShort": "Karachi",
+            "latitude": 24.892857,
+            "longitude": 67.02747,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "3 months ago",
+        "datePublished": "2025-12-23",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Darosoft",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Job Summary*\n\nWe are looking for a *hands-on AI Engineer* with *at least 2 years of professional experience* in building *AI agents and automated AI-driven workflows*. The ideal candidate should have strong experience working with *LLMs, AI agent frameworks, and n8n workflow automation*, and be capable of integrating intelligent systems into real-world business applications.\n\n*Key Responsibilities*\n\n* Design, develop, and deploy *AI agents* capable of task execution, decision-making, and tool usage\n* Build and maintain *n8n workflows* for AI-driven automation\n* Integrate AI agents with:\n* Internal systems (ERP, CRM, databases)\n* Third-party APIs and services\n* Develop *LLM-powered solutions* such as chatbots, assistants, and process automation tools\n* Implement *prompt engineering*, agent memory, and multi-step reasoning flows\n* Build and consume *REST APIs* for AI integrations\n* Monitor, debug, and optimize AI agents and automation workflows\n* Ensure reliability, scalability, and performance of AI systems\n* Document AI workflows, agent logic, and integrations\n\n*Required Skills & QualificationsExperience*\n\n* Minimum *2 years of professional experience* as an AI Engineer / ML Engineer / Automation Engineer\n\n*Core Technical Skills*\n\n* Strong proficiency in *Python*\n* Experience with *NumPy, Pandas, Scikit-learn*\n* Solid understanding of *data handling, statistics, and ML fundamentals*\n\n*AI, LLMs & Agents*\n\n* Hands-on experience building *AI agents*\n* Experience working with *LLMs* (OpenAI, Azure OpenAI, Hugging Face, etc.)\n* Strong *prompt engineering* skills\n* Experience with *RAG (Retrieval-Augmented Generation)* pipelines\n* Familiarity with agent frameworks such as:\n* *LangChain*\n* *LlamaIndex*\n* or similar tools\n\n*Automation & Workflows*\n\n* Proven experience working with *n8n workflow automation*\n* Experience building:\n* Event-driven workflows\n* Webhook-based automations\n* Scheduled (cron) workflows\n* Ability to orchestrate workflows involving *LLMs + APIs + databases*\n\n*APIs & Backend*\n\n* Experience building and consuming *REST APIs*\n* Familiarity with *FastAPI or Flask*\n* Experience integrating AI systems with databases (SQL / NoSQL)\n\n*Nice to Have (Plus Points)*\n\n* Experience with *self-hosted n8n deployments*\n* Knowledge of *vector databases* (FAISS, Pinecone, Weaviate, etc.)\n* Experience with *Docker* and basic cloud deployments\n* Familiarity with *MLOps concepts*\n* Experience with *Zapier / Make.com* in addition to n8n\n\n*Soft Skills*\n\n* Strong problem-solving and analytical skills\n* Ability to explain AI concepts to non-technical stakeholders\n* Good communication and teamwork skills\n* Self-driven and eager to learn new technologies\n\nJob Type: Full-time\n\nPay: Rs55,000.00 - Rs75,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Job Summary</b></p><p>We are looking for a <b>hands-on AI Engineer</b> with <b>at least 2 years of professional experience</b> in building <b>AI agents and automated AI-driven workflows</b>. The ideal candidate should have strong experience working with <b>LLMs, AI agent frameworks, and n8n workflow automation</b>, and be capable of integrating intelligent systems into real-world business applications.</p><p><b>Key Responsibilities</b></p><ul><li>Design, develop, and deploy <b>AI agents</b> capable of task execution, decision-making, and tool usage</li><li>Build and maintain <b>n8n workflows</b> for AI-driven automation</li><li>Integrate AI agents with:</li><li>Internal systems (ERP, CRM, databases)</li><li>Third-party APIs and services</li><li>Develop <b>LLM-powered solutions</b> such as chatbots, assistants, and process automation tools</li><li>Implement <b>prompt engineering</b>, agent memory, and multi-step reasoning flows</li><li>Build and consume <b>REST APIs</b> for AI integrations</li><li>Monitor, debug, and optimize AI agents and automation workflows</li><li>Ensure reliability, scalability, and performance of AI systems</li><li>Document AI workflows, agent logic, and integrations</li></ul><p><b>Required Skills &amp; QualificationsExperience</b></p><ul><li>Minimum <b>2 years of professional experience</b> as an AI Engineer / ML Engineer / Automation Engineer</li></ul><p><b>Core Technical Skills</b></p><ul><li>Strong proficiency in <b>Python</b></li><li>Experience with <b>NumPy, Pandas, Scikit-learn</b></li><li>Solid understanding of <b>data handling, statistics, and ML fundamentals</b></li></ul><p><b>AI, LLMs &amp; Agents</b></p><ul><li>Hands-on experience building <b>AI agents</b></li><li>Experience working with <b>LLMs</b> (OpenAI, Azure OpenAI, Hugging Face, etc.)</li><li>Strong <b>prompt engineering</b> skills</li><li>Experience with <b>RAG (Retrieval-Augmented Generation)</b> pipelines</li><li>Familiarity with agent frameworks such as:</li><li><b>LangChain</b></li><li><b>LlamaIndex</b></li><li>or similar tools</li></ul><p><b>Automation &amp; Workflows</b></p><ul><li>Proven experience working with <b>n8n workflow automation</b></li><li>Experience building:</li><li>Event-driven workflows</li><li>Webhook-based automations</li><li>Scheduled (cron) workflows</li><li>Ability to orchestrate workflows involving <b>LLMs + APIs + databases</b></li></ul><p><b>APIs &amp; Backend</b></p><ul><li>Experience building and consuming <b>REST APIs</b></li><li>Familiarity with <b>FastAPI or Flask</b></li><li>Experience integrating AI systems with databases (SQL / NoSQL)</li></ul><p><b>Nice to Have (Plus Points)</b></p><ul><li>Experience with <b>self-hosted n8n deployments</b></li><li>Knowledge of <b>vector databases</b> (FAISS, Pinecone, Weaviate, etc.)</li><li>Experience with <b>Docker</b> and basic cloud deployments</li><li>Familiarity with <b>MLOps concepts</b></li><li>Experience with <b>Zapier / Make.com</b> in addition to n8n</li></ul><p><b>Soft Skills</b></p><ul><li>Strong problem-solving and analytical skills</li><li>Ability to explain AI concepts to non-technical stakeholders</li><li>Good communication and teamwork skills</li><li>Self-driven and eager to learn new technologies</li></ul><p>Job Type: Full-time</p><p>Pay: Rs55,000.00 - Rs75,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Scientists & Statisticians"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 13,
+        "jobKey": "f2f8bd5092ecf2a9",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=f2f8bd5092ecf2a9",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    }
+]

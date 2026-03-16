@@ -17,7 +17,8 @@ CREATE TABLE otp_verifications (
 
 CREATE TABLE jobs (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  platform TEXT NOT NULL,        -- 'linkedin' | 'indeed'
+  platform TEXT NOT NULL,        
+  role TEXT,                    
   title TEXT NOT NULL,
   company_name TEXT,
   description TEXT,

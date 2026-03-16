@@ -41,7 +41,7 @@ const sendOtpEmail = async (recipientEmail, otpCode) => {
   `;
 
   const mailOptions = {
-    from: `"Auth Service" <${process.env.EMAIL_USER}>`,
+    from: `"APEX" <${process.env.EMAIL_USER}>`,
     to: recipientEmail,
     subject: 'Your OTP Verification Code',
     html: htmlContent,

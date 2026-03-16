@@ -6,17 +6,14 @@ class JobController:
     def __init__(self):
         self.job_service = JobService()
 
-    def extract_missing_skills(self, data):
+    def calculate_compatibility(self, data):
         data = data or {}
-        limit = data.get("limit")
+        skills = data.get("skills", [])
+        job_title = (data.get("job_title") or "").strip()
+        job_description = (data.get("job_description") or "").strip()
 
-        if limit is not None:
-            try:
-                limit = int(limit)
-                if limit <= 0:
-                    return jsonify({"error": "limit must be a positive integer"}), 400
-            except Exception:
-                return jsonify({"error": "limit must be a positive integer"}), 400
+        if not isinstance(skills, list):
+            return jsonify({"error": "skills must be an array of strings"}), 400
 
         result = self.job_service.extract_and_save_missing_job_skills(limit=limit)
         return jsonify(result), 200
@@ -36,3 +33,18 @@ class JobController:
 
         result = self.job_service.get_role_insights(current_role, selected_role, skills or [])
         return jsonify(result), 200
+        if not job_title:
+            return jsonify({"error": "job_title is required"}), 400
+
+        if not job_description:
+            return jsonify({"error": "job_description is required"}), 400
+
+        try:
+            result = self.job_service.calculate_compatibility(
+                user_skills=skills,
+                job_title=job_title,
+                job_description=job_description,
+            )
+            return jsonify(result), 200
+        except Exception as exc:
+            return jsonify({"error": str(exc)}), 502

@@ -5,7 +5,7 @@ from routes.job_routes import job_bp
 from eureka_client import register_eureka
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
+load_dotenv(os.path.join(os.path.dirname(__file__), '../.env'), override=True)
 
 app = Flask(__name__)
 PORT = int(os.getenv("JOB_SERVICE_PORT", 5004))

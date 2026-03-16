@@ -5,10 +5,6 @@ job_bp = Blueprint('jobs', __name__)
 controller = JobController()
 
 
-@job_bp.route('/extract-missing-skills', methods=['POST'])
-def extract_missing_skills():
-    return controller.extract_missing_skills(request.json)
-
 @job_bp.route('/count', methods=['GET'])
 def get_job_count():
     role = request.args.get('role')
@@ -21,3 +17,6 @@ def get_role_insights():
     selected_role = data.get('selectedRole')
     skills = data.get('skills', [])
     return controller.get_role_insights(current_role, selected_role, skills)
+@job_bp.route('/compatibility', methods=['POST'])
+def compatibility():
+    return controller.calculate_compatibility(request.json)

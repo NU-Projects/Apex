@@ -62,21 +62,41 @@ function JobResultCard({ job, compatibility, onCheckCompatibility }) {
             {compatibility.loading
               ? 'Checking...'
               : compatibility.score !== undefined
-                ? `Score: ${compatibility.score}%`
+                ? 'View Compatibility'
                 : 'Check Compatibility'}
           </button>
         </div>
       </div>
 
-      <details className="mt-4 rounded-xl border border-border-default bg-surface p-3">
-        <summary className="cursor-pointer text-sm font-medium text-brand-700">View description</summary>
-        <p className="mt-2 whitespace-pre-wrap text-sm text-text-secondary">
-          {job.description || 'No description available for this listing.'}
-        </p>
+      <details className="group mt-4 overflow-hidden rounded-2xl border border-brand-100 bg-linear-to-br from-brand-50/40 via-white to-accent-cyan/10 shadow-sm">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 marker:content-none">
+          <span className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700">
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h8M8 12h8m-8 5h5" />
+            </svg>
+            Job description
+          </span>
+
+          <span className="inline-flex items-center gap-2 text-xs text-text-muted">
+            <span>Expand</span>
+            <svg
+              className="h-4 w-4 transition-transform duration-200 group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </summary>
+
+        <div className="border-t border-brand-100/80 bg-white/80 px-4 py-3">
+          <p className="whitespace-pre-wrap text-sm leading-6 text-text-secondary">
+            {job.description || 'No description available for this listing.'}
+          </p>
+        </div>
       </details>
 
-      {compatibility.gap ? <p className="mt-3 text-sm text-text-secondary">{compatibility.gap}</p> : null}
-      {compatibility.error ? <p className="mt-3 text-sm text-red-600">{compatibility.error}</p> : null}
     </article>
   )
 }

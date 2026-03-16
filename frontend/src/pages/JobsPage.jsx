@@ -4,6 +4,7 @@ import JobsHero from '../components/jobs/JobsHero'
 import JobsFilterBar from '../components/jobs/JobsFilterBar'
 import JobsResultsPanel from '../components/jobs/JobsResultsPanel'
 import JobsPageSkeleton from '../components/jobs/JobsPageSkeleton'
+import CompatibilityModal from '../components/jobs/CompatibilityModal'
 import { fetchDistinctRoles, fetchJobsByRole, getCompatibilityScore } from '../services/jobService'
 import { useSkills } from '../hooks/useSkills'
 
@@ -16,6 +17,7 @@ function JobsPage() {
   const [jobsError, setJobsError] = useState('')
   const [hasSearched, setHasSearched] = useState(false)
   const [compatibilityState, setCompatibilityState] = useState({})
+  const [activeCompatibilityJob, setActiveCompatibilityJob] = useState(null)
   const { skills } = useSkills()
 
   useEffect(() => {
@@ -28,6 +30,17 @@ function JobsPage() {
 
     loadRoles()
   }, [])
+
+  useEffect(() => {
+    if (!activeCompatibilityJob) return undefined
+
+    const previous = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.body.style.overflow = previous
+    }
+  }, [activeCompatibilityJob])
 
   const handleFilterJobs = async () => {
     if (!selectedRole) return
@@ -49,6 +62,8 @@ function JobsPage() {
   const handleCompatibilityCheck = async (job) => {
     const jobId = job.id
     if (!jobId) return
+
+    setActiveCompatibilityJob(job)
 
     setCompatibilityState((prev) => ({
       ...prev,
@@ -87,6 +102,10 @@ function JobsPage() {
     }
   }
 
+  const closeCompatibilityModal = () => {
+    setActiveCompatibilityJob(null)
+  }
+
   const normalizedJobs = useMemo(
     () =>
       jobs.map((job, index) => ({
@@ -102,6 +121,10 @@ function JobsPage() {
   if (loading) {
     return <JobsPageSkeleton />
   }
+
+  const activeCompatibility = activeCompatibilityJob
+    ? compatibilityState[activeCompatibilityJob.id] || {}
+    : {}
 
   return (
     <div className="min-h-screen flex flex-col bg-surface font-sans">
@@ -127,6 +150,16 @@ function JobsPage() {
           onCheckCompatibility={handleCompatibilityCheck}
         />
       </main>
+
+      <CompatibilityModal
+        open={Boolean(activeCompatibilityJob)}
+        job={activeCompatibilityJob}
+        compatibility={activeCompatibility}
+        onClose={closeCompatibilityModal}
+        onRetry={() => {
+          if (activeCompatibilityJob) handleCompatibilityCheck(activeCompatibilityJob)
+        }}
+      />
     </div>
   )
 }

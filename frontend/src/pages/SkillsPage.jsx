@@ -41,7 +41,6 @@ function SkillsPage() {
               <h2 className="text-xl font-bold text-text-primary">Inventory</h2>
               <p className="text-sm text-text-muted">Extracted and verified skills from your profile.</p>
             </div>
-
           </div>
 
           <div className="flex flex-wrap gap-3">

@@ -6,18 +6,6 @@ class JobController:
     def __init__(self):
         self.job_service = JobService()
 
-    def calculate_compatibility(self, data):
-        data = data or {}
-        skills = data.get("skills", [])
-        job_title = (data.get("job_title") or "").strip()
-        job_description = (data.get("job_description") or "").strip()
-
-        if not isinstance(skills, list):
-            return jsonify({"error": "skills must be an array of strings"}), 400
-
-        result = self.job_service.extract_and_save_missing_job_skills(limit=limit)
-        return jsonify(result), 200
-
     def get_job_count(self, role):
         if not role:
             return jsonify({"error": "role parameter is required"}), 400
@@ -33,6 +21,16 @@ class JobController:
 
         result = self.job_service.get_role_insights(current_role, selected_role, skills or [])
         return jsonify(result), 200
+
+    def calculate_compatibility(self, data):
+        data = data or {}
+        skills = data.get("skills", [])
+        job_title = (data.get("job_title") or "").strip()
+        job_description = (data.get("job_description") or "").strip()
+
+        if not isinstance(skills, list):
+            return jsonify({"error": "skills must be an array of strings"}), 400
+
         if not job_title:
             return jsonify({"error": "job_title is required"}), 400
 

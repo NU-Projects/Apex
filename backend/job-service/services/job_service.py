@@ -218,6 +218,37 @@ class JobService:
             return 0
         return self.repository.get_job_count_by_role(role)
 
+    def calculate_compatibility(self, user_skills, job_title, job_description):
+        required_skills = self._extract_required_skills(job_title, job_description)
+
+        if not required_skills:
+            return {
+                "compatibility_score": 0,
+                "required_skills": [],
+                "matched_skills": [],
+                "missing_skills": [],
+                "gap_analysis": "Could not extract required skills from the job posting.",
+            }
+
+        matched = self._get_matched_required_skills(user_skills, required_skills)
+        missing = [s for s in required_skills if s not in matched]
+        score = round((len(matched) / len(required_skills)) * 100) if required_skills else 0
+
+        if score >= 80:
+            gap_summary = "Strong match! Your skills align well with this role."
+        elif score >= 50:
+            gap_summary = f"Moderate match. Consider developing: {', '.join(missing[:5])}."
+        else:
+            gap_summary = f"Significant skill gaps. Key missing skills: {', '.join(missing[:5])}."
+
+        return {
+            "compatibility_score": score,
+            "required_skills": required_skills,
+            "matched_skills": matched,
+            "missing_skills": missing,
+            "gap_analysis": gap_summary,
+        }
+
     def _extract_json_object(self, text):
         """Extract a JSON object from text that may contain markdown fences or extra explanation."""
         if not text:

@@ -1,4 +1,4 @@
-#!/bin/bash
+chmod +x filename.sh#!/bin/bash
 
 trap 'echo -e "\nStopping all services..."; kill $(jobs -p) 2>/dev/null; exit' SIGINT SIGTERM
 
@@ -32,7 +32,7 @@ elif [ -d ".venv" ]; then
 fi
 
 pip3 install -r requirements.txt || pip install -r requirements.txt
-python3 app.py || python app.py &
+python3 app.py || python3 app.py &
 cd ..
 
 echo -e "\033[32mAll services are starting up!\033[0m"

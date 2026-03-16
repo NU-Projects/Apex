@@ -82,3 +82,21 @@ class JobRepository:
         finally:
             if conn:
                 conn.close()
+
+    def get_latest_job_created_at(self):
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            cur.execute("SELECT created_at FROM jobs ORDER BY created_at DESC LIMIT 1")
+            row = cur.fetchone()
+            cur.close()
+            if row:
+                return row[0]
+            return None
+        except Exception as exc:
+            print(f"Failed to get latest job created_at: {exc}")
+            return None
+        finally:
+            if conn:
+                conn.close()

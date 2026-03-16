@@ -75,7 +75,6 @@ def parse_linkedin_job(job: dict, country_folder: str, role: str) -> dict:
         "title": clean_title(job.get("title")),
         "company_name": clean_text(job.get("companyName")),
         "description": clean_text(job.get("description")),
-        "skills": [],
         "url": job.get("jobUrl"),
         "location": clean_text(location_raw) if location_raw else None,
         "experience_level": clean_text(job.get("experienceLevel")),
@@ -106,7 +105,6 @@ def parse_indeed_job(job: dict, country_folder: str, role: str) -> dict:
         "title": clean_title(job.get("title")),
         "company_name": clean_text(job.get("companyName")),
         "description": clean_text(job.get("descriptionText")),
-        "skills": [],
         "url": job.get("jobUrl"),
         "location": clean_text(location_str),
         "experience_level": None,  
@@ -160,7 +158,7 @@ def collect_all_jobs() -> list[dict]:
     return all_jobs
 
 
-def insert_jobs(jobs: list[dict]):
+def insert_jobs(jobs: list[dict], truncate: bool = False):
     if not jobs:
         print("No jobs to insert.")
         return
@@ -170,10 +168,14 @@ def insert_jobs(jobs: list[dict]):
         conn = psycopg2.connect(DATABASE_URL)
         cur = conn.cursor()
 
+        if truncate:
+            print("Truncating jobs table...")
+            cur.execute("TRUNCATE TABLE jobs RESTART IDENTITY;")
+
         insert_sql = """
-            INSERT INTO jobs (platform, role, title, company_name, description, skills,
+            INSERT INTO jobs (platform, role, title, company_name, description,
                               url, location, experience_level, contract_type, country)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (url) DO UPDATE SET
                 role = EXCLUDED.role,
                 title = EXCLUDED.title,
@@ -203,7 +205,6 @@ def insert_jobs(jobs: list[dict]):
                 job["title"],
                 job["company_name"],
                 job["description"],
-                job["skills"],
                 job["url"],
                 job["location"],
                 job["experience_level"],
@@ -272,7 +273,7 @@ def main():
 
     if jobs:
         print("Inserting into database...")
-        insert_jobs(jobs)
+        insert_jobs(jobs, truncate=True)
     else:
         print("No jobs found to insert.")
 

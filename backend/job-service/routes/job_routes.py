@@ -20,3 +20,7 @@ def get_role_insights():
 @job_bp.route('/compatibility', methods=['POST'])
 def compatibility():
     return controller.calculate_compatibility(request.json)
+
+@job_bp.route('/sync', methods=['POST', 'GET'])
+def sync_jobs():
+    return controller.sync_jobs()

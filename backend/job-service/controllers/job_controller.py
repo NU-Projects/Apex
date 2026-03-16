@@ -1,16 +1,25 @@
 from flask import jsonify
 from services.job_service import JobService
+from services.sync_service import SyncService
 
 
 class JobController:
     def __init__(self):
         self.job_service = JobService()
+        self.sync_service = SyncService()
 
     def get_job_count(self, role):
         if not role:
             return jsonify({"error": "role parameter is required"}), 400
         count = self.job_service.get_job_count_by_role(role)
         return jsonify({"role": role, "count": count}), 200
+
+    def sync_jobs(self):
+        try:
+            result = self.sync_service.check_and_sync()
+            return jsonify(result), 200
+        except Exception as exc:
+            return jsonify({"error": str(exc)}), 500
 
     def get_role_insights(self, current_role, selected_role, skills=None):
         if not current_role or not selected_role:

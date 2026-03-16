@@ -8,6 +8,11 @@ function setupEurekaRoutes(app) {
     const appId = req.params.appId.toUpperCase();
     const instance = req.body.instance;
 
+    // Normalize port if it's an object (e.g., from py_eureka_client: {"$": 5003})
+    if (instance.port && typeof instance.port === 'object' && instance.port['$'] !== undefined) {
+      instance.port = instance.port['$'];
+    }
+
     if (!registry[appId]) registry[appId] = [];
 
     const index = registry[appId].findIndex(i => i.instanceId === instance.instanceId);

@@ -116,7 +116,6 @@ class JobService:
 
     def _canonicalize_skill(self, skill):
         text = str(skill).lower().strip()
-        # Normalize common separators and variants to improve matching quality.
         text = text.replace("node.js", "node js")
         text = text.replace("ci/cd", "cicd")
         text = re.sub(r"[^a-z0-9\s]", " ", text)
@@ -149,7 +148,6 @@ class JobService:
         if overlap == 0:
             return False
 
-        # Count as a match when a meaningful portion of the required phrase overlaps.
         return (overlap / len(req_tokens)) >= 0.5
 
     def _get_matched_required_skills(self, user_skills, required_skills):
@@ -194,7 +192,6 @@ class JobService:
             try:
                 skills = self._extract_required_skills(title, description)
 
-                # Save empty array when no skills are found so row is not repeatedly retried.
                 success = self.repository.update_job_skills(job_id, skills)
                 if success:
                     updated += 1

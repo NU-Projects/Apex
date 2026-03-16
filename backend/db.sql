@@ -4,7 +4,8 @@ CREATE TABLE users (
     password TEXT NOT NULL,
     github_username VARCHAR(100),
     linkedin_username VARCHAR(100),
-    skills TEXT[],          
+    skills TEXT[],  
+    role TEXT,        
     is_verified BOOLEAN DEFAULT FALSE
 );
 

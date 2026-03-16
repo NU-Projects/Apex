@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import Navbar from '../components/Navbar'
-import Sidebar from '../components/Sidebar'
 import { useAuth } from '../hooks/useAuth'
 import { useSkills } from '../hooks/useSkills'
 
@@ -29,27 +28,27 @@ function DashboardPage() {
   const name = user.fullName || user.user_metadata?.username || user.email
 
   return (
-    <div className="flex h-screen bg-surface overflow-hidden">
-      <Sidebar />
-      <div className="flex-1 flex flex-col overflow-hidden">
-        <Navbar />
-        <main className="flex-1 overflow-y-auto w-full p-8">
-          <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-sm border border-border-light p-6">
-            <h1 className="text-2xl font-bold text-text-primary mb-6">Hello, {name}</h1>
-            <h2 className="text-lg font-semibold text-text-primary mb-4">Your Current Skills</h2>
-            <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => (
-                <span key={skill} className="px-3 py-1 bg-brand-50 text-brand-700 rounded-full text-sm font-medium border border-brand-100">
-                  {skill}
-                </span>
-              ))}
-            </div>
-            {skills.length === 0 && (
-              <p className="text-text-muted text-sm">No skills found.</p>
-            )}
+    <div className="min-h-screen flex flex-col bg-surface font-sans">
+      <Navbar />
+      
+      <main className="flex-1 w-full max-w-7xl mx-auto p-6 md:p-10">
+        <div className="bg-white rounded-2xl shadow-sm border border-border-light p-8 animate-fade-in">
+          <h1 className="text-3xl font-bold text-text-primary mb-2">Hello, {name}</h1>
+          <p className="text-text-secondary mb-8 text-lg">Welcome back to your dashboard.</p>
+          
+          <h2 className="text-xl font-semibold text-text-primary mb-5">Your Current Skills</h2>
+          <div className="flex flex-wrap gap-2.5">
+            {skills.map((skill) => (
+              <span key={skill} className="px-3.5 py-1.5 bg-brand-50 text-brand-700 rounded-lg text-sm font-semibold border border-brand-100 shadow-sm">
+                {skill}
+              </span>
+            ))}
           </div>
-        </main>
-      </div>
+          {skills.length === 0 && (
+            <p className="text-text-muted text-sm bg-surface p-4 rounded-lg inline-block">No skills found. Begin an analysis to populate your profile.</p>
+          )}
+        </div>
+      </main>
     </div>
   )
 }

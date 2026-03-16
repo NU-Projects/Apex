@@ -65,3 +65,20 @@ class JobRepository:
         finally:
             if conn:
                 conn.close()
+
+    def get_job_count_by_role(self, role):
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            query = "SELECT COUNT(*) FROM jobs WHERE title ILIKE %s OR description ILIKE %s"
+            cur.execute(query, (f"%{role}%", f"%{role}%"))
+            count = cur.fetchone()[0]
+            cur.close()
+            return count
+        except Exception as exc:
+            print(f"Failed to get count for role {role}: {exc}")
+            return 0
+        finally:
+            if conn:
+                conn.close()

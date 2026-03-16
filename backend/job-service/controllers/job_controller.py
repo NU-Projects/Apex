@@ -20,3 +20,19 @@ class JobController:
 
         result = self.job_service.extract_and_save_missing_job_skills(limit=limit)
         return jsonify(result), 200
+
+    def get_job_count(self, role):
+        if not role:
+            return jsonify({"error": "role parameter is required"}), 400
+        count = self.job_service.get_job_count_by_role(role)
+        return jsonify({"role": role, "count": count}), 200
+
+    def get_role_insights(self, current_role, selected_role, skills=None):
+        if not current_role or not selected_role:
+            return jsonify({"error": "currentRole and selectedRole parameters are required"}), 400
+
+        if skills is not None and not isinstance(skills, list):
+            return jsonify({"error": "skills must be an array of strings"}), 400
+
+        result = self.job_service.get_role_insights(current_role, selected_role, skills or [])
+        return jsonify(result), 200

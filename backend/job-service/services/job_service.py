@@ -13,7 +13,6 @@ class JobService:
         self.repository = JobRepository()
         self.ollama_api_key = os.getenv("OLLAMA_API_KEY", "").strip()
         self.ollama_model = os.getenv("OLLAMA_MODEL", "").strip()
-        # If OLLAMA_BASE_URL is not provided, prefer cloud when key exists, else local Ollama.
         self.ollama_base_url = os.getenv("OLLAMA_BASE_URL", "").strip()
 
     def _resolve_ollama_url(self):
@@ -42,7 +41,6 @@ class JobService:
         except Exception:
             pass
 
-        # Fallback if model surrounds JSON with explanation or code fences.
         match = re.search(r"\[[\s\S]*\]", stripped)
         if not match:
             return []
@@ -112,7 +110,6 @@ class JobService:
             chat_error = exc
 
         if not content:
-            # Fallback for OpenAI-compatible deployments.
             response = requests.post(
                 openai_url,
                 headers=headers,
@@ -147,7 +144,6 @@ class JobService:
             try:
                 skills = self._extract_skills_from_ollama(title, description)
 
-                # Save empty array when no skills are found so row is not repeatedly retried.
                 success = self.repository.update_job_skills(job_id, skills)
                 if success:
                     updated += 1
@@ -164,4 +160,132 @@ class JobService:
             "failed": failed,
             "skipped": skipped,
             "errors": errors,
+        }
+
+    def get_job_count_by_role(self, role):
+        if not role:
+            return 0
+        return self.repository.get_job_count_by_role(role)
+
+    def _extract_json_object(self, text):
+        """Extract a JSON object from text that may contain markdown fences or extra explanation."""
+        if not text:
+            return None
+
+        stripped = text.strip()
+        try:
+            parsed = json.loads(stripped)
+            if isinstance(parsed, dict):
+                return parsed
+        except Exception:
+            pass
+
+        match = re.search(r"\{[\s\S]*\}", stripped)
+        if not match:
+            return None
+
+        try:
+            parsed = json.loads(match.group(0))
+            if isinstance(parsed, dict):
+                return parsed
+        except Exception:
+            return None
+
+        return None
+
+    def get_role_insights(self, current_role, selected_role, skills=None):
+        current_count = self.get_job_count_by_role(current_role)
+        selected_count = self.get_job_count_by_role(selected_role)
+
+        skills_text = ""
+        if skills:
+            skills_text = (
+                f"\nThe user currently possesses the following skills: {', '.join(skills)}.\n"
+                "Consider how transferable these skills are to the selected role, "
+                "identify any skill gaps, and factor this into your advice.\n"
+            )
+
+        prompt = (
+            f"The user is currently a '{current_role}' and considering a change to '{selected_role}'.\n"
+            f"There are currently {current_count} jobs available for '{current_role}' and "
+            f"{selected_count} jobs available for '{selected_role}' in the job market.\n"
+            f"{skills_text}"
+            "Based on the roles, the availability of jobs, and the user's current skills, "
+            "respond with ONLY a valid JSON object (no extra text) using exactly this structure:\n"
+            "{\n"
+            '  "selected_role_growth": "<short growth outlook for the selected role>",\n'
+            '  "current_role_growth": "<short growth outlook for the current role>",\n'
+            '  "decision": true or false (true = should switch, false = should not),\n'
+            '  "advice": "<professional career advice under 100 words>"\n'
+            "}\n"
+        )
+
+        chat_url = self._resolve_ollama_url()
+        openai_url = self._resolve_openai_compatible_url()
+        headers = {"Content-Type": "application/json"}
+        if self.ollama_api_key:
+            headers["Authorization"] = f"Bearer {self.ollama_api_key}"
+
+        payload = {
+            "model": self.ollama_model,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": "You are a helpful career advisor AI. You must respond with ONLY valid JSON, no markdown, no explanation.",
+                },
+                {"role": "user", "content": prompt},
+            ],
+            "stream": False,
+        }
+
+        content = ""
+        try:
+            response = requests.post(chat_url, headers=headers, json=payload, timeout=90)
+            response.raise_for_status()
+            data = response.json()
+            content = data.get("message", {}).get("content") or data.get("response") or ""
+        except Exception:
+            pass
+
+        if not content:
+            try:
+                response = requests.post(
+                    openai_url,
+                    headers=headers,
+                    json={"model": self.ollama_model, "messages": payload["messages"]},
+                    timeout=90,
+                )
+                response.raise_for_status()
+                data = response.json()
+                choices = data.get("choices", [])
+                if choices:
+                    content = choices[0].get("message", {}).get("content", "")
+            except Exception:
+                pass
+
+       
+        ai_result = self._extract_json_object(content) if content else None
+
+        if ai_result:
+            return {
+                "current_role": current_role,
+                "selected_role": selected_role,
+                "current_role_count": current_count,
+                "selected_role_count": selected_count,
+                "selected_role_growth": ai_result.get("selected_role_growth", ""),
+                "current_role_growth": ai_result.get("current_role_growth", ""),
+                "decision": ai_result.get("decision", False),
+                "advice": ai_result.get("advice", ""),
+            }
+
+    
+        return {
+            "current_role": current_role,
+            "selected_role": selected_role,
+            "current_role_count": current_count,
+            "selected_role_count": selected_count,
+            "selected_role_growth": "",
+            "current_role_growth": "",
+            "decision": False,
+            "advice": content or "Unable to generate advice at this moment.",
         }

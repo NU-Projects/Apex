@@ -1,0 +1,114 @@
+[
+    {
+        "title": "ML/AI Engineer",
+        "companyName": "Recruitingers",
+        "location": {
+            "city": null,
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Pakistan",
+            "formattedAddressShort": "Pakistan",
+            "latitude": 0,
+            "longitude": 0,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "21 days ago",
+        "datePublished": "2026-02-23",
+        "jobType": [
+            "Full-time"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Recruitingers",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Please note this is full-time remote position for committed and dedicated resource, who will be working from 12PM to 9PM. Monday to Friday. *\n\nKIDAN is more than a family-owned and multi-cultural international IT consultancy firm. We've grown from a single client to a family of over 900+ enterprises worldwide, cementing ourselves as trusted IT management and security advisors.\n\nOur strength lies in our proactive problem-solving approach. By asking the right questions and strategizing effective solutions, we've consistently delivered secure, reliable IT systems, leaving a trail of success stories in our wake. Our talented team of experts is the driving force behind these achievements.\n\nWe are seeking a highly skilled *AI & ML Engineer* to architect, build, and deploy our secure internal *AI platform*. This platform will act as a centralized intelligence layer supporting *security, directory services, internal data, workflows, *and *organizational automation*.\n\nThe ideal candidate has strong expertise in *AI/ML engineering, LLMs, IAM, enterprise security, cloud infrastructure, and API integrations*, with a proven track record in training and fine‑tuning *large language models*.\n\n*Key Responsibilities*\n\n* Build and maintain an internal AI platform for centralized organizational data, knowledge, and security.\n* Develop custom LLM-based tools for internal use (chatbots, automation agents, access‑control intelligence, internal search, compliance & policy monitoring).\n* Train and fine‑tune LLMs on internal datasets with strict security and privacy standards.\n* Implement RAG (Retrieval-Augmented Generation) pipelines using vector databases.\n* Automate internal workflows (referral requests, onboarding, compliance alerts, CRM updates, IAM tasks).\n* Build secure APIs and backend services enabling AI-driven operations and system integrations.\n* Deploy, monitor, scale, and optimize ML/LLM models in cloud or hybrid environments.\n* Collaborate with cross-functional teams (IT, Security, Ops) to integrate AI into existing internal systems.\n\n*Requirements*\n\n* *4+ years *of hands‑on experience in *Machine Learning*.\n* Strong expertise in *Python* and *ML frameworks *(TensorFlow, PyTorch, Scikit‑learn).\n* Proven experience training, fine‑tuning, optimizing, and deploying *LLMs*.\n* Experience with *RAG pipelines* and vector databases.\n* Solid understanding of *Identity & Access Management (IAM)* and enterprise security principles.\n* Strong experience building *APIs, backend services*, and integrating ML models into production systems.\n* *Cloud deployment experience *(AWS, Azure, GCP) for model hosting, scaling, and security.\n* Strong foundation in data pipelines, ML operations, and model optimization.\n* Full-time remote job\n* 8 hours per day from 11 AM to 8 PM PST (Monday to Friday)\n\nJob Type: Full-time\n\nPay: Rs150,000.00 - Rs200,000.00 per month\n\n\n\nApplication Question(s):\n* Kindly let us know what is your Salary expectation for this full-time remote position?\n\nWork Location: Remote",
+        "descriptionHtml": "<p><b>Please note this is full-time remote position for committed and dedicated resource, who will be working from 12PM to 9PM. Monday to Friday. </b></p><p>KIDAN is more than a family-owned and multi-cultural international IT consultancy firm. We've grown from a single client to a family of over 900+ enterprises worldwide, cementing ourselves as trusted IT management and security advisors.</p><p>Our strength lies in our proactive problem-solving approach. By asking the right questions and strategizing effective solutions, we've consistently delivered secure, reliable IT systems, leaving a trail of success stories in our wake. Our talented team of experts is the driving force behind these achievements.</p><p>We are seeking a highly skilled <b>AI &amp; ML Engineer</b> to architect, build, and deploy our secure internal <b>AI platform</b>. This platform will act as a centralized intelligence layer supporting <b>security, directory services, internal data, workflows, </b>and <b>organizational automation</b>.</p><p>The ideal candidate has strong expertise in <b>AI/ML engineering, LLMs, IAM, enterprise security, cloud infrastructure, and API integrations</b>, with a proven track record in training and fine‑tuning <b>large language models</b>.</p><p><b>Key Responsibilities</b></p><ul><li>Build and maintain an internal AI platform for centralized organizational data, knowledge, and security.</li><li>Develop custom LLM-based tools for internal use (chatbots, automation agents, access‑control intelligence, internal search, compliance &amp; policy monitoring).</li><li>Train and fine‑tune LLMs on internal datasets with strict security and privacy standards.</li><li>Implement RAG (Retrieval-Augmented Generation) pipelines using vector databases.</li><li>Automate internal workflows (referral requests, onboarding, compliance alerts, CRM updates, IAM tasks).</li><li>Build secure APIs and backend services enabling AI-driven operations and system integrations.</li><li>Deploy, monitor, scale, and optimize ML/LLM models in cloud or hybrid environments.</li><li>Collaborate with cross-functional teams (IT, Security, Ops) to integrate AI into existing internal systems.</li></ul><p><b>Requirements</b></p><ul><li><b>4+ years </b>of hands‑on experience in <b>Machine Learning</b>.</li><li>Strong expertise in <b>Python</b> and <b>ML frameworks </b>(TensorFlow, PyTorch, Scikit‑learn).</li><li>Proven experience training, fine‑tuning, optimizing, and deploying <b>LLMs</b>.</li><li>Experience with <b>RAG pipelines</b> and vector databases.</li><li>Solid understanding of <b>Identity &amp; Access Management (IAM)</b> and enterprise security principles.</li><li>Strong experience building <b>APIs, backend services</b>, and integrating ML models into production systems.</li><li><b>Cloud deployment experience </b>(AWS, Azure, GCP) for model hosting, scaling, and security.</li><li>Strong foundation in data pipelines, ML operations, and model optimization.</li><li>Full-time remote job</li><li>8 hours per day from 11 AM to 8 PM PST (Monday to Friday)</li></ul><p>Job Type: Full-time</p><p>Pay: Rs150,000.00 - Rs200,000.00 per month</p><p>Application Question(s):</p><ul><li>Kindly let us know what is your Salary expectation for this full-time remote position?</li></ul><p>Work Location: Remote</p>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Scientists & Statisticians"
+        ],
+        "attributes": [
+            "Full-time"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 0,
+        "jobKey": "0e6ab906b0eb3834",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=0e6ab906b0eb3834",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    },
+    {
+        "title": "AI Engineer",
+        "companyName": "Cortech sols pvt ltd",
+        "location": {
+            "city": "Islamabad",
+            "postalCode": null,
+            "country": "Pakistan",
+            "countryCode": "PK",
+            "formattedAddressLong": "Islamabad",
+            "formattedAddressShort": "Islamabad",
+            "latitude": 33.717033,
+            "longitude": 73.06044,
+            "streetAddress": null,
+            "fullAddress": null
+        },
+        "age": "a month ago",
+        "datePublished": "2026-02-13",
+        "jobType": [
+            "Full-time",
+            "Contract"
+        ],
+        "companyUrl": "https://www.indeed.com/cmp/Cortech-Sols-Pvt-Ltd",
+        "rating": {
+            "rating": 0,
+            "count": 0
+        },
+        "descriptionText": "*Job Title: AI Engineer*\n\nLocation: Gulberg Greens, Islamabad.\n\nExperience Required: 2-3 years.\n\nType: Full Time, Onsite Role.\n\nJob Overview\n\nWe are seeking a skilled AI Engineer specializing in Large Language Models (LLMs) and Generative AI with 2–3 years of hands-on experience in building, deploying, and optimizing AI-driven solutions. The role involves working closely with cross-functional teams to develop scalable, production-ready AI applications that deliver real business value.\n\n*Key Responsibilities*\n\n\\* Develop and deploy applications using LLMs (e.g., GPT, Claude, LLaMA, Mistral)\n\n\\* Implement prompt engineering, RAG (Retrieval-Augmented Generation), MCP Servers and embedding-based solutions.\n\n\\* Fine-tune and optimize generative models for domain-specific use cases.\n\n\\* Design end-to-end Generative AI pipelines and workflows\n\n\\* Integrate AI capabilities into existing products via APIs and microservices.\n\n\\* Evaluate model performance, accuracy, latency, and cost efficiency.\n\n\\* Work with vector databases such as Pinecone, FAISS, or Weaviate.\n\n\\* Ensure ethical AI usage, data privacy, and security compliance.\n\n*Required Qualifications*\n\n\\* Bachelor’s degree in Computer Science, Artificial Intelligence, Data Science, or a related field.\n\n\\* 2–3 years of practical experience in AI/ML or applied Generative AI.\n\n\\* Strong proficiency in Python and AI/ML frameworks (PyTorch, TensorFlow, Hugging Face).\n\n\\* Hands-on experience with LLMs, transformers, and generative models.\n\n\\* Strong expertise to work with MCP servers and LangGraph.\n\n\\* Experience with prompt engineering, embeddings, and RAG architectures.\n\n\\* Familiarity with RESTful APIs and cloud platforms (AWS, GCP, Azure)\n\n\\* Solid understanding of software engineering best practices.\n\n*Preferred Skills*\n\n\\* Experience fine-tuning open-source LLMs (LLaMA, Falcon, Mistral, etc.)\n\n\\* Knowledge of LangChain, LIamaIndex, or similar orchestration frameworks.\n\n\\* Experience with Docker, Kubernetes, and CI/CD pipelines.\n\n\\* Understanding of MLOps concepts and model monitoring.\n\n\\* Exposure to multimodal AI (text, image, or audio-based models).\n\nJob Types: Full-time, Contract\n\nPay: Rs140,000.00 - Rs150,000.00 per month\n\nWork Location: In person",
+        "descriptionHtml": "<p><b>Job Title: AI Engineer</b></p><p>Location: Gulberg Greens, Islamabad.</p><p>Experience Required: 2-3 years.</p><p>Type: Full Time, Onsite Role.</p><p>Job Overview</p><p>We are seeking a skilled AI Engineer specializing in Large Language Models (LLMs) and Generative AI with 2&ndash;3 years of hands-on experience in building, deploying, and optimizing AI-driven solutions. The role involves working closely with cross-functional teams to develop scalable, production-ready AI applications that deliver real business value.</p><p><b>Key Responsibilities</b></p><p>* Develop and deploy applications using LLMs (e.g., GPT, Claude, LLaMA, Mistral)</p><p>* Implement prompt engineering, RAG (Retrieval-Augmented Generation), MCP Servers and embedding-based solutions.</p><p>* Fine-tune and optimize generative models for domain-specific use cases.</p><p>* Design end-to-end Generative AI pipelines and workflows</p><p>* Integrate AI capabilities into existing products via APIs and microservices.</p><p>* Evaluate model performance, accuracy, latency, and cost efficiency.</p><p>* Work with vector databases such as Pinecone, FAISS, or Weaviate.</p><p>* Ensure ethical AI usage, data privacy, and security compliance.</p><p><b>Required Qualifications</b></p><p>* Bachelor&rsquo;s degree in Computer Science, Artificial Intelligence, Data Science, or a related field.</p><p>* 2&ndash;3 years of practical experience in AI/ML or applied Generative AI.</p><p>* Strong proficiency in Python and AI/ML frameworks (PyTorch, TensorFlow, Hugging Face).</p><p>* Hands-on experience with LLMs, transformers, and generative models.</p><p>* Strong expertise to work with MCP servers and LangGraph.</p><p>* Experience with prompt engineering, embeddings, and RAG architectures.</p><p>* Familiarity with RESTful APIs and cloud platforms (AWS, GCP, Azure)</p><p>* Solid understanding of software engineering best practices.</p><p><b>Preferred Skills</b></p><p>* Experience fine-tuning open-source LLMs (LLaMA, Falcon, Mistral, etc.)</p><p>* Knowledge of LangChain, LIamaIndex, or similar orchestration frameworks.</p><p>* Experience with Docker, Kubernetes, and CI/CD pipelines.</p><p>* Understanding of MLOps concepts and model monitoring.</p><p>* Exposure to multimodal AI (text, image, or audio-based models).</p><p>Job Types: Full-time, Contract</p><p>Pay: Rs140,000.00 - Rs150,000.00 per month</p><p>Work Location: In person</p>",
+        "benefits": [],
+        "occupation": [
+            "Data & Database Occupations",
+            "Technology Occupations",
+            "Data Scientists & Statisticians"
+        ],
+        "attributes": [
+            "Full-time",
+            "Contract"
+        ],
+        "workingSystem": [],
+        "numOfCandidates": null,
+        "source": "Indeed",
+        "hiringDemand.isUrgentHire": false,
+        "hiringDemand.isHighVolumeHiring": false,
+        "locale": "pk",
+        "salary": {},
+        "expired": false,
+        "postedToday": false,
+        "scrapingInfo.page": 1,
+        "scrapingInfo.index": 1,
+        "jobKey": "ad1805bc63d5c82f",
+        "jobUrl": "https://www.indeed.com/viewjob?jk=ad1805bc63d5c82f",
+        "emails": [],
+        "isRemote": false,
+        "socialInsurance": [],
+        "shiftAndSchedule": [],
+        "requirements": []
+    }
+]

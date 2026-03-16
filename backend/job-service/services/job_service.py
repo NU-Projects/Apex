@@ -3,12 +3,14 @@ import os
 import re
 import requests
 from dotenv import load_dotenv
+from repositories.job_repository import JobRepository
 
 load_dotenv(os.path.join(os.path.dirname(__file__), '../../.env'), override=True)
 
 
 class JobService:
     def __init__(self):
+        self.repository = JobRepository()
         self.ollama_api_key = os.getenv("OLLAMA_API_KEY", "").strip()
         self.ollama_model = os.getenv("OLLAMA_MODEL", "").strip()
         self.ollama_base_url = os.getenv("OLLAMA_BASE_URL", "").strip()
@@ -190,7 +192,7 @@ class JobService:
                 continue
 
             try:
-                skills = self._extract_skills_from_ollama(title, description)
+                skills = self._extract_required_skills(title, description)
 
                 # Save empty array when no skills are found so row is not repeatedly retried.
                 success = self.repository.update_job_skills(job_id, skills)
@@ -204,8 +206,11 @@ class JobService:
                 errors.append({"job_id": str(job_id), "error": str(exc)})
 
         return {
-            "compatibility_score": score,
-            "gap_analysis": gap_summary,
+            "processed": len(rows),
+            "updated": updated,
+            "failed": failed,
+            "skipped": skipped,
+            "errors": errors,
         }
 
     def get_job_count_by_role(self, role):

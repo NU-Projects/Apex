@@ -5,6 +5,10 @@ job_bp = Blueprint('jobs', __name__)
 controller = JobController()
 
 
+@job_bp.route('/roles', methods=['GET'])
+def get_distinct_roles():
+    return controller.get_distinct_roles()
+
 @job_bp.route('/count', methods=['GET'])
 def get_job_count():
     role = request.args.get('role')

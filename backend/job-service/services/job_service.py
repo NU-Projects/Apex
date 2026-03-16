@@ -210,6 +210,9 @@ class JobService:
             "errors": errors,
         }
 
+    def get_distinct_roles(self):
+        return self.repository.get_distinct_roles()
+
     def get_job_count_by_role(self, role):
         if not role:
             return 0

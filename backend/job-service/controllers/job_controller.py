@@ -8,6 +8,10 @@ class JobController:
         self.job_service = JobService()
         self.sync_service = SyncService()
 
+    def get_distinct_roles(self):
+        roles = self.job_service.get_distinct_roles()
+        return jsonify({"roles": roles}), 200
+
     def get_job_count(self, role):
         if not role:
             return jsonify({"error": "role parameter is required"}), 400

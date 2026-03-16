@@ -83,6 +83,22 @@ class JobRepository:
             if conn:
                 conn.close()
 
+    def get_distinct_roles(self):
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            cur.execute("SELECT DISTINCT role FROM jobs WHERE role IS NOT NULL ORDER BY role")
+            rows = cur.fetchall()
+            cur.close()
+            return [row[0] for row in rows]
+        except Exception as exc:
+            print(f"Failed to get distinct roles: {exc}")
+            return []
+        finally:
+            if conn:
+                conn.close()
+
     def get_latest_job_created_at(self):
         conn = None
         try:

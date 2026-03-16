@@ -14,3 +14,18 @@ CREATE TABLE otp_verifications (
     otp_code VARCHAR(10) NOT NULL,
     expires_at TIMESTAMP NOT NULL
 );
+
+CREATE TABLE jobs (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  platform TEXT NOT NULL,        -- 'linkedin' | 'indeed'
+  title TEXT NOT NULL,
+  company_name TEXT,
+  description TEXT,
+  skills TEXT[],              
+  url TEXT,
+  location TEXT,
+  experience_level TEXT,
+  contract_type TEXT,
+  country TEXT,
+  created_at TIMESTAMPTZ DEFAULT now()
+);

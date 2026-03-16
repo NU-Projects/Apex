@@ -1,4 +1,4 @@
- $backendRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+$backendRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 
 Write-Host "Starting Netflix Eureka Server..." -ForegroundColor Cyan
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$backendRoot\netflix-eureka-server'; npm i; npm run dev"

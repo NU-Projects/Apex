@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 from flask_cors import CORS
+from routes.job_routes import job_bp
 from eureka_client import register_eureka
 from dotenv import load_dotenv
 
@@ -22,6 +23,8 @@ CORS(app, resources={r"/*": {
     "supports_credentials": True,
     "max_age": 86400
 }})
+
+app.register_blueprint(job_bp, url_prefix='/jobs')
 
 if __name__ == '__main__':
     register_eureka()

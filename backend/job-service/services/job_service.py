@@ -219,33 +219,30 @@ class JobService:
         return self.repository.get_job_count_by_role(role)
 
     def calculate_compatibility(self, user_skills, job_title, job_description):
+        normalized_user_skills = self._normalize_skills(user_skills)
         required_skills = self._extract_required_skills(job_title, job_description)
 
         if not required_skills:
             return {
                 "compatibility_score": 0,
-                "required_skills": [],
-                "matched_skills": [],
-                "missing_skills": [],
-                "gap_analysis": "Could not extract required skills from the job posting.",
+                "gap_analysis": "Could not identify clear required skills from this job post. Please provide a more detailed job description for a reliable compatibility estimate.",
             }
 
-        matched = self._get_matched_required_skills(user_skills, required_skills)
-        missing = [s for s in required_skills if s not in matched]
-        score = round((len(matched) / len(required_skills)) * 100) if required_skills else 0
+        matched = self._get_matched_required_skills(normalized_user_skills, required_skills)
+        missing = [skill for skill in required_skills if skill not in matched]
+        score = round((len(matched) / len(required_skills)) * 100)
 
-        if score >= 80:
-            gap_summary = "Strong match! Your skills align well with this role."
-        elif score >= 50:
-            gap_summary = f"Moderate match. Consider developing: {', '.join(missing[:5])}."
-        else:
-            gap_summary = f"Significant skill gaps. Key missing skills: {', '.join(missing[:5])}."
+        have_text = ", ".join(matched[:4]) if matched else "no direct core-match skills yet"
+        missing_text = ", ".join(missing[:4]) if missing else "no major missing skills"
+
+        gap_summary = (
+            f"You already have: {have_text}. "
+            f"You are currently missing or should strengthen: {missing_text}. "
+            "Improving these areas will increase your fit for this role."
+        )
 
         return {
             "compatibility_score": score,
-            "required_skills": required_skills,
-            "matched_skills": matched,
-            "missing_skills": missing,
             "gap_analysis": gap_summary,
         }
 

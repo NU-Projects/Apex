@@ -149,3 +149,26 @@ class JobRepository:
         finally:
             if conn:
                 conn.close()
+
+    def get_job_counts_by_location(self, country):
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            query = """
+                SELECT location, COUNT(*) 
+                FROM jobs 
+                WHERE country ILIKE %s 
+                GROUP BY location 
+                ORDER BY COUNT(*) DESC
+            """
+            cur.execute(query, (f"%{country}%",))
+            rows = cur.fetchall()
+            cur.close()
+            return [{"location": r[0], "count": r[1]} for r in rows if r[0]]
+        except Exception as exc:
+            print(f"Failed to get location counts for {country}: {exc}")
+            return []
+        finally:
+            if conn:
+                conn.close()

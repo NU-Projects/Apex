@@ -29,7 +29,8 @@ function Navbar() {
   }
 
   const navLinks = [
-    { name: 'Skills', path: '/dashboard' },
+    { name: 'Dashboard', path: '/dashboard' },
+    { name: 'Skills', path: '/skills' },
     { name: 'Jobs', path: '/jobs' },
     { name: 'Roadmap', path: '/roadmap' },
   ]

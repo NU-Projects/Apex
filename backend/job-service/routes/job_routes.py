@@ -41,3 +41,8 @@ def compatibility():
 @job_bp.route('/sync', methods=['POST', 'GET'])
 def sync_jobs():
     return controller.sync_jobs()
+
+@job_bp.route('/locations', methods=['GET'])
+def get_location_counts():
+    country = request.args.get('country')
+    return controller.get_location_counts(country)

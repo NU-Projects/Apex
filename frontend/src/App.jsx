@@ -4,6 +4,7 @@ import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
 import ForgotPasswordPage from './pages/ForgotPasswordPage'
 import DashboardPage from './pages/DashboardPage'
+import SkillsPage from './pages/SkillsPage'
 import JobsPage from './pages/JobsPage'
 import RoadmapPage from './pages/RoadmapPage'
 import ProfilePage from './pages/ProfilePage'
@@ -24,6 +25,14 @@ function App() {
         element={
           <ProtectedRoute>
             <DashboardPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/skills"
+        element={
+          <ProtectedRoute>
+            <SkillsPage />
           </ProtectedRoute>
         }
       />

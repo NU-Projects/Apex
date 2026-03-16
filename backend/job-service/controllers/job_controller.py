@@ -65,3 +65,9 @@ class JobController:
             return jsonify(result), 200
         except Exception as exc:
             return jsonify({"error": str(exc)}), 502
+
+    def get_location_counts(self, country):
+        if not country:
+            return jsonify({"error": "country parameter is required"}), 400
+        counts = self.job_service.get_job_counts_by_location(country)
+        return jsonify(counts), 200

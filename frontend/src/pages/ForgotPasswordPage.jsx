@@ -142,14 +142,14 @@ function ForgotPasswordPage() {
       title={step === 1 ? 'Reset password' : step === 2 ? 'Verify Email' : 'New Password'}
       subtitle={subtitles[step]}
     >
-      <div className="space-y-4 animate-slide-in" key={step}>
+      <div className="space-y-4" key={step}>
         {error && (
-          <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600 animate-fade-in">
+          <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600">
             {error}
           </div>
         )}
         {success && (
-          <div className="p-3 rounded-lg bg-blue-50 border border-blue-200 text-sm text-brand-700 animate-fade-in">
+          <div className="p-3 rounded-lg bg-blue-50 border border-blue-200 text-sm text-brand-700">
             {success}
           </div>
         )}

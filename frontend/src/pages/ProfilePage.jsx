@@ -1,13 +1,23 @@
+import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import { useAuth } from '../hooks/useAuth'
 
 function ProfilePage() {
   const { user } = useAuth()
+  const navigate = useNavigate()
   
   return (
     <div className="min-h-screen flex flex-col bg-surface font-sans">
       <Navbar />
       <main className="flex-1 w-full max-w-7xl mx-auto p-6 md:p-10">
+        <button 
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-2 text-text-muted hover:text-brand-600 font-bold mb-6 transition-colors group"
+        >
+          <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" /></svg>
+          Back to Dashboard
+        </button>
+
         <div className="bg-white rounded-2xl shadow-sm border border-border-light p-8 animate-fade-in max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold text-text-primary mb-2">Edit Profile</h1>
           <p className="text-text-secondary text-lg mb-8">Manage your personal information and application preferences.</p>

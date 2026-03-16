@@ -12,17 +12,17 @@ function HeroSection() {
 
         {/* Main Content */}
         <div className="text-center max-w-4xl mx-auto mt-32">
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-text-primary tracking-tighter mb-8 leading-[1.1] animate-fade-up">
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-text-primary tracking-tighter mb-8 leading-[1.1]">
             Your skills deserve the <span className="text-brand-600">perfect career.</span>
           </h1>
 
-          <div className="text-xl sm:text-2xl text-text-secondary font-medium leading-relaxed mb-12 animate-fade-up flex flex-col gap-2" style={{ animationDelay: '100ms' }}>
+          <div className="text-xl sm:text-2xl text-text-secondary font-medium leading-relaxed mb-12 flex flex-col gap-2">
             <p>The all-in-one AI career intelligence platform.</p>
             <p>Extract skills, bridge knowledge gaps, and land your dream job seamlessly.</p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up mb-24" style={{ animationDelay: '200ms' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">
             <Link
               to="/signup"
               className="px-8 py-3.5 text-base font-bold text-white rounded-xl bg-brand-600 shadow-lg shadow-brand-500/30 hover:bg-brand-700 transition-all duration-300"

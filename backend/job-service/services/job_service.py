@@ -237,8 +237,8 @@ class JobService:
         missing = [skill for skill in required_skills if skill not in matched]
         score = round((len(matched) / len(required_skills)) * 100)
 
-        have_text = ", ".join(matched[:4]) if matched else "no direct core-match skills yet"
-        missing_text = ", ".join(missing[:4]) if missing else "no major missing skills"
+        have_text = ", ".join([s for i, s in enumerate(matched) if i < 4]) if matched else "no direct core-match skills yet"
+        missing_text = ", ".join([s for i, s in enumerate(missing) if i < 4]) if missing else "no major missing skills"
 
         gap_summary = (
             f"You already have: {have_text}. "

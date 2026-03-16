@@ -120,6 +120,7 @@ function JobsPage() {
 
         <JobsResultsPanel
           hasSearched={hasSearched}
+          jobsLoading={jobsLoading}
           jobsError={jobsError}
           jobs={normalizedJobs}
           compatibilityState={compatibilityState}

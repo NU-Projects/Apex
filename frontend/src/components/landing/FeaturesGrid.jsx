@@ -117,7 +117,7 @@ function FeaturesGrid() {
               key={f.title}
               className="group rounded-2xl border border-border-light bg-white p-5 hover:shadow-lg hover:border-brand-200 transition-all duration-300"
             >
-              <div className="w-10 h-10 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-10 h-10 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-600 mb-4">
                 {f.icon}
               </div>
               <h3 className="text-sm font-semibold text-text-primary mb-1.5">{f.title}</h3>

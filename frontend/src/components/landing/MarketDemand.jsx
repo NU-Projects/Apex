@@ -40,7 +40,7 @@ function MarketDemand() {
               <p className="text-xs font-semibold text-text-secondary">Relative market growth (2024 Q4)</p>
             </div>
             <span className="flex items-center gap-1.5 text-[11px] font-bold text-accent-emerald bg-accent-emerald/10 px-3 py-1.5 rounded-full uppercase tracking-wider">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent-emerald animate-pulse"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-emerald"></span>
               Live Trends
             </span>
           </div>
@@ -59,7 +59,7 @@ function MarketDemand() {
             {demandData.map((d) => (
               <div key={d.skill} className="relative flex flex-col items-center flex-1 group z-10 h-full justify-end">
                 {/* Tooltip on hover */}
-                <div className="absolute top-0 -translate-y-full mb-1 bg-gray-900 text-white text-[10px] font-bold px-2.5 py-1.5 rounded-lg shadow-xl opacity-0 scale-95 origin-bottom group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 whitespace-nowrap pointer-events-none z-20">
+                <div className="absolute top-0 -translate-y-full mb-1 bg-gray-900 text-white text-[10px] font-bold px-2.5 py-1.5 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-20">
                   {d.demand}% Demand
                   {/* Tooltip Arrow */}
                   <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-gray-900 rotate-45"></div>

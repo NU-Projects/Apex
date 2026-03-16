@@ -85,7 +85,11 @@ function GeoMap({ country, locationCounts }) {
 
   const getShortName = (name) => {
     if (!name) return "";
-    const parts = name.split(',').map(s=>s.trim());
+    const lowerName = name.toLowerCase().trim();
+    if (lowerName === 'pakistan' || lowerName === 'united states' || lowerName === 'usa' || lowerName === 'us') {
+      return "OTHERS";
+    }
+    const parts = name.split(',').map(s => s.trim());
     const firstPart = parts[0];
     if (firstPart.length > 12) {
       const words = firstPart.split(' ');
@@ -103,10 +107,9 @@ function GeoMap({ country, locationCounts }) {
     <div className="w-full select-none">
       {/* Header */}
       <div className="flex items-center gap-3 mb-5">
-        <span className="text-3xl">{cfg.flag}</span>
         <div>
           <h4 className="text-lg font-black text-text-primary tracking-tight">
-            {country === 'Pakistan' ? 'Pakistan' : 'United States'} - Job Demand Map
+            Job Demand Map
           </h4>
           <p className="text-xs text-text-muted font-semibold">
             Bubble size = job count · Hover for details
@@ -186,13 +189,13 @@ function GeoMap({ country, locationCounts }) {
                     />
                   )}
 
-                  {/* Pulsing ring for top role */}
+                  {/* Pulsing ring for top role - removed animation */}
                   {i === 0 && !isHovered && (
                     <circle
                       r={r + 6}
                       fill={color}
                       opacity={0.15}
-                      style={{ animation: 'mapPulse 2.5s ease-out infinite', pointerEvents: 'none' }}
+                      style={{ pointerEvents: 'none' }}
                     />
                   )}
 
@@ -260,12 +263,18 @@ function GeoMap({ country, locationCounts }) {
             <div
               key={hoveredLoc}
               className="absolute top-4 left-1/2 z-30 pointer-events-none"
-              style={{ transform: 'translateX(-50%)', animation: 'tooltipIn 0.15s ease-out' }}
+              style={{ transform: 'translateX(-50%)' }}
             >
               <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white px-5 py-3.5 flex items-center gap-4 min-w-[220px]">
                 <div className="w-4 h-4 rounded-full flex-shrink-0 shadow-md" style={{ background: color }} />
                 <div>
-                  <p className="text-[11px] font-black text-text-primary uppercase tracking-widest leading-none mb-1">{loc.location}</p>
+                  <p className="text-[11px] font-black text-text-primary uppercase tracking-widest leading-none mb-1">
+                    {(() => {
+                      const lower = loc.location.toLowerCase().trim();
+                      if (lower === 'pakistan' || lower === 'united states' || lower === 'usa' || lower === 'us') return 'OTHERS';
+                      return loc.location;
+                    })()}
+                  </p>
                   <p className="text-2xl font-black leading-none" style={{ color }}>{loc.count}</p>
                   <p className="text-[10px] font-bold text-text-muted mt-0.5">
                     {total > 0 ? ((loc.count / total) * 100).toFixed(1) : 0}% of total · {country}
@@ -276,31 +285,13 @@ function GeoMap({ country, locationCounts }) {
           );
         })()}
 
-        {/* Legend badge */}
-        <div className="absolute bottom-4 right-4 bg-white/80 backdrop-blur-sm rounded-2xl px-4 py-2 border border-border-light shadow-sm flex items-center gap-3">
-          <div className="flex items-center gap-1">
-            <div className="w-2.5 h-2.5 rounded-full bg-blue-300 opacity-70" />
-            <span className="text-[10px] font-bold text-text-muted uppercase tracking-wider">Few</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <div className="w-4 h-4 rounded-full bg-blue-500" />
-            <span className="text-[10px] font-bold text-text-muted uppercase tracking-wider">Many</span>
-          </div>
-        </div>
+
       </div>
 
 
 
       <style>{`
-        @keyframes mapPulse {
-          0%   { transform: scale(1); opacity: 0.25; }
-          70%  { transform: scale(1.8); opacity: 0; }
-          100% { transform: scale(1.8); opacity: 0; }
-        }
-        @keyframes tooltipIn {
-          from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
-          to   { opacity: 1; transform: translateX(-50%) translateY(0); }
-        }
+        /* Animations removed */
       `}</style>
     </div>
   );

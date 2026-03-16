@@ -34,7 +34,7 @@ function DashboardPage() {
       <Navbar />
 
       <main className="flex-1 w-full max-w-7xl mx-auto p-6 md:p-10">
-        <div className="mb-10 animate-fade-in">
+        <div className="mb-10">
           <h1 className="text-4xl font-black text-text-primary mb-2 tracking-tight">Hello, {name}</h1>
           <p className="text-text-secondary text-lg font-medium">Your career intelligence overview is ready.</p>
         </div>
@@ -42,20 +42,20 @@ function DashboardPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
           {/* Left Column: Role Focus & Quick Stats */}
-          <div className="lg:col-span-4 space-y-8 animate-fade-up" style={{ animationDelay: '100ms' }}>
+          <div className="lg:col-span-4 space-y-8">
             <div className="bg-white rounded-3xl shadow-sm border border-border-light p-8">
               <h2 className="text-xl font-bold text-text-primary mb-2">Profile Focus</h2>
               <p className="text-sm text-text-secondary mb-6">Market trends are currently adjusted for <strong>{userRole}</strong>.</p>
 
-              <div className="p-6 bg-brand-600 rounded-2xl text-white flex items-center justify-between group cursor-pointer overflow-hidden relative shadow-lg shadow-brand-500/20">
+              <div className="p-6 bg-brand-600 rounded-2xl text-white flex items-center justify-between overflow-hidden relative shadow-lg shadow-brand-500/20">
                 <div className="relative z-10">
                   <p className="text-[10px] font-bold uppercase tracking-widest opacity-80 mb-1">Target Path</p>
                   <p className="text-xl font-black">{userRole}</p>
                 </div>
-                <div className="relative z-10 p-2 bg-white/20 rounded-lg group-hover:scale-110 transition-transform">
+                <div className="relative z-10 p-2 bg-white/20 rounded-lg">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
                 </div>
-                <div className="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-colors" />
+                <div className="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-white/10 rounded-full blur-2xl transition-colors" />
               </div>
 
 
@@ -78,7 +78,7 @@ function DashboardPage() {
           </div>
 
           {/* Right Column: Market Heatmap */}
-          <div className="lg:col-span-8 animate-fade-up" style={{ animationDelay: '200ms' }}>
+          <div className="lg:col-span-8">
             <div className="bg-white rounded-3xl shadow-sm border border-border-light p-8">
               <JobHeatmap userRole={userRole} userSkills={skills} />
             </div>

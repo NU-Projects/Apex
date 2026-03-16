@@ -188,9 +188,9 @@ function SignupPage() {
     <AuthCard title={step === 4 ? "Verify Email" : "Create your account"} subtitle={subtitles[step]}>
       {step < 4 && <StepIndicator currentStep={step} totalSteps={3} labels={stepLabels} />}
 
-      <div className="space-y-4 animate-slide-in" key={step}>
+      <div className="space-y-4" key={step}>
         {error && (
-          <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600 animate-fade-in">
+          <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600">
             {error}
           </div>
         )}

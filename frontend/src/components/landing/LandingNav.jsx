@@ -70,7 +70,7 @@ function LandingNav() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-border-light animate-fade-in">
+        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-border-light">
           <div className="px-6 py-4 space-y-3">
             <div className="flex gap-3">
               <Link to="/login" className="flex-1 text-center text-sm font-semibold text-brand-600 border border-brand-200 px-4 py-2.5 rounded-lg hover:bg-brand-50 transition-colors">

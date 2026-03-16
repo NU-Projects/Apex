@@ -36,7 +36,7 @@ function JobsFilterBar({ roles, selectedRole, onRoleChange, onFilterJobs, jobsLo
           disabled={!selectedRole || jobsLoading}
           className="inline-flex h-[50px] min-w-40 items-center justify-center rounded-xl bg-brand-600 px-5 text-sm font-semibold text-white transition-colors hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-brand-200"
         >
-          {jobsLoading ? 'Filtering jobs...' : 'Filter Jobs'}
+          {jobsLoading ? 'Searching jobs...' : 'Find Jobs'}
         </button>
       </div>
     </section>

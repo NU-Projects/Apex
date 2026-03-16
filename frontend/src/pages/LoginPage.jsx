@@ -50,7 +50,7 @@ function LoginPage() {
     <AuthCard title="Welcome back" subtitle="Sign in to your Apex account">
       <form onSubmit={handleLogin} className="space-y-4">
         {error && (
-          <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600 animate-fade-in">
+          <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600">
             {error}
           </div>
         )}

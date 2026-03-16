@@ -41,9 +41,7 @@ function SkillsPage() {
               <h2 className="text-xl font-bold text-text-primary">Inventory</h2>
               <p className="text-sm text-text-muted">Extracted and verified skills from your profile.</p>
             </div>
-            <button className="px-5 py-2.5 bg-brand-600 text-white rounded-xl text-sm font-bold shadow-lg shadow-brand-500/20 hover:bg-brand-700 transition-all">
-              Update Profile
-            </button>
+        
           </div>
           
           <div className="flex flex-wrap gap-3">

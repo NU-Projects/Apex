@@ -2,7 +2,7 @@ import os
 from py_eureka_client import eureka_client
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
+load_dotenv(os.path.join(os.path.dirname(__file__), '../.env'), override=True)
 
 def register_eureka():
     e_url = os.getenv("EUREKA_URL", "http://localhost:5001")

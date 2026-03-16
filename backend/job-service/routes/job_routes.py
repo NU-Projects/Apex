@@ -5,6 +5,6 @@ job_bp = Blueprint('jobs', __name__)
 controller = JobController()
 
 
-@job_bp.route('/extract-missing-skills', methods=['POST'])
-def extract_missing_skills():
-    return controller.extract_missing_skills(request.json)
+@job_bp.route('/compatibility', methods=['POST'])
+def compatibility():
+    return controller.calculate_compatibility(request.json)

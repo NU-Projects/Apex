@@ -218,6 +218,11 @@ class JobService:
             return 0
         return self.repository.get_job_count_by_role(role)
 
+    def get_jobs_by_role(self, role):
+        if not role:
+            return []
+        return self.repository.get_jobs_by_role(role)
+
     def calculate_compatibility(self, user_skills, job_title, job_description):
         normalized_user_skills = self._normalize_skills(user_skills)
         required_skills = self._extract_required_skills(job_title, job_description)

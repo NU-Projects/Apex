@@ -116,3 +116,36 @@ class JobRepository:
         finally:
             if conn:
                 conn.close()
+
+    def get_jobs_by_role(self, role):
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            cur.execute(
+                """
+                SELECT id, title, platform, url, description
+                FROM jobs
+                WHERE role ILIKE %s
+                ORDER BY created_at DESC
+                """,
+                (f"%{role}%",),
+            )
+            rows = cur.fetchall()
+            cur.close()
+            return [
+                {
+                    "id": str(row[0]),
+                    "title": row[1] or "",
+                    "platform": (row[2] or "").lower(),
+                    "apply_url": row[3] or "",
+                    "description": row[4] or "",
+                }
+                for row in rows
+            ]
+        except Exception as exc:
+            print(f"Failed to get jobs for role {role}: {exc}")
+            return []
+        finally:
+            if conn:
+                conn.close()

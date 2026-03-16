@@ -18,6 +18,12 @@ class JobController:
         count = self.job_service.get_job_count_by_role(role)
         return jsonify({"role": role, "count": count}), 200
 
+    def get_jobs_by_role(self, role):
+        if not role:
+            return jsonify({"error": "role is required"}), 400
+        jobs = self.job_service.get_jobs_by_role(role)
+        return jsonify({"jobs": jobs, "count": len(jobs)}), 200
+
     def sync_jobs(self):
         try:
             result = self.sync_service.check_and_sync()

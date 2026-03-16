@@ -14,6 +14,19 @@ def get_job_count():
     role = request.args.get('role')
     return controller.get_job_count(role)
 
+@job_bp.route('/by-role', methods=['POST'])
+def get_jobs_by_role():
+    data = request.json or {}
+    role = (
+        data.get('jobRole')
+        or data.get('job_role')
+        or data.get('job-Role')
+        or data.get('role')
+        or ''
+    )
+    role = str(role).strip()
+    return controller.get_jobs_by_role(role)
+
 @job_bp.route('/insights', methods=['POST'])
 def get_role_insights():
     data = request.json or {}

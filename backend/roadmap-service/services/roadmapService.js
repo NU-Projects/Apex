@@ -7,12 +7,6 @@ const PREFERRED_MAX_STAGES = 4;
 
 const normalizeKey = (value) => String(value || '').trim().toLowerCase();
 
-const toBoolean = (value, fallback = false) => {
-  if (typeof value === 'boolean') return value;
-  if (typeof value === 'string') return value.toLowerCase() === 'true';
-  return fallback;
-};
-
 const extractArrayFromText = (text) => {
   const cleanedText = String(text || '')
     .replace(/```json/gi, '')
@@ -36,25 +30,35 @@ const normalizeRoadmap = (llmArray, currentSkills, missingSkills) => {
   }
 
   const currentSkillSet = new Set((currentSkills || []).map(normalizeKey));
-  const missingSkillSet = new Set((missingSkills || []).map(normalizeKey));
   const missingSkillList = (missingSkills || []).map((skill) => String(skill || '').trim()).filter(Boolean);
 
   const prepared = llmArray
     .map((item) => ({
       stage_name: String(item?.stage_name || 'General').trim(),
       stage_order: Number.isFinite(Number(item?.stage_order)) ? Number(item.stage_order) : 1,
-      skill_name: String(item?.skill_name || '').trim(),
-      is_project: toBoolean(item?.is_project, false)
+      skill_name: String(item?.skill_name || '').trim()
     }))
     .filter((item) => item.skill_name.length > 0 && item.stage_name.length > 0)
+    // Keep roadmap focused on learning gaps only.
+    .filter((item) => !currentSkillSet.has(normalizeKey(item.skill_name)))
     .sort((a, b) => a.stage_order - b.stage_order || a.stage_name.localeCompare(b.stage_name));
 
-  if (prepared.length === 0) {
-    throw new Error('Roadmap response was empty after normalization');
+  const sourceItems = prepared.length > 0 ? prepared : [];
+
+  if (sourceItems.length === 0 && missingSkillList.length === 0) {
+    return [];
   }
 
+  const effectiveSourceItems = sourceItems.length > 0
+    ? sourceItems
+    : [{
+      stage_name: 'Core Skills',
+      stage_order: 1,
+      skill_name: missingSkillList[0]
+    }];
+
   const stageMeta = new Map();
-  for (const item of prepared) {
+  for (const item of effectiveSourceItems) {
     const key = normalizeKey(item.stage_name);
     if (!stageMeta.has(key)) {
       stageMeta.set(key, {
@@ -82,26 +86,18 @@ const normalizeRoadmap = (llmArray, currentSkills, missingSkills) => {
 
   const overflowStage = selectedStages[selectedStages.length - 1]?.[0] || normalizeKey('Core Skills');
 
-  const normalized = prepared
+  const normalized = effectiveSourceItems
     .map((item) => {
       const stageKey = normalizeKey(item.stage_name);
       const assignedStageKey = stageOrderMap.has(stageKey) ? stageKey : overflowStage;
-      const normalizedSkill = normalizeKey(item.skill_name);
-      let status = 'not_started';
-      if (currentSkillSet.has(normalizedSkill)) {
-        status = 'completed';
-      } else if (missingSkillSet.has(normalizedSkill)) {
-        status = 'not_started';
-      }
 
       return {
         stage_name: selectedStages[(stageOrderMap.get(assignedStageKey) || 1) - 1]?.[1]?.originalName || 'Core Skills',
         stage_order: stageOrderMap.get(assignedStageKey) || 1,
         skill_name: item.skill_name,
-        status,
+        status: 'not_started',
         is_unlocked: false,
-        quiz_passed: false,
-        is_project: item.is_project
+        quiz_passed: false
       };
     })
     .sort((a, b) => a.stage_order - b.stage_order || a.skill_name.localeCompare(b.skill_name));
@@ -129,8 +125,7 @@ const normalizeRoadmap = (llmArray, currentSkills, missingSkills) => {
         skill_name: missingSkill,
         status: 'not_started',
         is_unlocked: false,
-        quiz_passed: false,
-        is_project: false
+        quiz_passed: false
       });
       seenSkills.add(key);
     }
@@ -140,33 +135,6 @@ const normalizeRoadmap = (llmArray, currentSkills, missingSkills) => {
 
   for (const item of deduped) {
     item.is_unlocked = item.stage_order === 1;
-    if (item.stage_order === 1) {
-      item.is_project = false;
-    }
-  }
-
-  const laterStageIndexes = deduped
-    .map((item, index) => ({ item, index }))
-    .filter(({ item }) => item.stage_order > 1);
-
-  if (laterStageIndexes.length > 0) {
-    const currentProjectIndexes = laterStageIndexes
-      .filter(({ item }) => item.is_project)
-      .map(({ index }) => index);
-
-    if (currentProjectIndexes.length === 0) {
-      const lastLater = laterStageIndexes[laterStageIndexes.length - 1];
-      deduped[lastLater.index].is_project = true;
-    }
-
-    if (currentProjectIndexes.length > 2) {
-      const keep = new Set(currentProjectIndexes.slice(0, 2));
-      currentProjectIndexes.slice(2).forEach((idx) => {
-        if (!keep.has(idx)) {
-          deduped[idx].is_project = false;
-        }
-      });
-    }
   }
 
   return deduped;
@@ -190,14 +158,12 @@ Rules:
    - stage_name
    - stage_order (starting from 1)
 3. Each stage contains multiple skills.
-4. Include both missing skills AND relevant important skills for the role.
+4. Include only skills that the user still needs to learn.
 5. Mark skills:
-   - If skill is in Current Skills -> status = "completed"
-   - If skill is in Missing Skills -> status = "not_started"
-   - Otherwise -> status = "not_started"
-6. Only first stage should have is_unlocked = true, others false.
-7. quiz_passed = false for all
-8. Add 1-2 project items (is_project = true) in later stages.
+  - Every roadmap skill must be status = "not_started"
+6. Never include skills already present in Current Skills.
+7. Only first stage should have is_unlocked = true, others false.
+8. quiz_passed = false for all
 9. Keep skill names short and standard (e.g., "Node.js", "Docker", "REST API").
 10. Output MUST be a flat JSON array (no nesting).
 11. Minimize the number of stages as much as possible while keeping a clean progression.
@@ -210,10 +176,9 @@ Output format (STRICT):
     "stage_name": "Frontend",
     "stage_order": 1,
     "skill_name": "HTML",
-    "status": "completed",
+    "status": "not_started",
     "is_unlocked": true,
-    "quiz_passed": false,
-    "is_project": false
+    "quiz_passed": false
   }
 ]
 
@@ -267,6 +232,15 @@ const generateAndStoreRoadmap = async (email) => {
     const err = new Error('User role is required to generate roadmap');
     err.statusCode = 400;
     throw err;
+  }
+
+  if (missingSkills.length === 0) {
+    const savedRoadmap = await roadmapRepository.replaceUserRoadmap(email, role, []);
+    return {
+      email,
+      role,
+      roadmap: savedRoadmap
+    };
   }
 
   const roadmap = await callOllamaRoadmap({

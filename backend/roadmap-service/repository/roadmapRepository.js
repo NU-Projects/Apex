@@ -40,14 +40,17 @@ const replaceUserRoadmap = async (email, role, roadmapRows) => {
     skill_name: row.skill_name,
     status: row.status,
     is_unlocked: row.is_unlocked,
-    quiz_passed: row.quiz_passed,
-    is_project: row.is_project
+    quiz_passed: row.quiz_passed
   }));
+
+  if (rowsToInsert.length === 0) {
+    return [];
+  }
 
   const { data, error } = await supabase
     .from('user_roadmap')
     .insert(rowsToInsert)
-    .select('email, role, stage_name, stage_order, skill_name, status, is_unlocked, quiz_passed, is_project');
+    .select('email, role, stage_name, stage_order, skill_name, status, is_unlocked, quiz_passed');
 
   if (error) {
     const err = new Error(`Failed to save roadmap: ${error.message}`);

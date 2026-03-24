@@ -139,6 +139,8 @@ function JobsPage() {
           onRoleChange={setSelectedRole}
           onFilterJobs={handleFilterJobs}
           jobsLoading={jobsLoading}
+          jobCount={jobs.length}
+          hasSearched={hasSearched}
         />
 
         <JobsResultsPanel

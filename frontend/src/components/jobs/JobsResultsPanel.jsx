@@ -2,14 +2,14 @@ import JobResultCard from './JobResultCard'
 
 function JobsIntroState() {
   return (
-    <div className="rounded-2xl border border-dashed border-border-default bg-white p-10 text-center shadow-sm">
+    <div className="rounded-3xl border border-dashed border-border-default bg-white p-10 text-center shadow-sm">
       <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-50 text-brand-600">
         <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5h6M9 9h6M9 13h3m8 6H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 002 2z" />
         </svg>
       </div>
-      <h3 className="mt-4 text-xl font-semibold text-text-primary">Choose Role and Start Discovery</h3>
-      <p className="mx-auto mt-2 max-w-md text-sm text-text-muted">
+      <h3 className="mt-4 text-xl font-bold text-text-primary mb-2">Choose Role and Start Discovery</h3>
+      <p className="mx-auto text-base font-bold text-text-muted">
         Pick a role and click Find Jobs to load matching openings from available platforms.
       </p>
     </div>

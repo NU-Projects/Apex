@@ -52,6 +52,7 @@ export default function RoleSelection({ onRoleSelected }) {
           .then(res => res.json())
           .then(newData => {
             if (newData.user) {
+              // Store the user with is_syncing: true so the skills page shows animation
               localStorage.setItem('user', JSON.stringify(newData.user));
               window.dispatchEvent(new Event('storage'));
             }

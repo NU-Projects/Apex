@@ -7,7 +7,8 @@ CREATE TABLE users (
     skills TEXT[],  
     missing_skills TEXT[],
     role TEXT,        
-    is_verified BOOLEAN DEFAULT FALSE
+    is_verified BOOLEAN DEFAULT FALSE,
+    is_syncing BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE otp_verifications (

@@ -1,7 +1,7 @@
 const pool = require('../config/db');
 
 const getUserProfile = async (email) => {
-  const query = 'SELECT email, full_name, github_username, linkedin_username, role, skills, missing_skills FROM users WHERE email = $1';
+  const query = 'SELECT email, full_name, github_username, linkedin_username, role, skills, missing_skills, is_syncing FROM users WHERE email = $1';
   const { rows } = await pool.query(query, [email]);
   return rows[0] || null;
 };
@@ -57,4 +57,18 @@ const updateUserMissingSkills = async (email, missing_skills) => {
   return rows[0] || null;
 }
 
-module.exports = { getUserProfile, updateUserProfile, updateUserSkills, updateUserMissingSkills };
+const setUserSyncingStatus = async (email, isSyncing) => {
+  try {
+    const query = `UPDATE users SET is_syncing = $2 WHERE email = $1 RETURNING is_syncing`;
+    const { rows } = await pool.query(query, [email, isSyncing]);
+    return rows[0] || null;
+  } catch (e) {
+    if (e.code === '42703') {
+       // Column doesn't exist, skip syncing status update
+       return null;
+    }
+    throw e;
+  }
+};
+
+module.exports = { getUserProfile, updateUserProfile, updateUserSkills, updateUserMissingSkills, setUserSyncingStatus };

@@ -15,6 +15,21 @@ const getSkillsServiceUrl = () => {
   return process.env.SKILLS_EXTRACTION_SERVICE_URL || 'http://localhost:5003';
 };
 
+const getProfile = async (req, res) => {
+  try {
+    const email = req.query.email || req.body.email;
+    if (!email) return res.status(400).json({ error: 'Email is required' });
+
+    const user = await userRepository.getUserProfile(email);
+    if (!user) return res.status(404).json({ error: 'User not found' });
+
+    return res.status(200).json({ user });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ error: 'Server error' });
+  }
+};
+
 const updateProfile = async (req, res) => {
   try {
     const { email, full_name, password, role, github_username, linkedin_username } = req.body;
@@ -49,10 +64,31 @@ const updateProfile = async (req, res) => {
       updates.password = await bcrypt.hash(password, salt);
     }
 
-    // Perform database update first
-    const updatedUserBase = await userRepository.updateUserProfile(email, updates);
+    // Perform database update first (Immediate)
+    await userRepository.updateUserProfile(email, updates);
 
-    // Now definitely trigger skill extraction if social handles changed
+    // Sync new password to Supabase if it was changed
+    if (password) {
+      try {
+        const supabase = require('../config/supabase');
+        const { data: listData } = await supabase.auth.admin.listUsers();
+        const sbUser = listData?.users?.find(u => u.email === email);
+        if (sbUser) {
+          const { error: updateError } = await supabase.auth.admin.updateUserById(sbUser.id, {
+            password,
+          });
+          if (updateError) {
+            console.error('[Supabase Sync Failed]:', updateError.message);
+          } else {
+            console.log('[Supabase Sync] Password updated for', email);
+          }
+        }
+      } catch (sbErr) {
+        console.error('[Supabase Error]:', sbErr.message);
+      }
+    }
+
+    // Prepare for background processing
     const finalGithub = updates.github_username !== undefined ? updates.github_username : currentUser.github_username;
     const finalLinkedin = updates.linkedin_username !== undefined ? updates.linkedin_username : currentUser.linkedin_username;
     const finalRole = updates.role !== undefined ? updates.role : currentUser.role;
@@ -61,46 +97,71 @@ const updateProfile = async (req, res) => {
     const linkedinChanged = updates.linkedin_username !== undefined && updates.linkedin_username !== currentUser.linkedin_username;
     const handlesChanged = githubChanged || linkedinChanged;
 
-    // We only trigger external skill scraping if the social handles actually changed
-    if (handlesChanged && (finalGithub || finalLinkedin)) {
-      const skillsUrl = getSkillsServiceUrl();
-      console.log(`Triggering skill extraction for ${email} at ${skillsUrl}`);
-      
-      try {
-        // Significantly increased timeout to 90 seconds (extraction and scraping can take time)
-        const skillsRes = await axios.post(`${skillsUrl}/all-skills`, {
-          github_username: finalGithub,
-          linkedin_username: finalLinkedin
-        }, { timeout: 90000 });
-        
-        const newSkills = skillsRes.data;
-        if (Array.isArray(newSkills)) {
-          // Merge with existing skills (avoid duplicates)
-          const existingSkills = currentUser.skills || [];
-          const mergedSkills = [...new Set([...existingSkills, ...newSkills])];
+    const roleChanged = updates.role !== undefined && updates.role !== currentUser.role;
+
+    // Trigger Heavy Processing in the Background
+    if (handlesChanged || roleChanged) {
+      (async () => {
+        try {
+          const skillsUrl = getSkillsServiceUrl();
           
-          await userRepository.updateUserSkills(email, mergedSkills);
+          // Start Syncing
+          await userRepository.setUserSyncingStatus(email, true);
           
-          if (finalRole) {
-            const msRes = await axios.post(`${skillsUrl}/missing-skills`, {
-              role: finalRole,
-              currentSkills: mergedSkills
+          if (handlesChanged && (finalGithub || finalLinkedin)) {
+            console.log(`[Background] Triggering skill extraction for ${email}...`);
+            const skillsRes = await axios.post(`${skillsUrl}/all-skills`, {
+              github_username: finalGithub,
+              linkedin_username: finalLinkedin
             }, { timeout: 90000 });
             
-            const missingSkills = msRes.data;
-            if (Array.isArray(missingSkills)) {
-              await userRepository.updateUserMissingSkills(email, missingSkills);
+            const newSkills = skillsRes.data;
+            if (Array.isArray(newSkills)) {
+              // Merge with existing skills (avoid duplicates)
+              const existingSkills = currentUser.skills || [];
+              const mergedSkills = [...new Set([...existingSkills, ...newSkills])];
+
+              await userRepository.updateUserSkills(email, mergedSkills);
+              
+              const currentRole = finalRole || currentUser.role;
+              if (currentRole) {
+                const msRes = await axios.post(`${skillsUrl}/missing-skills`, {
+                  role: currentRole,
+                  currentSkills: mergedSkills
+                }, { timeout: 90000 });
+                
+                if (Array.isArray(msRes.data)) {
+                  await userRepository.updateUserMissingSkills(email, msRes.data);
+                }
+              }
+            }
+          } else if (roleChanged && finalRole) {
+            console.log(`[Background] Role changed for ${email}, recomputing missing skills...`);
+            const msRes = await axios.post(`${skillsUrl}/missing-skills`, {
+              role: finalRole,
+              currentSkills: currentUser.skills || []
+            }, { timeout: 90000 });
+            
+            if (Array.isArray(msRes.data)) {
+              await userRepository.updateUserMissingSkills(email, msRes.data);
             }
           }
+          console.log(`[Background] Sync completed for ${email}`);
+        } catch (bgErr) {
+          console.error('[Background Sync Failed]:', bgErr.message);
+        } finally {
+          // Finish Syncing
+          await userRepository.setUserSyncingStatus(email, false);
         }
-      } catch (e) {
-        console.error('Skill automated fetch failed during profile update:', e.message);
-      }
+      })();
     }
 
-    // Fetch the final state of the user for response
+    // Fetch the final state of the user for response (immediate)
     const finalUser = await userRepository.getUserProfile(email);
-    return res.status(200).json({ message: 'Profile updated successfully', user: finalUser });
+    return res.status(200).json({ 
+      message: 'Profile updated. Skills/Insights will update in the background.', 
+      user: finalUser 
+    });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ error: 'Server error' });
@@ -117,21 +178,32 @@ const recomputeMissingSkills = async (req, res) => {
       return res.status(400).json({ error: 'User must have a mapped role and existing skills to analyze gaps.' });
     }
 
+    // Set syncing status so the frontend can show a loading animation
+    await userRepository.setUserSyncingStatus(email, true);
+
+    // Return immediately so the frontend can start polling
+    res.status(200).json({ message: 'Missing skills computation started.', user: { ...currentUser, is_syncing: true } });
+
+    // Continue processing in the background (after response is sent)
     const skillsUrl = getSkillsServiceUrl();
-    console.log(`Triggering direct missing skills computation for ${email}`);
+    console.log(`[Background] Triggering missing skills computation for ${email}...`);
     
-    const msRes = await axios.post(`${skillsUrl}/missing-skills`, {
-      role: currentUser.role,
-      currentSkills: currentUser.skills
-    }, { timeout: 90000 });
-    
-    const missingSkills = msRes.data;
-    if (Array.isArray(missingSkills)) {
-      await userRepository.updateUserMissingSkills(email, missingSkills);
+    try {
+      const msRes = await axios.post(`${skillsUrl}/missing-skills`, {
+        role: currentUser.role,
+        currentSkills: currentUser.skills
+      }, { timeout: 90000 });
+      
+      const missingSkills = msRes.data;
+      if (Array.isArray(missingSkills)) {
+        await userRepository.updateUserMissingSkills(email, missingSkills);
+      }
+      console.log(`[Background] Missing skills computation completed for ${email}`);
+    } catch (bgErr) {
+      console.error('[Background] Missing skills computation failed:', bgErr.message);
+    } finally {
+      await userRepository.setUserSyncingStatus(email, false);
     }
-    
-    const finalUser = await userRepository.getUserProfile(email);
-    return res.status(200).json({ message: 'Missing skills computed successfully', user: finalUser });
 
   } catch (err) {
     console.error('Explicit missing skill recalculation failed:', err.message);
@@ -192,4 +264,4 @@ const triggerSkillExtraction = async (req, res) => {
   }
 };
 
-module.exports = { updateProfile, triggerSkillExtraction, recomputeMissingSkills };
+module.exports = { getProfile, updateProfile, triggerSkillExtraction, recomputeMissingSkills };

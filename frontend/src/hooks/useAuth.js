@@ -36,5 +36,26 @@ export function useAuth() {
         setUser(null)
     }, [])
 
-    return { user, loading, logout }
+    const refresh = useCallback(async () => {
+        try {
+            const token = localStorage.getItem('accessToken')
+            if (!token || !user?.email) return
+
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+            const res = await fetch(`${API_URL}/user/profile?email=${user.email}`, {
+                headers: { 'Authorization': `Bearer ${token}` }
+            })
+            const data = await res.json()
+            if (res.ok && data.user) {
+                localStorage.setItem('user', JSON.stringify(data.user))
+                window.dispatchEvent(new Event('storage'))
+                setUser(data.user)
+                return data.user
+            }
+        } catch (err) {
+            console.error('Auth refresh failed:', err)
+        }
+    }, [user?.email])
+
+    return { user, loading, logout, refresh }
 }

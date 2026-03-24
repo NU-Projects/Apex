@@ -73,7 +73,6 @@ app.use('/eureka', async (req, res) => {
       method: req.method,
       url: `${SERVICES.eureka}/eureka${req.url}`,
       data: req.body,
-      params: req.query,
       headers: { 'Content-Type': 'application/json' }
     });
     res.status(response.status).json(response.data);
@@ -89,7 +88,6 @@ app.use('/skills', async (req, res) => {
       method: req.method,
       url: `${SERVICES.skills}${req.url}`,
       data: req.body,
-      params: req.query,
       headers: { 'Content-Type': 'application/json' }
     });
     res.status(response.status).json(response.data);
@@ -105,7 +103,6 @@ app.use('/jobs', async (req, res) => {
       method: req.method,
       url: `${SERVICES.jobs}/jobs${req.url}`,
       data: req.body,
-      params: req.query,
       headers: { 'Content-Type': 'application/json' }
     });
     res.status(response.status).json(response.data);
@@ -121,7 +118,6 @@ app.use('/user', async (req, res) => {
       method: req.method,
       url: `${SERVICES.user}/user${req.url}`,
       data: req.body,
-      params: req.query,
       headers: { 'Content-Type': 'application/json' }
     });
     res.status(response.status).json(response.data);

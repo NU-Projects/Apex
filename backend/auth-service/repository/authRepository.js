@@ -17,7 +17,7 @@ const findUserByEmail = async (email) => {
 const findUserForLogin = async (email) => {
 
   const query = `
-    SELECT email, full_name, password, github_username, linkedin_username, skills, is_verified
+    SELECT email, full_name, password, github_username, linkedin_username, skills, missing_skills, is_verified, role
     FROM users
     WHERE email = $1
   `;
@@ -105,7 +105,7 @@ const markUserVerified = async (email) => {
     UPDATE users
     SET is_verified = true
     WHERE email = $1
-    RETURNING email, full_name, github_username, linkedin_username, is_verified, skills
+    RETURNING email, full_name, github_username, linkedin_username, is_verified, skills, missing_skills, role
   `;
 
   const { rows } = await pool.query(query, [email]);

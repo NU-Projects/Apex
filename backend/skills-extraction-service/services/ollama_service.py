@@ -3,9 +3,14 @@ import requests
 
 class OllamaService:
     def __init__(self):
-        base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/")
-        self.ollama_url = f"{base_url}/api/generate"
+        base_url = os.getenv("OLLAMA_BASE_URL")
+        if not base_url:
+            print("Error: OLLAMA_BASE_URL is missing. Please define your cloud URL in .env")
+            base_url = "http://localhost:11434" # Fallback so it doesn't crash instantly
+            
+        self.ollama_url = f"{base_url.rstrip('/')}/api/generate"
         self.model = os.getenv("OLLAMA_MODEL")
+        self.api_key = os.getenv("OLLAMA_API_KEY")
 
     def get_missing_skills(self, role, current_skills):
         skills_str = ", ".join(current_skills) if current_skills else "None"
@@ -24,7 +29,11 @@ class OllamaService:
         
         try:
             # Increased internal timeout to 60s for cloud-based Ollama models
-            response = requests.post(self.ollama_url, json={
+            headers = {"Content-Type": "application/json"}
+            if self.api_key:
+                headers["Authorization"] = f"Bearer {self.api_key}"
+
+            response = requests.post(self.ollama_url, headers=headers, json={
                 "model": self.model,
                 "prompt": prompt,
                 "stream": False

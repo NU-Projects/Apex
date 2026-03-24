@@ -135,6 +135,8 @@ const verifyOtp = async ({ email, otp }) => {
       linkedInUserName: verifiedUser.linkedin_username,
       isVerified: verifiedUser.is_verified,
       skills: verifiedUser.skills || [],
+      missing_skills: verifiedUser.missing_skills || [],
+      role: verifiedUser.role,
     } : null,
   };
 };
@@ -193,6 +195,8 @@ const login = async ({ email, password }) => {
       linkedInUserName: user.linkedin_username,
       isVerified: user.is_verified,
       skills: user.skills || [],
+      missing_skills: user.missing_skills || [],
+      role: user.role,
     },
   };
 };

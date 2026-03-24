@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import JobHeatmap from '../components/JobHeatmap'
+import RoleSelection from '../components/RoleSelection'
 import { useAuth } from '../hooks/useAuth'
 import { useSkills } from '../hooks/useSkills'
 
@@ -9,6 +10,7 @@ function DashboardPage() {
   const navigate = useNavigate()
   const { user, loading: authLoading } = useAuth()
   const { skills, loading: skillsLoading } = useSkills()
+  const [isEditingRole, setIsEditingRole] = useState(false)
 
   useEffect(() => {
     if (!authLoading && !user) {
@@ -26,8 +28,12 @@ function DashboardPage() {
 
   if (!user) return null
 
-  const name = user.fullName || user.user_metadata?.username || user.email
-  const userRole = user.role || 'Software Engineer' // Default if not set
+  if (isEditingRole) {
+    return <RoleSelection onRoleSelected={() => setIsEditingRole(false)} />
+  }
+
+  const name = user.full_name || user.fullName || user.user_metadata?.username || user.email
+  const userRole = user.role
 
   return (
     <div className="min-h-screen flex flex-col bg-surface font-sans">
@@ -52,10 +58,14 @@ function DashboardPage() {
                   <p className="text-[10px] font-bold uppercase tracking-widest opacity-80 mb-1">Target Path</p>
                   <p className="text-xl font-black">{userRole}</p>
                 </div>
-                <div className="relative z-10 p-2 bg-white/20 rounded-lg">
+                <button 
+                  onClick={() => setIsEditingRole(true)}
+                  className="relative z-10 p-2 bg-white/20 rounded-lg hover:bg-white/30 transition-colors cursor-pointer outline-none"
+                  title="Edit Target Path"
+                >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
-                </div>
-                <div className="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-white/10 rounded-full blur-2xl transition-colors" />
+                </button>
+                <div className="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-white/10 rounded-full blur-2xl pointer-events-none transition-colors" />
               </div>
 
 
@@ -70,7 +80,7 @@ function DashboardPage() {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-text-primary uppercase tracking-tighter">Market Growth</p>
-                    <p className="text-sm text-text-secondary">High demand for Software Engineer roles.</p>
+                    <p className="text-sm text-text-secondary">High demand for {userRole} roles.</p>
                   </div>
                 </div>
               </div>

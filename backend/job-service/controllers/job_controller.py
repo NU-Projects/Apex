@@ -71,3 +71,27 @@ class JobController:
             return jsonify({"error": "country parameter is required"}), 400
         counts = self.job_service.get_job_counts_by_location(country)
         return jsonify(counts), 200
+
+    def normalize_locations(self, data):
+        import requests
+        country = data.get("country")
+        locations = data.get("locations", None)
+        if not country:
+            return jsonify({"error": "country string is required"}), 400
+        
+        try:
+            mapping = self.job_service.normalize_locations(country, locations)
+            return jsonify(mapping), 200
+        except requests.exceptions.ConnectionError:
+            return jsonify({
+                "error": "Ollama connection refused. Please make sure Ollama is running on your computer at localhost:11434"
+            }), 503
+        except Exception as e:
+            return jsonify({"error": str(e)}), 500
+
+    def normalize_all_jobs(self):
+        try:
+            result = self.job_service.normalize_all_geographies()
+            return jsonify(result), 200
+        except Exception as exc:
+            return jsonify({"error": str(exc)}), 500

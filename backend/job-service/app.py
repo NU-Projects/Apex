@@ -30,7 +30,7 @@ CORS(app, resources={r"/*": {
 app.register_blueprint(job_bp, url_prefix='/jobs')
 
 lookupIntervalHours = 24
-timeExpirationDays = 7
+timeExpirationDays = 10000000000
 
 def continuous_sync_runner():
     """Background runner to continuously check and execute sync after every interval."""

@@ -172,3 +172,102 @@ class JobRepository:
         finally:
             if conn:
                 conn.close()
+
+    def get_unique_raw_locations(self, country):
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            cur.execute(
+                """
+                SELECT DISTINCT location FROM jobs
+                WHERE country ILIKE %s AND location IS NOT NULL AND normalized_location IS NULL
+                """,
+                (f"%{country}%",)
+            )
+            rows = cur.fetchall()
+            cur.close()
+            return [str(row[0]).strip() for row in rows if row[0]]
+        except Exception as exc:
+            print(f"Failed to get raw locations for {country}: {exc}")
+            return []
+        finally:
+            if conn:
+                conn.close()
+
+    def update_normalized_locations(self, country, mapping):
+        if not mapping:
+            return True
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            for raw_loc, norm_loc in mapping.items():
+                cur.execute(
+                    """
+                    UPDATE jobs SET normalized_location = %s
+                    WHERE country ILIKE %s AND location = %s
+                    """,
+                    (norm_loc, f"%{country}%", raw_loc)
+                )
+            conn.commit()
+            cur.close()
+            return True
+        except Exception as exc:
+            print(f"Failed to update normalized locations: {exc}")
+            if conn:
+                conn.rollback()
+            return False
+        finally:
+            if conn:
+                conn.close()
+
+    def get_unnormalized_geographies(self):
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            # Fetch unique pairs of country/location that need normalization
+            cur.execute(
+                """
+                SELECT DISTINCT country, location 
+                FROM jobs 
+                WHERE normalized_location IS NULL 
+                   OR country NOT IN ('Pakistan', 'United States')
+                """
+            )
+            rows = cur.fetchall()
+            cur.close()
+            return [{"raw_country": r[0], "raw_location": r[1]} for r in rows]
+        except Exception as exc:
+            print(f"Failed to fetch unnormalized geographies: {exc}")
+            return []
+        finally:
+            if conn:
+                conn.close()
+
+    def update_job_geography(self, raw_country, raw_location, norm_country, norm_city):
+        conn = None
+        try:
+            conn = self.get_db_connection()
+            cur = conn.cursor()
+            cur.execute(
+                """
+                UPDATE jobs 
+                SET country = %s, normalized_location = %s
+                WHERE (country = %s OR (country IS NULL AND %s IS NULL))
+                  AND (location = %s OR (location IS NULL AND %s IS NULL))
+                """,
+                (norm_country, norm_city, raw_country, raw_country, raw_location, raw_location)
+            )
+            conn.commit()
+            cur.close()
+            return True
+        except Exception as exc:
+            print(f"Failed to update geography for {raw_location} in {raw_country}: {exc}")
+            if conn:
+                conn.rollback()
+            return False
+        finally:
+            if conn:
+                conn.close()

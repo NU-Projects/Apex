@@ -16,11 +16,14 @@ start "API Gateway" cmd /k "cd /d ""%BACKEND_DIR%\api-gateway"" && npm i && npm 
 echo Starting Auth Service...
 start "Auth Service" cmd /k "cd /d ""%BACKEND_DIR%\auth-service"" && npm i && npm run dev"
 
+echo Starting User Service...
+start "User Service" cmd /k "cd /d ""%BACKEND_DIR%\user-service"" && npm i && npm run dev"
+
 echo Starting Job Service...
-start "Job Service" cmd /k "cd /d ""%BACKEND_DIR%\job-service"" && (if exist venv\Scripts\activate.bat call venv\Scripts\activate.bat) && (if exist .venv\Scripts\activate.bat call .venv\Scripts\activate.bat) && pip install -r requirements.txt && python app.py"
+start "Job Service" cmd /k "cd /d ""%BACKEND_DIR%\job-service"" && (if exist venv\Scripts\activate.bat call venv\Scripts\activate.bat) && (if exist .venv\Scripts\activate.bat call .venv\Scripts\activate.bat) && pip install -r requirements.txt --user && python app.py"
 
 echo Starting Skills Extraction Service...
-start "Skills Extraction Service" cmd /k "cd /d ""%BACKEND_DIR%\skills-extraction-service"" && (if exist venv\Scripts\activate.bat call venv\Scripts\activate.bat) && (if exist .venv\Scripts\activate.bat call .venv\Scripts\activate.bat) && pip install -r requirements.txt && python app.py"
+start "Skills Extraction Service" cmd /k "cd /d ""%BACKEND_DIR%\skills-extraction-service"" && (if exist venv\Scripts\activate.bat call venv\Scripts\activate.bat) && (if exist .venv\Scripts\activate.bat call .venv\Scripts\activate.bat) && pip install -r requirements.txt --user && python app.py"
 
 echo All services are starting up!
 

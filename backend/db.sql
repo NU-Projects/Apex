@@ -5,6 +5,7 @@ CREATE TABLE users (
     github_username VARCHAR(100),
     linkedin_username VARCHAR(100),
     skills TEXT[],  
+    missing_skills TEXT[],
     role TEXT,        
     is_verified BOOLEAN DEFAULT FALSE
 );

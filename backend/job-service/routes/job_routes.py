@@ -46,3 +46,11 @@ def sync_jobs():
 def get_location_counts():
     country = request.args.get('country')
     return controller.get_location_counts(country)
+
+@job_bp.route('/normalize-locations', methods=['POST'])
+def normalize_locations():
+    return controller.normalize_locations(request.json)
+
+@job_bp.route('/normalize-all-geographies', methods=['POST', 'GET'])
+def normalize_all_geographies():
+    return controller.normalize_all_jobs()

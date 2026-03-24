@@ -19,3 +19,8 @@ def all_skills():
 @skill_bp.route('/save-skills', methods=['POST'])
 def save_skills():
     return controller.add_skills_to_db(request.json)
+
+@skill_bp.route('/missing-skills', methods=['POST'])
+def missing_skills():
+    return controller.get_missing_skills(request.json)
+

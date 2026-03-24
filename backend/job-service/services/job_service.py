@@ -15,19 +15,7 @@ class JobService:
         self.ollama_model = os.getenv("OLLAMA_MODEL", "").strip()
         self.ollama_base_url = os.getenv("OLLAMA_BASE_URL", "").strip()
 
-    def _resolve_ollama_url(self):
-        if self.ollama_base_url:
-            return f"{self.ollama_base_url.rstrip('/')}/api/chat"
-        if self.ollama_api_key:
-            return "https://ollama.com/api/chat"
-        return "http://localhost:11434/api/chat"
 
-    def _resolve_openai_compatible_url(self):
-        if self.ollama_base_url:
-            return f"{self.ollama_base_url.rstrip('/')}/v1/chat/completions"
-        if self.ollama_api_key:
-            return "https://ollama.com/v1/chat/completions"
-        return "http://localhost:11434/v1/chat/completions"
 
     def _extract_json_array(self, text):
         if not text:
@@ -58,8 +46,11 @@ class JobService:
         if not self.ollama_model:
             raise ValueError("OLLAMA_MODEL is missing in .env")
 
-        chat_url = self._resolve_ollama_url()
-        openai_url = self._resolve_openai_compatible_url()
+        # Convert messages array into a single prompt string for the /api/generate endpoint
+        prompt_text = "\n\n".join([f"[{msg.get('role', 'user').upper()}]: {msg.get('content', '')}" for msg in messages])
+        
+        base_url = self.ollama_base_url.rstrip('/') if self.ollama_base_url else "http://localhost:11434"
+        chat_url = f"{base_url}/api/generate"
 
         headers = {"Content-Type": "application/json"}
         if self.ollama_api_key:
@@ -67,38 +58,19 @@ class JobService:
 
         payload = {
             "model": self.ollama_model,
-            "messages": messages,
+            "prompt": prompt_text,
             "stream": False,
         }
-
-        content = ""
-        chat_error = None
 
         try:
             response = requests.post(chat_url, headers=headers, json=payload, timeout=timeout)
             response.raise_for_status()
             data = response.json()
-            content = data.get("message", {}).get("content") or data.get("response") or ""
-        except Exception as exc:
-            chat_error = exc
-
-        if not content:
-            response = requests.post(
-                openai_url,
-                headers=headers,
-                json={"model": self.ollama_model, "messages": messages},
-                timeout=timeout,
-            )
-            response.raise_for_status()
-            data = response.json()
-            choices = data.get("choices", [])
-            if choices:
-                content = choices[0].get("message", {}).get("content", "")
-
-        if not content and chat_error:
-            raise chat_error
-
-        return content.strip()
+            return data.get("response", "").strip()
+        except requests.exceptions.RequestException as e:
+            if hasattr(e, "response") and getattr(e, "response") is not None:
+                raise Exception(f"Ollama API Error ({e.response.status_code}): {e.response.text}")
+            raise Exception(f"Failed to connect to Ollama at {chat_url}. Error: {str(e)}")
 
     def _normalize_skills(self, skills):
         seen = set()
@@ -380,3 +352,116 @@ class JobService:
         
         # Now returns pre-normalized (or COALESCED) locations from the DB
         return self.repository.get_job_counts_by_location(country)
+
+    def normalize_locations(self, country, locations=None):
+        if not country:
+            return {}
+
+        # If locations not provided, fetch all unique unnormalized ones from DB for this country
+        if not locations:
+            locations = self.repository.get_unique_raw_locations(country)
+
+        if not locations:
+            return {}
+
+        # Group in batches to not break prompt
+        batch_size = 50
+        mapping = {}
+
+        for i in range(0, len(locations), batch_size):
+            batch = locations[i:i+batch_size]
+            prompt = (
+                f"Normalize the following job location strings into their primary major city in {country}. "
+                f"Group sub-areas and variations into their main city name (e.g., 'Johar Town', 'Johar Town, Punjab', 'Lahore, Punjab' all map to 'Lahore'). "
+                f"If it's a generic country like '{country}' or 'Remote', map it to '{country}'. "
+                f"Return ONLY a strictly valid JSON object mapping every exact raw location string to its normalized city name."
+                f"\n\nLocations:\n{json.dumps(batch)}"
+            )
+
+            content = self._call_ollama(
+                messages=[
+                    {"role": "system", "content": "You are a data cleaner. Respond ONLY with a valid JSON object. No explanation."},
+                    {"role": "user", "content": prompt}
+                ],
+                timeout=90
+            )
+            batch_mapping = self._extract_json_object(content)
+            if batch_mapping:
+                mapping.update(batch_mapping)
+
+        # Ensure all original locations exist natively if missed
+        for loc in locations:
+            if loc not in mapping:
+                mapping[loc] = str(loc).strip().title()
+
+        # Save back to database
+        self.repository.update_normalized_locations(country, mapping)
+
+        return mapping
+
+    def normalize_all_geographies(self):
+        # 1. Fetch unnormalized pairs from DB
+        items = self.repository.get_unnormalized_geographies()
+        if not items:
+            return {"message": "All items already normalized.", "count": 0}
+
+        # 2. Prepare prompt for Ollama to categorize them into Pakistan or United States + City
+        # Process in batches to avoid context window issues
+        batch_size = 40
+        processed_count = 0
+
+        for i in range(0, len(items), batch_size):
+            batch = items[i:i+batch_size]
+            prompt = (
+                "You are an expert geography normalizer. You will be given a list of JSON objects with 'raw_country' and 'raw_location'. "
+                "You must normalize BOTH into a standard format. "
+                "Crucially: 'normalized_country' must be EXCLUSIVELY either 'Pakistan' or 'United States'. "
+                "State abbreviations like 'IL', 'WA', 'MD' or names like 'New York City Metropolitan Area' or 'GA' should map to 'United States'. "
+                "Locations like 'Lahore', 'Islamabad', 'Johar Town', 'Multan' should map to 'Pakistan'. "
+                "The 'normalized_city' should be the primary city name (e.g. 'Johar Town' -> 'Lahore', 'Brooklyn' -> 'New York'). "
+                "Map 'Remote' or generic area strings to the Country name itself if no specific city is known."
+                "\n\nRespond with ONLY a valid JSON array of objects with exactly this structure: "
+                '[{"raw_country": "...", "raw_location": "...", "normalized_country": "...", "normalized_city": "..."}]'
+                f"\n\nItems to normalize:\n{json.dumps(batch)}"
+            )
+
+            try:
+                content = self._call_ollama(
+                    messages=[
+                        {"role": "system", "content": "You are a data cleaner. Respond ONLY with a valid JSON array. No explanation."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    timeout=120
+                )
+                
+                # Use _extract_json_array helper
+                mappings = []
+                try:
+                    # _extract_json_array expects text and handles markdown
+                    parsed = json.loads(content)
+                    if isinstance(parsed, list):
+                        mappings = parsed
+                except:
+                    # fallback to regex extract if direct json fails
+                    match = re.search(r"\[[\s\S]*\]", content)
+                    if match:
+                        try:
+                            mappings = json.loads(match.group(0))
+                        except:
+                            pass
+
+                # 3. Update DB for each mapping
+                for m in mappings:
+                    raw_c = m.get("raw_country")
+                    raw_l = m.get("raw_location")
+                    norm_c = m.get("normalized_country")
+                    norm_city = m.get("normalized_city")
+                    
+                    if norm_c and norm_city:
+                        success = self.repository.update_job_geography(raw_c, raw_l, norm_c, norm_city)
+                        if success:
+                            processed_count += 1
+            except Exception as e:
+                print(f"Error in batch normalization: {e}")
+
+        return {"message": "Normalization complete", "processed_count": processed_count}

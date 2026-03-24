@@ -41,7 +41,8 @@ const SERVICES = {
   eureka: process.env.EUREKA_SERVER_URL || 'http://localhost:5001',
   skills: process.env.SKILLS_EXTRACTION_SERVICE_URL || 'http://localhost:5003',
   jobs: process.env.JOB_SERVICE_URL || 'http://localhost:5004',
-  user: process.env.USER_SERVICE_URL || 'http://localhost:5005'
+  user: process.env.USER_SERVICE_URL || 'http://localhost:5005',
+  roadmap: process.env.ROADMAP_SERVICE_URL || 'http://localhost:5006'
 };
 
 app.get('/', (req, res) => {
@@ -119,6 +120,22 @@ app.use('/user', async (req, res) => {
     const response = await axios({
       method: req.method,
       url: `${SERVICES.user}/user${req.url}`,
+      data: req.body,
+      params: req.query,
+      headers: { 'Content-Type': 'application/json' }
+    });
+    res.status(response.status).json(response.data);
+  } catch (error) {
+    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+  }
+});
+
+// Route: /roadmap* -> roadmap-service
+app.use('/roadmap', async (req, res) => {
+  try {
+    const response = await axios({
+      method: req.method,
+      url: `${SERVICES.roadmap}/roadmap${req.url}`,
       data: req.body,
       params: req.query,
       headers: { 'Content-Type': 'application/json' }

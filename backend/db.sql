@@ -32,3 +32,26 @@ CREATE TABLE jobs (
   country TEXT,
   created_at TIMESTAMPTZ DEFAULT now()
 );
+
+CREATE TABLE user_roadmap (
+    id SERIAL PRIMARY KEY,
+
+    email VARCHAR(255) NOT NULL,
+    role VARCHAR(100) NOT NULL,
+
+    stage_name VARCHAR(100) NOT NULL,
+    stage_order INT NOT NULL,
+
+    skill_name VARCHAR(150) NOT NULL,
+
+    status VARCHAR(20) DEFAULT 'not_started'
+        CHECK (status IN ('not_started', 'in_progress', 'completed')),
+
+    is_unlocked BOOLEAN DEFAULT FALSE,
+    quiz_passed BOOLEAN DEFAULT FALSE,
+
+    is_project BOOLEAN DEFAULT FALSE,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

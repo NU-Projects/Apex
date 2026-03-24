@@ -54,6 +54,6 @@ app.use('/auth', authRoutes);
 
 app.listen(PORT, async () => {
   console.log(`Auth Service running on port ${PORT}`);
-  startEureka();
+  // startEureka();
   // await connectProducer();
 });

@@ -71,16 +71,9 @@ function LoginPage() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          showReset
+          onReset={() => navigate('/forgot-password')}
         />
-
-        <div className="flex justify-end">
-          <Link
-            to="/forgot-password"
-            className="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors"
-          >
-            Forgot password?
-          </Link>
-        </div>
 
         <Button type="submit" loading={loading}>
           Sign in

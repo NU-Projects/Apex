@@ -6,13 +6,16 @@ const { eurekaClient } = require('../eureka-client');
 
 const getSkillsServiceUrl = () => {
   if (eurekaClient) {
-    const instances = eurekaClient.getInstancesByAppId('SKILLS-EXTRACTION-SERVICE');
+    const instances = eurekaClient.getInstancesByAppId('SKILLS-EXTRACTION-SERVICE') || 
+                      eurekaClient.getInstancesByAppId('skills-extraction-service');
     if (instances && instances.length > 0) {
       const instance = instances[0];
-      return `http://${instance.hostName}:${instance.port.$}`;
+      return `http://${instance.hostName || instance.ipAddr}:${instance.port.$}`;
     }
   }
-  return process.env.SKILLS_EXTRACTION_SERVICE_URL || 'http://localhost:5003';
+  const fallback = process.env.SKILLS_EXTRACTION_SERVICE_URL || 'http://localhost:5003';
+  console.log(`Eureka not yet synced for SKILLS-EXTRACTION-SERVICE. Falling back to ${fallback}`);
+  return fallback;
 };
 
 const updateProfile = async (req, res) => {
@@ -59,9 +62,10 @@ const updateProfile = async (req, res) => {
 
     const githubChanged = updates.github_username !== undefined && updates.github_username !== currentUser.github_username;
     const linkedinChanged = updates.linkedin_username !== undefined && updates.linkedin_username !== currentUser.linkedin_username;
+    const roleChanged = updates.role !== undefined && updates.role !== currentUser.role;
     const handlesChanged = githubChanged || linkedinChanged;
 
-    // We only trigger external skill scraping if the social handles actually changed
+    // Trigger skills extraction only if handles changed
     if (handlesChanged && (finalGithub || finalLinkedin)) {
       const skillsUrl = getSkillsServiceUrl();
       console.log(`Triggering skill extraction for ${email} at ${skillsUrl}`);
@@ -75,16 +79,14 @@ const updateProfile = async (req, res) => {
         
         const newSkills = skillsRes.data;
         if (Array.isArray(newSkills)) {
-          // Merge with existing skills (avoid duplicates)
-          const existingSkills = currentUser.skills || [];
-          const mergedSkills = [...new Set([...existingSkills, ...newSkills])];
+          // Replace existing skills with fresh extractions from the new handles
+          await userRepository.updateUserSkills(email, newSkills);
           
-          await userRepository.updateUserSkills(email, mergedSkills);
-          
-          if (finalRole) {
+          const currentRole = finalRole || currentUser.role;
+          if (currentRole) {
             const msRes = await axios.post(`${skillsUrl}/missing-skills`, {
-              role: finalRole,
-              currentSkills: mergedSkills
+              role: currentRole,
+              currentSkills: newSkills
             }, { timeout: 90000 });
             
             const missingSkills = msRes.data;
@@ -95,6 +97,23 @@ const updateProfile = async (req, res) => {
         }
       } catch (e) {
         console.error('Skill automated fetch failed during profile update:', e.message);
+      }
+    } else if (roleChanged) {
+      // If ONLY the role changed, just recompute missing skills
+      const skillsUrl = getSkillsServiceUrl();
+      console.log(`Role changed for ${email}, recomputing missing skills at ${skillsUrl}`);
+      try {
+        const msRes = await axios.post(`${skillsUrl}/missing-skills`, {
+          role: finalRole,
+          currentSkills: currentUser.skills || []
+        }, { timeout: 90000 });
+        
+        const missingSkills = msRes.data;
+        if (Array.isArray(missingSkills)) {
+          await userRepository.updateUserMissingSkills(email, missingSkills);
+        }
+      } catch (err) {
+        console.error('Role update missing skill recalculation failed:', err.message);
       }
     }
 

@@ -47,7 +47,7 @@ def continuous_sync_runner():
         time.sleep(lookupIntervalHours * 3600)
 
 if __name__ == '__main__':
-    register_eureka()
+    # register_eureka()
     
     threading.Thread(target=continuous_sync_runner, daemon=True).start()
     

@@ -82,11 +82,6 @@ function Navbar() {
             {/* Dropdown Menu */}
             {profileOpen && (
               <div className="absolute right-0 mt-3 w-56 bg-white border border-border-light rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] py-2 z-50 animate-fade-in">
-                <div className="px-4 py-2 border-b border-border-light mb-1">
-                  <p className="text-sm font-semibold text-text-primary truncate">{user?.fullName || user?.email || 'User'}</p>
-                  <p className="text-xs text-text-muted truncate">Free Plan</p>
-                </div>
-
                 <Link
                   to="/profile"
                   className="flex items-center px-4 py-2.5 text-sm font-medium text-text-secondary hover:text-brand-600 hover:bg-brand-50 transition-colors"

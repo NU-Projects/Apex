@@ -76,6 +76,8 @@ const getLevelLabel = (progressPercent) => {
 
 function RoadmapPage() {
   const { user, loading: authLoading } = useAuth();
+  const userEmail = user?.email;
+  const userRole = user?.role;
 
   const [role, setRole] = useState('Learning Roadmap');
   const [roadmapItems, setRoadmapItems] = useState([]);
@@ -86,7 +88,7 @@ function RoadmapPage() {
   const [hasStoredRoadmap, setHasStoredRoadmap] = useState(false);
 
   const generateRoadmapFlow = useCallback(async () => {
-    if (!user?.email) {
+    if (!userEmail) {
       setError('Logged-in email not found. Please login again.');
       setIsGenerating(false);
       return;
@@ -111,8 +113,8 @@ function RoadmapPage() {
     }, MAX_LOADING_MS);
 
     try {
-      const data = await generateRoadmap(user.email, { signal: controller.signal });
-      setRole(data?.role || user.role || 'Learning Roadmap');
+      const data = await generateRoadmap(userEmail, { signal: controller.signal });
+      setRole(data?.role || userRole || 'Learning Roadmap');
       const nextItems = addUiIds(Array.isArray(data?.roadmap) ? data.roadmap : []);
       setRoadmapItems(nextItems);
       setHasStoredRoadmap(nextItems.length > 0);
@@ -134,10 +136,10 @@ function RoadmapPage() {
         setIsGenerating(false);
       }
     }
-  }, [user]);
+  }, [userEmail, userRole]);
 
   const fetchStoredRoadmap = useCallback(async () => {
-    if (!user?.email) {
+    if (!userEmail) {
       setError('Logged-in email not found. Please login again.');
       setIsFetchingStored(false);
       return;
@@ -147,16 +149,16 @@ function RoadmapPage() {
     setError('');
 
     try {
-      const data = await getRoadmapByEmail(user.email);
+      const data = await getRoadmapByEmail(userEmail);
       const nextItems = addUiIds(Array.isArray(data?.roadmap) ? data.roadmap : []);
 
-      setRole(data?.role || user.role || 'Learning Roadmap');
+      setRole(data?.role || userRole || 'Learning Roadmap');
       setRoadmapItems(nextItems);
       setHasStoredRoadmap(nextItems.length > 0);
     } catch (err) {
       // Treat missing user/profile as an empty roadmap state so user can generate one.
       if ((err?.message || '').toLowerCase().includes('user not found')) {
-        setRole(user?.role || 'Learning Roadmap');
+        setRole(userRole || 'Learning Roadmap');
         setRoadmapItems([]);
         setHasStoredRoadmap(false);
         setError('');
@@ -168,12 +170,12 @@ function RoadmapPage() {
     } finally {
       setIsFetchingStored(false);
     }
-  }, [user]);
+  }, [userEmail, userRole]);
 
   useEffect(() => {
-    if (authLoading) return;
+    if (authLoading || !userEmail) return;
     fetchStoredRoadmap();
-  }, [authLoading, fetchStoredRoadmap]);
+  }, [authLoading, userEmail, fetchStoredRoadmap]);
 
   const stages = useMemo(() => buildStages(roadmapItems), [roadmapItems]);
 

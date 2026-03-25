@@ -74,6 +74,42 @@ const getLevelLabel = (progressPercent) => {
   return 'Beginner';
 };
 
+const normalizeRole = (value) => (value || '').trim().toLowerCase();
+
+const getRoadmapPayloadRole = (data) => {
+  if (Array.isArray(data?.roadmap) && data.roadmap.length > 0) {
+    return data.roadmap[0]?.role || data?.role || '';
+  }
+  return data?.role || '';
+};
+
+const smoothBoostToComplete = (fromProgress, onTick) => new Promise((resolve) => {
+  const start = Math.max(0, Math.min(99, Number.isFinite(fromProgress) ? fromProgress : 0));
+
+  if (start >= 100) {
+    onTick(100);
+    resolve();
+    return;
+  }
+
+  const durationMs = 650;
+  const startedAt = Date.now();
+
+  const animationTimer = setInterval(() => {
+    const elapsed = Date.now() - startedAt;
+    const t = Math.min(1, elapsed / durationMs);
+    const eased = 1 - ((1 - t) ** 3);
+    const next = Math.round(start + ((100 - start) * eased));
+
+    onTick(next);
+
+    if (t >= 1) {
+      clearInterval(animationTimer);
+      resolve();
+    }
+  }, 16);
+});
+
 function RoadmapPage() {
   const { user, loading: authLoading } = useAuth();
   const userEmail = user?.email;
@@ -86,6 +122,7 @@ function RoadmapPage() {
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [error, setError] = useState('');
   const [hasStoredRoadmap, setHasStoredRoadmap] = useState(false);
+  const [showRoleMismatchAlert, setShowRoleMismatchAlert] = useState(false);
 
   const generateRoadmapFlow = useCallback(async () => {
     if (!userEmail) {
@@ -101,10 +138,12 @@ function RoadmapPage() {
     const controller = new AbortController();
     const startedAt = Date.now();
     let requestSettled = false;
+    let currentProgress = 0;
 
     const progressTimer = setInterval(() => {
       const elapsed = Date.now() - startedAt;
       const percent = Math.min(100, Math.round((elapsed / MAX_LOADING_MS) * 100));
+      currentProgress = percent;
       setLoadingProgress(percent);
     }, 250);
 
@@ -114,14 +153,28 @@ function RoadmapPage() {
 
     try {
       const data = await generateRoadmap(userEmail, { signal: controller.signal });
-      setRole(data?.role || userRole || 'Learning Roadmap');
+      const actualRole = normalizeRole(userRole);
+      const responseRole = normalizeRole(getRoadmapPayloadRole(data));
+      const hasRoleMismatch = Boolean(
+        actualRole &&
+        responseRole &&
+        actualRole !== responseRole
+      );
+
+      setRole(userRole || data?.role || 'Learning Roadmap');
       const nextItems = addUiIds(Array.isArray(data?.roadmap) ? data.roadmap : []);
       setRoadmapItems(nextItems);
       setHasStoredRoadmap(nextItems.length > 0);
-      setLoadingProgress(100);
+      setShowRoleMismatchAlert(hasRoleMismatch && nextItems.length > 0);
       clearInterval(progressTimer);
       clearTimeout(timeoutTimer);
       requestSettled = true;
+
+      currentProgress = Math.max(
+        currentProgress,
+        Math.min(99, Math.round(((Date.now() - startedAt) / MAX_LOADING_MS) * 100))
+      );
+      await smoothBoostToComplete(currentProgress, setLoadingProgress);
       setIsGenerating(false);
     } catch (err) {
       if (err?.name === 'AbortError') {
@@ -151,21 +204,32 @@ function RoadmapPage() {
     try {
       const data = await getRoadmapByEmail(userEmail);
       const nextItems = addUiIds(Array.isArray(data?.roadmap) ? data.roadmap : []);
+      const actualRole = normalizeRole(userRole);
+      const responseRole = normalizeRole(getRoadmapPayloadRole(data));
+      const hasRoleMismatch = Boolean(
+        actualRole &&
+        responseRole &&
+        actualRole !== responseRole &&
+        nextItems.length > 0
+      );
 
-      setRole(data?.role || userRole || 'Learning Roadmap');
+      setRole(userRole || data?.role || 'Learning Roadmap');
       setRoadmapItems(nextItems);
       setHasStoredRoadmap(nextItems.length > 0);
+      setShowRoleMismatchAlert(hasRoleMismatch);
     } catch (err) {
       // Treat missing user/profile as an empty roadmap state so user can generate one.
       if ((err?.message || '').toLowerCase().includes('user not found')) {
         setRole(userRole || 'Learning Roadmap');
         setRoadmapItems([]);
         setHasStoredRoadmap(false);
+        setShowRoleMismatchAlert(false);
         setError('');
       } else {
         setError(err?.message || 'Failed to load roadmap. Please retry.');
         setRoadmapItems([]);
         setHasStoredRoadmap(false);
+        setShowRoleMismatchAlert(false);
       }
     } finally {
       setIsFetchingStored(false);
@@ -274,6 +338,23 @@ function RoadmapPage() {
           </section>
         ) : (
           <div className="space-y-6">
+            {showRoleMismatchAlert ? (
+              <section className="rounded-2xl border border-sky-300/70 bg-sky-100/70 p-4 shadow-sm backdrop-blur-md animate-fade-in">
+                <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                  <p className="text-sm md:text-base font-semibold text-sky-900">
+                    Your role has changed. Regenerate roadmap due to this update.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={generateRoadmapFlow}
+                    className="inline-flex items-center justify-center rounded-xl border border-white/60 bg-white/30 px-7 py-3 text-base font-black tracking-wide text-sky-900 backdrop-blur-lg shadow-[0_10px_30px_rgba(14,116,144,0.24)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-white/45 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2"
+                  >
+                    Regenerate Roadmap
+                  </button>
+                </div>
+              </section>
+            ) : null}
+
             <RoadmapHeader
               role={role}
               progressPercent={progressPercent}

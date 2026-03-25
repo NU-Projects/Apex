@@ -37,8 +37,8 @@ FILENAME_TO_ROLE = {
     "product_manager":    "Product Manager",
 }
 
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3")
-OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
+OLLAMA_BASE_URL = 'https://ollama.com'
 
 def call_ollama(messages):
     payload = {

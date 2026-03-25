@@ -186,8 +186,7 @@ Return only valid JSON, no markdown and no explanation.`;
 };
 
 const callOllamaRoadmap = async ({ role, currentSkills, missingSkills }) => {
-  const generateUrl = process.env.OLLAMA_GENERATE_URL
-    || `${(process.env.OLLAMA_BASE_URL || 'https://ollama.com').replace(/\/$/, '')}/api/generate`;
+  const generateUrl = 'https://ollama.com/api/generate';
 
   const headers = { 'Content-Type': 'application/json' };
   if (process.env.OLLAMA_API_KEY) {

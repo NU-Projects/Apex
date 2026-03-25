@@ -3,12 +3,7 @@ import requests
 
 class OllamaService:
     def __init__(self):
-        base_url = os.getenv("OLLAMA_BASE_URL")
-        if not base_url:
-            print("Error: OLLAMA_BASE_URL is missing. Please define your cloud URL in .env")
-            base_url = "http://localhost:11434" # Fallback so it doesn't crash instantly
-            
-        self.ollama_url = f"{base_url.rstrip('/')}/api/generate"
+        self.ollama_url = f"https://ollama.com/api/generate"
         self.model = os.getenv("OLLAMA_MODEL")
         self.api_key = os.getenv("OLLAMA_API_KEY")
 
@@ -24,7 +19,6 @@ class OllamaService:
             "2. INTELLIGENCE: Do not list skills they already have or close synonyms (e.g. if 'NLP' is known, don't list 'Natural Language Processing').\n"
             "3. CLEAN FORMAT: Provide ONLY the names of the missing skills. No suffixes like 'programming', 'skills', or 'experience'. No parentheses like '(Git)'.\n"
             "4. OUTPUT: Provide only a single comma-separated list. No introduction, no numbered lists, no explanation.\n"
-            "Example: Docker, Kubernetes, Ansible, Terraform, Jenkins"
         )
         
         try:

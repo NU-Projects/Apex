@@ -13,7 +13,7 @@ class JobService:
         self.repository = JobRepository()
         self.ollama_api_key = os.getenv("OLLAMA_API_KEY", "").strip()
         self.ollama_model = os.getenv("OLLAMA_MODEL", "").strip()
-        self.ollama_base_url = os.getenv("OLLAMA_BASE_URL", "").strip()
+        self.ollama_base_url = 'https://ollama.com'
 
 
 
@@ -49,7 +49,7 @@ class JobService:
         # Convert messages array into a single prompt string for the /api/generate endpoint
         prompt_text = "\n\n".join([f"[{msg.get('role', 'user').upper()}]: {msg.get('content', '')}" for msg in messages])
         
-        base_url = self.ollama_base_url.rstrip('/') if self.ollama_base_url else "http://localhost:11434"
+        base_url = self.ollama_base_url
         chat_url = f"{base_url}/api/generate"
 
         headers = {"Content-Type": "application/json"}

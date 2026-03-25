@@ -276,48 +276,18 @@ class JobService:
             "}\n"
         )
 
-        chat_url = self._resolve_ollama_url()
-        openai_url = self._resolve_openai_compatible_url()
-        headers = {"Content-Type": "application/json"}
-        if self.ollama_api_key:
-            headers["Authorization"] = f"Bearer {self.ollama_api_key}"
+        messages = [
+            {
+                "role": "system",
+                "content": "You are a helpful career advisor AI. You must respond with ONLY valid JSON, no markdown, no explanation.",
+            },
+            {"role": "user", "content": prompt},
+        ]
 
-        payload = {
-            "model": self.ollama_model,
-            "messages": [
-                {
-                    "role": "system",
-                    "content": "You are a helpful career advisor AI. You must respond with ONLY valid JSON, no markdown, no explanation.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-            "stream": False,
-        }
-
-        content = ""
         try:
-            response = requests.post(chat_url, headers=headers, json=payload, timeout=90)
-            response.raise_for_status()
-            data = response.json()
-            content = data.get("message", {}).get("content") or data.get("response") or ""
+            content = self._call_ollama(messages=messages, timeout=90)
         except Exception:
-            pass
-
-        if not content:
-            try:
-                response = requests.post(
-                    openai_url,
-                    headers=headers,
-                    json={"model": self.ollama_model, "messages": payload["messages"]},
-                    timeout=90,
-                )
-                response.raise_for_status()
-                data = response.json()
-                choices = data.get("choices", [])
-                if choices:
-                    content = choices[0].get("message", {}).get("content", "")
-            except Exception:
-                pass
+            content = ""
 
        
         ai_result = self._extract_json_object(content) if content else None

@@ -133,7 +133,6 @@ app.use('/roadmap', async (req, res) => {
       method: req.method,
       url: `${SERVICES.roadmap}/roadmap${req.url}`,
       data: req.body,
-      params: req.query,
       headers: { 'Content-Type': 'application/json' }
     });
     res.status(response.status).json(response.data);

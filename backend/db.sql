@@ -51,8 +51,6 @@ CREATE TABLE user_roadmap (
     is_unlocked BOOLEAN DEFAULT FALSE,
     quiz_passed BOOLEAN DEFAULT FALSE,
 
-    is_project BOOLEAN DEFAULT FALSE,
-
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

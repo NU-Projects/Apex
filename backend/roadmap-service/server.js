@@ -36,7 +36,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-app.get('/roadmap', (req, res) => {
+app.get('/roadmap/health', (req, res) => {
   res.json({ message: 'Roadmap Service is running' });
 });
 

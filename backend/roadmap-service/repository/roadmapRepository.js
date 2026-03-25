@@ -19,6 +19,23 @@ const getUserRoadmapInputs = async (email) => {
   return data;
 };
 
+const getUserRoadmapByEmail = async (email) => {
+  const { data, error } = await supabase
+    .from('user_roadmap')
+    .select('email, role, stage_name, stage_order, skill_name, status, is_unlocked, quiz_passed')
+    .eq('email', email)
+    .order('stage_order', { ascending: true })
+    .order('skill_name', { ascending: true });
+
+  if (error) {
+    const err = new Error(`Failed to fetch roadmap: ${error.message}`);
+    err.statusCode = 500;
+    throw err;
+  }
+
+  return data || [];
+};
+
 const replaceUserRoadmap = async (email, role, roadmapRows) => {
   const { error: deleteError } = await supabase
     .from('user_roadmap')
@@ -63,5 +80,6 @@ const replaceUserRoadmap = async (email, role, roadmapRows) => {
 
 module.exports = {
   getUserRoadmapInputs,
+  getUserRoadmapByEmail,
   replaceUserRoadmap
 };

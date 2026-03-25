@@ -257,6 +257,18 @@ const generateAndStoreRoadmap = async (email) => {
   };
 };
 
+const getStoredRoadmap = async (email) => {
+  const user = await roadmapRepository.getUserRoadmapInputs(email);
+  const roadmap = await roadmapRepository.getUserRoadmapByEmail(email);
+
+  return {
+    email,
+    role: user?.role || roadmap?.[0]?.role || 'Learning Roadmap',
+    roadmap
+  };
+};
+
 module.exports = {
-  generateAndStoreRoadmap
+  generateAndStoreRoadmap,
+  getStoredRoadmap
 };

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import Navbar from '../components/Navbar';
 import { useAuth } from '../hooks/useAuth';
-import { generateRoadmap } from '../services/roadmapService';
+import { generateRoadmap, getRoadmapByEmail } from '../services/roadmapService';
 import RoadmapHeader from '../components/roadmap/RoadmapHeader';
 import RoadmapProgressBar from '../components/roadmap/RoadmapProgressBar';
 import RoadmapStageCard from '../components/roadmap/RoadmapStageCard';
@@ -79,18 +79,20 @@ function RoadmapPage() {
 
   const [role, setRole] = useState('Learning Roadmap');
   const [roadmapItems, setRoadmapItems] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [isFetchingStored, setIsFetchingStored] = useState(true);
+  const [isGenerating, setIsGenerating] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [error, setError] = useState('');
+  const [hasStoredRoadmap, setHasStoredRoadmap] = useState(false);
 
-  const fetchRoadmap = useCallback(async () => {
+  const generateRoadmapFlow = useCallback(async () => {
     if (!user?.email) {
       setError('Logged-in email not found. Please login again.');
-      setLoading(false);
+      setIsGenerating(false);
       return;
     }
 
-    setLoading(true);
+    setIsGenerating(true);
     setLoadingProgress(0);
     setError('');
 
@@ -111,12 +113,14 @@ function RoadmapPage() {
     try {
       const data = await generateRoadmap(user.email, { signal: controller.signal });
       setRole(data?.role || user.role || 'Learning Roadmap');
-      setRoadmapItems(addUiIds(Array.isArray(data?.roadmap) ? data.roadmap : []));
+      const nextItems = addUiIds(Array.isArray(data?.roadmap) ? data.roadmap : []);
+      setRoadmapItems(nextItems);
+      setHasStoredRoadmap(nextItems.length > 0);
       setLoadingProgress(100);
       clearInterval(progressTimer);
       clearTimeout(timeoutTimer);
       requestSettled = true;
-      setLoading(false);
+      setIsGenerating(false);
     } catch (err) {
       if (err?.name === 'AbortError') {
         setError('Roadmap generation timed out after 60 seconds. Please retry.');
@@ -127,15 +131,49 @@ function RoadmapPage() {
       clearInterval(progressTimer);
       clearTimeout(timeoutTimer);
       if (!requestSettled) {
-        setLoading(false);
+        setIsGenerating(false);
       }
+    }
+  }, [user]);
+
+  const fetchStoredRoadmap = useCallback(async () => {
+    if (!user?.email) {
+      setError('Logged-in email not found. Please login again.');
+      setIsFetchingStored(false);
+      return;
+    }
+
+    setIsFetchingStored(true);
+    setError('');
+
+    try {
+      const data = await getRoadmapByEmail(user.email);
+      const nextItems = addUiIds(Array.isArray(data?.roadmap) ? data.roadmap : []);
+
+      setRole(data?.role || user.role || 'Learning Roadmap');
+      setRoadmapItems(nextItems);
+      setHasStoredRoadmap(nextItems.length > 0);
+    } catch (err) {
+      // Treat missing user/profile as an empty roadmap state so user can generate one.
+      if ((err?.message || '').toLowerCase().includes('user not found')) {
+        setRole(user?.role || 'Learning Roadmap');
+        setRoadmapItems([]);
+        setHasStoredRoadmap(false);
+        setError('');
+      } else {
+        setError(err?.message || 'Failed to load roadmap. Please retry.');
+        setRoadmapItems([]);
+        setHasStoredRoadmap(false);
+      }
+    } finally {
+      setIsFetchingStored(false);
     }
   }, [user]);
 
   useEffect(() => {
     if (authLoading) return;
-    fetchRoadmap();
-  }, [authLoading, fetchRoadmap]);
+    fetchStoredRoadmap();
+  }, [authLoading, fetchStoredRoadmap]);
 
   const stages = useMemo(() => buildStages(roadmapItems), [roadmapItems]);
 
@@ -171,19 +209,66 @@ function RoadmapPage() {
       <div className="pointer-events-none absolute top-40 -right-24 h-72 w-72 rounded-full bg-accent-cyan/20 blur-3xl" />
       <Navbar />
       <main className="flex-1 w-full max-w-7xl mx-auto p-6 md:p-10 relative z-10">
-        {loading ? (
+        {isGenerating ? (
           <RoadmapLoadingState loadingProgress={loadingProgress} />
+        ) : authLoading || isFetchingStored ? (
+          <section className="min-h-[calc(100vh-220px)] flex items-center justify-center animate-fade-in">
+            <div className="w-8 h-8 rounded-full border-t-2 border-b-2 border-brand-600 animate-spin" />
+          </section>
         ) : error ? (
           <section className="rounded-2xl border border-rose-200 bg-rose-50 p-8 shadow-sm animate-fade-in">
             <h2 className="text-xl font-bold text-rose-700">Unable to load roadmap</h2>
             <p className="mt-2 text-rose-600">{error}</p>
             <button
               type="button"
-              onClick={fetchRoadmap}
+              onClick={fetchStoredRoadmap}
               className="mt-5 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700 transition-colors"
             >
               Retry
             </button>
+          </section>
+        ) : !hasStoredRoadmap ? (
+          <section className="min-h-[calc(100vh-220px)] flex items-center justify-center animate-fade-in">
+            <div className="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-border-default bg-white p-8 md:p-10 shadow-xl">
+              <div className="relative z-10">
+                <div className="mx-auto w-fit rounded-full border border-brand-100 bg-white px-4 py-1 text-xs font-bold uppercase tracking-wider text-brand-700">
+                  Learning Plan
+                </div>
+
+                <h2 className="mt-4 text-center text-3xl md:text-4xl font-black text-text-primary leading-tight">
+                  Build Your Personalized Roadmap
+                </h2>
+
+                <p className="mx-auto mt-4 max-w-2xl text-center text-text-secondary text-base md:text-lg">
+                  No saved roadmap found yet. Generate one tailored to your role and skill gaps, then track every stage of your progress in one place.
+                </p>
+
+                <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-3">
+                  <div className="rounded-2xl border border-border-light bg-white px-4 py-4 text-center">
+                    <p className="text-sm font-bold text-text-primary">Role-Aligned Stages</p>
+                    <p className="mt-1 text-xs text-text-muted">Focused progression for your target role</p>
+                  </div>
+                  <div className="rounded-2xl border border-border-light bg-white px-4 py-4 text-center">
+                    <p className="text-sm font-bold text-text-primary">Missing Skills Coverage</p>
+                    <p className="mt-1 text-xs text-text-muted">Every key gap gets mapped to a stage</p>
+                  </div>
+                  <div className="rounded-2xl border border-border-light bg-white px-4 py-4 text-center">
+                    <p className="text-sm font-bold text-text-primary">Progress Tracking</p>
+                    <p className="mt-1 text-xs text-text-muted">Mark tasks complete as you level up</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex justify-center">
+                  <button
+                    type="button"
+                    onClick={generateRoadmapFlow}
+                    className="inline-flex items-center justify-center rounded-full bg-brand-600 px-9 py-3 text-sm md:text-base font-semibold text-white shadow-lg shadow-brand-300/40 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2"
+                  >
+                    Generate Roadmap
+                  </button>
+                </div>
+              </div>
+            </div>
           </section>
         ) : (
           <div className="space-y-6">

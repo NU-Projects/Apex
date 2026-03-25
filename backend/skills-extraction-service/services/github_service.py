@@ -14,7 +14,7 @@ class GithubService:
             return []
 
         headers = {"Authorization": f"token {self.token}"}
-        url = f"https://api.github.com/users/{username}/repos"
+        url = f"https://api.github.com/users/{username}/repos?per_page=100"
         
         try:
             response = requests.get(url, headers=headers, timeout=10)

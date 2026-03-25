@@ -117,17 +117,14 @@ const updateProfile = async (req, res) => {
             
             const newSkills = skillsRes.data;
             if (Array.isArray(newSkills)) {
-              // Merge with existing skills (avoid duplicates)
-              const existingSkills = currentUser.skills || [];
-              const mergedSkills = [...new Set([...existingSkills, ...newSkills])];
-
-              await userRepository.updateUserSkills(email, mergedSkills);
+              // Replace existing skills with the newly fetched full profile sync
+              await userRepository.updateUserSkills(email, newSkills);
               
               const currentRole = finalRole || currentUser.role;
               if (currentRole) {
                 const msRes = await axios.post(`${skillsUrl}/missing-skills`, {
                   role: currentRole,
-                  currentSkills: mergedSkills
+                  currentSkills: newSkills
                 }, { timeout: 90000 });
                 
                 if (Array.isArray(msRes.data)) {

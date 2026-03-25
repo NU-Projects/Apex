@@ -113,5 +113,6 @@ export const getLocationCounts = async (country) => {
   }
 };
 
+export const getCachedLocationCounts = (country) => GLOBAL_CACHE.locationCounts[country];
 export const getCachedPopularRoles = () => GLOBAL_CACHE.popularRoleCounts;
 export const setCachedPopularRoles = (data) => { GLOBAL_CACHE.popularRoleCounts = data; };

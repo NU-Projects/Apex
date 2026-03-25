@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { getLocationCounts, getJobCount, getRoleInsights, getCachedPopularRoles, setCachedPopularRoles } from '../services/jobService';
+import { getLocationCounts, getJobCount, getRoleInsights, getCachedPopularRoles, setCachedPopularRoles, getCachedLocationCounts } from '../services/jobService';
 import GeoMap from './GeoMap';
 
 const POPULAR_ROLES = [
@@ -10,13 +10,16 @@ const POPULAR_ROLES = [
 ];
 
 function JobHeatmap({ userRole, userSkills }) {
-  const [locations, setLocations] = useState([]);
-  const [loadingMap, setLoadingMap] = useState(true);
   const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'map'
   const [selectedCountry, setSelectedCountry] = useState('Pakistan');
 
-  const [roleCounts, setRoleCounts] = useState({});
-  const [loadingGrid, setLoadingGrid] = useState(true);
+  const cachedLocations = useMemo(() => getCachedLocationCounts(selectedCountry), [selectedCountry]);
+  const [locations, setLocations] = useState(cachedLocations || []);
+  const [loadingMap, setLoadingMap] = useState(!cachedLocations);
+
+  const cachedRoles = useMemo(() => getCachedPopularRoles(), []);
+  const [roleCounts, setRoleCounts] = useState(cachedRoles || {});
+  const [loadingGrid, setLoadingGrid] = useState(!cachedRoles);
   const [selectedRole, setSelectedRole] = useState(null);
   const [insightsLoading, setInsightsLoading] = useState(false);
   const [activeInsight, setActiveInsight] = useState(null);
@@ -26,9 +29,10 @@ function JobHeatmap({ userRole, userSkills }) {
   // Fetch Map Data
   useEffect(() => {
     const fetchLocations = async () => {
-      // Clear current data and show loader immediately to prevent mismatched map renders
-      setLoadingMap(true);
-      setLocations([]);
+      if (!getCachedLocationCounts(selectedCountry)) {
+        setLoadingMap(true);
+        setLocations([]);
+      }
 
       try {
         const data = await getLocationCounts(selectedCountry);
@@ -44,10 +48,7 @@ function JobHeatmap({ userRole, userSkills }) {
 
   // Fetch Grid Data
   useEffect(() => {
-    const cached = getCachedPopularRoles();
-    if (cached) {
-      setRoleCounts(cached);
-      setLoadingGrid(false);
+    if (getCachedPopularRoles()) {
       return;
     }
 

@@ -18,6 +18,95 @@ function formatPlatform(platform) {
   return normalized.charAt(0).toUpperCase() + normalized.slice(1)
 }
 
+function formatJobDescription(text) {
+  if (!text) return <span className="text-text-muted italic">No description available for this listing.</span>;
+
+  const lines = text.split('\n');
+  const formatted = [];
+  let lastHeadingText = null;
+
+  const exactHeadings = [
+    'requirements', 'qualifications', 'responsibilities', 'key responsibilities',
+    'primary responsibilities', 'about the role', "what you'll do", 'what you will do',
+    'benefits', 'job description', 'skills', 'required skills', 'preferred skills',
+    'education', 'experience', 'duties', "what we're looking for", 'who you are',
+    'role', 'purpose', 'job purpose', 'required qualifications', 'minimum qualifications',
+    'preferred qualifications', 'about us', 'company overview', 'what we offer',
+    'bonus points', 'nice to have', 'nice-to-have', 'required education', 'required experience', 'company description', 'required skills and abilities',
+    'responsibilities and duties', 'job summary', 'job responsibilities', 'compensation range', 'our mission', 'our values', 'the role', 'our team', 'job overview'
+  ];
+
+  for (let i = 0; i < lines.length; i++) {
+    const trimmed = lines[i].trim();
+    if (!trimmed) continue;
+
+    const explicitBulletMatch = trimmed.match(/^([-*•]|\d+\.)\s*(.*)/);
+    const trimmedLower = trimmed.toLowerCase().replace(/:$/, '');
+
+    const isHeading =
+      trimmed.length > 2 &&
+      trimmed.length <= 70 &&
+      !explicitBulletMatch &&
+      (
+        trimmed.endsWith(':') ||
+        exactHeadings.includes(trimmedLower) ||
+        (trimmed === trimmed.toUpperCase() && !trimmed.match(/^\d/))
+      );
+
+    let bulletText = null;
+    if (!isHeading) {
+      if (explicitBulletMatch) {
+        bulletText = explicitBulletMatch[2] || trimmed.replace(/^([-*•]|\d+\.)\s*/, '');
+      } else if (!trimmed.match(/[.!?]$/) && !trimmed.includes('. ')) {
+        bulletText = trimmed;
+      } else if (trimmed.length < 150 && !trimmed.includes('. ')) {
+        bulletText = trimmed;
+      }
+    }
+
+    if (isHeading) {
+      const headingClean = trimmedLower.replace(/:$/, '');
+      if (lastHeadingText === headingClean) {
+        continue;
+      }
+      lastHeadingText = headingClean;
+
+      formatted.push(
+        <h4 key={i} className="font-black text-text-primary mt-6 mb-3 text-base tracking-tight">
+          {trimmed.replace(/:$/, '')}
+        </h4>
+      );
+    } else if (bulletText !== null) {
+      let content = bulletText;
+      const labelMatch = bulletText.match(/^([\w\s-]+):\s*(.*)/);
+      if (labelMatch && labelMatch[1].length <= 35) {
+        content = <><strong className="font-bold text-text-primary">{labelMatch[1]}:</strong> {labelMatch[2]}</>;
+      }
+
+      formatted.push(
+        <div key={i} className="flex items-start gap-2.5 my-1.5 pl-1">
+          <span className="text-brand-500 font-bold mt-[2px] text-lg leading-none">•</span>
+          <span className="text-text-secondary leading-relaxed">{content}</span>
+        </div>
+      );
+    } else {
+      let content = trimmed;
+      const labelMatch = trimmed.match(/^([\w\s-]+):\s*(.*)/);
+      if (labelMatch && labelMatch[1].length <= 35) {
+        content = <><strong className="font-bold text-text-primary">{labelMatch[1]}:</strong> {labelMatch[2]}</>;
+      }
+
+      formatted.push(
+        <p key={i} className="mb-3 text-text-secondary leading-relaxed">
+          {content}
+        </p>
+      );
+    }
+  }
+
+  return <div className="text-sm font-medium">{formatted}</div>;
+}
+
 function JobResultCard({ job, compatibility, onCheckCompatibility }) {
   const normalizedPlatform = normalizePlatform(job.platform)
   const platformLabel = formatPlatform(normalizedPlatform)
@@ -44,11 +133,10 @@ function JobResultCard({ job, compatibility, onCheckCompatibility }) {
             onClick={(event) => {
               if (!job.applyUrl) event.preventDefault()
             }}
-            className={`inline-flex h-10 min-w-24 items-center justify-center rounded-lg px-3 text-sm font-semibold transition-colors ${
-              job.applyUrl
-                ? 'bg-brand-600 text-white hover:bg-brand-700'
-                : 'cursor-not-allowed bg-brand-200 text-white'
-            }`}
+            className={`inline-flex h-10 min-w-24 items-center justify-center rounded-lg px-3 text-sm font-semibold transition-colors ${job.applyUrl
+              ? 'bg-brand-600 text-white hover:bg-brand-700'
+              : 'cursor-not-allowed bg-brand-200 text-white'
+              }`}
           >
             Apply
           </a>
@@ -90,10 +178,8 @@ function JobResultCard({ job, compatibility, onCheckCompatibility }) {
           </span>
         </summary>
 
-        <div className="border-t border-brand-100/80 bg-white/80 px-4 py-3">
-          <p className="whitespace-pre-wrap text-sm leading-6 text-text-secondary">
-            {job.description || 'No description available for this listing.'}
-          </p>
+        <div className="border-t border-brand-100/80 bg-white/80 px-5 py-4">
+          {formatJobDescription(job.description)}
         </div>
       </details>
 

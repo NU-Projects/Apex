@@ -39,6 +39,13 @@ print -P "%F{cyan}Starting Roadmap Service...%f"
     npm run dev
 ) &
 
+print -P "%F{cyan}Starting Quiz Service...%f"
+(
+    cd "$BACKEND_ROOT/quiz-service" || exit 1
+    npm i
+    npm run dev
+) &
+
 print -P "%F{cyan}Starting User Service...%f"
 (
     cd "$BACKEND_ROOT/user-service" || exit 1

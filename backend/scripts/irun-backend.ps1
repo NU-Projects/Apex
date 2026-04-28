@@ -15,6 +15,9 @@ Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$ba
 Write-Host "Starting Roadmap Service..." -ForegroundColor Cyan
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$backendRoot\roadmap-service'; npm i; npm run dev"
 
+Write-Host "Starting Quiz Service..." -ForegroundColor Cyan
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$backendRoot\quiz-service'; npm i; npm run dev"
+
 Write-Host "Starting User Service..." -ForegroundColor Cyan
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$backendRoot\user-service'; npm i; npm run dev"
 

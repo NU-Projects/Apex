@@ -39,6 +39,13 @@ echo -e "\033[36mStarting Roadmap Service...\033[0m"
     npm run dev
 ) &
 
+echo -e "\033[36mStarting Quiz Service...\033[0m"
+(
+    cd "$BACKEND_ROOT/quiz-service" || exit 1
+    npm i
+    npm run dev
+) &
+
 echo -e "\033[36mStarting User Service...\033[0m"
 (
     cd "$BACKEND_ROOT/user-service" || exit 1

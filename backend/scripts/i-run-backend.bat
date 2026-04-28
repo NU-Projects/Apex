@@ -19,6 +19,9 @@ start "Auth Service" cmd /k "cd /d ""%BACKEND_DIR%\auth-service"" && npm i && np
 echo Starting Roadmap Service...
 start "Roadmap Service" cmd /k "cd /d ""%BACKEND_DIR%\roadmap-service"" && npm i && npm run dev"
 
+echo Starting Quiz Service...
+start "Quiz Service" cmd /k "cd /d ""%BACKEND_DIR%\quiz-service"" && npm i && npm run dev"
+
 echo Starting User Service...
 start "User Service" cmd /k "cd /d ""%BACKEND_DIR%\user-service"" && npm i && npm run dev"
 

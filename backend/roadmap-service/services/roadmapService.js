@@ -193,6 +193,7 @@ const callOllamaRoadmap = async ({ role, currentSkills, missingSkills }) => {
     headers.Authorization = `Bearer ${process.env.OLLAMA_API_KEY}`;
   }
 
+  const ollamaTimeoutMs = Number(process.env.OLLAMA_TIMEOUT_MS) || 180000; // default 3 minutes
   const response = await axios.post(
     generateUrl,
     {
@@ -202,7 +203,7 @@ const callOllamaRoadmap = async ({ role, currentSkills, missingSkills }) => {
     },
     {
       headers,
-      timeout: 90000
+      timeout: ollamaTimeoutMs
     }
   );
 

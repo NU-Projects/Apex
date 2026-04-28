@@ -37,11 +37,12 @@ const getUserRoadmapByEmail = async (email) => {
 };
 
 const replaceUserRoadmap = async (email, role, roadmapRows) => {
+  // Delete all existing roadmap entries for this user, regardless of role
+  // This ensures old roadmaps are cleared when the user's role changes
   const { error: deleteError } = await supabase
     .from('user_roadmap')
     .delete()
-    .eq('email', email)
-    .eq('role', role);
+    .eq('email', email);
 
   if (deleteError) {
     const err = new Error(`Failed to clear previous roadmap: ${deleteError.message}`);

@@ -7,7 +7,10 @@ import RoadmapProgressBar from '../components/roadmap/RoadmapProgressBar';
 import RoadmapStageCard from '../components/roadmap/RoadmapStageCard';
 import RoadmapLoadingState from '../components/roadmap/RoadmapLoadingState';
 
+// Time used to drive the visual progress growth (Reaches 85% at 85% of this value)
 const MAX_LOADING_MS = 60000;
+// Allow waiting up to this many ms AFTER the bar hits 85%
+const MAX_WAIT_AFTER_85_MS = 3 * 60 * 1000; // 3 minutes
 
 const normalizeStatus = (status) => {
   if (status === 'completed') return 'completed';
@@ -77,10 +80,12 @@ const getLevelLabel = (progressPercent) => {
 const normalizeRole = (value) => (value || '').trim().toLowerCase();
 
 const getRoadmapPayloadRole = (data) => {
+  // Get the role from the actual roadmap items in the database
+  // This represents what role the roadmap was generated for
   if (Array.isArray(data?.roadmap) && data.roadmap.length > 0) {
-    return data.roadmap[0]?.role || data?.role || '';
+    return data.roadmap[0]?.role || '';
   }
-  return data?.role || '';
+  return '';
 };
 
 const smoothBoostToComplete = (fromProgress, onTick) => new Promise((resolve) => {
@@ -142,14 +147,17 @@ function RoadmapPage() {
 
     const progressTimer = setInterval(() => {
       const elapsed = Date.now() - startedAt;
-      const percent = Math.min(100, Math.round((elapsed / MAX_LOADING_MS) * 100));
+      // Cap visual progress at 85% while waiting for the backend response
+      const percent = Math.min(85, Math.round((elapsed / MAX_LOADING_MS) * 100));
       currentProgress = percent;
       setLoadingProgress(percent);
     }, 250);
 
+    // Use a fixed total request timeout of 3 minutes (180 seconds)
+    const totalRequestTimeout = 3 * 60 * 1000; // 3 minutes
     const timeoutTimer = setTimeout(() => {
       controller.abort('ROADMAP_TIMEOUT');
-    }, MAX_LOADING_MS);
+    }, totalRequestTimeout);
 
     try {
       const data = await generateRoadmap(userEmail, { signal: controller.signal });
@@ -165,20 +173,23 @@ function RoadmapPage() {
       const nextItems = addUiIds(Array.isArray(data?.roadmap) ? data.roadmap : []);
       setRoadmapItems(nextItems);
       setHasStoredRoadmap(nextItems.length > 0);
-      setShowRoleMismatchAlert(hasRoleMismatch && nextItems.length > 0);
+      // After successful generation, roles should match - don't show mismatch alert
+      setShowRoleMismatchAlert(false);
       clearInterval(progressTimer);
       clearTimeout(timeoutTimer);
       requestSettled = true;
 
+      // Ensure we pick up the last visual progress (capped at 85%) before boosting
       currentProgress = Math.max(
         currentProgress,
-        Math.min(99, Math.round(((Date.now() - startedAt) / MAX_LOADING_MS) * 100))
+        Math.min(85, Math.round(((Date.now() - startedAt) / MAX_LOADING_MS) * 100))
       );
       await smoothBoostToComplete(currentProgress, setLoadingProgress);
       setIsGenerating(false);
     } catch (err) {
       if (err?.name === 'AbortError') {
-        setError('Roadmap generation timed out after 60 seconds. Please retry.');
+        const secs = Math.round(totalRequestTimeout / 1000);
+        setError(`Roadmap generation timed out after ${secs} seconds. Please retry.`);
       } else {
         setError(err?.message || 'Failed to generate roadmap. Please retry.');
       }

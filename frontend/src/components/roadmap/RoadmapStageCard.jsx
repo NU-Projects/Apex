@@ -99,15 +99,30 @@ function RoadmapStageCard({ stage, onActionClick, onTestClick }) {
                     type="button"
                     onClick={() => onTestClick(skill)}
                     disabled={!testEnabled}
-                    className="inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-[15px] font-semibold border border-border-default bg-white text-text-primary disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 hover:border-slate-300 transition-all"
+                    className={`inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-[15px] font-semibold border transition-all ${
+                      skill.quiz_passed
+                        ? 'border-emerald-300 bg-emerald-50 text-emerald-700 disabled:opacity-60'
+                        : 'border-border-default bg-white text-text-primary disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-50 hover:border-slate-300'
+                    }`}
                   >
-                    <svg className="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-                      <path d="M7.25 4.75h5.5" strokeLinecap="round" />
-                      <path d="M8 4.75l.25 2m3.5-2l-.25 2" strokeLinecap="round" />
-                      <path d="M6.5 8.5h7l-.8 6.2a2 2 0 01-1.98 1.75H9.28a2 2 0 01-1.98-1.75L6.5 8.5z" />
-                      <path d="M9.2 11.1h1.6m-1.6 2.2h1.6" strokeLinecap="round" />
-                    </svg>
-                    Test
+                    {skill.quiz_passed ? (
+                      <>
+                        <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fillRule="evenodd" d="M16.704 5.29a1 1 0 010 1.414l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.414l2.493 2.493 6.493-6.493a1 1 0 011.415 0z" clipRule="evenodd" />
+                        </svg>
+                        Quiz Passed
+                      </>
+                    ) : (
+                      <>
+                        <svg className="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                          <path d="M7.25 4.75h5.5" strokeLinecap="round" />
+                          <path d="M8 4.75l.25 2m3.5-2l-.25 2" strokeLinecap="round" />
+                          <path d="M6.5 8.5h7l-.8 6.2a2 2 0 01-1.98 1.75H9.28a2 2 0 01-1.98-1.75L6.5 8.5z" />
+                          <path d="M9.2 11.1h1.6m-1.6 2.2h1.6" strokeLinecap="round" />
+                        </svg>
+                        Test
+                      </>
+                    )}
                   </button>
                   <button
                     type="button"

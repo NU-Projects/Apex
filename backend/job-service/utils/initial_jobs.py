@@ -37,10 +37,17 @@ FILENAME_TO_ROLE = {
     "product_manager":    "Product Manager",
 }
 
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
-OLLAMA_BASE_URL = 'https://ollama.com'
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama2")
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY", "")
 
 def call_ollama(messages):
+    is_local = 'localhost' in OLLAMA_BASE_URL or '127.0.0.1' in OLLAMA_BASE_URL
+    
+    headers = {'Content-Type': 'application/json'}
+    if OLLAMA_API_KEY and not is_local:
+        headers['Authorization'] = f'Bearer {OLLAMA_API_KEY}'
+    
     payload = {
         "model": OLLAMA_MODEL,
         "messages": messages,
@@ -108,7 +115,9 @@ def normalize_locations_for_jobs(jobs):
             else:
                 job["normalized_location"] = raw.strip().title() if raw else None
 
-def clean_text(text: str | None) -> str | None:
+from typing import Optional
+
+def clean_text(text: Optional[str]) -> Optional[str]:
     if not text:
         return None
     
@@ -143,7 +152,7 @@ def clean_text(text: str | None) -> str | None:
     return text.strip() if text.strip() else None
 
 
-def clean_title(title: str | None) -> str | None:
+def clean_title(title: Optional[str]) -> Optional[str]:
     if not title:
         return None
     title = html.unescape(title)
@@ -208,7 +217,7 @@ def parse_indeed_job(job: dict, country_folder: str, role: str) -> dict:
     }
 
 
-def collect_all_jobs() -> list[dict]:
+def collect_all_jobs() -> list:
     all_jobs = []
 
     if not SCRAPPED_JOBS_DIR.exists():
@@ -253,7 +262,7 @@ def collect_all_jobs() -> list[dict]:
     return all_jobs
 
 
-def insert_jobs(jobs: list[dict], truncate: bool = False):
+def insert_jobs(jobs: list, truncate: bool = False):
     if not jobs:
         print("No jobs to insert.")
         return

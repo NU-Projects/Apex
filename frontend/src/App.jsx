@@ -7,6 +7,7 @@ import DashboardPage from './pages/DashboardPage'
 import SkillsPage from './pages/SkillsPage'
 import JobsPage from './pages/JobsPage'
 import RoadmapPage from './pages/RoadmapPage'
+import QuizPage from './pages/QuizPage'
 import ProfilePage from './pages/ProfilePage'
 
 import ProtectedRoute from './components/ProtectedRoute'
@@ -57,6 +58,14 @@ function App() {
         element={
           <ProtectedRoute>
             <ProfilePage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/quiz"
+        element={
+          <ProtectedRoute>
+            <QuizPage />
           </ProtectedRoute>
         }
       />

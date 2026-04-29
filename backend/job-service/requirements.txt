@@ -3,3 +3,4 @@ requests
 python-dotenv
 py-eureka-client
 flask-cors
+psycopg2-binary

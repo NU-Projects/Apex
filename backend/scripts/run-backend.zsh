@@ -5,8 +5,22 @@ trap 'print -P "\n%F{red}Stopping all services...%f"; kill $(jobs -p) 2>/dev/nul
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BACKEND_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-PIP_CMD="$(command -v pip3 >/dev/null 2>&1 && echo pip3 || command -v pip >/dev/null 2>&1 && echo pip || true)"
-PY_CMD="$(command -v python3 >/dev/null 2>&1 && echo python3 || command -v python >/dev/null 2>&1 && echo python || true)"
+# Detect Python and pip commands
+if command -v python3 >/dev/null 2>&1; then
+    PY_CMD="python3"
+elif command -v python >/dev/null 2>&1; then
+    PY_CMD="python"
+else
+    PY_CMD=""
+fi
+
+if command -v pip3 >/dev/null 2>&1; then
+    PIP_CMD="pip3"
+elif command -v pip >/dev/null 2>&1; then
+    PIP_CMD="pip"
+else
+    PIP_CMD=""
+fi
 
 print -P "%F{cyan}Starting Netflix Eureka Server...%f"
 (

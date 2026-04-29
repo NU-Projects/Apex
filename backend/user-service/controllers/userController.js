@@ -6,10 +6,14 @@ const { eurekaClient } = require('../eureka-client');
 
 const getSkillsServiceUrl = () => {
   if (eurekaClient) {
-    const instances = eurekaClient.getInstancesByAppId('SKILLS-EXTRACTION-SERVICE');
-    if (instances && instances.length > 0) {
-      const instance = instances[0];
-      return `http://${instance.hostName}:${instance.port.$}`;
+    try {
+      const instances = eurekaClient.getInstancesByAppId('SKILLS-EXTRACTION-SERVICE');
+      if (instances && instances.length > 0) {
+        const instance = instances[0];
+        return `http://${instance.hostName}:${instance.port.$}`;
+      }
+    } catch (err) {
+      console.log('Skills service not yet available in Eureka, using fallback URL');
     }
   }
   return process.env.SKILLS_EXTRACTION_SERVICE_URL || 'http://localhost:5003';

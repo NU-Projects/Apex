@@ -12,8 +12,8 @@ class JobService:
     def __init__(self):
         self.repository = JobRepository()
         self.ollama_api_key = os.getenv("OLLAMA_API_KEY", "").strip()
-        self.ollama_model = os.getenv("OLLAMA_MODEL", "").strip()
-        self.ollama_base_url = 'https://ollama.com'
+        self.ollama_model = os.getenv("OLLAMA_MODEL", "llama2").strip()
+        self.ollama_base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").strip()
 
 
 
@@ -46,6 +46,9 @@ class JobService:
         if not self.ollama_model:
             raise ValueError("OLLAMA_MODEL is missing in .env")
 
+        # Check if using local Ollama (no API key needed)
+        is_local = 'localhost' in self.ollama_base_url or '127.0.0.1' in self.ollama_base_url
+        
         # Convert messages array into a single prompt string for the /api/generate endpoint
         prompt_text = "\n\n".join([f"[{msg.get('role', 'user').upper()}]: {msg.get('content', '')}" for msg in messages])
         
@@ -53,7 +56,8 @@ class JobService:
         chat_url = f"{base_url}/api/generate"
 
         headers = {"Content-Type": "application/json"}
-        if self.ollama_api_key:
+        # Only add auth header if API key exists and not using local instance
+        if self.ollama_api_key and not is_local:
             headers["Authorization"] = f"Bearer {self.ollama_api_key}"
 
         payload = {

@@ -10,6 +10,7 @@ const extractArrayFromText = (text) => {
     .replace(/```/g, '')
     .trim();
 
+  // Try to find JSON array boundaries
   const start = cleanedText.indexOf('[');
   const end = cleanedText.lastIndexOf(']');
 
@@ -17,8 +18,28 @@ const extractArrayFromText = (text) => {
     throw new Error('Ollama did not return a valid JSON array for the quiz');
   }
 
-  const jsonArrayText = cleanedText.slice(start, end + 1);
-  return JSON.parse(jsonArrayText);
+  let jsonArrayText = cleanedText.slice(start, end + 1);
+  
+  // Clean up common JSON issues
+  // Fix trailing commas before closing brackets
+  jsonArrayText = jsonArrayText.replace(/,(\s*[}\]])/g, '$1');
+  // Fix missing commas between objects
+  jsonArrayText = jsonArrayText.replace(/}\s*{/g, '},{');
+  // Remove any control characters
+  jsonArrayText = jsonArrayText.replace(/[\x00-\x1F\x7F]/g, '');
+  
+  try {
+    return JSON.parse(jsonArrayText);
+  } catch (parseError) {
+    // If parsing fails, try to provide more context
+    const errorPos = parseError.message.match(/position (\d+)/);
+    if (errorPos) {
+      const pos = parseInt(errorPos[1]);
+      const context = jsonArrayText.substring(Math.max(0, pos - 50), Math.min(jsonArrayText.length, pos + 50));
+      throw new Error(`Invalid JSON at position ${pos}. Context: ...${context}...`);
+    }
+    throw new Error(`Failed to parse quiz JSON: ${parseError.message}`);
+  }
 };
 
 /**
@@ -40,12 +61,48 @@ const normalizeQuiz = (llmArray) => {
         typeof item.correct_option === 'string'
       );
     })
-    .map((item, index) => ({
-      id: index + 1,
-      statement: item.statement.trim(),
-      options: item.options.map((opt) => String(opt).trim()),
-      correct_option: item.correct_option.trim()
-    }));
+    .map((item, index) => {
+      const statement = item.statement.trim();
+      const options = item.options.map((opt) => String(opt).trim());
+      let correctOption = item.correct_option.trim();
+
+      // Validate that correct_option exists in options array
+      // Try exact match first
+      let matchIndex = options.findIndex(opt => opt === correctOption);
+      
+      // If no exact match, try case-insensitive
+      if (matchIndex === -1) {
+        matchIndex = options.findIndex(opt => 
+          opt.toLowerCase() === correctOption.toLowerCase()
+        );
+        if (matchIndex !== -1) {
+          correctOption = options[matchIndex]; // Use the exact text from options
+        }
+      }
+
+      // If still no match, check if it's a letter (A, B, C, D)
+      if (matchIndex === -1) {
+        const upperCorrect = correctOption.toUpperCase();
+        if (['A', 'B', 'C', 'D'].includes(upperCorrect)) {
+          const letterIndex = ['A', 'B', 'C', 'D'].indexOf(upperCorrect);
+          correctOption = options[letterIndex];
+          matchIndex = letterIndex;
+        }
+      }
+
+      // If STILL no match, default to first option
+      if (matchIndex === -1) {
+        console.warn(`[Quiz] Invalid correct_option "${correctOption}" for question "${statement}". Defaulting to first option.`);
+        correctOption = options[0];
+      }
+
+      return {
+        id: index + 1,
+        statement,
+        options,
+        correct_option: correctOption
+      };
+    });
 
   if (normalized.length < 10) {
     throw new Error(
@@ -65,22 +122,23 @@ const buildPrompt = (title) => {
 Generate exactly 10 multiple choice questions (MCQs) on the topic: "${title}".
 
 Rules:
-1. Difficulty level must be medium / mediocre — not too easy, not too hard.
+1. Difficulty level must be medium — not too easy, not too hard.
 2. Each question must have:
    - "statement": the question text
    - "options": an array of exactly 4 answer choices (strings)
-   - "correct_option": the correct answer (must exactly match one of the 4 options)
+   - "correct_option": the EXACT TEXT of the correct answer from the options array
 3. All 4 options must be plausible; avoid obviously wrong fillers.
 4. Cover different sub-topics within "${title}" for variety.
 5. Output MUST be a flat JSON array of 10 objects.
 6. Do NOT include any markdown, explanation, or text outside the JSON.
+7. IMPORTANT: "correct_option" must be the complete text of one of the options, NOT a letter like "A" or "B".
 
-Output format (STRICT):
+Example format:
 [
   {
-    "statement": "What is ...?",
-    "options": ["Option A", "Option B", "Option C", "Option D"],
-    "correct_option": "Option B"
+    "statement": "What is the capital of France?",
+    "options": ["London", "Paris", "Berlin", "Madrid"],
+    "correct_option": "Paris"
   }
 ]
 
@@ -91,10 +149,15 @@ Return ONLY valid JSON, no markdown and no explanation.`;
  * Call the Ollama API and return 10 normalised MCQs.
  */
 const callOllamaQuiz = async (title) => {
-  const generateUrl = 'https://ollama.com/api/generate';
+  // Check if using local Ollama
+  const ollamaBaseUrl = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
+  const isLocal = ollamaBaseUrl.includes('localhost') || ollamaBaseUrl.includes('127.0.0.1');
+  
+  const generateUrl = `${ollamaBaseUrl}/api/generate`;
 
   const headers = { 'Content-Type': 'application/json' };
-  if (process.env.OLLAMA_API_KEY) {
+  // Only add auth for cloud Ollama
+  if (process.env.OLLAMA_API_KEY && !isLocal) {
     headers.Authorization = `Bearer ${process.env.OLLAMA_API_KEY}`;
   }
 
@@ -103,7 +166,7 @@ const callOllamaQuiz = async (title) => {
   const response = await axios.post(
     generateUrl,
     {
-      model: process.env.OLLAMA_MODEL,
+      model: process.env.OLLAMA_MODEL || 'llama2',
       prompt: buildPrompt(title),
       stream: false
     },

@@ -6,19 +6,24 @@ const port = parseInt(process.env.USER_SERVICE_PORT, 10) || 5005;
 
 const client = new Eureka({
   instance: {
-    app: 'user-service',
+    app: 'USER-SERVICE',
+    instanceId: `USER-SERVICE:${port}`,
     hostName: process.env.HOSTNAME || 'localhost',
     ipAddr: '127.0.0.1',
-    statusPageUrl: `http://localhost:${port}/user`,
-    healthCheckUrl: `http://localhost:${port}/user`,
+    statusPageUrl: `http://127.0.0.1:${port}/user`,
+    healthCheckUrl: `http://127.0.0.1:${port}/user`,
     port: {
       '$': port,
       '@enabled': 'true',
     },
-    vipAddress: 'user-service',
+    vipAddress: 'USER-SERVICE',
     dataCenterInfo: {
       '@class': 'com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo',
       name: 'MyOwn',
+    },
+    leaseInfo: {
+      renewalIntervalInSecs: 30,
+      durationInSecs: 90,
     },
   },
   eureka: {
@@ -27,6 +32,8 @@ const client = new Eureka({
     servicePath: '/eureka/apps/',
     maxRetries: 10,
     requestRetryDelay: 2000,
+    heartbeatInterval: 30000,
+    registryFetchInterval: 30000,
   },
 });
 
@@ -36,8 +43,17 @@ function startEureka() {
     if (error) {
       console.error('Eureka registration failed:', error);
     } else {
-      console.log('Registered with Eureka successfully!');
+      console.log(`Registered: USER-SERVICE -> 127.0.0.1:${port}`);
     }
+  });
+
+  // Handle heartbeat errors
+  client.on('heartbeat', () => {
+    // Heartbeat successful
+  });
+
+  client.on('registryUpdated', () => {
+    // Registry updated
   });
 }
 

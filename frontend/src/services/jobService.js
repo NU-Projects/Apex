@@ -1,5 +1,4 @@
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-const JOB_API_URL = 'http://localhost:5004/jobs';
 
 // Global cache to persist records across route navigations
 const GLOBAL_CACHE = {
@@ -64,7 +63,7 @@ export const getCompatibilityScore = async ({ skills, jobTitle, jobDescription }
 export const getJobCount = async (role) => {
   if (GLOBAL_CACHE.jobCounts[role]) return GLOBAL_CACHE.jobCounts[role];
   try {
-    const res = await fetch(`${JOB_API_URL}/count?role=${encodeURIComponent(role)}`);
+    const res = await fetch(`${API_URL}/jobs/count?role=${encodeURIComponent(role)}`);
     const data = await res.json();
     GLOBAL_CACHE.jobCounts[role] = data;
     return data;
@@ -79,7 +78,7 @@ export const getRoleInsights = async (currentRole, selectedRole, skills = [], si
   if (GLOBAL_CACHE.roleInsights[cacheKey]) return GLOBAL_CACHE.roleInsights[cacheKey];
 
   try {
-    const res = await fetch(`${JOB_API_URL}/insights`, {
+    const res = await fetch(`${API_URL}/jobs/insights`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ currentRole, selectedRole, skills }),
@@ -103,7 +102,7 @@ export const getRoleInsights = async (currentRole, selectedRole, skills = [], si
 export const getLocationCounts = async (country) => {
   if (GLOBAL_CACHE.locationCounts[country]) return GLOBAL_CACHE.locationCounts[country];
   try {
-    const res = await fetch(`${JOB_API_URL}/locations?country=${encodeURIComponent(country)}`);
+    const res = await fetch(`${API_URL}/jobs/locations?country=${encodeURIComponent(country)}`);
     const data = await res.json();
     GLOBAL_CACHE.locationCounts[country] = data;
     return data;

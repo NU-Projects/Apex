@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { useAuth } from '../hooks/useAuth';
 import { generateRoadmap, getRoadmapByEmail } from '../services/roadmapService';
@@ -117,6 +118,7 @@ const smoothBoostToComplete = (fromProgress, onTick) => new Promise((resolve) =>
 
 function RoadmapPage() {
   const { user, loading: authLoading } = useAuth();
+  const navigate = useNavigate();
   const userEmail = user?.email;
   const userRole = user?.role;
 
@@ -276,8 +278,8 @@ function RoadmapPage() {
     }));
   };
 
-  const onTestClick = () => {
-    // Intentionally empty for now as requested.
+  const onTestClick = (skill) => {
+    navigate('/quiz?topic=' + encodeURIComponent(skill.skill_name));
   };
 
   return (

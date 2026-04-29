@@ -18,8 +18,10 @@ async function register() {
         app: SERVICE_NAME,
         status: 'UP'
       }
+    }, {
+      headers: { 'Content-Type': 'application/json' }
     });
-    console.log(`Registered ${SERVICE_NAME} with Eureka`);
+    console.log(`Registered: ${SERVICE_NAME} -> ${HOST_NAME}:${PORT}`);
   } catch (err) {
     console.error('Eureka registration failed:', err.message);
   }
@@ -28,10 +30,13 @@ async function register() {
 function startHeartbeat() {
   setInterval(async () => {
     try {
-      await axios.put(`${EUREKA_URL}/eureka/apps/${SERVICE_NAME}/${INSTANCE_ID}`);
+      await axios.put(`${EUREKA_URL}/eureka/apps/${SERVICE_NAME}/${INSTANCE_ID}`, {}, {
+        headers: { 'Content-Type': 'application/json' },
+        timeout: 5000
+      });
     } catch (err) {
-      console.error('Eureka heartbeat failed, re-registering...');
-      register();
+      console.error('eureka heartbeat FAILED, Re-registering app');
+      await register();
     }
   }, 30000);
 }

@@ -38,7 +38,7 @@ function QuizResult({ score, total, onTryAgain, onMarkDone, onAnswerKey, onBackT
                     <p className="mt-2 text-text-secondary text-sm">
                         {passed
                             ? 'Great job! You\'ve demonstrated your knowledge.'
-                            : 'Don\'t worry — review the material and try again.'}
+                            : 'Don\'t worry, review the material and try again.'}
                     </p>
 
                     {/* Actions */}

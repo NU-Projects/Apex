@@ -79,8 +79,40 @@ const replaceUserRoadmap = async (email, role, roadmapRows) => {
   return (data || []).sort((a, b) => a.stage_order - b.stage_order || a.skill_name.localeCompare(b.skill_name));
 };
 
+const VALID_STATUSES = ['not_started', 'in_progress', 'completed'];
+
+const updateSkillStatus = async (email, skillName, status) => {
+  if (!VALID_STATUSES.includes(status)) {
+    const err = new Error(`Invalid status "${status}". Must be one of: ${VALID_STATUSES.join(', ')}`);
+    err.statusCode = 400;
+    throw err;
+  }
+
+  const { data, error } = await supabase
+    .from('user_roadmap')
+    .update({ status })
+    .eq('email', email)
+    .ilike('skill_name', skillName)
+    .select('email, role, stage_name, stage_order, skill_name, status, is_unlocked, quiz_passed');
+
+  if (error) {
+    const err = new Error(`Failed to update skill status: ${error.message}`);
+    err.statusCode = 500;
+    throw err;
+  }
+
+  if (!data || data.length === 0) {
+    const err = new Error(`No roadmap entry found for email "${email}" and skill "${skillName}"`);
+    err.statusCode = 404;
+    throw err;
+  }
+
+  return data[0];
+};
+
 module.exports = {
   getUserRoadmapInputs,
   getUserRoadmapByEmail,
-  replaceUserRoadmap
+  replaceUserRoadmap,
+  updateSkillStatus
 };

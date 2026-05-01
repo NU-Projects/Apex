@@ -32,3 +32,19 @@ export const generateRoadmap = async (email, options = {}) => {
 
   return data;
 };
+
+export const updateRoadmapStatus = async (email, skillName, status) => {
+  const res = await fetch(`${API_URL}/roadmap/update-status`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, skill_name: skillName, status })
+  });
+
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data?.error || 'Failed to update skill status');
+  }
+
+  return data;
+};

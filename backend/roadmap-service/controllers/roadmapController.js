@@ -32,7 +32,24 @@ const getRoadmapByEmail = async (req, res) => {
   }
 };
 
+const updateSkillStatus = async (req, res) => {
+  try {
+    const { email, skill_name, status } = req.body;
+
+    if (!email || !skill_name || !status) {
+      return res.status(400).json({ error: 'email, skill_name, and status are required' });
+    }
+
+    const result = await roadmapService.updateSkillStatus(email, skill_name, status);
+    return res.status(200).json(result);
+  } catch (error) {
+    const statusCode = error.statusCode || 500;
+    return res.status(statusCode).json({ error: error.message || 'Failed to update skill status' });
+  }
+};
+
 module.exports = {
   generateRoadmapByEmail,
-  getRoadmapByEmail
+  getRoadmapByEmail,
+  updateSkillStatus
 };

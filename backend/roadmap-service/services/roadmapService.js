@@ -269,7 +269,19 @@ const getStoredRoadmap = async (email) => {
   };
 };
 
+const updateSkillStatus = async (email, skillName, status) => {
+  if (!email || !skillName || !status) {
+    const err = new Error('email, skill_name, and status are all required');
+    err.statusCode = 400;
+    throw err;
+  }
+
+  const updated = await roadmapRepository.updateSkillStatus(email, skillName, status);
+  return updated;
+};
+
 module.exports = {
   generateAndStoreRoadmap,
-  getStoredRoadmap
+  getStoredRoadmap,
+  updateSkillStatus
 };

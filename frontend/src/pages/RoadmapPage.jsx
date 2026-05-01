@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { useAuth } from '../hooks/useAuth';
-import { generateRoadmap, getRoadmapByEmail } from '../services/roadmapService';
+import { generateRoadmap, getRoadmapByEmail, updateRoadmapStatus } from '../services/roadmapService';
 import RoadmapHeader from '../components/roadmap/RoadmapHeader';
 import RoadmapProgressBar from '../components/roadmap/RoadmapProgressBar';
 import RoadmapStageCard from '../components/roadmap/RoadmapStageCard';
@@ -269,13 +269,32 @@ function RoadmapPage() {
     };
   }, [roadmapItems]);
 
-  const onActionClick = (skill) => {
+  const onActionClick = async (skill) => {
+    if (!userEmail) return;
+
+    const nextStatus = skill.status === 'not_started' ? 'in_progress'
+      : skill.status === 'in_progress' ? 'completed'
+      : null;
+
+    if (!nextStatus) return;
+
+    // Optimistic UI update
+    const previousStatus = skill.status;
     setRoadmapItems((prev) => prev.map((item) => {
       if (item.ui_id !== skill.ui_id) return item;
-      if (item.status === 'not_started') return { ...item, status: 'in_progress' };
-      if (item.status === 'in_progress') return { ...item, status: 'completed' };
-      return item;
+      return { ...item, status: nextStatus };
     }));
+
+    try {
+      await updateRoadmapStatus(userEmail, skill.skill_name, nextStatus);
+    } catch (err) {
+      // Rollback on failure
+      console.error('Failed to update status:', err.message);
+      setRoadmapItems((prev) => prev.map((item) => {
+        if (item.ui_id !== skill.ui_id) return item;
+        return { ...item, status: previousStatus };
+      }));
+    }
   };
 
   const onTestClick = (skill) => {

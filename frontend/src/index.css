@@ -80,3 +80,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-text-primary);
 }
+
+/* Global cursor-pointer for all clickable/interactive elements */
+a,
+button:not(:disabled),
+summary,
+select,
+label[for],
+[role="button"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::file-selector-button {
+  cursor: pointer;
+}

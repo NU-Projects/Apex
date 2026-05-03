@@ -12,4 +12,13 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 5173,
+    allowedHosts: ['f-apex.duckdns.org', '52.66.65.67', 'localhost'],
+  },
 })

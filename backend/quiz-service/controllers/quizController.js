@@ -5,7 +5,10 @@ const generateQuiz = async (req, res) => {
     const { title } = req.body;
 
     if (!title || typeof title !== 'string' || title.trim().length === 0) {
-      return res.status(400).json({ error: 'Title is required' });
+      return res.status(400).json({ 
+        success: false,
+        error: 'Please provide a valid topic for the quiz.' 
+      });
     }
 
     console.log(`[Quiz] Generating quiz for topic: ${title}`);
@@ -15,7 +18,13 @@ const generateQuiz = async (req, res) => {
   } catch (error) {
     console.error('[Quiz] Generation failed:', error.message);
     const statusCode = error.statusCode || 500;
-    return res.status(statusCode).json({ error: error.message || 'Failed to generate quiz' });
+    const userMessage = statusCode === 500 
+      ? 'Unable to generate quiz. Please try again later.' 
+      : error.message;
+    return res.status(statusCode).json({ 
+      success: false,
+      error: userMessage 
+    });
   }
 };
 
@@ -24,18 +33,30 @@ const passQuiz = async (req, res) => {
     const { email, title } = req.body;
 
     if (!email || typeof email !== 'string' || email.trim().length === 0) {
-      return res.status(400).json({ error: 'Email is required' });
+      return res.status(400).json({ 
+        success: false,
+        error: 'Email is required to save your progress.' 
+      });
     }
 
     if (!title || typeof title !== 'string' || title.trim().length === 0) {
-      return res.status(400).json({ error: 'Title is required' });
+      return res.status(400).json({ 
+        success: false,
+        error: 'Quiz topic is required.' 
+      });
     }
 
     const result = await quizService.passQuiz(email.trim(), title.trim());
     return res.status(200).json(result);
   } catch (error) {
     const statusCode = error.statusCode || 500;
-    return res.status(statusCode).json({ error: error.message || 'Failed to process quiz pass' });
+    const userMessage = statusCode === 500 
+      ? 'Unable to save quiz progress. Please try again later.' 
+      : error.message;
+    return res.status(statusCode).json({ 
+      success: false,
+      error: userMessage 
+    });
   }
 };
 

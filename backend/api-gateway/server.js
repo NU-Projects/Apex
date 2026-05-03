@@ -63,7 +63,18 @@ app.use('/auth', async (req, res) => {
     });
     res.status(response.status).json(response.data);
   } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+    if (error.code === 'ECONNREFUSED' || error.code === 'ENOTFOUND') {
+      return res.status(503).json({ 
+        success: false, 
+        message: 'Authentication service is temporarily unavailable. Please try again later.' 
+      });
+    }
+    res.status(error.response?.status || 500).json(
+      error.response?.data || { 
+        success: false, 
+        message: 'Something went wrong. Please try again later.' 
+      }
+    );
   }
 });
 
@@ -78,7 +89,18 @@ app.use('/eureka', async (req, res) => {
     });
     res.status(response.status).json(response.data);
   } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+    if (error.code === 'ECONNREFUSED' || error.code === 'ENOTFOUND') {
+      return res.status(503).json({ 
+        success: false, 
+        error: 'Service discovery is temporarily unavailable. Please try again later.' 
+      });
+    }
+    res.status(error.response?.status || 500).json(
+      error.response?.data || { 
+        success: false, 
+        error: 'Something went wrong. Please try again later.' 
+      }
+    );
   }
 });
 
@@ -93,7 +115,18 @@ app.use('/skills', async (req, res) => {
     });
     res.status(response.status).json(response.data);
   } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+    if (error.code === 'ECONNREFUSED' || error.code === 'ENOTFOUND') {
+      return res.status(503).json({ 
+        success: false, 
+        error: 'Skills service is temporarily unavailable. Please try again later.' 
+      });
+    }
+    res.status(error.response?.status || 500).json(
+      error.response?.data || { 
+        success: false, 
+        error: 'Something went wrong. Please try again later.' 
+      }
+    );
   }
 });
 
@@ -108,7 +141,18 @@ app.use('/jobs', async (req, res) => {
     });
     res.status(response.status).json(response.data);
   } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+    if (error.code === 'ECONNREFUSED' || error.code === 'ENOTFOUND') {
+      return res.status(503).json({ 
+        success: false, 
+        error: 'Jobs service is temporarily unavailable. Please try again later.' 
+      });
+    }
+    res.status(error.response?.status || 500).json(
+      error.response?.data || { 
+        success: false, 
+        error: 'Something went wrong. Please try again later.' 
+      }
+    );
   }
 });
 
@@ -123,7 +167,18 @@ app.use('/user', async (req, res) => {
     });
     res.status(response.status).json(response.data);
   } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+    if (error.code === 'ECONNREFUSED' || error.code === 'ENOTFOUND') {
+      return res.status(503).json({ 
+        success: false, 
+        error: 'User service is temporarily unavailable. Please try again later.' 
+      });
+    }
+    res.status(error.response?.status || 500).json(
+      error.response?.data || { 
+        success: false, 
+        error: 'Something went wrong. Please try again later.' 
+      }
+    );
   }
 });
 
@@ -138,7 +193,18 @@ app.use('/roadmap', async (req, res) => {
     });
     res.status(response.status).json(response.data);
   } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+    if (error.code === 'ECONNREFUSED' || error.code === 'ENOTFOUND') {
+      return res.status(503).json({ 
+        success: false, 
+        error: 'Roadmap service is temporarily unavailable. Please try again later.' 
+      });
+    }
+    res.status(error.response?.status || 500).json(
+      error.response?.data || { 
+        success: false, 
+        error: 'Something went wrong. Please try again later.' 
+      }
+    );
   }
 });
 
@@ -153,8 +219,56 @@ app.use('/quiz', async (req, res) => {
     });
     res.status(response.status).json(response.data);
   } catch (error) {
-    res.status(error.response?.status || 500).json(error.response?.data || { error: error.message });
+    if (error.code === 'ECONNREFUSED' || error.code === 'ENOTFOUND') {
+      return res.status(503).json({ 
+        success: false, 
+        error: 'Quiz service is temporarily unavailable. Please try again later.' 
+      });
+    }
+    res.status(error.response?.status || 500).json(
+      error.response?.data || { 
+        success: false, 
+        error: 'Something went wrong. Please try again later.' 
+      }
+    );
   }
+});
+
+// ─── Global Error Handler ───
+
+app.use((err, req, res, next) => {
+  console.error('API Gateway Error:', err.message);
+  
+  // Handle CORS errors
+  if (err.message === 'CORS not allowed') {
+    return res.status(403).json({
+      success: false,
+      error: 'Access denied. Please try again.'
+    });
+  }
+  
+  // Handle JSON parsing errors
+  if (err instanceof SyntaxError && err.status === 400 && 'body' in err) {
+    return res.status(400).json({
+      success: false,
+      error: 'Invalid request format. Please try again.'
+    });
+  }
+  
+  // Default error response
+  res.status(err.statusCode || 500).json({
+    success: false,
+    error: 'Something went wrong. Please try again later.'
+  });
+});
+
+// ─── 404 Handler ───
+
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    error: 'Service not available. Please contact support.'
+  });
 });
 
 app.listen(PORT, () => {

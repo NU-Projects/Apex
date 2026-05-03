@@ -42,6 +42,43 @@ app.get('/roadmap/health', (req, res) => {
 
 app.use('/roadmap', roadmapRoutes);
 
+// ─── Global Error Handler ───
+
+app.use((err, req, res, next) => {
+  console.error('Error:', err.message);
+  
+  // Handle CORS errors
+  if (err.message === 'CORS not allowed') {
+    return res.status(403).json({
+      success: false,
+      error: 'Access denied. Please try again.'
+    });
+  }
+  
+  // Handle JSON parsing errors
+  if (err instanceof SyntaxError && err.status === 400 && 'body' in err) {
+    return res.status(400).json({
+      success: false,
+      error: 'Invalid request format. Please try again.'
+    });
+  }
+  
+  // Default error response
+  res.status(err.statusCode || 500).json({
+    success: false,
+    error: 'Something went wrong. Please try again later.'
+  });
+});
+
+// ─── 404 Handler ───
+
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    error: 'Service not available. Please contact support.'
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Roadmap Service running on port ${PORT}`);
   startEureka();

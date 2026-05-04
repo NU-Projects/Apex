@@ -1,6 +1,6 @@
 from services.github_service import GithubService
 from services.linkedin_service import LinkedinService
-from services.ollama_service import OllamaService
+from services.groq_service import GroqService
 from repositories.skill_repository import SkillRepository
 from flask import jsonify
 
@@ -8,7 +8,7 @@ class SkillController:
     def __init__(self):
         self.github_service = GithubService()
         self.linkedin_service = LinkedinService()
-        self.ollama_service = OllamaService()
+        self.groq_service = GroqService()
         self.repository = SkillRepository()
 
     def get_github_skills(self, data):
@@ -40,5 +40,5 @@ class SkillController:
     def get_missing_skills(self, data):
         role = data.get('role', '')
         current_skills = data.get('currentSkills', [])
-        missing_skills = self.ollama_service.get_missing_skills(role, current_skills)
+        missing_skills = self.groq_service.get_missing_skills(role, current_skills)
         return jsonify(missing_skills)

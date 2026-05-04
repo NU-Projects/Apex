@@ -37,29 +37,39 @@ FILENAME_TO_ROLE = {
     "product_manager":    "Product Manager",
 }
 
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama2")
-OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY", "")
+GROQ_API_KEY = os.getenv("GROQ_API")
+GROQ_MODEL = "llama-3.3-70b-versatile"  # Fast and accurate model
 
-def call_ollama(messages):
-    is_local = 'localhost' in OLLAMA_BASE_URL or '127.0.0.1' in OLLAMA_BASE_URL
+def call_groq(messages):
+    """Call Groq API for AI normalization"""
+    if not GROQ_API_KEY:
+        print("  ERROR: GROQ_API not set in .env")
+        return None
     
-    headers = {'Content-Type': 'application/json'}
-    if OLLAMA_API_KEY and not is_local:
-        headers['Authorization'] = f'Bearer {OLLAMA_API_KEY}'
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {GROQ_API_KEY}'
+    }
     
     payload = {
-        "model": OLLAMA_MODEL,
+        "model": GROQ_MODEL,
         "messages": messages,
-        "stream": False,
+        "temperature": 0.1,  # Low temperature for consistent results
+        "max_tokens": 2000
     }
+    
     try:
-        res = requests.post(f"{OLLAMA_BASE_URL}/api/chat", json=payload, timeout=90)
+        res = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            json=payload,
+            headers=headers,
+            timeout=30
+        )
         res.raise_for_status()
         data = res.json()
-        return data.get("message", {}).get("content", "").strip()
+        return data.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
     except Exception as e:
-        print(f"  AI Error: {e}")
+        print(f"  Groq API Error: {e}")
         return None
 
 def extract_json_object(text):
@@ -71,49 +81,62 @@ def extract_json_object(text):
     except:
         return None
 
+import time
+
 def normalize_locations_for_jobs(jobs):
-    """Group jobs by country, find unique locations, and normalize them using AI."""
-    by_country = {}
-    for job in jobs:
-        c = job.get("country", "Unknown")
-        if c not in by_country: by_country[c] = []
-        by_country[c].append(job)
-
-    for country, country_jobs in by_country.items():
-        raw_locations = list(set(j["location"] for j in country_jobs if j.get("location")))
-        if not raw_locations: continue
-
-        print(f"  Normalizing {len(raw_locations)} unique locations for {country}...")
+    """Normalize job locations using Groq AI with rate limiting."""
+    # Collect ALL unique locations first
+    all_locations = list(set(j.get("location") for j in jobs if j.get("location")))
+    
+    if not all_locations:
+        return
+    
+    print(f"  Normalizing {len(all_locations)} unique locations using Groq AI...")
+    
+    # Process in batches of 100 with delays
+    batch_size = 100
+    mapping = {}
+    
+    for i in range(0, len(all_locations), batch_size):
+        batch = all_locations[i:i+batch_size]
         
-        # Process in batches of 50 to avoid prompt size limits
-        batch_size = 50
-        mapping = {}
-        for i in range(0, len(raw_locations), batch_size):
-            batch = raw_locations[i:i+batch_size]
-            prompt = (
-                f"Normalize the following job location strings into their primary major city in {country}. "
-                f"Group sub-areas and variations into their main city name (e.g., 'Johar Town', 'Johar Town, Punjab', 'Lahore, Punjab' all map to 'Lahore'). "
-                f"If it's a generic country like '{country}' or 'Remote', map it to '{country}'. "
-                f"Return ONLY a strictly valid JSON object mapping every exact raw location string to its normalized city name."
-                f"\n\nLocations:\n{json.dumps(batch)}"
-            )
-            
-            content = call_ollama([
-                {"role": "system", "content": "You are a data cleaner. Respond ONLY with a valid JSON object."},
-                {"role": "user", "content": prompt}
-            ])
-            
-            batch_mapping = extract_json_object(content)
-            if batch_mapping:
-                mapping.update(batch_mapping)
-
-        # Apply mapping
-        for job in country_jobs:
-            raw = job.get("location")
-            if raw in mapping:
-                job["normalized_location"] = str(mapping[raw]).strip().title()
-            else:
-                job["normalized_location"] = raw.strip().title() if raw else None
+        prompt = (
+            f"Normalize these job locations into major cities. "
+            f"Rules:\n"
+            f"- Pakistan cities: Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Hyderabad, Quetta, Gujranwala, Sialkot\n"
+            f"- USA cities: New York, San Francisco, Los Angeles, Seattle, Chicago, Boston, Austin, Atlanta, Dallas, Washington DC\n"
+            f"- Sub-areas go to main city (e.g., 'Johar Town' → 'Lahore', 'Brooklyn' → 'New York')\n"
+            f"- Generic locations (country names, state names, small towns) → 'Others'\n"
+            f"- 'Remote' stays as 'Remote'\n\n"
+            f"Return ONLY a valid JSON object mapping each location to its normalized city.\n\n"
+            f"Locations: {json.dumps(batch)}"
+        )
+        
+        print(f"  Processing batch {i//batch_size + 1}/{(len(all_locations)-1)//batch_size + 1}...")
+        
+        content = call_groq([
+            {"role": "system", "content": "You are a location normalizer. Return ONLY valid JSON."},
+            {"role": "user", "content": prompt}
+        ])
+        
+        batch_mapping = extract_json_object(content)
+        if batch_mapping:
+            mapping.update(batch_mapping)
+        
+        # Add delay to avoid rate limits (Groq free tier: 30 requests/minute)
+        if i + batch_size < len(all_locations):
+            print(f"  Waiting 3 seconds to avoid rate limits...")
+            time.sleep(3)
+    
+    # Apply mapping to all jobs
+    for job in jobs:
+        raw = job.get("location")
+        if raw in mapping:
+            job["normalized_location"] = str(mapping[raw]).strip()
+        else:
+            job["normalized_location"] = "Others"
+    
+    print(f"  ✅ Normalized {len(mapping)} locations!")
 
 from typing import Optional
 
@@ -269,12 +292,17 @@ def insert_jobs(jobs: list, truncate: bool = False):
 
     conn = None
     try:
-        conn = psycopg2.connect(DATABASE_URL)
+        # Add connection timeout
+        conn = psycopg2.connect(DATABASE_URL, connect_timeout=10)
+        conn.autocommit = False
         cur = conn.cursor()
 
         if truncate:
-            print("Truncating jobs table...")
-            cur.execute("TRUNCATE TABLE jobs RESTART IDENTITY;")
+            print("Deleting existing jobs...")
+            # Use DELETE instead of TRUNCATE (faster and no lock issues)
+            cur.execute("DELETE FROM jobs;")
+            conn.commit()
+            print("✅ Existing jobs deleted")
 
         insert_sql = """
             INSERT INTO jobs (platform, role, title, company_name, description,
@@ -296,7 +324,8 @@ def insert_jobs(jobs: list, truncate: bool = False):
         skipped = 0
         seen_urls = set()
 
-        for job in jobs:
+        print(f"Inserting {len(jobs)} jobs...")
+        for idx, job in enumerate(jobs):
             url = job.get("url")
             if url and url in seen_urls:
                 skipped += 1
@@ -318,6 +347,10 @@ def insert_jobs(jobs: list, truncate: bool = False):
                 job["country"],
             ))
             inserted += 1
+            
+            # Show progress every 100 jobs
+            if (idx + 1) % 100 == 0:
+                print(f"  Inserted {idx + 1}/{len(jobs)} jobs...")
 
         conn.commit()
         cur.close()
@@ -378,7 +411,7 @@ def main():
     print(f"\nTotal jobs collected: {len(jobs)}\n")
 
     if jobs:
-        print(f"Normalizing {len(jobs)} jobs (AI categorization)...")
+        print(f"Normalizing {len(jobs)} jobs using Groq AI...")
         normalize_locations_for_jobs(jobs)
         
         print("Inserting into database...")

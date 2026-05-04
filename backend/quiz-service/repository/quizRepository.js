@@ -58,8 +58,47 @@ const markQuizPassed = async (email, skillName) => {
   }
 };
 
+/**
+ * Get user's complete roadmap with all stages and skills.
+ */
+const getUserRoadmap = async (email) => {
+  const { data, error } = await supabase
+    .from('user_roadmap')
+    .select('email, role, stage_name, stage_order, skill_name, status, is_unlocked, quiz_passed')
+    .eq('email', email)
+    .order('stage_order', { ascending: true })
+    .order('skill_name', { ascending: true });
+
+  if (error) {
+    const err = new Error(`Failed to fetch user roadmap: ${error.message}`);
+    err.statusCode = 500;
+    throw err;
+  }
+
+  return data || [];
+};
+
+/**
+ * Unlock all skills in a specific stage.
+ */
+const unlockStage = async (email, stageOrder) => {
+  const { error } = await supabase
+    .from('user_roadmap')
+    .update({ is_unlocked: true })
+    .eq('email', email)
+    .eq('stage_order', stageOrder);
+
+  if (error) {
+    const err = new Error(`Failed to unlock stage: ${error.message}`);
+    err.statusCode = 500;
+    throw err;
+  }
+};
+
 module.exports = {
   getUserSkills,
   moveSkillToCurrent,
-  markQuizPassed
+  markQuizPassed,
+  getUserRoadmap,
+  unlockStage
 };

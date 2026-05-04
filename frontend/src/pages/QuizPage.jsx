@@ -8,6 +8,7 @@ import QuizQuestion from '../components/quiz/QuizQuestion';
 import QuizNavigation from '../components/quiz/QuizNavigation';
 import QuizResult from '../components/quiz/QuizResult';
 import QuizAnswerKey from '../components/quiz/QuizAnswerKey';
+import SkillNotification from '../components/SkillNotification';
 
 const transformApiQuiz = (apiQuiz) => {
     return apiQuiz.map((q, qIndex) => {
@@ -71,6 +72,7 @@ function QuizPage() {
     const [view, setView] = useState('loading'); // loading | quiz | result | answerKey | error
     const [error, setError] = useState('');
     const [isMarkingDone, setIsMarkingDone] = useState(false);
+    const [notificationData, setNotificationData] = useState(null);
 
     const fetchQuiz = useCallback(async () => {
         setView('loading');
@@ -106,7 +108,8 @@ function QuizPage() {
             setError('No quiz topic specified.');
             setView('error');
         }
-    }, [topic, fetchQuiz]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [topic]); // Only re-run when topic changes, not when fetchQuiz changes
 
     const handleSelect = (optionKey) => {
         setSelectedAnswers((prev) => ({ ...prev, [currentQuestionIndex]: optionKey }));
@@ -144,8 +147,15 @@ function QuizPage() {
 
         setIsMarkingDone(true);
         try {
-            await markQuizPassed(user.email, topic);
-            navigate('/roadmap');
+            const result = await markQuizPassed(user.email, topic);
+            
+            // Show notification with the result data
+            setNotificationData(result);
+            
+            // Navigate after a delay to allow user to see the notification
+            setTimeout(() => {
+                navigate('/roadmap');
+            }, 8500);
         } catch (err) {
             setError(err?.message || 'Failed to mark quiz as done.');
             // Stay on result page but show error briefly
@@ -169,6 +179,15 @@ function QuizPage() {
         <div className="min-h-screen flex flex-col bg-surface font-sans relative overflow-hidden">
             <div className="pointer-events-none absolute -top-20 -left-24 h-72 w-72 rounded-full bg-brand-200/40 blur-3xl" />
             <div className="pointer-events-none absolute top-40 -right-24 h-72 w-72 rounded-full bg-accent-cyan/20 blur-3xl" />
+            
+            {/* Skill Notification Popup */}
+            {notificationData && (
+                <SkillNotification 
+                    data={notificationData} 
+                    onClose={() => setNotificationData(null)} 
+                />
+            )}
+            
             <Navbar />
             <main className="flex-1 w-full max-w-4xl mx-auto p-6 md:p-10 relative z-10">
                 {/* Quiz title header */}

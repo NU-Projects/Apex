@@ -84,7 +84,7 @@ class JobController:
             return jsonify(mapping), 200
         except requests.exceptions.ConnectionError:
             return jsonify({
-                "error": "Ollama connection refused. Please make sure Ollama is running on your computer at localhost:11434"
+                "error": "Groq API connection error. Please check your internet connection and API key."
             }), 503
         except Exception as e:
             return jsonify({"error": str(e)}), 500

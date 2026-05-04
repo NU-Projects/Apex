@@ -11,9 +11,8 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '../../.env'), override=True
 class JobService:
     def __init__(self):
         self.repository = JobRepository()
-        self.ollama_api_key = os.getenv("OLLAMA_API_KEY", "").strip()
-        self.ollama_model = os.getenv("OLLAMA_MODEL", "llama2").strip()
-        self.ollama_base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").strip()
+        self.groq_api_key = os.getenv("GROQ_API", "").strip()
+        self.groq_model = "llama-3.3-70b-versatile"
 
 
 
@@ -42,39 +41,33 @@ class JobService:
 
         return []
 
-    def _call_ollama(self, messages, timeout=90):
-        if not self.ollama_model:
-            raise ValueError("OLLAMA_MODEL is missing in .env")
+    def _call_groq(self, messages, timeout=30, temperature=0.3):
+        """Call Groq API for AI completions"""
+        if not self.groq_api_key:
+            raise ValueError("GROQ_API key is missing in .env")
 
-        # Check if using local Ollama (no API key needed)
-        is_local = 'localhost' in self.ollama_base_url or '127.0.0.1' in self.ollama_base_url
-        
-        # Convert messages array into a single prompt string for the /api/generate endpoint
-        prompt_text = "\n\n".join([f"[{msg.get('role', 'user').upper()}]: {msg.get('content', '')}" for msg in messages])
-        
-        base_url = self.ollama_base_url
-        chat_url = f"{base_url}/api/generate"
-
-        headers = {"Content-Type": "application/json"}
-        # Only add auth header if API key exists and not using local instance
-        if self.ollama_api_key and not is_local:
-            headers["Authorization"] = f"Bearer {self.ollama_api_key}"
+        url = "https://api.groq.com/openai/v1/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {self.groq_api_key}",
+            "Content-Type": "application/json"
+        }
 
         payload = {
-            "model": self.ollama_model,
-            "prompt": prompt_text,
-            "stream": False,
+            "model": self.groq_model,
+            "messages": messages,
+            "temperature": temperature,
+            "max_tokens": 2048,
         }
 
         try:
-            response = requests.post(chat_url, headers=headers, json=payload, timeout=timeout)
+            response = requests.post(url, headers=headers, json=payload, timeout=timeout)
             response.raise_for_status()
             data = response.json()
-            return data.get("response", "").strip()
+            return data["choices"][0]["message"]["content"].strip()
         except requests.exceptions.RequestException as e:
             if hasattr(e, "response") and getattr(e, "response") is not None:
-                raise Exception(f"Ollama API Error ({e.response.status_code}): {e.response.text}")
-            raise Exception(f"Failed to connect to Ollama at {chat_url}. Error: {str(e)}")
+                raise Exception(f"Groq API Error: {e.response.status_code} {e.response.text}")
+            raise Exception(f"Failed to connect to Groq API. Error: {str(e)}")
 
     def _normalize_skills(self, skills):
         seen = set()
@@ -140,15 +133,22 @@ class JobService:
             f"Job title: {title or ''}\n\n"
             f"Job description: {description or ''}"
         )
-        content = self._call_ollama(
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You extract job requirements and return only JSON arrays.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-        )
+        try:
+            content = self._call_groq(
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You extract job requirements and return only JSON arrays.",
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+                temperature=0.3,
+                timeout=30
+            )
+        except Exception as e:
+            print(f"Error calling Groq API for skill extraction: {e}")
+            content = ""
+        
         skills = self._extract_json_array(content)
         return self._normalize_skills(skills)
 
@@ -254,8 +254,12 @@ class JobService:
         return None
 
     def get_role_insights(self, current_role, selected_role, skills=None):
+        print(f"\n[Role Insights] Starting analysis: {current_role} → {selected_role}")
+        
         current_count = self.get_job_count_by_role(current_role)
         selected_count = self.get_job_count_by_role(selected_role)
+        
+        print(f"[Role Insights] Job counts - Current: {current_count}, Selected: {selected_count}")
 
         skills_text = ""
         if skills:
@@ -288,15 +292,19 @@ class JobService:
             {"role": "user", "content": prompt},
         ]
 
+        print(f"[Role Insights] Calling Groq API...")
         try:
-            content = self._call_ollama(messages=messages, timeout=90)
-        except Exception:
+            content = self._call_groq(messages=messages, timeout=30, temperature=0.3)
+            print(f"[Role Insights] Groq API response received: {content[:200]}...")
+        except Exception as e:
+            print(f"[Role Insights] ❌ Error calling Groq API: {e}")
             content = ""
 
        
         ai_result = self._extract_json_object(content) if content else None
-
+        
         if ai_result:
+            print(f"[Role Insights] ✅ Successfully parsed AI response")
             return {
                 "current_role": current_role,
                 "selected_role": selected_role,
@@ -308,7 +316,7 @@ class JobService:
                 "advice": ai_result.get("advice", ""),
             }
 
-    
+        print(f"[Role Insights] ⚠️ Failed to parse AI response, returning fallback")
         return {
             "current_role": current_role,
             "selected_role": selected_role,
@@ -352,12 +360,13 @@ class JobService:
                 f"\n\nLocations:\n{json.dumps(batch)}"
             )
 
-            content = self._call_ollama(
+            content = self._call_groq(
                 messages=[
                     {"role": "system", "content": "You are a data cleaner. Respond ONLY with a valid JSON object. No explanation."},
                     {"role": "user", "content": prompt}
                 ],
-                timeout=90
+                timeout=30,
+                temperature=0.3
             )
             batch_mapping = self._extract_json_object(content)
             if batch_mapping:
@@ -400,12 +409,13 @@ class JobService:
             )
 
             try:
-                content = self._call_ollama(
+                content = self._call_groq(
                     messages=[
                         {"role": "system", "content": "You are a data cleaner. Respond ONLY with a valid JSON array. No explanation."},
                         {"role": "user", "content": prompt}
                     ],
-                    timeout=120
+                    timeout=30,
+                    temperature=0.3
                 )
                 
                 # Use _extract_json_array helper

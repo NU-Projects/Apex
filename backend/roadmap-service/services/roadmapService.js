@@ -17,7 +17,7 @@ const extractArrayFromText = (text) => {
   const end = cleanedText.lastIndexOf(']');
 
   if (start === -1 || end === -1 || end <= start) {
-    throw new Error('Ollama did not return a JSON array roadmap');
+    throw new Error('Groq did not return a JSON array roadmap');
   }
 
   const jsonArrayText = cleanedText.slice(start, end + 1);
@@ -185,31 +185,48 @@ Output format (STRICT):
 Return only valid JSON, no markdown and no explanation.`;
 };
 
-const callOllamaRoadmap = async ({ role, currentSkills, missingSkills }) => {
-  const generateUrl = 'https://ollama.com/api/generate';
-
-  const headers = { 'Content-Type': 'application/json' };
-  if (process.env.OLLAMA_API_KEY) {
-    headers.Authorization = `Bearer ${process.env.OLLAMA_API_KEY}`;
+const callGroqRoadmap = async ({ role, currentSkills, missingSkills }) => {
+  const groqApiKey = process.env.GROQ_API;
+  
+  if (!groqApiKey) {
+    throw new Error('GROQ_API key is missing in .env');
   }
 
-  const ollamaTimeoutMs = Number(process.env.OLLAMA_TIMEOUT_MS) || 180000; // default 3 minutes
+  const generateUrl = 'https://api.groq.com/openai/v1/chat/completions';
+  
+  const headers = {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${groqApiKey}`
+  };
+
+  const groqTimeoutMs = Number(process.env.GROQ_TIMEOUT_MS) || 30000; // 30 sec default
+
   const response = await axios.post(
     generateUrl,
     {
-      model: process.env.OLLAMA_MODEL,
-      prompt: buildPrompt({ role, currentSkills, missingSkills }),
-      stream: false
+      model: 'llama-3.3-70b-versatile',
+      messages: [
+        {
+          role: 'system',
+          content: 'You are a career roadmap generator. Return ONLY a valid JSON array.'
+        },
+        {
+          role: 'user',
+          content: buildPrompt({ role, currentSkills, missingSkills })
+        }
+      ],
+      temperature: 0.3,  // Lower temperature for consistent, structured output
+      max_tokens: 4000
     },
     {
       headers,
-      timeout: ollamaTimeoutMs
+      timeout: groqTimeoutMs
     }
   );
 
-  const llmText = response?.data?.response;
+  const llmText = response?.data?.choices?.[0]?.message?.content;
   if (!llmText) {
-    throw new Error('Ollama response is empty');
+    throw new Error('Groq response is empty');
   }
 
   const llmArray = extractArrayFromText(llmText);
@@ -243,7 +260,7 @@ const generateAndStoreRoadmap = async (email) => {
     };
   }
 
-  const roadmap = await callOllamaRoadmap({
+  const roadmap = await callGroqRoadmap({
     role,
     currentSkills,
     missingSkills

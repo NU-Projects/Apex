@@ -28,6 +28,27 @@ It also matches users with relevant job listings using **compatibility scoring**
 - Real-time job market data updates  
 - Market demand visualization using heatmaps  
 
+## DEMO
+![01](demo/01.png)
+![02](demo/02.png)
+![03](demo/03.png)
+![04](demo/04.png)
+![05](demo/05.png)
+![06](demo/06.png)
+![07](demo/07.png)
+![08](demo/08.png)
+![09](demo/09.png)
+![01](demo/app/01.png)
+![02](demo/app/02.png)
+![03](demo/app/03.png)
+![04](demo/app/04.png)
+![05](demo/app/05.png)
+![06](demo/app/06.png)
+![07](demo/app/07.png)
+![08](demo/app/08.png)
+![09](demo/app/09.png)
+
+
 ## Tech Stack
 ### Frontend
 - React.js  
